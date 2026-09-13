@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:764ce1416dd88bc3df4a7539411405ab54d734130e5547e1ad1d17aa46d26a27",
+  "claims": [
+    {
+      "id": "claim_b52b1bd353d14a769d4dfe22676e5925",
+      "statement": "Theogony workspace organizes backend code into six crates: theogony-domain, theogony-ports, theogony-db-sqlite, theogony-gedcom, theogony-ai, and theogony-app.",
+      "evidence": [
+        {
+          "resource": "repo://Cargo.toml#L1-L10",
+          "version": "repo-lines-v1:sha256:b97a0b5301d94ba5436fcab92e4f2c1f62d12633bf16dce9fc6a576662e5c090:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhM2MyMzlkZDBmMjE1NGQ3OTVjMzk5YTI3ZWRiOWNjMzRjNGJkNDNkOTM5OTE2NzZhMjFkYjFkMGFjMjY5OGQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZkM2I2YzViOTQ0MjJhN2MwNGYwMDkzMzgxYmY4ZDE3MDdlNmVjY2E2Zjc4NzMyMWE2Nzk0ZWEzZGYxNjQ1MmQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg3YjU3NzUyMTdiOTI2NzNhZTZjYzhjNThhOTYzYzA4OTQ0MDdhZjI2YTJlMjFjMTM4MWEwYzBhNGMxMmYxMmYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_29621663af27464f8889d730c2ec7eab",
+      "statement": "theogony-domain defines core genealogy entities, rules, business logic, and types exported to TypeScript via ts-rs.",
+      "evidence": [
+        {
+          "resource": "repo://Cargo.toml#L3-L10",
+          "version": "repo-lines-v1:sha256:499cd6742d2d3b81a527d5d5c32951e00a52ef08f4417119ef913d57f3bbab6f:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiN2RmMzIxNGUyYmY4N2JhMGQ1ZTc1MGI4ZWM4MjA3ODc2MjA2Nzk0MDUzOWYzMTY2ZjM1ZDMzMTQ2ZjRlYzAyYiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZmQzYjZjNWI5NDQyMmE3YzA0ZjAwOTMzODFiZjhkMTcwN2U2ZWNjYTZmNzg3MzIxYTY3OTRlYTNkZjE2NDUyZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjIsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYmY0ZmM0OTg4YjY2ZGZhYTgxMWU0YTI5MzE2ZjFjYjg0NzdhNGI3ZjZiOGYwNDhkMjM3YTFiMjcwMWZlMWJiYyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODdiNTc3NTIxN2I5MjY3M2FlNmNjOGM1OGE5NjNjMDg5NDQwN2FmMjZhMmUyMWMxMzgxYTBjMGE0YzEyZjEyZiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_a54af3f609f64e61abf873fd0394a873",
+      "statement": "theogony-ports provides abstract repository and service traits separating domain logic from persistence implementations.",
+      "evidence": [
+        {
+          "resource": "repo://Cargo.toml#L3-L10",
+          "version": "repo-lines-v1:sha256:499cd6742d2d3b81a527d5d5c32951e00a52ef08f4417119ef913d57f3bbab6f:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiN2RmMzIxNGUyYmY4N2JhMGQ1ZTc1MGI4ZWM4MjA3ODc2MjA2Nzk0MDUzOWYzMTY2ZjM1ZDMzMTQ2ZjRlYzAyYiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZmQzYjZjNWI5NDQyMmE3YzA0ZjAwOTMzODFiZjhkMTcwN2U2ZWNjYTZmNzg3MzIxYTY3OTRlYTNkZjE2NDUyZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjIsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYmY0ZmM0OTg4YjY2ZGZhYTgxMWU0YTI5MzE2ZjFjYjg0NzdhNGI3ZjZiOGYwNDhkMjM3YTFiMjcwMWZlMWJiYyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODdiNTc3NTIxN2I5MjY3M2FlNmNjOGM1OGE5NjNjMDg5NDQwN2FmMjZhMmUyMWMxMzgxYTBjMGE0YzEyZjEyZiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_04bd8aee482b47ae9f986b72c0ae785b",
+      "statement": "theogony-db-sqlite implements database schema migrations, transactional persistence, backups, and restores using SQLite.",
+      "evidence": [
+        {
+          "resource": "repo://Cargo.toml#L3-L10",
+          "version": "repo-lines-v1:sha256:499cd6742d2d3b81a527d5d5c32951e00a52ef08f4417119ef913d57f3bbab6f:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiN2RmMzIxNGUyYmY4N2JhMGQ1ZTc1MGI4ZWM4MjA3ODc2MjA2Nzk0MDUzOWYzMTY2ZjM1ZDMzMTQ2ZjRlYzAyYiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZmQzYjZjNWI5NDQyMmE3YzA0ZjAwOTMzODFiZjhkMTcwN2U2ZWNjYTZmNzg3MzIxYTY3OTRlYTNkZjE2NDUyZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjIsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYmY0ZmM0OTg4YjY2ZGZhYTgxMWU0YTI5MzE2ZjFjYjg0NzdhNGI3ZjZiOGYwNDhkMjM3YTFiMjcwMWZlMWJiYyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODdiNTc3NTIxN2I5MjY3M2FlNmNjOGM1OGE5NjNjMDg5NDQwN2FmMjZhMmUyMWMxMzgxYTBjMGE0YzEyZjEyZiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_0cff813dd4ac4e45b41232fa5e69e93f",
+      "statement": "theogony-gedcom handles GEDCOM parsing, serialization, mapping, package creation, and snapshot diff comparison.",
+      "evidence": [
+        {
+          "resource": "repo://Cargo.toml#L3-L10",
+          "version": "repo-lines-v1:sha256:499cd6742d2d3b81a527d5d5c32951e00a52ef08f4417119ef913d57f3bbab6f:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiN2RmMzIxNGUyYmY4N2JhMGQ1ZTc1MGI4ZWM4MjA3ODc2MjA2Nzk0MDUzOWYzMTY2ZjM1ZDMzMTQ2ZjRlYzAyYiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZmQzYjZjNWI5NDQyMmE3YzA0ZjAwOTMzODFiZjhkMTcwN2U2ZWNjYTZmNzg3MzIxYTY3OTRlYTNkZjE2NDUyZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjIsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYmY0ZmM0OTg4YjY2ZGZhYTgxMWU0YTI5MzE2ZjFjYjg0NzdhNGI3ZjZiOGYwNDhkMjM3YTFiMjcwMWZlMWJiYyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODdiNTc3NTIxN2I5MjY3M2FlNmNjOGM1OGE5NjNjMDg5NDQwN2FmMjZhMmUyMWMxMzgxYTBjMGE0YzEyZjEyZiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_243b77ae96604eab82be7de8072f88a7",
+      "statement": "theogony-ai provides optional AI assistant integration, prompt handling, and record analysis capabilities.",
+      "evidence": [
+        {
+          "resource": "repo://Cargo.toml#L3-L10",
+          "version": "repo-lines-v1:sha256:499cd6742d2d3b81a527d5d5c32951e00a52ef08f4417119ef913d57f3bbab6f:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiN2RmMzIxNGUyYmY4N2JhMGQ1ZTc1MGI4ZWM4MjA3ODc2MjA2Nzk0MDUzOWYzMTY2ZjM1ZDMzMTQ2ZjRlYzAyYiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZmQzYjZjNWI5NDQyMmE3YzA0ZjAwOTMzODFiZjhkMTcwN2U2ZWNjYTZmNzg3MzIxYTY3OTRlYTNkZjE2NDUyZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjIsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYmY0ZmM0OTg4YjY2ZGZhYTgxMWU0YTI5MzE2ZjFjYjg0NzdhNGI3ZjZiOGYwNDhkMjM3YTFiMjcwMWZlMWJiYyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODdiNTc3NTIxN2I5MjY3M2FlNmNjOGM1OGE5NjNjMDg5NDQwN2FmMjZhMmUyMWMxMzgxYTBjMGE0YzEyZjEyZiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_ac1892e9f5f04e1989dba06bffa04f11",
+      "statement": "theogony-app acts as the Tauri desktop integration host, registering commands, managing application lifecycle, and exposing generated TypeScript bindings.",
+      "evidence": [
+        {
+          "resource": "repo://Cargo.toml#L3-L10",
+          "version": "repo-lines-v1:sha256:499cd6742d2d3b81a527d5d5c32951e00a52ef08f4417119ef913d57f3bbab6f:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiN2RmMzIxNGUyYmY4N2JhMGQ1ZTc1MGI4ZWM4MjA3ODc2MjA2Nzk0MDUzOWYzMTY2ZjM1ZDMzMTQ2ZjRlYzAyYiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZmQzYjZjNWI5NDQyMmE3YzA0ZjAwOTMzODFiZjhkMTcwN2U2ZWNjYTZmNzg3MzIxYTY3OTRlYTNkZjE2NDUyZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjIsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYmY0ZmM0OTg4YjY2ZGZhYTgxMWU0YTI5MzE2ZjFjYjg0NzdhNGI3ZjZiOGYwNDhkMjM3YTFiMjcwMWZlMWJiYyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODdiNTc3NTIxN2I5MjY3M2FlNmNjOGM1OGE5NjNjMDg5NDQwN2FmMjZhMmUyMWMxMzgxYTBjMGE0YzEyZjEyZiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_b8d7982ba49b47ff8dcb3086ed267338",
+      "statement": "The UI frontend is built with Vite, React, TypeScript, and Fluent UI v9, communicating with the backend through Tauri IPC or an optional HTTP transport.",
+      "evidence": [
+        {
+          "resource": "repo://ui/src/App.tsx#L1-L10",
+          "version": "repo-lines-v1:sha256:af6269a4709de56be5c327551d12592d0915ea49b69d5b97ad1e8dc50c03e819:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM0NjI0MDY1ZmE3ZGQ5ZGFkZWI1NjQxYTk3MTY2NDJjMmNlYTJlZDU5YTRiYzQ1Y2VjZjBlZTBiMTEzODM0MGUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlYjcwMjU3NTkzZGEwNmY2ODJhM2RkZGE1NGE5ZDI2MGQ0ZmM1MTRmNjQ1MjM3ZjVjYTc0YjA4ZjhkYTYxYTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjYxYWNlZjk5ZmE0NWQ1ZjIzNDJlYmQ0MDJlMGZhY2E1ZWI2NTg0YmIxYTc0ZDQzMmEyZmQyNWZlNzYzODA2NzcifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.1",
+    "at": "2026-09-13T14:10:48.725Z"
+  }
+}
