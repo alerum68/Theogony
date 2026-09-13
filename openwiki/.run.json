@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "runId": "d78d114a-627f-453a-807b-6fee24c29e2d",
+  "mode": "init",
+  "phase": "planning",
+  "startedAt": "2026-09-13T05:54:16.479Z",
+  "language": "en",
+  "languageChanged": false,
+  "requiredRewritePages": [],
+  "initialPages": [],
+  "sourceFingerprint": "sha256:881023468e503d0eb4bcb30c0b46020a428ab8c03986c73eb207d4a822cc7dd9",
+  "targetGitHead": "87cb85dedbcff9991016a52da1fdfe9ea83d0398",
+  "actor": {
+    "producerActor": "openwiki/0.5.1",
+    "metadataModel": "nvidia/nemotron-3.5-lightning:free"
+  },
+  "previousLastUpdate": null,
+  "wikiGoal": "A user manual for users of Theogony Genealogical Software. Detailed directions on both the program, and best practices with Genealogical Proof Standard and Theogony's workflow.",
+  "beforeContentSnapshot": "59b0201869f028b38c86e5fdfa3643d6cc16d32f50c66c480cc984ba09b2dafe",
+  "preparedWiki": {
+    "generatedProvenance": []
+  }
+}

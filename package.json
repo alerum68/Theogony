@@ -1,0 +1,12 @@
+{
+  "name": "theogony-wiki",
+  "version": "1.0.0",
+  "description": "Documentation and GitHub Wiki for Theogony",
+  "scripts": {
+    "dev": "npx docsify serve . -p 3000",
+    "serve": "npx docsify serve . -p 3000"
+  },
+  "devDependencies": {
+    "docsify-cli": "^4.4.6"
+  }
+}

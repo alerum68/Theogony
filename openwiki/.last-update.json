@@ -1,0 +1,7 @@
+{
+  "updatedAt": "2026-09-13T06:48:45.415Z",
+  "command": "init",
+  "model": "qwen2.5-coder:7b-instruct-q6_K",
+  "status": "interrupted",
+  "language": "en"
+}
