@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-09-13T06:49:54.611Z",
+  "updatedAt": "2026-09-13T06:56:09.903Z",
   "command": "init",
-  "model": "gemma2:9b-instruct-q4_K_M",
+  "model": "qwen2.5:7b",
   "status": "interrupted",
   "language": "en"
 }
