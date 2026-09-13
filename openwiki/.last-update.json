@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-09-13T07:01:09.846Z",
+  "updatedAt": "2026-09-13T07:08:46.611Z",
   "command": "init",
-  "model": "qwen2.5:7b-32k",
+  "model": "qwen2.5:7b-128k",
   "status": "interrupted",
   "language": "en"
 }
