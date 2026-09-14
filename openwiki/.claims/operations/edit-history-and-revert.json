@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:3dbb4b59c492e9eb6dbe13d01af725c537ef6f067bbd4a8dd1ebe5316f8bec31",
+  "claims": [
+    {
+      "id": "claim_f6c274bf15a84fc890db8799aa2fea34",
+      "statement": "Theogony records every data mutation in an immutable audit log composed of edit actions and structured operations that preserve timestamps, provenance, and reversion pointers.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-db-sqlite/src/edit_log.rs",
+          "version": "repo-file-v1:sha256:08244a323cd83b88c0c420844a405843c7d202188c14923e362ad6b3b86421df"
+        }
+      ]
+    },
+    {
+      "id": "claim_d4f6e47c0e6c4b7293172888f39f689f",
+      "statement": "Selective revert performs pre-flight conflict analysis to detect dependent downstream modifications and supports resolution via Refuse, Cascade, or Reassign strategies.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-db-sqlite/src/revert.rs",
+          "version": "repo-file-v1:sha256:9e0be40350396fc7218f99f04048d9267b42bf8a230417d32b7ac562e070f296"
+        }
+      ]
+    },
+    {
+      "id": "claim_275170274f9a4890adac9b6ea53de18a",
+      "statement": "Cascade resolution automatically sorts and recursively reverts blocking downstream actions in reverse chronological order (newest first).",
+      "evidence": [
+        {
+          "resource": "repo://theogony-db-sqlite/src/revert.rs#L43-L58",
+          "version": "repo-lines-v1:sha256:8bd697be1fda0bb4956b21f1ad9929b59cfa96f3deb4a64e8082fa944b6c2cfc:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZmOWZmZTgxMDdmYTAzYjAzNDBhOGIxNDZjZDQxN2I2ZTdhNTJkNmI1NzcyZjdhYTliM2YzNDc3MDk1ODU1ZGIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE0MTlhNmRjYzA0ZTIxM2EzYzdhNzdhNDU2YjAxZTc2ZDFlZjc4Y2QwMGJiZWMxZDhmODE0NThmZTkzZWRjNTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImM3NTRlYmJmZDhlZmVhNGQ0OWVjNWM3YTM4Yjg3MTYwNWNlNGYzMGM5NTY3NmQ2ZTU5MTBmYzQ4ZjUwMzQ1MTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRjMDUzNGJkYWY2ODcwYjZmZmY5MjQ0MDc2M2FlOWZhYjFkMTVlOTAxODg0ZjdiMGYwYmVlYzMzOWE4MjcyMTYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_a3ca3fd38d554e4781723c20a1bf291c",
+      "statement": "Reassign resolution updates dependent foreign keys or field references to alternative target records, enabling safe reverts without losing downstream work.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-db-sqlite/src/revert.rs#L69-L85",
+          "version": "repo-lines-v1:sha256:0cdc08946cf65000068320af4a6a5f936a826bbf98fdf13386df00dadda0afc4:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY3YjI0OTIwMTMwMzJlN2VjZGZkYWY3MGQ3NTA5ZjQ5YWY2MmI2MTlmZDE4OWE1ZGZiZjk5MDBmYmFlNTM5NjAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM5YTg1NzJiODg4YjA4Zjc5Nzk4YTE5YWNhZDFlZmRhZmVkMDI3MDQyNWEzZTFjMjJkODg4ZDEwNmQ2NTY4M2IiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjYwNjYzZjFiYzU0YmM5OTMzZGY5MjEyNjZmZDBjMzlkZmU1MTAzNmJlNmJkYjg0MmNiNTgyOGNiMTgzYmU3MDgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjYzYTY0MWJhNWZlYzUzMDY2YzE1ZWViMjU2ZTBmNThjMjU3OTllNzJhOTJmZjM2OTQyMDM5ZWM1N2JkNjY0MmEifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.1",
+    "at": "2026-09-14T02:18:08.068Z"
+  }
+}
