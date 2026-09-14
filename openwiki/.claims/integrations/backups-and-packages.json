@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:ae1d1487059fbb7741677d2c771f593a94d6e4da71dc5de8036fb0e6f9651443",
+  "claims": [
+    {
+      "id": "claim_666b0b527e5f4639a7c3014bd0fc0586",
+      "statement": "Database backups (.theb) are exported as gzipped tar archives containing a JSON manifest and a SQLite database snapshot produced via the SQLite Online Backup API with atomic temporary file renaming.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-app/src/commands/backup.rs#L52-L92",
+          "version": "repo-lines-v1:sha256:d0e5b5c47b06c0df2f5a63158d8d0c1e366ae019fa5d2e72a9e56e31f7a15b47:eyJzZWxlY3RlZExpbmVDb3VudCI6NDEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjgwNDdjNzE4Mjk3MzM5OTI5N2ZlNzAzMGM4YzExNjg4NTRkMjYzZTE5MTFhNGUwYzk4NDQxMmJlMGI0ZmQzZWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImUyMmZhYTUzNWJkMmVhM2Q1MmU3NDFlZDQ1NDQzNWI3ZmU0OWU4MzU4NmU5NDNkOThkODJiYmZiMjRkMWY1YzUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc5ZmI0ZWVlNDViZDdkZjZhODY3MGI2OGNkODU4MzVkZDEyZmZmYjg5NjYyOGEyM2NhMzg3YmNkZDM2YTQ4YzMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImNjNWJlYTY3YjUyNDlkZDljNzEwNjA2MmRmYTVhZTk1OWIwMWUyNGFiNzQyNWQzY2Y2OTJmNTc3OTdkNGI3NTQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_f186ed2cb97348d9bf5c769a9d8fc7f3",
+      "statement": "Restoring a .theb backup enforces strict safety guarantees: it always restores to a new tree file, validates archive contents, checks forward schema compatibility before touching the destination, and regenerates tree copy IDs upon collision with existing trees.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-app/src/commands/backup.rs#L156-L265",
+          "version": "repo-lines-v1:sha256:c8ee929a4a6fe15c7006248b847ce6a35d658d65462e01aaef4b207c87edb7d7:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEwLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI2MWNhYzg1NzdjYzNjNTRlYjA5OTEzOTlkN2JlNDQ5YTE3MzYzY2Q5MzdhYzJkNDc3MzcxOTU5NzYzYmViNzdkIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJlMjJmYWE1MzViZDJlYTNkNTJlNzQxZWQ0NTQ0MzViN2ZlNDllODM1ODZlOTQzZDk4ZDgyYmJmYjI0ZDFmNWM1IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJlOWIwMjIwMDc5MTg3ZGZiMjZhMWNlMThlY2MwYjEyMzEzNTMyZjdhNTE3OWY2OWJhYzhjYTM2OWIzZWNlZjgzIiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MywiZm9sbG93aW5nQ29udGV4dEhhc2giOiI0YjcyMGQ5ZjgwZjEwOGMxMDRmNzI3YmEzMjM3YjNhM2Q1Y2E5NjJlZWMxNzVkYTZkY2ZmZmRhNTVjMWQ4OGJlIn0"
+        }
+      ]
+    },
+    {
+      "id": "claim_ea4709c1bbc8461b95a1c3f298ee8e9c",
+      "statement": "Lossless portability packages (.tgpkg) are GEDZIP-compatible ZIP archives containing a package manifest, GEDCOM-7 tree text (tree.ged), an evidence SQLite database snapshot, and a media directory.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-app/src/commands/interchange/package.rs#L98-L150",
+          "version": "repo-lines-v1:sha256:469fcc0234e92794a1ecf96959e358639708e053d03b5908bec103926e878c83:eyJzZWxlY3RlZExpbmVDb3VudCI6NTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRiOWM2YzcxM2M4MDA5NDE4ZDhlNjc3MTNkNTY5MjA3NzUzM2U3ZjM4Yjg4YTBhY2EzZGVjMjRjYzQ0ODg1MjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjIzZmQ2NTBjOGVkNWY0NDY0YjI2ZWJmNzRmYWFmMzE2OWYxMWMwMTM0YjQ4OTBlMmNhOTYwZTEzNjNmMGUzNDIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUxMjE2ZTRkMWZmNzFlMTU0NWNiN2RkZGMwZDRkNTdlNDY5ZjMyMzAwOGI0NDNiODY5OGZmOWQwNjFjNjUxOGEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImJjNjkxYTRhNzIxYWU5NzA5ZDFjZTRhYmNkZTM0N2E2ZTBiYzgwNTJlODAyMTNmMDdkODM3ZTE2ZTdjNzBiYTMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_e976c8e80c7947dc8e0753f333888358",
+      "statement": "Package imports distinguish between full packages and delta packages against baseline copy IDs, providing preview metrics such as individual and source document counts.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-app/src/commands/interchange/package.rs#L77-L80",
+          "version": "repo-lines-v1:sha256:c9e2708cf7e5a12a6c0c02f6fab8857e8f5080d48e16ee44f062404bba0ca8f8:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMjBkZDVkMmNjNGJjZGZjNzYxMjhhZGM3NmM5MjRhOGRmOTUyMjY5NmJmZTJjMmRhYzczYjZmZjAzMWM0N2VjMCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZTIyZmFhNTM1YmQyZWEzZDUyZTc0MWVkNDU0NDM1YjdmZTQ5ZTgzNTg2ZTk0M2Q5OGQ4MmJiZmIyNGQxZjVjNSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMzQ5NWY0NTk3ZDY5NmYwNzUxNzg5ZWFjMDUwNTlhOTM2NmNhYzM1MjkwMDY1ZDJiZTQxZGI2ODI4YjhkYTAyZCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODU5NGQ5MDVjNzJkMjU3ZWI1MTQzZjIwMjY2MDc4MmViMzVjMTg5YWIzNmU0ZTUxNmFiYTFlZmZhMjE0NTBiYyJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.1",
+    "at": "2026-09-14T02:18:08.068Z"
+  }
+}
