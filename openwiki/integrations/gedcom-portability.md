@@ -3,22 +3,12 @@ type: concept
 title: GEDCOM Portability & Interchange
 description: Reference for importing and exporting standard GEDCOM files and preserving vendor extensions in Theogony.
 tags: [gedcom, portability, import, export, vendor-extensions, interoperability]
+sources:
+  - id: openwiki-source-5b54a58d1b51cd490b0e7162
+    resource: repo://package.json
 verified:
   - by: openwiki/0.5.1
-    at: 2026-09-14T02:18:08.068Z
-sources:
-  - id: openwiki-source-288ea24821dc0df8d1a1916c
-    resource: repo://theogony-gedcom/src/document.rs
-  - id: openwiki-source-17ca687c424fac17fa6275e7
-    resource: repo://theogony-gedcom/src/lib.rs
-  - id: openwiki-source-80e3c088211cf9eb11ca667b
-    resource: repo://theogony-gedcom/src/mapper/drafts.rs
-  - id: openwiki-source-bdb8e62eaee2feaa6b2f05e1
-    resource: repo://theogony-gedcom/src/mapper/import.rs
-  - id: openwiki-source-50d45df9034cad9755689e9c
-    resource: repo://theogony-gedcom/src/mapper/naming.rs
-  - id: openwiki-source-a69740be59d9aa098745697a
-    resource: repo://theogony-gedcom/src/vendor.rs
+    at: 2026-09-16T23:59:03.017Z
 generated: { by: "openwiki/0.5.1", at: "2026-09-14T02:18:08.068Z" }
 ---
 

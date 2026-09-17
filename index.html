@@ -29,5 +29,13 @@
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <!-- Renders ```mermaid fenced blocks -- the generated pages use one on
+       every major concept/workflow page (see openwiki/INSTRUCTIONS.md),
+       which otherwise show up as inert code text under plain docsify. -->
+  <script src="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-mermaid@2.0.1/dist/docsify-mermaid.js"></script>
+  <script>
+    mermaid.initialize({ startOnLoad: false });
+  </script>
 </body>
 </html>

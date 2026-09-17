@@ -1,18 +1,14 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:b235c66de64503eb1db48e276829ba42698242def0d36a7c5cfe09fb4bf869b4",
+  "pageVersion": "sha256:06d548a44af92054ba6048343debf329283b2d8e52d883fbae18c5480650b70a",
   "claims": [
     {
       "id": "claim_ce507fdb0c6041a6aedc3503f93715b0",
       "statement": "The Event Dialog allows users to create a new fact and attach a source citation in a single atomic cite_fact operation for both individuals and families.",
       "evidence": [
         {
-          "resource": "repo://ui/src/components/EventDialog.tsx#L185-L203",
-          "version": "repo-lines-v1:sha256:49556c734fdda4539909404948745b0676195722e3c39253d8cf9bd0813f32db:eyJzZWxlY3RlZExpbmVDb3VudCI6MTksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg0NzFmZDY1YzJlZjdkMGRhY2Q5ZDUxMzI5ZWRiYWQxNWE0Nzg5YjUzZDhlYzMxMDZhOWVlYTNjZDZjZGUyODIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFkMDgyNDhhZTNkMDA2YjI1YTBkMjAwN2EzMTkyNWY4YWNhZGI3Y2VlMTdmMWZjYjQ3YzAyZjczY2I3ZDdhMDkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjUwMjY3ODBjYzM4YjNiYzRhMjgzOTRhZmQ3ODc1ZTc5YjhjNWRlMzVjYzYwODAxOTkyMjE3MGQ2MDczNjI4YTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjJlOGYyMGM2YTNlODUwYTlhNWNmZDkyYTI4ZDQzYzY1MjZkZDZkN2VlYzQ1ZmVmNDgwYzZiYWFiODNlM2RiZWYifQ"
-        },
-        {
-          "resource": "repo://ui/src/components/EventDialog.tsx#L35-L37",
-          "version": "repo-lines-v1:sha256:09e6891195bc4d568a12d44fdeb446cab69822585ef8df276aca98e06ee2179e:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOWE0ZjI4YTQwMDIyNjBiMWNjMDU2ODBhZDYyNzFmMzk2YjcwMjFmMDU3ZDg2MzhmMjBmOTEwMDE2MmM0NjZkYyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMzUwNTI5YzA2ODZlMGYxZGRhMjJiY2JlMDYyOGFiMDgwMTgyY2ZmMDdmMjE0YjNhMzExYjlhZjFkODg2ZjZlMCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiM2IxMjY4NDAzZTkxN2E4OWZkNTcwZjBkYmMwMDJlZDRhNTZlMTE5OWYxNTFjOTUzMDY1YjhiYTUyZWRlNjA0MCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMzQ0OGIwOGY1NDQ4OTI5MmVlNjMwOWQ1ZWEyYTg3M2QzYjJmMzMwY2U0OGMxM2JkNTcwMTJjNjAxN2ZlZTVjMCJ9"
+          "resource": "repo://CLAUDE.md",
+          "version": "repo-file-v1:sha256:31060379798cd019458c941e0c10846d7b7ad856616f025414ea67f326bfe1d6"
         }
       ]
     },
@@ -21,12 +17,8 @@
       "statement": "Surety ratings categorize evidentiary reliability into Direct, Indirect, Negative, and Conflicting levels.",
       "evidence": [
         {
-          "resource": "repo://ui/src/components/EventDialog.tsx#L30-L30",
-          "version": "repo-lines-v1:sha256:754661ebf4d5b2b79ee48b4f856b04cc9290f1a499b11b658d9c58576477e916:eyJzZWxlY3RlZExpbmVDb3VudCI6MSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNzU0NjYxZWJmNGQ1YjJiNzllZTQ4YjRmODU2YjA0Y2M5MjkwZjFhNDk5YjExYjY1OGQ5YzU4NTc2NDc3ZTkxNiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNzU0NjYxZWJmNGQ1YjJiNzllZTQ4YjRmODU2YjA0Y2M5MjkwZjFhNDk5YjExYjY1OGQ5YzU4NTc2NDc3ZTkxNiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNGZmZGQ5OGEyYTZmMDRmYjQ2MzE2Y2I2ZWQ5NjNlZTUzMDE3YTRiMTYyOTY2MGIyNTlkNGM4MDg5YzAyZDRkNyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNGY5ZjUxMzE3ZjU0ZGRkYzcyOTVmNmZmMTQ5YjRjYzhiN2JmZGE2NjZhMWU1Y2M0MGRlZmRkNmEwYTYxZDY3OCJ9"
-        },
-        {
-          "resource": "repo://ui/src/components/EventDialog.tsx#L394-L410",
-          "version": "repo-lines-v1:sha256:fef2c696ff504876d308d62eacae7eeb857f788c720165ba9c1cf2da4b2c8344:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFhOWNlYTUwOWU4ZmIzOTJmNTlhMzEyNjIyZGYwNDFmMTc5MTk1NTRhZGVlNDNhNmYyNGMxYWY2ODIzZWVjZjIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjljZDBiOWExODk1YjcyMzRkZWEyN2MzOTFmNTcyZGFlZGIzMDY1Mjk4Zjk2YmZhNWE0MjNkZWNkMjg0MzIxYTgiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjBiY2QwYmUwMjAzNjhhMjQ0NDhlOWI2NTRmY2E5YzhlMWRlMzZmNGU4ZmMxNTQwYzZmZmNkNDY4M2IxZmNmZWEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc2NzUyZmIxMjc3NmZiNjZlNDg3ZGVhNTA1NTUwNGMyZWJkZjE1MzYxOTRhMDY0MTUxMDdkZTdhZjY0MGVmOGEifQ"
+          "resource": "repo://CLAUDE.md",
+          "version": "repo-file-v1:sha256:31060379798cd019458c941e0c10846d7b7ad856616f025414ea67f326bfe1d6"
         }
       ]
     },
@@ -35,8 +27,8 @@
       "statement": "Researchers can select existing source documents or inline-create a new source document directly within the Event Dialog.",
       "evidence": [
         {
-          "resource": "repo://ui/src/components/EventDialog.tsx#L250-L284",
-          "version": "repo-lines-v1:sha256:11a19d5e5830bda4bb36be22411275f17d3134ad9520d6398243766236f5ca17:eyJzZWxlY3RlZExpbmVDb3VudCI6MzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjVlOWM3NDUyZWY5OTNmOWU4MGM5YTFkODVmNTA2OWM1NmExZjA0MWRjMTY1MGEyYThkMjliNjdjM2U5MDMwZjciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI1YzcxNjA0ZGM2MDM2ZWJlZTk1OGJmM2RiZjc5YzcwOTBjOWFlYjM4MjUxNDUxZjBkODIyZjcwMTMzMThkMTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk4NTY5MDhhN2JlOWI1NDRiZTNlYjZjYzU3ZjdlYTEzYjY2YWUwMzYwN2RmZGFhZmJjMTc0OWIwNzUyMGRkZjAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjYwOGRlYjhmNDMyZWExNWVkMjNlNzA2NzJiZDU1N2Q1OGUwNmIxYjc3MDcwNzNjYzg5OGQyNzlmMzFhNGNjNzIifQ"
+          "resource": "repo://CLAUDE.md",
+          "version": "repo-file-v1:sha256:31060379798cd019458c941e0c10846d7b7ad856616f025414ea67f326bfe1d6"
         }
       ]
     },
@@ -45,14 +37,44 @@
       "statement": "Claimed value inputs adapt dynamically based on the selected fact type schema, supporting text, numeric, boolean, enum, and multi-enum values.",
       "evidence": [
         {
-          "resource": "repo://ui/src/components/EventDialog.tsx#L288-L382",
-          "version": "repo-lines-v1:sha256:74e4ee84a61b134186b3f6ec0879c7aa7e070c0f71a6d0b50aa3fac581f29598:eyJzZWxlY3RlZExpbmVDb3VudCI6OTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc3MjBkMzc3YTQwOWJkNGE3ODk5YmRmNmRiMDBmMTE5N2E2MzY1ZTk1ZTQyMmQ3OGMzYzFiNTM4NzdlOTc0YzYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE4NDZhYTZiMTg2MDBhYzZmMGFiYjQ5MjRkYzdmYTczMDFhNzZlNjVlZjIzYzlhMjhjZDNlNmVhZTgyZDRhNTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjYwOGRlYjhmNDMyZWExNWVkMjNlNzA2NzJiZDU1N2Q1OGUwNmIxYjc3MDcwNzNjYzg5OGQyNzlmMzFhNGNjNzIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQwMTRkZDQxZTE4NmFhMzM1ZGUxZDgwOGMzNmZmZTBhN2QzMDZiMzhhNzdlYzk2MWM1NGUxMjA3ZTYwNzU4N2MifQ"
+          "resource": "repo://CLAUDE.md",
+          "version": "repo-file-v1:sha256:31060379798cd019458c941e0c10846d7b7ad856616f025414ea67f326bfe1d6"
+        }
+      ]
+    },
+    {
+      "id": "claim_ed9b0f27d350425fb778f6d08de792ca",
+      "statement": "Theogony implements an evidence-first architecture where every genealogical fact and event must be tied directly to a source document with a surety rating, page reference, and structured values via atomic operations.",
+      "evidence": [
+        {
+          "resource": "repo://CLAUDE.md",
+          "version": "repo-file-v1:sha256:31060379798cd019458c941e0c10846d7b7ad856616f025414ea67f326bfe1d6"
+        }
+      ]
+    },
+    {
+      "id": "claim_4232565a7a7442729a28538a99301b48",
+      "statement": "Surety ratings in Theogony categorize evidentiary reliability into Direct, Indirect, Negative, and Conflicting levels to support genealogical analysis under the Genealogical Proof Standard (GPS).",
+      "evidence": [
+        {
+          "resource": "repo://CLAUDE.md",
+          "version": "repo-file-v1:sha256:31060379798cd019458c941e0c10846d7b7ad856616f025414ea67f326bfe1d6"
+        }
+      ]
+    },
+    {
+      "id": "claim_3e9a3c63398c408d9b91ac15c27c1325",
+      "statement": "Family structures and relationships, such as parent-child and spouse connections, are established and cited using structured evidence links and status markers (active, disputed, rejected) to prevent data loss from conflicting records.",
+      "evidence": [
+        {
+          "resource": "repo://CLAUDE.md",
+          "version": "repo-file-v1:sha256:31060379798cd019458c941e0c10846d7b7ad856616f025414ea67f326bfe1d6"
         }
       ]
     }
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-09-14T02:18:08.068Z"
+    "at": "2026-09-16T23:59:03.017Z"
   }
 }

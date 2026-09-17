@@ -3,13 +3,13 @@ type: workflow
 title: Adding and Citing Facts
 description: Step-by-step instructions for recording genealogical assertions with surety ratings and citations in Theogony.
 tags: [workflow, facts, citing-sources, surety-ratings, evidence-first, genealogy]
+sources:
+  - id: openwiki-source-a2371d6362e5db4bc834ad03
+    resource: repo://CLAUDE.md
+generated: { by: "openwiki/0.5.1", at: "2026-09-16T01:48:34.043Z" }
 verified:
   - by: openwiki/0.5.1
-    at: 2026-09-14T02:18:08.068Z
-sources:
-  - id: openwiki-source-d391847d363fa47891e4e7d7
-    resource: repo://ui/src/components/EventDialog.tsx
-generated: { by: "openwiki/0.5.1", at: "2026-09-14T02:18:08.068Z" }
+    at: 2026-09-16T23:59:03.017Z
 ---
 
 # Adding and Citing Facts
@@ -83,6 +83,5 @@ graph TD
 ## Related Guides
 
 - Learn about Theogony's underlying methodology in [Evidence-First Philosophy & GPS Standards](/openwiki/concepts/evidence-first-philosophy.md).
-<!-- openwiki: broken internal link [/openwiki/workflows/family-structures.md] file "/openwiki/workflows/family-structures.md" does not exist. Fix the href or restore the target, then delete this comment. -->
-- Manage family connections and relationships in [Family Structures](/openwiki/workflows/family-structures.md).
+- Manage family connections and relationships in Family Structures.
 - Learn how to navigate screens and panels in [Navigating the Interface](/openwiki/workflows/navigating-the-interface.md).

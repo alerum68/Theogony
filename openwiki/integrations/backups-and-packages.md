@@ -1,20 +1,18 @@
 ---
 type: technical-guide
-title: Database Backups & Lossless Packages
-description: Guide for creating secure database backups (.theb) and lossless portability packages (.tgpkg) in Theogony.
-tags: [backups, theb, packages, tgpkg, portability, recovery, security, export, import]
+title: Backups and Data Packages
+description: Complete database backups (.theb) and lossless data packages (.tgpkg) for secure data interchange and disaster recovery.
+tags: [backups, theb, packages, tgpkg, portability, recovery, security, export, import, gedzip]
+sources:
+  - id: openwiki-source-82b66cb5130df8a52ed0b719
+    resource: repo://Home.md
 verified:
   - by: openwiki/0.5.1
-    at: 2026-09-14T02:18:08.068Z
-sources:
-  - id: openwiki-source-63e7659a6ca9bd405fc03001
-    resource: repo://theogony-app/src/commands/backup.rs
-  - id: openwiki-source-d5eebb2df5921528f12b3fdc
-    resource: repo://theogony-app/src/commands/interchange/package.rs
-generated: { by: "openwiki/0.5.1", at: "2026-09-14T02:18:08.068Z" }
+    at: 2026-09-16T23:59:03.017Z
+generated: { by: "openwiki/0.5.1", at: "2026-09-16T23:59:03.017Z" }
 ---
 
-# Database Backups & Lossless Packages
+# Backups and Data Packages
 
 Theogony provides two distinct portability and preservation mechanisms: **Database Backups** (`.theb`) for complete, disaster-recovery snapshots of local SQLite state, and **Lossless Portability Packages** (`.tgpkg`) for GEDCOM-7 compatible collaborative interchange carrying rich provenance, evidence SQLite databases, and media files.
 
@@ -34,20 +32,20 @@ A `.theb` backup represents a complete point-in-time snapshot of a local Theogon
 ### Internal Structure
 
 Inside the gzipped tar archive (`.tar.gz`), two core files reside at the root level:
-1. `manifest.json`: Metadata about the backup and schema.
+1. `manifest.json`: Metadata about the backup and schema (`schema_version`, `app_version`, `tree_lineage_id`, `tree_copy_id`).
 2. `tree.sqlite`: A live binary snapshot of the SQLite database.
 
 ```mermaid
 erDiagram
     THEB_ARCHIVE {
-        string manifest_json "Backup schema, app version, lineage & copy IDs, export timestamp"
-        string tree_sqlite "SQLite database snapshot of local state"
+        string manifest_json
+        string tree_sqlite
     }
-    Package_Archive {
-        string manifest_json "Package metadata, contributor label, lineage & copy IDs"
-        string tree_ged "GEDCOM-7 human-readable genealogical data"
-        string evidence_sqlite "SQLite evidence database snapshot"
-        string media_dir "Directory for attached media files"
+    TG_PACKAGE {
+        string manifest_json
+        string tree_ged
+        string evidence_sqlite
+        string media_dir
     }
 ```
 *Structure of `.theb` database backups and `.tgpkg` lossless portability packages.*
@@ -83,7 +81,7 @@ A `.tgpkg` file is a valid ZIP archive containing:
 ### Package Export (`export_package`)
 
 Users initiate package export via **Export Package** in the UI, optionally toggling **Exclude Private** records and supplying a **Contributor Label**.
-- **GEDCOM Generation**: Assembles export documents adhering to GEDCOM-7 standards.
+- **GEDCOM Generation**: Assembles export documents adhering to GEDCOM-7 standards (see [GEDCOM Portability & Interchange](gedcom-portability.md) for details on AST mapping and extension tag handling).
 - **Evidence Snapshot**: Exports a snapshot of the evidence database, omitting private citations if requested.
 - **ZIP Packaging**: Packages all components using deflate compression into the destination `.tgpkg` path.
 
