@@ -18,7 +18,7 @@ sources:
     resource: repo://theogony-domain/src/lib.rs
 verified:
   - by: openwiki/0.5.1
-    at: 2026-09-17T02:26:55.274Z
+    at: 2026-09-17T13:37:16.004Z
 ---
 
 # System Overview
