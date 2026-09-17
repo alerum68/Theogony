@@ -15,9 +15,6 @@ sources:
   - id: openwiki-source-bc2f9c24b5998e743b312c38
     resource: repo://ui/src/screens/ReviewQueue.tsx
 generated: { by: "openwiki/0.5.1", at: "2026-09-17T17:22:57.510Z" }
-verified:
-  - by: openwiki/0.5.1
-    at: 2026-09-17T17:22:57.510Z
 ---
 
 # Review Queue and Audit History

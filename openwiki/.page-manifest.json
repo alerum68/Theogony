@@ -2,39 +2,39 @@
   "schemaVersion": 1,
   "pages": {
     "/openwiki/architecture/system-overview.md": {
+      "gitHead": "61b894e3adef1154e59bfaa40763666007ffd49f",
+      "sourceFingerprint": "sha256:645e512c5911a2d156e2dc4eb78f6e63f7e97ffb4ef13c130637652e21c2e3bc",
       "pageVersion": "sha256:5284f3ef5658e36b4db4457994c1bbf6f0b68715c936f7899b51408263c7dbbb",
       "completedBy": "openwiki/0.5.1",
-      "completedRunId": "0ce0606a-7fdd-42f3-b684-ccab563707fb",
-      "gitHead": "61b894e3adef1154e59bfaa40763666007ffd49f",
-      "sourceFingerprint": "sha256:645e512c5911a2d156e2dc4eb78f6e63f7e97ffb4ef13c130637652e21c2e3bc"
+      "completedRunId": "0ce0606a-7fdd-42f3-b684-ccab563707fb"
     },
     "/openwiki/concepts/evidence-first-philosophy.md": {
+      "gitHead": "61b894e3adef1154e59bfaa40763666007ffd49f",
+      "sourceFingerprint": "sha256:645e512c5911a2d156e2dc4eb78f6e63f7e97ffb4ef13c130637652e21c2e3bc",
       "pageVersion": "sha256:b2b7d665983d04c922ba4a36fd772a26d40644847654b6cd7e8d2b4ad239d34d",
       "completedBy": "openwiki/0.5.1",
-      "completedRunId": "f326d01f-7396-4d2f-a635-a6d52d6ed458",
-      "gitHead": "61b894e3adef1154e59bfaa40763666007ffd49f",
-      "sourceFingerprint": "sha256:645e512c5911a2d156e2dc4eb78f6e63f7e97ffb4ef13c130637652e21c2e3bc"
+      "completedRunId": "f326d01f-7396-4d2f-a635-a6d52d6ed458"
     },
     "/openwiki/integrations/gedcom-portability.md": {
+      "gitHead": "61b894e3adef1154e59bfaa40763666007ffd49f",
+      "sourceFingerprint": "sha256:645e512c5911a2d156e2dc4eb78f6e63f7e97ffb4ef13c130637652e21c2e3bc",
       "pageVersion": "sha256:b925df95042e9a5dece599ec39f55ffe0b9f7039427237b8b463c1be34ab4216",
       "completedBy": "openwiki/0.5.1",
-      "completedRunId": "f326d01f-7396-4d2f-a635-a6d52d6ed458",
-      "gitHead": "61b894e3adef1154e59bfaa40763666007ffd49f",
-      "sourceFingerprint": "sha256:645e512c5911a2d156e2dc4eb78f6e63f7e97ffb4ef13c130637652e21c2e3bc"
+      "completedRunId": "f326d01f-7396-4d2f-a635-a6d52d6ed458"
     },
     "/openwiki/operations/review-and-audit.md": {
+      "gitHead": "61b894e3adef1154e59bfaa40763666007ffd49f",
+      "sourceFingerprint": "sha256:645e512c5911a2d156e2dc4eb78f6e63f7e97ffb4ef13c130637652e21c2e3bc",
       "pageVersion": "sha256:35254e904f0a462594843e535f7d9c120aa158990ab1b3f1749ddb2a5445d41f",
       "completedBy": "openwiki/0.5.1",
-      "completedRunId": "f24bb23b-6659-4fd6-98fb-222f6904e27d",
-      "gitHead": "61b894e3adef1154e59bfaa40763666007ffd49f",
-      "sourceFingerprint": "sha256:645e512c5911a2d156e2dc4eb78f6e63f7e97ffb4ef13c130637652e21c2e3bc"
+      "completedRunId": "f24bb23b-6659-4fd6-98fb-222f6904e27d"
     },
     "/openwiki/workflows/user-workflows.md": {
+      "gitHead": "61b894e3adef1154e59bfaa40763666007ffd49f",
+      "sourceFingerprint": "sha256:645e512c5911a2d156e2dc4eb78f6e63f7e97ffb4ef13c130637652e21c2e3bc",
       "pageVersion": "sha256:426f62258f49cf52fa0fa733cb089d89c89a8b3e37bacbd136f57da223ba8cdb",
       "completedBy": "openwiki/0.5.1",
-      "completedRunId": "f326d01f-7396-4d2f-a635-a6d52d6ed458",
-      "gitHead": "61b894e3adef1154e59bfaa40763666007ffd49f",
-      "sourceFingerprint": "sha256:645e512c5911a2d156e2dc4eb78f6e63f7e97ffb4ef13c130637652e21c2e3bc"
+      "completedRunId": "f326d01f-7396-4d2f-a635-a6d52d6ed458"
     }
   }
 }
