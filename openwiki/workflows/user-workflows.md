@@ -17,6 +17,9 @@ sources:
   - id: openwiki-source-581ccfdbc4f29f5dcf09c2df
     resource: repo://ui/src/screens/People.tsx
 generated: { by: "openwiki/0.5.1", at: "2026-09-17T16:00:11.458Z" }
+verified:
+  - by: openwiki/0.5.1
+    at: 2026-09-17T16:00:11.458Z
 ---
 
 The OpenWiki genealogical workbench provides an evidence-first interface for exploring individuals, asserting and citing historical facts, managing surety ratings, and structuring family relationships. This page documents the core user workflows for navigating the application interface and performing genealogical data entry.

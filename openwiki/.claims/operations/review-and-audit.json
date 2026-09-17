@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:03253385f701ad4720b75425535ef06e5f0a476ac726a60be08f1a943116ab4b",
+  "pageVersion": "sha256:35254e904f0a462594843e535f7d9c120aa158990ab1b3f1749ddb2a5445d41f",
   "claims": [
     {
       "id": "claim_ee75702a1edb40959b542ee031f18d5a",
@@ -8,11 +8,11 @@
       "evidence": [
         {
           "resource": "repo://theogony-app/src/commands/review.rs",
-          "version": "repo-file-v1:sha256:d6a18d131ee9db9583beac545762a2b5a68da1b929d1a3732795da082431179b"
+          "version": "repo-file-v1:sha256:e5f3ce5d2627ad0ff0b5efc7bfde5eacc053254196601d178ff455a223250846"
         },
         {
           "resource": "repo://ui/src/screens/ReviewQueue.tsx",
-          "version": "repo-file-v1:sha256:51d4b3c299de08794f6bc1cf80218eccc185c4de79c89a5004f8ce1b9a40f240"
+          "version": "repo-file-v1:sha256:30067e1aabc06934f2119bce3d12d7a6781fdeacc522c729ff606ced35923091"
         }
       ]
     },
@@ -47,6 +47,6 @@
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-09-17T16:00:11.458Z"
+    "at": "2026-09-17T17:22:57.510Z"
   }
 }

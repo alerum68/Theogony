@@ -14,7 +14,10 @@ sources:
     resource: repo://ui/src/components/RevertDialog.tsx
   - id: openwiki-source-bc2f9c24b5998e743b312c38
     resource: repo://ui/src/screens/ReviewQueue.tsx
-generated: { by: "openwiki/0.5.1", at: "2026-09-17T16:00:11.458Z" }
+generated: { by: "openwiki/0.5.1", at: "2026-09-17T17:22:57.510Z" }
+verified:
+  - by: openwiki/0.5.1
+    at: 2026-09-17T17:22:57.510Z
 ---
 
 # Review Queue and Audit History
@@ -27,8 +30,8 @@ OpenWiki and its underlying domain engine enforce rigorous evidence-first data i
 
 The Review Queue (`repo://ui/src/screens/ReviewQueue.tsx`, `repo://theogony-app/src/commands/review.rs`) helps researchers monitor and clean up entity relationships across three primary sections:
 
-1. **Unattached Personas**: Floating personas that have not yet been linked to a conclusion person. Researchers can inspect their claims and sources, and click **Attach…** (`repo://ui/src/components/AttachPersonaDialog.tsx`) to link them to an individual or create a new blank person. When attached, all assertions currently held by the persona are updated in a single atomic transaction (`log_action`) to carry the link (`repo://theogony-app/src/commands/review.rs#L174-L216`). If the persona has no existing assertions, a minimal `persona_name` assertion is created to hold the attachment.
-2. **Cited by Multiple Sources**: Personas whose evidence spans multiple source documents (`repo://theogony-app/src/commands/review.rs#L255-L297`). Researchers review these entries to determine whether citations represent independent corroboration or duplicate extractions.
+1. **Unattached Personas**: Floating personas that have not yet been linked to a conclusion person. Researchers can inspect their claims and sources, and click **Attach…** (`repo://ui/src/components/AttachPersonaDialog.tsx`) to link them to an individual or create a new blank person. When attached, all assertions currently held by the persona are updated in a single atomic transaction (`log_action`) to carry the link (`repo://theogony-app/src/commands/review.rs#L176-L221`). If the persona has no existing assertions, a minimal `persona_name` assertion is created to hold the attachment.
+2. **Cited by Multiple Sources**: Personas whose evidence spans multiple source documents (`repo://theogony-app/src/commands/review.rs#L255-L302`). Researchers review these entries to determine whether citations represent independent corroboration or duplicate extractions.
 3. **Merge People**: A manual search-and-pick merge tool where researchers select two individual records (Person A and Person B) via `PersonPicker` components, compare their attributes in the `MergeDialog`, and merge them.
 
 ---
