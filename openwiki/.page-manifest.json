@@ -5,22 +5,22 @@
       "pageVersion": "sha256:150abd8e7078e9d412ea0e28add0214baa02335e230cb639558a059f485bce6c",
       "completedBy": "openwiki/0.5.1",
       "completedRunId": "239d9a43-a3c8-465e-b9ee-21afac69c423",
-      "gitHead": "3ad599e6369ae41172ac0d7a83fdf1c37e5c0115",
-      "sourceFingerprint": "sha256:4b35ef200745b7a09127fdfbfb7c43d9dd961eda336dbfba617895e05930ab09"
+      "gitHead": "b1532d8153483ecd3515590ba24c15e836bd4727",
+      "sourceFingerprint": "sha256:c2799fbda5ebf7d2c4a71011b2e7ce41db48e1f28a2dec6c582aa68f1772c1e3"
     },
     "/openwiki/concepts/evidence-first-philosophy.md": {
       "pageVersion": "sha256:37f9d90ad5dd492534b87f0f3656b584d10f0ab3769a274f0a9ab04bd344d65c",
       "completedBy": "openwiki/0.5.1",
       "completedRunId": "3bb1d72c-06a4-411e-91d0-2f60547dc172",
-      "gitHead": "3ad599e6369ae41172ac0d7a83fdf1c37e5c0115",
-      "sourceFingerprint": "sha256:4b35ef200745b7a09127fdfbfb7c43d9dd961eda336dbfba617895e05930ab09"
+      "gitHead": "b1532d8153483ecd3515590ba24c15e836bd4727",
+      "sourceFingerprint": "sha256:c2799fbda5ebf7d2c4a71011b2e7ce41db48e1f28a2dec6c582aa68f1772c1e3"
     },
     "/openwiki/integrations/gedcom-portability.md": {
-      "gitHead": "d2ff870207d54fecd013e4c06ac297a4857b86c1",
-      "sourceFingerprint": "sha256:ec3af9920a320a5be90462ff6bb6cf4119df0ec9d82f6bcb65bd2840872439b5",
-      "pageVersion": "sha256:3258cbee307f6daec5cd292229e7614601881b989d5d898b314601793a4a1336",
+      "pageVersion": "sha256:a57e29f7498840a92c5897705c0da520615141c37c731e5c6ed6f88b7d68ebc2",
       "completedBy": "openwiki/0.5.1",
-      "completedRunId": "4c7624b1-cfd1-4047-a2c7-dbcab1ef15b9"
+      "completedRunId": "8f60954c-8757-4666-ad1f-82a1975314bf",
+      "gitHead": "b1532d8153483ecd3515590ba24c15e836bd4727",
+      "sourceFingerprint": "sha256:c2799fbda5ebf7d2c4a71011b2e7ce41db48e1f28a2dec6c582aa68f1772c1e3"
     }
   }
 }

@@ -1,14 +1,18 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:33d3eb2f1c4683105add1132afb75c2853714eab554c767f537b5684dd1a4b6e",
+  "pageVersion": "sha256:a57e29f7498840a92c5897705c0da520615141c37c731e5c6ed6f88b7d68ebc2",
   "claims": [
     {
       "id": "claim_554f42427c924d1a8f6040ef03bf6ed6",
-      "statement": "Plain GEDCOM interchange (.ged) supports importing and exporting standard GEDCOM 5.5.1 and GEDCOM 7 files, with sex normalization and custom fact fallbacks.",
+      "statement": "Plain GEDCOM interchange (.ged) supports importing and exporting standard GEDCOM 5.5.1 and GEDCOM 7 files, with raw GEDCOM sex code normalization ('M'/'F' to 'Male'/'Female') and custom fact fallbacks.",
       "evidence": [
         {
+          "resource": "repo://theogony-app/src/commands/interchange/assemble.rs",
+          "version": "repo-file-v1:sha256:cc02619b0783c6cdff19bf44a006994a53a48ee3989289d9a2acc14ce27b8ab9"
+        },
+        {
           "resource": "repo://theogony-app/src/commands/interchange/plain_ged.rs",
-          "version": "repo-file-v1:sha256:9d1cf601494a8ea9ebefd4f85c575e17de99bdbab9c69becce61319ba368278d"
+          "version": "repo-file-v1:sha256:c34d007785b220d40b7760e0a823530fa1d6fb12631eb93bf3b663493130eed0"
         },
         {
           "resource": "repo://theogony-gedcom/src/mapper/export.rs",
@@ -32,11 +36,11 @@
     },
     {
       "id": "claim_4b9bebd3275946d88c3c650e32cb84e0",
-      "statement": "Complete database backups (.theb) wrap a live SQLite database snapshot (created via the Online Backup API) and manifest.json in a tar+gzip archive with atomic file replacement.",
+      "statement": "Complete database backups (.theb) wrap a live SQLite database snapshot (created via the SQLite Online Backup API) and manifest.json in a tar+gzip archive with atomic file replacement (.theb.tmp staging and rename).",
       "evidence": [
         {
           "resource": "repo://theogony-app/src/commands/backup.rs",
-          "version": "repo-file-v1:sha256:f9c75988efa72cb2a1b4d011b498fb0ca823cef9505a8a3165eb2e44d01e0965"
+          "version": "repo-file-v1:sha256:3e969f0de93a85675d76e8d32b7e37289e0cd85e3f56c3c8c1096a65df8a3697"
         }
       ]
     },
@@ -57,6 +61,6 @@
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-09-15T13:41:43.525Z"
+    "at": "2026-09-17T03:21:34.270Z"
   }
 }
