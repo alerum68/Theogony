@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:03253385f701ad4720b75425535ef06e5f0a476ac726a60be08f1a943116ab4b",
+  "claims": [
+    {
+      "id": "claim_ee75702a1edb40959b542ee031f18d5a",
+      "statement": "The Review Queue provides dedicated read paths and inspection grids for unattached personas and multi-cited personas, allowing researchers to attach personas or merge individual records.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-app/src/commands/review.rs",
+          "version": "repo-file-v1:sha256:d6a18d131ee9db9583beac545762a2b5a68da1b929d1a3732795da082431179b"
+        },
+        {
+          "resource": "repo://ui/src/screens/ReviewQueue.tsx",
+          "version": "repo-file-v1:sha256:51d4b3c299de08794f6bc1cf80218eccc185c4de79c89a5004f8ce1b9a40f240"
+        }
+      ]
+    },
+    {
+      "id": "claim_0508e967d94c465a96a384da29467fdf",
+      "statement": "The edit history panel maintains an append-only audit trail of actions with cursor pagination, operation detail inspection, and before/after state diffs.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-app/src/commands/history.rs",
+          "version": "repo-file-v1:sha256:fe7a1c36e272d08918397ab0742d6b1b974727513888142f067a33fcdd5ad74f"
+        },
+        {
+          "resource": "repo://ui/src/components/HistoryPanel.tsx",
+          "version": "repo-file-v1:sha256:d5c4a0928cc1c596b2b326701d69448f1fe238a50b75565eca8c1c550b650979"
+        }
+      ]
+    },
+    {
+      "id": "claim_0ebee7bf14824db8a399d7148fe3db85",
+      "statement": "Selective reverts perform conflict checking via revert_conflicts and support two-step resolution using Refuse, Cascade, or Reassign strategies.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-app/src/commands/history.rs",
+          "version": "repo-file-v1:sha256:fe7a1c36e272d08918397ab0742d6b1b974727513888142f067a33fcdd5ad74f"
+        },
+        {
+          "resource": "repo://ui/src/components/RevertDialog.tsx",
+          "version": "repo-file-v1:sha256:22c5974fb9f30c591c46b192e3c143978e6d812c363ddf98632a0788ecd1baac"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.1",
+    "at": "2026-09-17T16:00:11.458Z"
+  }
+}

@@ -3,9 +3,6 @@ type: concept
 title: Data Portability & GEDCOM Interchange
 description: Comprehensive reference on GEDCOM 5.5.1 and GEDCOM 7 import/export, complete database backups (.theb), and lossless data packages (.tgpkg).
 tags: [gedcom, porting, backup, interchange, data-portability, vendors]
-verified:
-  - by: openwiki/0.5.1
-    at: 2026-09-17T03:21:34.270Z
 sources:
   - id: openwiki-source-63e7659a6ca9bd405fc03001
     resource: repo://theogony-app/src/commands/backup.rs
@@ -23,6 +20,7 @@ sources:
     resource: repo://theogony-gedcom/src/mapper/naming.rs
   - id: openwiki-source-3cae5790683d51118c7597cf
     resource: repo://theogony-gedcom/src/vendor/mod.rs
+generated: { by: "openwiki/0.5.1", at: "2026-09-17T16:00:11.458Z" }
 ---
 
 # Data Portability & GEDCOM Interchange
@@ -74,7 +72,7 @@ Plain GEDCOM interchange supports both legacy **GEDCOM 5.5.1** and modern **GEDC
 
 ## 3. Lossless Data Packages (`.tgpkg`)
 
-`.tgpkg` files are real ZIP archives (fully GEDZIP-compatible) designed for peer-to-peer tree sharing where evidentiary rigor must be preserved alongside genealogical structure (`repo://theogony-app/src/commands/interchange/package.rs`).
+`.tgpkg` files are real ZIP archives (fully GEDZIP-compliant) designed for peer-to-peer tree sharing where evidentiary rigor must be preserved alongside genealogical structure (`repo://theogony-app/src/commands/interchange/package.rs`).
 
 ### Archive Structure
 - `manifest.json`: Carries `schema_version`, `app_version`, `tree_lineage_id`, `tree_copy_id`, `exported_at`, `contributor_label`, and `kind` (`PackageKind::Full` or `PackageKind::Delta`).
@@ -109,5 +107,5 @@ Genealogy software frequently uses proprietary extension tags (e.g., Ancestry, R
 
 1. **Tier 1 (Standard Tags)**: Standard GEDCOM 5.5.1 / 7 tags (`BIRT`, `DEAT`, `MARR`, etc.) map directly to built-in fact types.
 2. **Tier 2 (Vendor Signature & Tag Tables)**: `detect_vendor` inspects `HEAD.SOUR` and child tags (`NAME`, `VERS`, `CORP`) against a prioritized `REGISTRY` of known vendor profiles (`repo://theogony-gedcom/src/vendor/mod.rs#L57-L71`). Matched extension tags (such as RootsMagic's `_MILT` or custom military tags) resolve to canonical fact types (`canonical_names::MILITARY_SERVICE`, `HAS_PHOTO`, etc.) via centralized mapping tables.
-3. **Tier 3 (Event Type Fallback)**: Unrecognized `EVEN` or `FACT` tags with a `2 TYPE <Value>` substructure adopt the specified type name.
-4. **Tier 4 (Mechanical Mechanical Fallback)**: Any remaining custom extension tags (e.g., `_DIT_NAME`, `_UID`) are processed via `mechanical_name_for_tag`: leading underscores are stripped, remaining underscores and dots are converted to word breaks, and words are title-cased (`_DIT_NAME` → `"Dit Name"`). This guarantees zero data loss: every custom tag becomes a valid fact type rather than falling back to unsearchable raw notes.
+3. **Tier 3 (Event Type Fallback)**: Unrecognized `EVEN` or `FACT` tags with a `2 TYPE <Value>` substructure adopt the specified type name (`repo://theogony-gedcom/src/mapper/naming.rs#L43-L50`).
+4. **Tier 4 (Mechanical Fallback)**: Any remaining custom extension tags (e.g., `_DIT_NAME`, `_UID`) are processed via `mechanical_name_for_tag`: leading underscores are stripped, remaining underscores and dots are converted to word breaks, and words are title-cased (`_DIT_NAME` → `"Dit Name"`). This guarantees zero data loss: every custom tag becomes a valid fact type rather than falling back to unsearchable raw notes (`repo://theogony-gedcom/src/mapper/naming.rs#L14-L22`).

@@ -1,11 +1,8 @@
 ---
 type: concept
 title: Evidence-First Philosophy & GPS Standards
-description: Core philosophical framework and genealogical proof standard implementation in Theogony.
+description: Core philosophical framework and genealogical proof standard implementation in Theogony, separating source documents, extracted personas, assertions, and concluded individuals and families.
 tags: [evidence-first, genealogy, gps, personas, assertions, conflict-handling, architecture]
-verified:
-  - by: openwiki/0.5.1
-    at: 2026-09-16T00:44:29.325Z
 sources:
   - id: openwiki-source-17ccbeaa6afd5efa0cb28ccd
     resource: repo://theogony-db-sqlite/src/assertions.rs
@@ -13,6 +10,7 @@ sources:
     resource: repo://theogony-db-sqlite/src/personas.rs
   - id: openwiki-source-f27b89db9906f12cec9ef142
     resource: repo://theogony-db-sqlite/src/sources.rs
+generated: { by: "openwiki/0.5.1", at: "2026-09-17T16:00:11.458Z" }
 ---
 
 # Evidence-First Philosophy & GPS Standards
@@ -75,7 +73,19 @@ Genealogical research frequently encounters contradictory evidence—such as con
   - `disputed`: A conflicting claim that challenges an existing conclusion or active assertion, retained for transparent analysis rather than deleted.
   - `rejected`: A claim evaluated and formally rejected under GPS scrutiny.
   - `proposed`: Hypothesis or AI-suggested claims awaiting review.
-- **Audit Trails:** All modifications are recorded in immutable edit logs and revision structures, ensuring complete traceability of analytical decisions without destroying competing claims.
+- **Audit Trails & Conflict States:** When conflicting evidence arises, records are not overwritten. Instead, competing assertions or relationship links are marked as `disputed` or `rejected`, allowing researchers to review alternative interpretations side-by-side. All modifications are recorded in immutable edit logs and revision structures.
+
+```mermaid
+stateDiagram-v2
+    [*] --> proposed : AI Suggestion / Hypothesis
+    proposed --> active : Approved by Genealogist
+    proposed --> rejected : Dismissed
+    active --> disputed : Challenged by New Evidence
+    disputed --> active : Reaffirmed after Analysis
+    disputed --> rejected : Proven Incorrect
+    active --> rejected : Invalidated
+    rejected --> active : Reconsidered
+```
 
 ---
 

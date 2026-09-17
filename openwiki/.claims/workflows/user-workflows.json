@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:a42e69e520e3a81a45299dff469a4bd97c6b82025d20bfa68d151d1e4a45df87",
+  "claims": [
+    {
+      "id": "claim_53865b534fed47e9a5e7f49642522c63",
+      "statement": "The OpenWiki interface features an Activity Bar, Side Bar, Tree Navigator (Family View / Pedigree Canvas), Details Panel, and Person Picker for navigating individuals and entity relationships.",
+      "evidence": [
+        {
+          "resource": "repo://ui/src/components/FamilyView.tsx",
+          "version": "repo-file-v1:sha256:52019cca32da951c79fd3188520c0503b411e838f635f69417106f41cb380e91"
+        },
+        {
+          "resource": "repo://ui/src/components/RelationshipsPanel.tsx",
+          "version": "repo-file-v1:sha256:3e9cdda8bc26e80e6c7fb2fcdb88e6f2e4587309f5670ed4003b6c896f1fc7b9"
+        },
+        {
+          "resource": "repo://ui/src/screens/People.tsx",
+          "version": "repo-file-v1:sha256:9f9a6bcc27489c6a5be54360179ff347ddbafa18b996dc64c186ff2a4dcbbe6a"
+        }
+      ]
+    },
+    {
+      "id": "claim_8bbd9b7167a244409b1beff063ba0934",
+      "statement": "Facts in OpenWiki are asserted and cited simultaneously through the Event Dialog, requiring a fact type, claimed value, source document citation, and place/date metadata.",
+      "evidence": [
+        {
+          "resource": "repo://ui/src/components/EventDialog.tsx",
+          "version": "repo-file-v1:sha256:1afa4d0cf0480158625c5bebf287393e0d2dfeec193365535a48b30f43889b28"
+        },
+        {
+          "resource": "repo://ui/src/components/EventsPanel.tsx",
+          "version": "repo-file-v1:sha256:063dbafbd36fe0988472bfd6f52a412e59b2361d1c967a32c850e2a1be2897ee"
+        }
+      ]
+    },
+    {
+      "id": "claim_8cf5a1cfcfc1410fa8649c35e4f8cf6b",
+      "statement": "Every fact citation requires a surety rating chosen from Direct, Indirect, Negative, or Conflicting to reflect source reliability and evidence certainty.",
+      "evidence": [
+        {
+          "resource": "repo://ui/src/components/EventDialog.tsx",
+          "version": "repo-file-v1:sha256:1afa4d0cf0480158625c5bebf287393e0d2dfeec193365535a48b30f43889b28"
+        }
+      ]
+    },
+    {
+      "id": "claim_3b55535a74e3422ca54101c3b4b1646f",
+      "statement": "Family structures such as parents, children, and spouses are managed through the Relationships Panel and Family View, supporting both linking existing individuals and creating new ones inline.",
+      "evidence": [
+        {
+          "resource": "repo://ui/src/components/PersonPicker.tsx",
+          "version": "repo-file-v1:sha256:2b302502c98761a11556bda4c6bab0031a9c9ea2fc195abc86138f0d6b69d04c"
+        },
+        {
+          "resource": "repo://ui/src/components/RelationshipsPanel.tsx",
+          "version": "repo-file-v1:sha256:3e9cdda8bc26e80e6c7fb2fcdb88e6f2e4587309f5670ed4003b6c896f1fc7b9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.1",
+    "at": "2026-09-17T16:00:11.458Z"
+  }
+}

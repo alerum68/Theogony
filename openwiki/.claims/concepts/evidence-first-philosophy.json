@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:37f9d90ad5dd492534b87f0f3656b584d10f0ab3769a274f0a9ab04bd344d65c",
+  "pageVersion": "sha256:b3bccee23021655df372b8daa7b80775a2a6413c6ebb17392e830c2bd05a7b5a",
   "claims": [
     {
       "id": "claim_aaf89ff87a82456581abe1f2da1ed2c2",
@@ -33,10 +33,38 @@
           "version": "repo-lines-v1:sha256:d7239048f2efcbce689e707202e678b36788d85c921db781466f7612b6f093d6:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOGQ1MmZjZGM5OTZlOGFhMjJmYTNmZDEzMGU2MjcyOTBjOTY5ZWMzZWM4M2ViYTNiYzJmMjRhN2MzN2UxOGU1ZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNjQyNmI5Nzk3YzdlMDhkNzlkZWI5ODM2OGEyZTY0ZTQwYTQxZmU2NTU2ODNiYzFhNDJhZTk0YzZiOTM1MmU2ZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNjAxYTA0MzY4NGJiOGMwYmFjNTIyZjc2NDM1OTYxMDViMTU1OGRjMTljMDA5MTNiNTVkZjAxYWYxM2FjYzYwYyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOTg0N2Q1MmY2MWRkYWU0OGI0ZWNlMjkwYjY4NTliNzQ3ZWU2NDExYjBjOTdmY2FjMGYyODFiNjc5MmFhOGJlMSJ9"
         }
       ]
+    },
+    {
+      "id": "claim_ba4a15aff8854ee0886aaad9501f08cd",
+      "statement": "Theogony separates source documents, extracted personas, assertions, and concluded individuals and families in an evidence-first model.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-db-sqlite/src/assertions.rs",
+          "version": "repo-file-v1:sha256:8181b03b16045b985d2323b2f240d3309e23ff053a8d5cca554bb9cf4c6e04cd"
+        },
+        {
+          "resource": "repo://theogony-db-sqlite/src/personas.rs",
+          "version": "repo-file-v1:sha256:7ce9b0ee7791858692504d64f1b9dda5e4cfac8ff7ffabcbfee985cdcef28791"
+        },
+        {
+          "resource": "repo://theogony-db-sqlite/src/sources.rs",
+          "version": "repo-file-v1:sha256:49fa41b9faf500119f98a239fa9ccbf72150f56bcf69dba42b25b9b30220a787"
+        }
+      ]
+    },
+    {
+      "id": "claim_6fbf8eb226fd43d8bb2839a1ea43dc41",
+      "statement": "Theogony implements non-destructive conflict handling by marking claims as active, disputed, rejected, or proposed rather than overwriting conflicting data.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-db-sqlite/src/assertions.rs",
+          "version": "repo-file-v1:sha256:8181b03b16045b985d2323b2f240d3309e23ff053a8d5cca554bb9cf4c6e04cd"
+        }
+      ]
     }
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-09-16T00:44:29.325Z"
+    "at": "2026-09-17T16:00:11.458Z"
   }
 }
