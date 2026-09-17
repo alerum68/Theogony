@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "pages": {
     "/openwiki/architecture/system-overview.md": {
-      "gitHead": "476cdf0449de39f2d8f3a13b6291398adc41d5ff",
-      "sourceFingerprint": "sha256:fc7f0d41e2b08610205b424a96fe39fc8aa0f34f059c53642f002dc7c71e7ff4",
-      "pageVersion": "sha256:fd8f309320330e5a03de65428818f13b2f0da4cad4aced273485c513fcee891f",
+      "pageVersion": "sha256:150abd8e7078e9d412ea0e28add0214baa02335e230cb639558a059f485bce6c",
       "completedBy": "openwiki/0.5.1",
-      "completedRunId": "002738b8-6efc-4117-acec-4214325e8190"
+      "completedRunId": "239d9a43-a3c8-465e-b9ee-21afac69c423",
+      "gitHead": "f645e755e7872ba48307023c1aecd2998086cd7e",
+      "sourceFingerprint": "sha256:4116c6db2d1299d48135b9bc7b6630d9bf6d7134f01554225774a5f988d6e9da"
     },
     "/openwiki/concepts/evidence-first-philosophy.md": {
       "gitHead": "dea912546c0dbfff4948fe4b657a67d28018b68f",

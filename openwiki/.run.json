@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "runId": "239d9a43-a3c8-465e-b9ee-21afac69c423",
+  "mode": "update",
+  "phase": "generating",
+  "startedAt": "2026-09-17T02:26:55.274Z",
+  "language": "en",
+  "languageChanged": false,
+  "requiredRewritePages": [],
+  "initialPages": [
+    "/openwiki/architecture/system-overview.md",
+    "/openwiki/concepts/evidence-first-philosophy.md",
+    "/openwiki/integrations/gedcom-portability.md"
+  ],
+  "sourceFingerprint": "sha256:4116c6db2d1299d48135b9bc7b6630d9bf6d7134f01554225774a5f988d6e9da",
+  "targetGitHead": "f645e755e7872ba48307023c1aecd2998086cd7e",
+  "actor": {
+    "producerActor": "openwiki/0.5.1",
+    "metadataModel": "gemini-3.5-flash-lite"
+  },
+  "previousLastUpdate": {
+    "updatedAt": "2026-09-17T00:20:10.661Z",
+    "command": "update",
+    "model": "gemini-3.5-flash-lite",
+    "status": "interrupted",
+    "language": "en"
+  },
+  "wikiGoal": "# OpenWiki Documentation Brief: Theogony\n\n## Target Audience\n- Primary: Genealogists, family history researchers, and general users seeking step-by-step guidance on using Theogony and applying the Genealogical Proof Standard (GPS).\n- Secondary: Power users and developers seeking an overview of data portability, GEDCOM interchange, and system architecture.\n\n## 1. What the Wiki Must Capture\n\n1. Evidence-First Philosophy & GPS Standards:\n   - How Theogony separates Source Documents -> Extracted Personas -> Assertions -> Concluded Individuals and Families.\n   - Non-destructive conflict handling: marking assertions as `active`, `disputed`, or `rejected` rather than overwriting conflicting data.\n\n2. Core User Workflows:\n   - Navigating the interface (Tree Navigator, Details Panel, Person Picker).\n   - Adding and citing facts, recording surety ratings, and attaching sources.\n   - Working with family structures (spouses, parent-child links, custom facts).\n\n3. Data Hygiene & Auditability:\n   - Review Queue: Resolving unattached personas and handling individuals cited by multiple sources.\n   - Edit History & Selective Revert: Navigating the audit log and understanding two-step revert actions (Refuse, Cascade, Reassign).\n\n4. Data Portability & Interchange:\n   - Importing and exporting standard GEDCOM 5.5.1 and GEDCOM 7 (`.ged`).\n   - Complete database backups (`.theb`) and lossless data packages (`.tgpkg`).\n   - How vendor-specific extension tags are preserved during import.\n\n5. System Overview (High-Level):\n   - Local-first desktop application architecture (Tauri, React, SQLite).\n   - High-level crate structure (Domain, Persistence, GEDCOM, UI).\n\n## 2. What Must Be Excluded (Internal Only)\n\n- Developer and Agent Tooling: Automation scripts, API key rotation logic, CLI wrappers, and internal harness files (`.agents/`).\n- Low-Level Code Plumbing: Internal Rust trait wrappers, FFI serialization details, and raw memory structures.\n- Raw Database Scripts: SQL table migration internals, SQLite PRAGMA tuning, and transaction lock mechanics.\n- Unit Test Implementations: Internal test fixtures, mock setups, and CI workflow pipelines.\n\n## 3. Formatting and Style Instructions for the Model\n\n0. Rendering Target:\n   - These pages are published to the project's native GitHub Wiki\n     (github.com/alerum68/Theogony/wiki), where GitHub server-renders each\n     page the same way it renders a README, issue, or pull request --\n     standard GitHub-Flavored Markdown, not a client-side renderer. A\n     publish step flattens this `openwiki/` tree into the wiki's own flat\n     page namespace and rewrites internal links to match; write links the\n     normal way described below and let that step handle the rest.\n\n1. Mermaid Diagrams:\n   - Include a Mermaid diagram (`graph TD` or `sequenceDiagram`) on every major concept and workflow page.\n   - Use diagrams to visualize the Evidence Hierarchy, Import/Export data flows, and Revert State transitions.\n   - GitHub renders standard ```mermaid fenced code blocks natively in wiki pages -- no plugin or special escaping needed.\n\n2. Task-Oriented Procedures:\n   - Format user actions using bold text for UI controls (for example: \"On the Activity Bar, click **Review Queue**\").\n\n3. Markdown Alerts:\n   - Use GitHub's native alert syntax for key notices, GPS best practices, and export caveats: `> [!NOTE]`, `> [!IMPORTANT]`, `> [!WARNING]` (each followed by the blockquote body on the next line(s)). GitHub renders these as styled callout boxes on the wiki, the same as in a README or PR.\n\n4. Cross-Linking:\n   - Maintain direct markdown links between theoretical concepts and practical workflow guides.\n   - Link paths must be relative to the linking page's own location on disk (standard relative-path resolution, e.g. `../workflows/adding-and-citing-facts.md` from a page under `concepts/`), or repo-root-absolute as `/openwiki/...md` -- the publish step resolves either form and rewrites it to the wiki's flat page name.\n\n5. Tone and Style:\n   - Clear, direct, professional technical documentation.\n   - No decorative emojis or conversational filler.",
+  "beforeContentSnapshot": "9cb1cedb421667b4ad59968a5c0da4b56e4f5c3353f06d35e6fdd78238693c96",
+  "preparedWiki": {
+    "generatedProvenance": [
+      {
+        "page": "/openwiki/architecture/system-overview.md",
+        "bodyHash": "f0534892dde43f55e31fa4be062733ec571d6095c9aca195c9abccb1c81706e3"
+      },
+      {
+        "page": "/openwiki/concepts/evidence-first-philosophy.md",
+        "bodyHash": "d679657588c5fb44281fd40806606acd1189448d43e0ac0733dba48e90e83efa"
+      },
+      {
+        "page": "/openwiki/integrations/gedcom-portability.md",
+        "bodyHash": "4abb3360c95f78847074dab3ae968637b0c89e6848ef16d9290bf896e822e15f"
+      }
+    ]
+  },
+  "plan": {
+    "pages": [
+      {
+        "id": "5a2ce365-9db1-44ad-902b-4365dc541918",
+        "path": "/openwiki/architecture/system-overview.md",
+        "title": "System Overview",
+        "purpose": "High-level overview of Theogony's local-first desktop application architecture (Tauri, React, SQLite, Rust crates).",
+        "seedPaths": [
+          "theogony-app/src/lib.rs",
+          "theogony-app/src/main.rs",
+          "ui/src/App.tsx"
+        ],
+        "relatedPages": [
+          "/openwiki/concepts/evidence-first-philosophy.md",
+          "/openwiki/integrations/gedcom-portability.md",
+          "/openwiki/operations/data-hygiene-and-audit.md",
+          "/openwiki/workflows/navigating-the-interface.md"
+        ],
+        "instructions": [
+          "Ensure the Mermaid architecture diagram and core subsystem descriptions remain accurate and current with recent crate evolution.",
+          "Retain the baseline page structure and review instructions for the overall system architecture, covering Tauri shell, React frontend, SQLite persistence, and core crate relationships."
+        ],
+        "status": "complete",
+        "completedBy": "openwiki/0.5.1"
+      },
+      {
+        "id": "a91affe8-4a97-4a4c-b848-74112700387c",
+        "path": "/openwiki/concepts/evidence-first-philosophy.md",
+        "title": "Evidence-First Philosophy & GPS Standards",
+        "purpose": "Explain Theogony's adherence to the Genealogical Proof Standard (GPS) and non-destructive conflict handling.",
+        "seedPaths": [
+          "theogony-app/src/commands/evidence.rs",
+          "theogony-domain/src/records.rs"
+        ],
+        "relatedPages": [
+          "/openwiki/architecture/system-overview.md",
+          "/openwiki/operations/data-hygiene-and-audit.md",
+          "/openwiki/workflows/adding-and-citing-facts.md"
+        ],
+        "instructions": [
+          "Ensure non-destructive conflict handling concepts (active, disputed, rejected) are thoroughly documented with a clear Mermaid diagram.",
+          "Retain the baseline evidence-first philosophy concepts, separating Source Documents -> Extracted Personas -> Assertions -> Concluded Individuals and Families."
+        ],
+        "status": "skipped"
+      },
+      {
+        "id": "fbc51428-c6e0-4f45-a973-6702ad94a6c2",
+        "path": "/openwiki/integrations/gedcom-portability.md",
+        "title": "Data Portability & GEDCOM Interchange",
+        "purpose": "Guide users and power users through importing/exporting standard GEDCOM files, database backups, and data packages.",
+        "seedPaths": [
+          "theogony-app/src/commands/backup.rs",
+          "theogony-app/src/commands/interchange/plain_ged.rs",
+          "theogony-gedcom/"
+        ],
+        "relatedPages": [
+          "/openwiki/architecture/system-overview.md",
+          "/openwiki/concepts/evidence-first-philosophy.md",
+          "/openwiki/operations/data-hygiene-and-audit.md"
+        ],
+        "instructions": [
+          "Address claim_4b9bebd3275946d88c3c650e32cb84e0 (stale) referencing /theogony-app/src/commands/backup.rs and claim_554f42427c924d1a8f6040ef03bf6ed6 (stale) referencing /theogony-app/src/commands/interchange/plain_ged.rs.",
+          "Retain and update GEDCOM portability documentation addressing import and export of GEDCOM 5.5.1 and GEDCOM 7, complete backups (.theb), lossless data packages (.tgpkg), and extension tag preservation."
+        ],
+        "status": "skipped"
+      },
+      {
+        "id": "4366c0c4-2d00-4f6c-90f3-7ab2313b27db",
+        "path": "/openwiki/operations/data-hygiene-and-audit.md",
+        "title": "Data Hygiene, Review Queue, and Audit Log",
+        "purpose": "Explain how to use the Review Queue, inspect edit history, and perform selective database reverts.",
+        "seedPaths": [
+          "theogony-app/src/commands/history.rs",
+          "theogony-app/src/commands/review.rs",
+          "ui/src/screens/ReviewQueue.tsx"
+        ],
+        "relatedPages": [
+          "/openwiki/concepts/evidence-first-philosophy.md",
+          "/openwiki/integrations/gedcom-portability.md",
+          "/openwiki/workflows/adding-and-citing-facts.md"
+        ],
+        "instructions": [
+          "Document the Review Queue workflow for resolving unattached personas and handling multi-cited individuals, alongside audit log navigation and selective two-step revert actions (Refuse, Cascade, Reassign)."
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "53c93663-6125-4d16-8393-696a63cc7096",
+        "path": "/openwiki/workflows/adding-and-citing-facts.md",
+        "title": "Adding and Citing Facts",
+        "purpose": "Provide practical guidance on recording genealogical assertions, surety ratings, and source citations.",
+        "seedPaths": [
+          "theogony-app/src/commands/evidence.rs",
+          "ui/src/components/EventDialog.tsx",
+          "ui/src/screens/Person.tsx"
+        ],
+        "relatedPages": [
+          "/openwiki/concepts/evidence-first-philosophy.md",
+          "/openwiki/operations/data-hygiene-and-audit.md",
+          "/openwiki/workflows/navigating-the-interface.md"
+        ],
+        "instructions": [
+          "Document step-by-step procedures for adding facts, recording surety ratings, attaching sources, and managing family structures (spouses, parent-child links)."
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "4f7c9705-091f-435a-be4d-36b37a03d180",
+        "path": "/openwiki/workflows/navigating-the-interface.md",
+        "title": "Navigating the Interface",
+        "purpose": "Guide users through the application shell, screens, sidebars, and workbench panels.",
+        "seedPaths": [
+          "ui/src/screens/Welcome.tsx",
+          "ui/src/shell/AppShell.tsx",
+          "ui/src/shell/DockWorkbench.tsx"
+        ],
+        "relatedPages": [
+          "/openwiki/architecture/system-overview.md",
+          "/openwiki/operations/data-hygiene-and-audit.md",
+          "/openwiki/workflows/adding-and-citing-facts.md"
+        ],
+        "instructions": [
+          "Document interface navigation including the Tree Navigator, Details Panel, Person Picker, Atlas, and People/Places screens using clear task-oriented procedures and UI control bolding."
+        ],
+        "status": "pending"
+      },
+      {
+        "id": "59a30c64-e43c-4524-841e-c65872316776",
+        "path": "/openwiki/quickstart.md",
+        "title": "Quickstart & Documentation Navigator",
+        "purpose": "Provide task routing, navigation index, and quickstart instructions for users and developers exploring Theogony.",
+        "seedPaths": [
+          "CLAUDE.md",
+          "README.md",
+          "ROADMAP.md"
+        ],
+        "relatedPages": [
+          "/openwiki/architecture/system-overview.md",
+          "/openwiki/concepts/evidence-first-philosophy.md",
+          "/openwiki/integrations/gedcom-portability.md",
+          "/openwiki/operations/data-hygiene-and-audit.md",
+          "/openwiki/workflows/navigating-the-interface.md"
+        ],
+        "instructions": [
+          "Create the mandatory quickstart task-routing map referencing all major sections of the wiki hierarchy (architecture, concepts, workflows, operations, integrations).",
+          "Provide clear paths and navigation instructions for researchers, genealogists, and developers."
+        ],
+        "status": "pending"
+      }
+    ],
+    "deletePages": []
+  }
+}

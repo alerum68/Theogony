@@ -16,6 +16,9 @@ sources:
     resource: repo://theogony-db-sqlite/Cargo.toml
   - id: openwiki-source-61c917696a7dbf739bd28821
     resource: repo://theogony-domain/src/lib.rs
+verified:
+  - by: openwiki/0.5.1
+    at: 2026-09-17T02:26:55.274Z
 ---
 
 # System Overview

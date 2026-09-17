@@ -3,6 +3,9 @@ type: concept
 title: Evidence-First Philosophy & GPS Standards
 description: Core philosophical framework and genealogical proof standard implementation in Theogony.
 tags: [evidence-first, genealogy, gps, personas, assertions, conflict-handling, architecture]
+verified:
+  - by: openwiki/0.5.1
+    at: 2026-09-16T00:44:29.325Z
 ---
 
 # Evidence-First Philosophy & GPS Standards
