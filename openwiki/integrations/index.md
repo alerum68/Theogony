@@ -1,4 +1,3 @@
 # Files
 
-- [Backups and Data Packages](backups-and-packages.md) - Complete database backups (.theb) and lossless data packages (.tgpkg) for secure data interchange and disaster recovery.
-- [GEDCOM Portability & Interchange](gedcom-portability.md) - Reference for importing and exporting standard GEDCOM files and preserving vendor extensions in Theogony.
+- [Data Portability & GEDCOM Interchange](gedcom-portability.md) - Comprehensive reference on GEDCOM 5.5.1 and GEDCOM 7 import/export, complete database backups (.theb), and lossless data packages (.tgpkg).

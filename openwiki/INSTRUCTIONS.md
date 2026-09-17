@@ -37,18 +37,29 @@
 
 ## 3. Formatting and Style Instructions for the Model
 
+0. Rendering Target:
+   - These pages are published to the project's native GitHub Wiki
+     (github.com/alerum68/Theogony/wiki), where GitHub server-renders each
+     page the same way it renders a README, issue, or pull request --
+     standard GitHub-Flavored Markdown, not a client-side renderer. A
+     publish step flattens this `openwiki/` tree into the wiki's own flat
+     page namespace and rewrites internal links to match; write links the
+     normal way described below and let that step handle the rest.
+
 1. Mermaid Diagrams:
    - Include a Mermaid diagram (`graph TD` or `sequenceDiagram`) on every major concept and workflow page.
    - Use diagrams to visualize the Evidence Hierarchy, Import/Export data flows, and Revert State transitions.
+   - GitHub renders standard ```mermaid fenced code blocks natively in wiki pages -- no plugin or special escaping needed.
 
 2. Task-Oriented Procedures:
    - Format user actions using bold text for UI controls (for example: "On the Activity Bar, click **Review Queue**").
 
 3. Markdown Alerts:
-   - Use GitHub-flavored alert blocks (`> [!NOTE]`, `> [!IMPORTANT]`, `> [!WARNING]`) for key notices, GPS best practices, and export caveats.
+   - Use GitHub's native alert syntax for key notices, GPS best practices, and export caveats: `> [!NOTE]`, `> [!IMPORTANT]`, `> [!WARNING]` (each followed by the blockquote body on the next line(s)). GitHub renders these as styled callout boxes on the wiki, the same as in a README or PR.
 
 4. Cross-Linking:
    - Maintain direct markdown links between theoretical concepts and practical workflow guides.
+   - Link paths must be relative to the linking page's own location on disk (standard relative-path resolution, e.g. `../workflows/adding-and-citing-facts.md` from a page under `concepts/`), or repo-root-absolute as `/openwiki/...md` -- the publish step resolves either form and rewrites it to the wiki's flat page name.
 
 5. Tone and Style:
    - Clear, direct, professional technical documentation.

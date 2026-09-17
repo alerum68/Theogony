@@ -1,56 +1,97 @@
 ---
 type: architecture
-title: System Architecture Overview
-description: High-level technical overview of Theogony's local-first architecture, Tauri backend, SQLite storage, and crate organization.
-tags: [architecture, tauri, sqlite, rust, react, domain, ports, gedcom]
-verified:
-  - by: openwiki/0.5.1
-    at: 2026-09-16T23:59:03.017Z
+title: System Overview
+description: High-level architectural overview of Theogony's local-first genealogy platform, crate layout, Tauri desktop shell, and persistence spine.
+tags: [architecture, rust, tauri, react, sqlite, crates, system-overview]
 sources:
-  - id: openwiki-source-5b54a58d1b51cd490b0e7162
-    resource: repo://package.json
-generated: { by: "openwiki/0.5.1", at: "2026-09-16T01:48:34.043Z" }
+  - id: openwiki-source-651d1fb6c9e49916a916ab51
+    resource: repo://Cargo.toml
+  - id: openwiki-source-a2371d6362e5db4bc834ad03
+    resource: repo://CLAUDE.md
+  - id: openwiki-source-0a92e91524b9981ef0c9df55
+    resource: repo://theogony-app/Cargo.toml
+  - id: openwiki-source-fb23fbb325b2a8122c3150c2
+    resource: repo://theogony-app/src/lib.rs
+  - id: openwiki-source-d7e9a325bf86e1ff1b0f94f1
+    resource: repo://theogony-db-sqlite/Cargo.toml
+  - id: openwiki-source-61c917696a7dbf739bd28821
+    resource: repo://theogony-domain/src/lib.rs
 ---
 
-# System Architecture Overview
+# System Overview
 
-Theogony is a local-first genealogy desktop application built with a robust multi-tier Rust backend and a modern React frontend. Designed around data ownership, privacy, and genealogical rigor, the application runs entirely offline using Tauri, SQLite, and a domain-driven crate architecture.
+Theogony is a high-performance, local-first genealogy desktop application engineered for rigorous evidence analysis, multi-user interchange, and historical family tree research. Built around a robust Rust backend and a native-feeling React/TypeScript desktop UI via Tauri, Theogony separates pure domain logic, persistence, and GEDCOM interchange into discrete crates while guaranteeing ACID-compliant SQLite storage.
 
-This page is part of the OpenWiki documentation hub; for a complete task-routing map of all pages and concepts, consult the [Theogony Quickstart Hub](/openwiki/quickstart.md).
+## Architectural Boundaries & Data Flow
+
+Theogony follows a strict layered architecture where dependencies flow inward. Pure domain types and ports reside at the center, isolated from database drivers, UI frameworks, and interchange protocols.
 
 ```mermaid
 graph TD
-    UI["React Frontend (ui/)"] -->|"Tauri IPC / Commands"| App["Tauri App Crate (theogony-app)"]
-    App --> Domain["Domain Models & Logic (theogony-domain)"]
-    App --> Ports["Traits & Interfaces (theogony-ports)"]
-    App --> DB["SQLite Persistence (theogony-db-sqlite)"]
-    App --> GEDCOM["GEDCOM Import / Export (theogony-gedcom)"]
-    App --> AI["AI Assistant Integration (theogony-ai)"]
-    DB -. implements .-> Ports
-    GEDCOM -. reads / writes .-> Domain
-    AI -. assists .-> Domain
+    subgraph UI ["Desktop UI (React + Fluent UI v9)"]
+        React[React Components / Views]
+        TanStack[TanStack Virtual / State]
+    end
+
+    subgraph Tauri ["Tauri Shell (theogony-app)"]
+        Commands[Tauri Commands / IPC]
+        Events[Event & State Broker]
+    end
+
+    subgraph Backend ["Rust Backend Workspace"]
+        Ports["theogony-ports\n(Traits & Interfaces)"]
+        Domain["theogony-domain\n(Pure Domain Types)"]
+        DB["theogony-db-sqlite\n(SQLite Persistence Spine)"]
+        Gedcom["theogony-gedcom\n(GEDCOM 7 & THEB Interchange)"]
+        AI["theogony-ai\n(AI Analysis & Synthesis)"]
+    end
+
+    React -->|Tauri IPC Invoke| Commands
+    Commands --> Ports
+    Ports --> DB
+    Ports --> Gedcom
+    Ports --> AI
+    DB -. implements .- Ports
+    Gedcom -. implements .- Ports
+    AI -. implements .- Ports
+    DB --> Domain
+    Gedcom --> Domain
+    AI --> Domain
+    Commands --> Tauri
+    Tauri --> UI
 ```
 
-## Core Crate Structure
+---
 
-The Rust workspace (`Cargo.toml`) is partitioned into specialized crates that decouple business logic, database persistence, external interoperability, and application orchestration:
+## Crate Structure
 
-1. **`theogony-domain`**: The foundational pure-Rust core. Defines core genealogical entities (individuals, families, events, facts, notes, citations, sources, repositories), identifiers (`IndividualId`, `FamilyId`, etc.), provenance tracking, and domain validation rules without external database or UI dependencies.
-2. **`theogony-ports`**: Defines abstract trait boundaries and interfaces (such as repository traits and edit log ports) that decouple domain services from specific storage engines.
-3. **`theogony-db-sqlite`**: The concrete SQLite persistence layer implementing the ports defined in `theogony-ports`. Manages database migrations, transactional repositories, edit logging, time travel / reversion, assertions, branches, and sample data generation.
-4. **`theogony-gedcom`**: Handles GEDCOM parser and exporter logic, translating hierarchical genealogical text files into domain records and vice versa.
-5. **`theogony-ai`**: Integrates local or remote AI capabilities (such as record analysis, transcription assistance, and relationship suggestions) against domain structures.
-6. **`theogony-app`**: The Tauri host application crate (`theogony-app`). Manages application state, Tauri commands, IPC bindings, window management, and background initialization.
+The Rust workspace (`Cargo.toml`) is organized into specialized crates that enforce separation of concerns:
 
-## Frontend Architecture
+1. **`theogony-domain`**
+   - **Purpose:** Pure domain models, record structs (`Individual`, `Family`, `Fact`, `Citation`, `SourceDocument`, `Place`, `Repository`), IDs, and error enums.
+   - **Invariants:** Zero external data-shape or database dependencies; safe to compile anywhere data structures are needed.
 
-Located in `ui/`, the frontend is built using **React**, **Vite**, and TypeScript, communicating with the Rust backend exclusively via asynchronous Tauri IPC commands and event listeners.
+2. **`theogony-ports`**
+   - **Purpose:** Trait definitions and repository interfaces (`TreeRepository`, etc.) defining the boundaries between backend execution logic and storage implementations.
 
-- **State Management & API**: Encapsulated in API client wrappers and React context hooks, providing type-safe interaction with backend Tauri commands.
-- **Components & Screens**: Organized into modular screen views (family trees, individual profiles, search, edit histories, settings, and GEDCOM import/export wizard) and reusable UI primitives.
+3. **`theogony-db-sqlite`**
+   - **Purpose:** ACID-compliant SQLite storage spine (`theogony-db-sqlite`). Implements migration management, versioned schema (`v6+`), high-performance queries, edit logging, and transaction boundaries.
 
-## Local-First Data Flow & Persistence
+4. **`theogony-gedcom`**
+   - **Purpose:** GEDCOM 7 parser, serialization engine, THEB interchange package format (`.tgpkg`), vendor dialect mapping, and conformance test harness.
 
-- **Local Storage**: All family tree databases are stored as local SQLite files (`.theogony` or `.db`), ensuring complete user ownership and zero cloud dependency unless explicitly configured for backup or sync.
-- **Transaction & Edit Logging**: Every mutation is captured in an immutable edit log (`theogony-db-sqlite/src/edit_log.rs`), supporting audit trails, undo/redo capabilities, and branch merging.
-- **Interoperability**: Users can import and export standard GEDCOM files smoothly via `theogony-gedcom`, bridging standard genealogical archives with Theogony's rich SQLite model.
+5. **`theogony-ai`**
+   - **Purpose:** Local and remote AI integration helpers, AI override tracking, and ToS state management.
+
+6. **`theogony-app`**
+   - **Purpose:** Tauri desktop application entrypoint, command handlers (`commands/`), IPC routing, export/import orchestration, and TypeScript binding generation via `ts-rs`.
+
+---
+
+## Local-First Storage, Tauri Commands, and SQLite Backing
+
+Theogony is engineered specifically as a desktop-native application with a strong local-first guarantee:
+
+- **Local-First Storage:** Every family tree is stored in a self-contained SQLite database file equipped with WAL mode, foreign key enforcement, and explicit migration paths, ensuring instant local startup, zero server dependency, and robust backup/restore capabilities (`.tgpkg`).
+- **Tauri Commands & IPC:** All operations that the UI can perform are defined as plain Rust functions over `AppState` inside `theogony-app/src/commands/`. The macro-driven command system generates Tauri IPC adapters and routing entries from a single source of truth, avoiding drift.
+- **SQLite Backing:** The persistence layer (`theogony-db-sqlite`) wraps Rusqlite connections with reader pools and exclusive writer locks, implementing robust transaction management, hypothesis branching, and change history logs.

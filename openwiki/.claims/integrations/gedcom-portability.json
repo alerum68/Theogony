@@ -1,20 +1,62 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:183fe91316b288ebfbf7808b1612e8690d0a796f5988bf28ef677259c6780407",
+  "pageVersion": "sha256:33d3eb2f1c4683105add1132afb75c2853714eab554c767f537b5684dd1a4b6e",
   "claims": [
     {
-      "id": "claim_630f32884e5b4af1a23703d5a25283ac",
-      "statement": "GedcomDocument parses GEDCOM files and detects GEDCOM version (5.5.1, 7, or other) from the HEAD.GEDC.VERS header record.",
+      "id": "claim_554f42427c924d1a8f6040ef03bf6ed6",
+      "statement": "Plain GEDCOM interchange (.ged) supports importing and exporting standard GEDCOM 5.5.1 and GEDCOM 7 files, with sex normalization and custom fact fallbacks.",
       "evidence": [
         {
-          "resource": "repo://package.json",
-          "version": "repo-file-v1:sha256:8823bf0c4675771f8bc7fbf3fefec5aec693d8c812cf153a8079cf82492dbee3"
+          "resource": "repo://theogony-app/src/commands/interchange/plain_ged.rs",
+          "version": "repo-file-v1:sha256:9d1cf601494a8ea9ebefd4f85c575e17de99bdbab9c69becce61319ba368278d"
+        },
+        {
+          "resource": "repo://theogony-gedcom/src/mapper/export.rs",
+          "version": "repo-file-v1:sha256:5d59c91f79b650e619647505d3ef9c3d0e17657996b39ec3c5c1ae70196673ae"
+        },
+        {
+          "resource": "repo://theogony-gedcom/src/mapper/import.rs",
+          "version": "repo-file-v1:sha256:9448ccab5bfd58c2d1de1604eb14c892d7021904b07e964905d24647789357bb"
+        }
+      ]
+    },
+    {
+      "id": "claim_11087e4485e24b57a9ac887ae928c236",
+      "statement": "Lossless data packages (.tgpkg) are GEDZIP-compliant ZIP archives containing manifest.json, tree.ged, evidence.sqlite, and media/ attachments.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-app/src/commands/interchange/package.rs",
+          "version": "repo-file-v1:sha256:0007d9082dbd2207c5a522acbc596032712470e59bcaea1b037ca17e973b8c03"
+        }
+      ]
+    },
+    {
+      "id": "claim_4b9bebd3275946d88c3c650e32cb84e0",
+      "statement": "Complete database backups (.theb) wrap a live SQLite database snapshot (created via the Online Backup API) and manifest.json in a tar+gzip archive with atomic file replacement.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-app/src/commands/backup.rs",
+          "version": "repo-file-v1:sha256:f9c75988efa72cb2a1b4d011b498fb0ca823cef9505a8a3165eb2e44d01e0965"
+        }
+      ]
+    },
+    {
+      "id": "claim_d85a31ea38b3422b8e8c6af9cd3f9fae",
+      "statement": "Vendor extension tag preservation uses a prioritized registry of vendor profiles and a four-tier fallback resolution strategy to map proprietary tags into canonical fact types without data loss.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-gedcom/src/mapper/naming.rs",
+          "version": "repo-file-v1:sha256:52738aee790f9552cf4bb53928ce1f5b160d7c71c7ef235576123eaf914d75cd"
+        },
+        {
+          "resource": "repo://theogony-gedcom/src/vendor/mod.rs",
+          "version": "repo-file-v1:sha256:8c088491c807afdb05a8ca26d457ec1dde9a7ab6810456d6883b3895906a26f9"
         }
       ]
     }
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-09-16T23:59:03.017Z"
+    "at": "2026-09-15T13:41:43.525Z"
   }
 }

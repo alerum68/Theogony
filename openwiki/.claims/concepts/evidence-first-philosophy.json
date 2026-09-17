@@ -1,30 +1,42 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:50b19bbdbf0a4eea4c0255538481c83200542e9014e274fdc2ec97e2b9e3dd78",
+  "pageVersion": "sha256:a7d0976e692bfc8b5ef4843eb942229b8ec69ed41307e6a2020419b7886b711b",
   "claims": [
     {
-      "id": "claim_2dbdacb1e642445ab5e60910567e4de8",
-      "statement": "Theogony implements an evidence-first philosophy adhering to the Genealogical Proof Standard by structuring data into four distinct layers: Source Documents, Extracted Personas, Assertions, and Concluded Individuals and Families.",
+      "id": "claim_aaf89ff87a82456581abe1f2da1ed2c2",
+      "statement": "Theogony implements a non-destructive conflict resolution model utilizing four explicit statuses ('active', 'proposed', 'disputed', 'rejected') for assertions and relationship links to handle contradictory historical evidence without deleting competing claims.",
       "evidence": [
         {
-          "resource": "repo://package.json",
-          "version": "repo-file-v1:sha256:8823bf0c4675771f8bc7fbf3fefec5aec693d8c812cf153a8079cf82492dbee3"
+          "resource": "repo://theogony-db-sqlite/src/assertions.rs#L10-L15",
+          "version": "repo-lines-v1:sha256:0893b286c6c574b0b998b699ea4ca814646851694d4dcba24386a9be1331ad8b:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNzFhNjJmNmM2ODZhNzUxYTU1ZWIxOTgzMDQ3ZDM3ZjgwNDViOWJjNzVjOGI4M2YzM2JmNDE1Y2QwZDZlNjY4YyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZGUwOGE1NmRkMWU2YmNiNDc4ZjU5MDNiYjYwMmI5NzFmNmRjYzEyYjExNDI4OWFmOTQ1ZWQ0YWVhNDFkMTMyMiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZWZjMDA5ZmU5ZWZmYTIzZmFiY2U3ZjNkNTUzMzYxYTQ2YWJmNzBhMDMyNDVlMDQ3NzYwNjllNWRhNWUzNWJkMSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMDIxMzhiNGMyYzVlNmNjZjkwYTYwMmE1YjBhNjA2ZWRkZTgyNGU5MDViYzRmYTNmMjkzOGE2ZmI1N2M3MDgyZiJ9"
+        },
+        {
+          "resource": "repo://theogony-db-sqlite/src/personas.rs#L16-L20",
+          "version": "repo-lines-v1:sha256:0a2e461fad057d760f132cb9bdafeb4cc1d00be72e0a34e2dfc10a7391788870:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYzhjYTlhNGE5MjY0NjgyYTEzYTQwMzgyYmQ3NTM3Zjg0NjM3MmEzNzg1NGI0YTc4MjRmOWY2NDM5MDQ3MGFkNCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiN2NlMzBiNTJlZjZjMjlhMzUyZjE1NTA1OTU2M2NkNWU4YTM1NzA3YjhjMWE1NThmNjZiOGY0N2RiNjQ4YzkyMSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNDVkNTM4MDFiODViZjg5NzE4Zjk2Mjg2OGMxMjZjYjRmYTE4ODUwZTQ4MTgyYTc0NmVjMDk5MDhjZGRkMDgzYSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYjlmZDhlODlkOGFlMWM4YjNkNWU2MzdkMTYwNzdjNTAxMGI2ZGZhOGI4NDU0MWZhYjU4MzRkYzg5NjM3YWZmNiJ9"
         }
       ]
     },
     {
-      "id": "claim_4303730fa2df4d57b23351a2011d785c",
-      "statement": "Non-destructive conflict handling is implemented by assigning explicit status markers ('active', 'disputed', or 'rejected') to assertions and relationship links rather than overwriting conflicting data.",
+      "id": "claim_562466d93b954f449e8b53da617ad38f",
+      "statement": "The core evidence-first data model transitions progressively from Source Documents and Citations to extracted Personas, discrete Assertions with surety ratings, and finally synthesized Concluded Individuals and Families.",
       "evidence": [
         {
-          "resource": "repo://package.json",
-          "version": "repo-file-v1:sha256:8823bf0c4675771f8bc7fbf3fefec5aec693d8c812cf153a8079cf82492dbee3"
+          "resource": "repo://theogony-db-sqlite/src/assertions.rs#L7-L8",
+          "version": "repo-lines-v1:sha256:7dd30fc5930f07ce33ab1da8d456dfeb62036a01d565946c07aabc5e490f18ec:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZmU3ZTAwODA4ODBmYmRiMzljMmM3ZjI3NjNiY2Q0ZWU5YzVmZjVlZGY3YjE2YzlmYTIzNGNlYmJjOWZhYzM1YyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYjZhZTFhODE0MGQ2NWI1NDlmYTNkOTg0Zjk4Nzc4MTFlMTAxM2Q5YmZlNzViYTIxMzhjZTdmMmY2MzJmMGQ5YSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZDExYjc5OWNlMjcxN2Q0MmZmYTY4NWQzMDk5ZTZkY2M2ZGRhZmNiZWE1OGYzNzkwZDUxODUzMTEzNzYyMTNlMiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYzgxZjA0OTczNTdjYTI4YzcwYjE0MjQwYTgzMDdhMGM5ZjUxYTRhNDc3OWVhOTMwM2ZhMTEwYmU1ZDg5MDAyOSJ9"
+        },
+        {
+          "resource": "repo://theogony-db-sqlite/src/personas.rs#L8-L14",
+          "version": "repo-lines-v1:sha256:7ee9976451067dea30766595ab826dc3d4af40d2ac78b4335014f036a0e3c6af:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYjQxODg5NTMyOWNjYzc4Y2QyOGFkZjY0NTdlNTZjOTEzNDEzMWYyNjU4YTg0YWNmNGU3NzY0MjdhZmU2MGRmNSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZWY0NDJkODQxMGNlNDdkYjE2YmM0ZDBmOTM3ZjBkNmVmMzBlZGEzYWE3NDI0Mjc5YWNhY2VmNGY1Y2ZmYTNhZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNTQ4ZWZjMzIyNmYzNjliMGVmMmUwNTMwMTAwM2Y1ZmUxYWViYzQ0ODhhNWZiZTM3Zjg2MDNlOGM0ZTVhMmIyMCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZWU0ZmRlMDVjZGFjNTFlNzVkNTVkZTQ4NTY4MDg0ZmJiYzY5MWFjNzM1MWJiOGI1Mjc1N2ViOGNlYzZjYWI3NCJ9"
+        },
+        {
+          "resource": "repo://theogony-db-sqlite/src/sources.rs#L10-L14",
+          "version": "repo-lines-v1:sha256:d7239048f2efcbce689e707202e678b36788d85c921db781466f7612b6f093d6:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOGQ1MmZjZGM5OTZlOGFhMjJmYTNmZDEzMGU2MjcyOTBjOTY5ZWMzZWM4M2ViYTNiYzJmMjRhN2MzN2UxOGU1ZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNjQyNmI5Nzk3YzdlMDhkNzlkZWI5ODM2OGEyZTY0ZTQwYTQxZmU2NTU2ODNiYzFhNDJhZTk0YzZiOTM1MmU2ZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNjAxYTA0MzY4NGJiOGMwYmFjNTIyZjc2NDM1OTYxMDViMTU1OGRjMTljMDA5MTNiNTVkZjAxYWYxM2FjYzYwYyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOTg0N2Q1MmY2MWRkYWU0OGI0ZWNlMjkwYjY4NTliNzQ3ZWU2NDExYjBjOTdmY2FjMGYyODFiNjc5MmFhOGJlMSJ9"
         }
       ]
     }
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-09-16T23:59:03.017Z"
+    "at": "2026-09-16T00:44:29.325Z"
   }
 }

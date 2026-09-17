@@ -1,72 +1,80 @@
 ---
 type: concept
 title: Evidence-First Philosophy & GPS Standards
-description: Explains how Theogony implements the Genealogical Proof Standard through structured evidence correlation, separating source documents, extracted personas, assertions, and concluded individuals and families.
-tags: [evidence-first, gps, genealogical-proof-standard, methodology, data-architecture]
-verified:
-  - by: openwiki/0.5.1
-    at: 2026-09-16T23:59:03.017Z
-sources:
-  - id: openwiki-source-5b54a58d1b51cd490b0e7162
-    resource: repo://package.json
-generated: { by: "openwiki/0.5.1", at: "2026-09-16T23:59:03.017Z" }
+description: Core philosophical framework and genealogical proof standard implementation in Theogony.
+tags: [evidence-first, genealogy, gps, personas, assertions, conflict-handling, architecture]
 ---
 
 # Evidence-First Philosophy & GPS Standards
 
-Theogony is built from the ground up on an **evidence-first philosophy**, adhering strictly to the **Genealogical Proof Standard (GPS)**. In traditional genealogy software, users often jump straight to creating conclusions (individuals, marriages, and parent-child relationships) and attach sources as an afterthought. This approach frequently obscures contradictions, destroys conflicting source evidence when data is overwritten, and makes it difficult to prove how a conclusion was reached.
-
-Theogony decouples raw historical documentation from genealogical conclusions. Every piece of historical information passes through a disciplined four-stage pipeline: **Source Documents** $\rightarrow$ **Extracted Personas** $\rightarrow$ **Assertions** $\rightarrow$ **Concluded Individuals and Families**.
+Theogony is built upon an **evidence-first genealogical model** inspired by Elizabeth Shown Mills's *Evidence Explained* methodology and the **Genealogical Proof Standard (GPS)** formulated by the Board for Certification of Genealogists (BCG). Rather than treating a family tree as a collection of mutable entity records where users overwrite birth dates or parent links directly, Theogony strictly separates raw source documents, extracted actors (*personas*), asserted claims, and concluded historical individuals and families.
 
 ---
 
-## The Four-Stage Evidence Hierarchy
+## The Evidence-First Data Model Hierarchy
 
-To satisfy the rigorous demands of the Genealogical Proof Standard—specifically the requirement for thorough research, exhaustive source citation, and the resolution of conflicting evidence—Theogony structures data into four distinct layers:
+The data architecture moves deliberately from uninterpreted historical artifacts to conclusive genealogical conclusions across four primary layers:
 
-<!-- openwiki: mermaid parse failed and this diagram was converted to a text fence so it does not break rendering. Fix the diagram source and restore the mermaid fence. Parser error: Heuristic: an unescaped angle bracket inside a label breaks rendering; rephrase the label. -->
-```text
+1. **Source Documents & Citations (`SourceDocument`, `Citation`)**
+   - Represents physical or digital archival records, books, census pages, vital records, or DNA test kits.
+   - Each source document contains specific citations (page references, transcriptions, and footnote texts) linked to assertions, facts, or personas via citation links.
+
+2. **Extracted Personas (`Persona`, `PersonaName`, `PersonaParent`, `PersonaSpouse`)**
+   - Represents an unlinked individual as they appear within a specific source document.
+   - A single historical person (e.g., John Smith) might appear across multiple census returns, land deeds, and marriage certificates, generating multiple distinct `Persona` records in the database.
+   - Personas capture names, reported sexes, parent links, and spouse links as stated *in that specific source document*.
+
+3. **Assertions (`Assertion`)**
+   - Represents specific claims made by a persona or source regarding facts (birth, death, residence, occupation) or names.
+   - Assertions carry explicit **surety** ratings (e.g., primary, secondary, questionable) and operational **status** attributes.
+
+4. **Concluded Individuals and Families (`Individual`, `Family`)**
+   - Represents the genealogist's synthesized conclusions—the canonical historical individuals and family units established by exhaustively analyzing and correlating underlying assertions across multiple sources.
+
+```mermaid
 graph TD
-    SD["Source Documents<br>Original or derivative records, repositories, and citations"] --> EP["Extracted Personas<br>Raw entities extracted from a single source document"]
-    EP --> AS["Assertions<br>Specific factual claims with active, disputed, or rejected status"]
-    AS --> IF["Concluded Individuals & Families<br>Synthesized genealogical entities and relationships"]
-    
-    style SD fill:#f9f,stroke:#333,stroke-width:2px
-    style EP fill:#bbf,stroke:#333,stroke-width:2px
-    style AS fill:#bfb,stroke:#333,stroke-width:2px
-    style IF fill:#ff9,stroke:#333,stroke-width:2px
+    subgraph Sources ["1. Source & Citation Layer"]
+        SD[SourceDocument] -->|has citations| Cit[Citation]
+        Cit -->|linked via CitationLink| CL[Owners: Persona, Fact, Assertion]
+    end
+
+    subgraph Personas ["2. Extracted Persona Layer"]
+        SD -->|generates| P[Persona]
+        P -->|has names, parent links, spouse links| PN[PersonaName / PersonaParent / PersonaSpouse]
+    end
+
+    subgraph Assertions ["3. Assertion & Conflict Layer"]
+        P -->|asserts facts & names| Ass[Assertion]
+        Ass -->|carries surety & status| Status[Status: active, disputed, rejected, proposed]
+    end
+
+    subgraph Conclusions ["4. Conclusion Layer"]
+        Ass -->|synthesized into| Ind[Concluded Individual]
+        Ass -->|synthesized into| Fam[Concluded Family]
+    end
 ```
-Figure 1: The four-stage evidence hierarchy from source documents to concluded individuals and families.
-
-### 1. Source Documents
-The foundation of the evidence hierarchy is the **Source Document**. A source document represents an original or derivative historical record (such as a census return, parish register, deed, tombstone, or probate record) along with its repository and citation details. Source documents are immutable records of historical artifacts.
-
-### 2. Extracted Personas
-When a source document is analyzed, researchers extract **Extracted Personas**. A persona represents a mention of an individual within a specific source document. For example, the 1850 US Federal Census listing for a household generates multiple personas—one for the head of household, one for the spouse, and several for children—each tied directly to that single census document (`repo://theogony-domain/src/records.rs#L315-L325`).
-
-### 3. Assertions
-Assertions are specific factual claims extracted from a persona that bear upon an individual or family (such as name, birth date, residence, parentage, or marriage). Unlike concluded entities, assertions retain their source context and surety ratings.
-
-> [!IMPORTANT]
-> **GPS Best Practice: Never Overwrite Conflicting Data**
-> Historical records frequently contradict one another (e.g., varying birth years across censuses or conflicting parentage names in baptismal registers). Theogony prohibits silent overwriting. Instead, every assertion and relationship link (such as parentage or spouse links) is assigned a status: `active`, `disputed`, or `rejected` (`repo://theogony-domain/src/records.rs#L348-L377`, `repo://theogony-domain/src/records.rs#L828-L844`). This preserves all historical evidence for future analysis and review.
-
-### 4. Concluded Individuals and Families
-At the apex of the hierarchy are **Concluded Individuals** and **Families**. These are the synthesized genealogical entities resulting from the correlation and analysis of multiple assertions across diverse source documents. When research supports a definitive conclusion, active assertions are linked to the concluded individual or family, while rejected or superseded assertions remain archived in the database for auditability and future re-evaluation.
 
 ---
 
-## Non-Destructive Conflict Handling & Statuses
+## Non-Destructive Conflict Handling
 
-When multiple source documents provide conflicting claims about an individual (such as conflicting ages, birthplaces, or parent-child connections), traditional software often forces the user to pick one value and overwrite or delete the other. Theogony implements non-destructive conflict handling using explicit status markers on assertions and relationship links:
+Genealogical research frequently encounters contradictory evidence—such as conflicting birth years across successive censuses or competing parentage claims. Traditional software often forces users to overwrite data or delete alternatives. Theogony implements **non-destructive conflict handling**:
 
-- **`active`**: The assertion or relationship link currently contributes to the active genealogical conclusion for the individual or family.
-- **`disputed`**: The claim conflicts with other evidence or remains under active genealogical review, requiring further correlation before a definitive conclusion can be reached.
-- **`rejected`**: The claim has been evaluated and determined to be incorrect, erroneous, or pertaining to a different individual, but it is retained in the database to prevent repeating past research errors and to maintain complete audit transparency.
+- **Status Vocabulary:** Assertions, persona-parent links, and persona-spouse links support four discrete operational statuses:
+  - `active`: Currently accepted evidence supporting a conclusion.
+  - `disputed`: A conflicting claim that challenges an existing conclusion or active assertion, retained for transparent analysis rather than deleted.
+  - `rejected`: A claim evaluated and formally rejected under GPS scrutiny.
+  - `proposed`: Hypothesis or AI-suggested claims awaiting review.
+- **Audit Trails:** All modifications are recorded in immutable edit logs and revision structures, ensuring complete traceability of analytical decisions without destroying competing claims.
 
 ---
 
-## Related Guides
+## The Genealogical Proof Standard (GPS)
 
-- Learn how to record surety ratings and attach sources in [Adding and Citing Facts](/openwiki/workflows/adding-and-citing-facts.md).
-- Understand how edit histories and rollbacks interact with evidence in [Edit History and Revert](/openwiki/operations/edit-history-and-revert.md).
+To establish reliable genealogical conclusions, Theogony's architecture supports the five pillars of the **Genealogical Proof Standard**:
+
+1. **A reasonably exhaustive search** for all available sources that could contain information about each identity or event.
+2. **Complete and accurate citations** of every source used (`SourceDocument`, `Citation`).
+3. **Thorough analysis and correlation** of the collected evidence (supported by `Assertion` statuses, surety levels, and persona linking).
+4. **Resolution of conflicting evidence** (supported by non-destructive `disputed` and `rejected` states rather than silent overwrites).
+5. **A soundly reasoned, written conclusion** explaining how the evidence proves the identity, relationship, or event.
