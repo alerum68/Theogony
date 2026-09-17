@@ -5,15 +5,15 @@
       "pageVersion": "sha256:150abd8e7078e9d412ea0e28add0214baa02335e230cb639558a059f485bce6c",
       "completedBy": "openwiki/0.5.1",
       "completedRunId": "239d9a43-a3c8-465e-b9ee-21afac69c423",
-      "gitHead": "f645e755e7872ba48307023c1aecd2998086cd7e",
-      "sourceFingerprint": "sha256:4116c6db2d1299d48135b9bc7b6630d9bf6d7134f01554225774a5f988d6e9da"
+      "gitHead": "3ad599e6369ae41172ac0d7a83fdf1c37e5c0115",
+      "sourceFingerprint": "sha256:4b35ef200745b7a09127fdfbfb7c43d9dd961eda336dbfba617895e05930ab09"
     },
     "/openwiki/concepts/evidence-first-philosophy.md": {
-      "gitHead": "dea912546c0dbfff4948fe4b657a67d28018b68f",
-      "sourceFingerprint": "sha256:630e541b15c308b0c0596fdf2eaa2148b0a61752100a05f3337ebbab8eb8b06d",
-      "pageVersion": "sha256:a7d0976e692bfc8b5ef4843eb942229b8ec69ed41307e6a2020419b7886b711b",
+      "pageVersion": "sha256:37f9d90ad5dd492534b87f0f3656b584d10f0ab3769a274f0a9ab04bd344d65c",
       "completedBy": "openwiki/0.5.1",
-      "completedRunId": "3bb1d72c-06a4-411e-91d0-2f60547dc172"
+      "completedRunId": "3bb1d72c-06a4-411e-91d0-2f60547dc172",
+      "gitHead": "3ad599e6369ae41172ac0d7a83fdf1c37e5c0115",
+      "sourceFingerprint": "sha256:4b35ef200745b7a09127fdfbfb7c43d9dd961eda336dbfba617895e05930ab09"
     },
     "/openwiki/integrations/gedcom-portability.md": {
       "gitHead": "d2ff870207d54fecd013e4c06ac297a4857b86c1",

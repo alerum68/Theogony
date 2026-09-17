@@ -6,6 +6,13 @@ tags: [evidence-first, genealogy, gps, personas, assertions, conflict-handling, 
 verified:
   - by: openwiki/0.5.1
     at: 2026-09-16T00:44:29.325Z
+sources:
+  - id: openwiki-source-17ccbeaa6afd5efa0cb28ccd
+    resource: repo://theogony-db-sqlite/src/assertions.rs
+  - id: openwiki-source-aee410ac1172dae3922a857f
+    resource: repo://theogony-db-sqlite/src/personas.rs
+  - id: openwiki-source-f27b89db9906f12cec9ef142
+    resource: repo://theogony-db-sqlite/src/sources.rs
 ---
 
 # Evidence-First Philosophy & GPS Standards
