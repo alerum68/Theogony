@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "runId": "be719b90-be53-4612-b656-b364898c4387",
+  "mode": "update",
+  "phase": "planning",
+  "startedAt": "2026-09-18T05:01:36.164Z",
+  "language": "en",
+  "languageChanged": false,
+  "requiredRewritePages": [],
+  "initialPages": [
+    "/openwiki/architecture/system-overview.md",
+    "/openwiki/concepts/evidence-first-philosophy.md",
+    "/openwiki/integrations/gedcom-portability.md",
+    "/openwiki/operations/review-and-audit.md",
+    "/openwiki/workflows/user-workflows.md"
+  ],
+  "sourceFingerprint": "sha256:c267700694ea5f35f61db0cfc183c02b1bb941a18f5334863047354816c50c53",
+  "targetGitHead": "922e57cc1a520f456e9f3ec389c06df87b9fa1f4",
+  "actor": {
+    "producerActor": "openwiki/0.5.1",
+    "metadataModel": "gemini-3.5-flash-lite"
+  },
+  "previousLastUpdate": {
+    "updatedAt": "2026-09-18T05:01:01.955Z",
+    "command": "update",
+    "gitHead": "61b894e3adef1154e59bfaa40763666007ffd49f",
+    "model": "gemini-3.5-flash-lite",
+    "status": "interrupted",
+    "language": "en"
+  },
+  "baseGitHead": "61b894e3adef1154e59bfaa40763666007ffd49f",
+  "wikiGoal": "# OpenWiki Documentation Brief: Theogony\n\n## Target Audience\n- Primary: Genealogists, family history researchers, and general users seeking step-by-step guidance on using Theogony and applying the Genealogical Proof Standard (GPS).\n- Secondary: Power users and developers seeking an overview of data portability, GEDCOM interchange, and system architecture.\n\n## 1. What the Wiki Must Capture\n\n1. Evidence-First Philosophy & GPS Standards:\n   - How Theogony separates Source Documents -> Extracted Personas -> Assertions -> Concluded Individuals and Families.\n   - Non-destructive conflict handling: marking assertions as `active`, `disputed`, or `rejected` rather than overwriting conflicting data.\n\n2. Core User Workflows:\n   - Navigating the interface (Tree Navigator, Details Panel, Person Picker).\n   - Adding and citing facts, recording surety ratings, and attaching sources.\n   - Working with family structures (spouses, parent-child links, custom facts).\n\n3. Data Hygiene & Auditability:\n   - Review Queue: Resolving unattached personas and handling individuals cited by multiple sources.\n   - Edit History & Selective Revert: Navigating the audit log and understanding two-step revert actions (Refuse, Cascade, Reassign).\n\n4. Data Portability & Interchange:\n   - Importing and exporting standard GEDCOM 5.5.1 and GEDCOM 7 (`.ged`).\n   - Complete database backups (`.theb`) and lossless data packages (`.tgpkg`).\n   - How vendor-specific extension tags are preserved during import.\n\n5. System Overview (High-Level):\n   - Local-first desktop application architecture (Tauri, React, SQLite).\n   - High-level crate structure (Domain, Persistence, GEDCOM, UI).\n\n## 2. What Must Be Excluded (Internal Only)\n\n- Developer and Agent Tooling: Automation scripts, API key rotation logic, CLI wrappers, and internal harness files (`.agents/`).\n- Low-Level Code Plumbing: Internal Rust trait wrappers, FFI serialization details, and raw memory structures.\n- Raw Database Scripts: SQL table migration internals, SQLite PRAGMA tuning, and transaction lock mechanics.\n- Unit Test Implementations: Internal test fixtures, mock setups, and CI workflow pipelines.\n\n## 3. Formatting and Style Instructions for the Model\n\n0. Rendering Target:\n   - These pages are published to the project's native GitHub Wiki\n     (github.com/alerum68/Theogony/wiki), where GitHub server-renders each\n     page the same way it renders a README, issue, or pull request --\n     standard GitHub-Flavored Markdown, not a client-side renderer. A\n     publish step flattens this `openwiki/` tree into the wiki's own flat\n     page namespace and rewrites internal links to match; write links the\n     normal way described below and let that step handle the rest.\n\n1. Mermaid Diagrams:\n   - Include a Mermaid diagram (`graph TD` or `sequenceDiagram`) on every major concept and workflow page.\n   - Use diagrams to visualize the Evidence Hierarchy, Import/Export data flows, and Revert State transitions.\n   - GitHub renders standard ```mermaid fenced code blocks natively in wiki pages -- no plugin or special escaping needed.\n\n2. Task-Oriented Procedures:\n   - Format user actions using bold text for UI controls (for example: \"On the Activity Bar, click **Review Queue**\").\n\n3. Markdown Alerts:\n   - Use GitHub's native alert syntax for key notices, GPS best practices, and export caveats: `> [!NOTE]`, `> [!IMPORTANT]`, `> [!WARNING]` (each followed by the blockquote body on the next line(s)). GitHub renders these as styled callout boxes on the wiki, the same as in a README or PR.\n\n4. Cross-Linking:\n   - Maintain direct markdown links between theoretical concepts and practical workflow guides.\n   - Link paths must be relative to the linking page's own location on disk (standard relative-path resolution, e.g. `../workflows/adding-and-citing-facts.md` from a page under `concepts/`), or repo-root-absolute as `/openwiki/...md` -- the publish step resolves either form and rewrites it to the wiki's flat page name.\n\n5. Tone and Style:\n   - Clear, direct, professional technical documentation.\n   - No decorative emojis or conversational filler.",
+  "beforeContentSnapshot": "5ec38d5df9ed5d0449c531a102b9ba91e82b889feaabc72e3e59a4ee78958cc5",
+  "preparedWiki": {
+    "generatedProvenance": [
+      {
+        "page": "/openwiki/architecture/system-overview.md",
+        "bodyHash": "837c276df621473e63639611c8e04ccc836eaa27fc72ea7e5bc1e17a4e3e373e",
+        "generated": {
+          "by": "openwiki/0.5.1",
+          "at": "2026-09-17T16:10:58.717Z"
+        }
+      },
+      {
+        "page": "/openwiki/concepts/evidence-first-philosophy.md",
+        "bodyHash": "03584e411c6aad30d7fabd494376026045f9848012312a660b98d9c7ab9a7690",
+        "generated": {
+          "by": "openwiki/0.5.1",
+          "at": "2026-09-17T16:00:11.458Z"
+        }
+      },
+      {
+        "page": "/openwiki/integrations/gedcom-portability.md",
+        "bodyHash": "2471365cf906f0a84be693c992f409c7f7ef9835da4c4b5dda827946e072e469",
+        "generated": {
+          "by": "openwiki/0.5.1",
+          "at": "2026-09-17T16:00:11.458Z"
+        }
+      },
+      {
+        "page": "/openwiki/operations/review-and-audit.md",
+        "bodyHash": "d6bb8fd79ae476a3c9370c4129780fcd190408578667d2b4eaa870de85786311",
+        "generated": {
+          "by": "openwiki/0.5.1",
+          "at": "2026-09-17T17:22:57.510Z"
+        }
+      },
+      {
+        "page": "/openwiki/workflows/user-workflows.md",
+        "bodyHash": "ff4c1bec59d6ff96413d45e49b805dc252921e40ee4e69c830ce5d52ccec7526",
+        "generated": {
+          "by": "openwiki/0.5.1",
+          "at": "2026-09-17T16:00:11.458Z"
+        }
+      }
+    ]
+  }
+}
