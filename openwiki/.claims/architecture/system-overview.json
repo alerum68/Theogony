@@ -1,44 +1,14 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:5284f3ef5658e36b4db4457994c1bbf6f0b68715c936f7899b51408263c7dbbb",
+  "pageVersion": "sha256:002fdff31180ff03764731006abf90f5698b96fe2c79c53e5ef0c8ddaeb2bea7",
   "claims": [
-    {
-      "id": "claim_3c40cdc2ff7441748d3a93f2f6b88b2e",
-      "statement": "Theogony's Rust workspace is organized into six core crates: theogony-domain, theogony-ports, theogony-db-sqlite, theogony-gedcom, theogony-ai, and theogony-app.",
-      "evidence": [
-        {
-          "resource": "repo://Cargo.toml#L1-L10",
-          "version": "repo-lines-v1:sha256:b97a0b5301d94ba5436fcab92e4f2c1f62d12633bf16dce9fc6a576662e5c090:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhM2MyMzlkZDBmMjE1NGQ3OTVjMzk5YTI3ZWRiOWNjMzRjNGJkNDNkOTM5OTE2NzZhMjFkYjFkMGFjMjY5OGQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZkM2I2YzViOTQ0MjJhN2MwNGYwMDkzMzgxYmY4ZDE3MDdlNmVjY2E2Zjc4NzMyMWE2Nzk0ZWEzZGYxNjQ1MmQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg3YjU3NzUyMTdiOTI2NzNhZTZjYzhjNThhOTYzYzA4OTQ0MDdhZjI2YTJlMjFjMTM4MWEwYzBhNGMxMmYxMmYifQ"
-        }
-      ]
-    },
     {
       "id": "claim_71f280f3b5544b898fa0f111a8c2d147",
       "statement": "Theogony-domain owns pure domain records, identifiers, provenance models, and error types with zero external storage or persistence dependencies.",
       "evidence": [
         {
           "resource": "repo://theogony-domain/src/lib.rs#L1-L28",
-          "version": "repo-lines-v1:sha256:768f4757a316eccd894e7c5ac6c275e13cd235cc41ba04ace892a65ca1bba218:eyJzZWxlY3RlZExpbmVDb3VudCI6MjgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg4YzdhOTE3Nzg3YzNmZDUzZjU1YTA1YjljYmE2ZjNjMWVmMDMzZjJiNDM0YWY0ZjcwNTg0Y2NiYmNiNzE2MjkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJmZTExYTcxMmI4YzczYzA5N2U4YTFmMGFjYmE5YzQyMjYxNWMzYjllZTc3ZjdhNzBiMTZhZGYxMTk3MTNlMGQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
-        }
-      ]
-    },
-    {
-      "id": "claim_68b68ccbe83348048a7bfa5c5a66d631",
-      "statement": "The frontend lives in ui/ using Vite, React, TypeScript, Fluent UI v9, and TanStack Virtual, communicating with the Rust backend via Tauri IPC.",
-      "evidence": [
-        {
-          "resource": "repo://CLAUDE.md#L38-L43",
-          "version": "repo-lines-v1:sha256:82c637a1363aba705fab7d8ca22ccf716647a21f87c373da922e64437c5bebb4:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDNmOTExM2ZiNGM0N2ZjMjA1Y2YxNDcwMTQyYzZmYWM1ZTZhZGNlYTM2MDdiZmVlMWJkOGIzMmM2ZGQ0OWI1ZiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYWY2YzQyMDYyYWIwMDY0ZWFlNjQ4ZTQ1MzhkNGFiZTFhODM3NWU4Yzc3NWFjY2JmNmJkMjUzOGJjNTRiNjMzNCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOGQ0YzRmOWZmZmRmOTQ0OGEwMTY4YTUzNTQ4OTEwYWQxM2I5NzM5ZmY1NjE0NDc1Zjc2ZDU0MmU3YzZiYmExOCJ9"
-        }
-      ]
-    },
-    {
-      "id": "claim_ff6b91b7edb64775a56ccddbbfd4dba0",
-      "statement": "TypeScript API bindings in ui/src/api/generated/ are generated from Rust types using ts-rs and verified in CI via scripts/check-bindings.sh.",
-      "evidence": [
-        {
-          "resource": "repo://CLAUDE.md#L53-L55",
-          "version": "repo-lines-v1:sha256:9781663ef10369bf32a7067d32cdd8226c81b470c9dd907289eb36cc6bdf45e6:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOTAwOWExMTI3NzNhMTgyN2ZhN2IyMTU4N2FlYzMwYTI3MWIwOGUzNmNlMTUwN2M3NTJkNjNmOGZmOTVhMzM2ZiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiODQxOWI3YWQzMTVkYjg1NGY1OTlmMmQ4NTNlYzY2ZWYzOTc2YjBjYzU4MjY3MzQ2ZjJlNDhhOGM5YTQzYWE2NSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMzZiZmFmMGI4N2IwNDZhMDZjODY1MGU4YTE3ZjVhOWNkYWEwYjNjOWM5NTA5ZDc0ZGM1N2I5MTg1Y2U4MDlmZCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNWIwNjU0ZWFjMjUwMzdkYTYzMTJiMjc1ZGQ0YzI0MzczZjU3YWU2MTMzOWNkMzRmNjNhN2ZiNjhjZWU2MDY5ZiJ9"
+          "version": "repo-lines-v1:sha256:f7facdb921578bce3224f75510dd306da079aaf47c10819be01e9dfb0de945c4:eyJzZWxlY3RlZExpbmVDb3VudCI6MzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEyZmE2ODhiODI0NDdhMjI0NGMwZDJlN2YzN2EzMzM4ODk4N2NkNmM5M2IxN2I3NGEyYzBhYzc3MWE0YTdiMDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFhMWQxYTYzMzkwMjI5Yzc5ODM0N2U4M2EwNDA1NDQxYzk0MDAwMzUyODRhZDE2OGMxYmY2Y2RmMWQ3MGEzNzAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
         }
       ]
     },
@@ -48,7 +18,7 @@
       "evidence": [
         {
           "resource": "repo://Cargo.toml",
-          "version": "repo-file-v1:sha256:ecf1fdf07be2cb0937356fe37c303ee4a52cfd081c19bd3e291065360ae406a7"
+          "version": "repo-file-v1:sha256:af24f4a20a07692922171c72d7ada29b21ab1de3d1f15649982f30f3c9aba505"
         }
       ]
     },
@@ -58,7 +28,7 @@
       "evidence": [
         {
           "resource": "repo://theogony-app/Cargo.toml",
-          "version": "repo-file-v1:sha256:e81ea38c24f9647f31be684c5858dfe192549f2ada393c33b8072f92333112c0"
+          "version": "repo-file-v1:sha256:bf0e3af13ca153bdc62ce9ce1437a12c2b04b0f6bdf06ed925ada9908af61ea6"
         },
         {
           "resource": "repo://theogony-app/src/lib.rs",
@@ -72,7 +42,7 @@
       "evidence": [
         {
           "resource": "repo://theogony-db-sqlite/Cargo.toml",
-          "version": "repo-file-v1:sha256:9dc9a0efb1c2a6ec8c1349d7064b98806222ab7c6765c722b7c9859038800994"
+          "version": "repo-file-v1:sha256:32df637a25c9874b25910a04865aab6cbdeb363cc5fea0e86ab1f5f46eeee8b3"
         }
       ]
     },
@@ -82,7 +52,7 @@
       "evidence": [
         {
           "resource": "repo://Cargo.toml",
-          "version": "repo-file-v1:sha256:ecf1fdf07be2cb0937356fe37c303ee4a52cfd081c19bd3e291065360ae406a7"
+          "version": "repo-file-v1:sha256:af24f4a20a07692922171c72d7ada29b21ab1de3d1f15649982f30f3c9aba505"
         }
       ]
     },
@@ -92,11 +62,11 @@
       "evidence": [
         {
           "resource": "repo://CLAUDE.md",
-          "version": "repo-file-v1:sha256:8f4ba5410226ac6b9590e9ca69be6d56a8b385b13b0b95be4cf9f238d37e6e1e"
+          "version": "repo-file-v1:sha256:a3fb09fbbdacbf0fdf0242c40671c722c8bed90a4712ff7d6193b3f901685406"
         },
         {
           "resource": "repo://Cargo.toml",
-          "version": "repo-file-v1:sha256:ecf1fdf07be2cb0937356fe37c303ee4a52cfd081c19bd3e291065360ae406a7"
+          "version": "repo-file-v1:sha256:af24f4a20a07692922171c72d7ada29b21ab1de3d1f15649982f30f3c9aba505"
         }
       ]
     },
@@ -106,7 +76,7 @@
       "evidence": [
         {
           "resource": "repo://theogony-domain/src/lib.rs",
-          "version": "repo-file-v1:sha256:768f4757a316eccd894e7c5ac6c275e13cd235cc41ba04ace892a65ca1bba218"
+          "version": "repo-file-v1:sha256:f7facdb921578bce3224f75510dd306da079aaf47c10819be01e9dfb0de945c4"
         }
       ]
     },
@@ -116,7 +86,7 @@
       "evidence": [
         {
           "resource": "repo://theogony-db-sqlite/Cargo.toml",
-          "version": "repo-file-v1:sha256:9dc9a0efb1c2a6ec8c1349d7064b98806222ab7c6765c722b7c9859038800994"
+          "version": "repo-file-v1:sha256:32df637a25c9874b25910a04865aab6cbdeb363cc5fea0e86ab1f5f46eeee8b3"
         }
       ]
     },
@@ -126,11 +96,11 @@
       "evidence": [
         {
           "resource": "repo://CLAUDE.md",
-          "version": "repo-file-v1:sha256:8f4ba5410226ac6b9590e9ca69be6d56a8b385b13b0b95be4cf9f238d37e6e1e"
+          "version": "repo-file-v1:sha256:a3fb09fbbdacbf0fdf0242c40671c722c8bed90a4712ff7d6193b3f901685406"
         },
         {
           "resource": "repo://theogony-app/Cargo.toml",
-          "version": "repo-file-v1:sha256:e81ea38c24f9647f31be684c5858dfe192549f2ada393c33b8072f92333112c0"
+          "version": "repo-file-v1:sha256:bf0e3af13ca153bdc62ce9ce1437a12c2b04b0f6bdf06ed925ada9908af61ea6"
         },
         {
           "resource": "repo://theogony-app/src/lib.rs",
@@ -144,7 +114,7 @@
       "evidence": [
         {
           "resource": "repo://Cargo.toml",
-          "version": "repo-file-v1:sha256:ecf1fdf07be2cb0937356fe37c303ee4a52cfd081c19bd3e291065360ae406a7"
+          "version": "repo-file-v1:sha256:af24f4a20a07692922171c72d7ada29b21ab1de3d1f15649982f30f3c9aba505"
         }
       ]
     },
@@ -154,7 +124,7 @@
       "evidence": [
         {
           "resource": "repo://theogony-app/Cargo.toml",
-          "version": "repo-file-v1:sha256:e81ea38c24f9647f31be684c5858dfe192549f2ada393c33b8072f92333112c0"
+          "version": "repo-file-v1:sha256:bf0e3af13ca153bdc62ce9ce1437a12c2b04b0f6bdf06ed925ada9908af61ea6"
         }
       ]
     },
@@ -174,7 +144,7 @@
       "evidence": [
         {
           "resource": "repo://ui/package.json",
-          "version": "repo-file-v1:sha256:694a189aa7632011968f9dd2c91f9501686a0c4ed2afdd45bd78902e54f37669"
+          "version": "repo-file-v1:sha256:f643a2d44cb1e5244958c07b888e3d6a0f92b68e1da2dacbc6833ce5d1355f38"
         }
       ]
     },
@@ -184,7 +154,7 @@
       "evidence": [
         {
           "resource": "repo://Cargo.toml",
-          "version": "repo-file-v1:sha256:ecf1fdf07be2cb0937356fe37c303ee4a52cfd081c19bd3e291065360ae406a7"
+          "version": "repo-file-v1:sha256:af24f4a20a07692922171c72d7ada29b21ab1de3d1f15649982f30f3c9aba505"
         }
       ]
     },
@@ -194,11 +164,11 @@
       "evidence": [
         {
           "resource": "repo://theogony-app/Cargo.toml",
-          "version": "repo-file-v1:sha256:e81ea38c24f9647f31be684c5858dfe192549f2ada393c33b8072f92333112c0"
+          "version": "repo-file-v1:sha256:bf0e3af13ca153bdc62ce9ce1437a12c2b04b0f6bdf06ed925ada9908af61ea6"
         },
         {
           "resource": "repo://ui/package.json",
-          "version": "repo-file-v1:sha256:694a189aa7632011968f9dd2c91f9501686a0c4ed2afdd45bd78902e54f37669"
+          "version": "repo-file-v1:sha256:f643a2d44cb1e5244958c07b888e3d6a0f92b68e1da2dacbc6833ce5d1355f38"
         }
       ]
     },
@@ -208,13 +178,23 @@
       "evidence": [
         {
           "resource": "repo://theogony-db-sqlite/Cargo.toml",
-          "version": "repo-file-v1:sha256:9dc9a0efb1c2a6ec8c1349d7064b98806222ab7c6765c722b7c9859038800994"
+          "version": "repo-file-v1:sha256:32df637a25c9874b25910a04865aab6cbdeb363cc5fea0e86ab1f5f46eeee8b3"
+        }
+      ]
+    },
+    {
+      "id": "claim_c8497db280bb4c67b8501ea1a2f8caff",
+      "statement": "Theogony's Rust workspace is organized into seven core crates: theogony-domain, theogony-ports, theogony-db-sqlite, theogony-gedcom, theogony-ai, theogony-dna, and theogony-app.",
+      "evidence": [
+        {
+          "resource": "repo://Cargo.toml",
+          "version": "repo-file-v1:sha256:af24f4a20a07692922171c72d7ada29b21ab1de3d1f15649982f30f3c9aba505"
         }
       ]
     }
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-09-17T16:10:58.717Z"
+    "at": "2026-09-21T03:25:57.637Z"
   }
 }

@@ -19,6 +19,9 @@ sources:
   - id: openwiki-source-436f4179fe22abf615d2f7d0
     resource: repo://ui/package.json
 generated: { by: "openwiki/0.5.1", at: "2026-09-17T16:10:58.717Z" }
+verified:
+  - by: openwiki/0.5.1
+    at: 2026-09-21T03:25:57.637Z
 ---
 
 # System Overview
