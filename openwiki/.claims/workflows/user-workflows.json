@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:1cad0d5279a5fdbb7ec77e661600a5726ef21e18cf4040e85b937c7d2fdb7a13",
+  "pageVersion": "sha256:eb192f9f6b09b6f96d8f72a2f79afdba8b202b988f09c69ef6669fe7e6ad55f8",
   "claims": [
     {
       "id": "claim_53865b534fed47e9a5e7f49642522c63",
@@ -26,7 +26,7 @@
       "evidence": [
         {
           "resource": "repo://ui/src/components/EventDialog.tsx",
-          "version": "repo-file-v1:sha256:1afa4d0cf0480158625c5bebf287393e0d2dfeec193365535a48b30f43889b28"
+          "version": "repo-file-v1:sha256:087f0f67a4af4798a521cee73d82b803f79315a344820093d36b17dd725208a0"
         },
         {
           "resource": "repo://ui/src/components/EventsPanel.tsx",
@@ -40,7 +40,7 @@
       "evidence": [
         {
           "resource": "repo://ui/src/components/EventDialog.tsx",
-          "version": "repo-file-v1:sha256:1afa4d0cf0480158625c5bebf287393e0d2dfeec193365535a48b30f43889b28"
+          "version": "repo-file-v1:sha256:087f0f67a4af4798a521cee73d82b803f79315a344820093d36b17dd725208a0"
         }
       ]
     },
@@ -61,6 +61,6 @@
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-09-17T16:00:11.458Z"
+    "at": "2026-09-23T14:10:57.952Z"
   }
 }

@@ -1,29 +1,7 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:7997b9565bf6cbb9730baf51aeab013f0a34fa30d1d6b91f2a8bb9f82cbca50a",
+  "pageVersion": "sha256:2d964273f66f9c8fc726b12caabe0f768fc5cebb3f6fd7a8752d665e698c9bf6",
   "claims": [
-    {
-      "id": "claim_554f42427c924d1a8f6040ef03bf6ed6",
-      "statement": "Plain GEDCOM interchange (.ged) supports importing and exporting standard GEDCOM 5.5.1 and GEDCOM 7 files, with raw GEDCOM sex code normalization ('M'/'F' to 'Male'/'Female') and custom fact fallbacks.",
-      "evidence": [
-        {
-          "resource": "repo://theogony-app/src/commands/interchange/assemble.rs",
-          "version": "repo-file-v1:sha256:cc02619b0783c6cdff19bf44a006994a53a48ee3989289d9a2acc14ce27b8ab9"
-        },
-        {
-          "resource": "repo://theogony-app/src/commands/interchange/plain_ged.rs",
-          "version": "repo-file-v1:sha256:c34d007785b220d40b7760e0a823530fa1d6fb12631eb93bf3b663493130eed0"
-        },
-        {
-          "resource": "repo://theogony-gedcom/src/mapper/export.rs",
-          "version": "repo-file-v1:sha256:5d59c91f79b650e619647505d3ef9c3d0e17657996b39ec3c5c1ae70196673ae"
-        },
-        {
-          "resource": "repo://theogony-gedcom/src/mapper/import.rs",
-          "version": "repo-file-v1:sha256:9448ccab5bfd58c2d1de1604eb14c892d7021904b07e964905d24647789357bb"
-        }
-      ]
-    },
     {
       "id": "claim_11087e4485e24b57a9ac887ae928c236",
       "statement": "Lossless data packages (.tgpkg) are GEDZIP-compliant ZIP archives containing manifest.json, tree.ged, evidence.sqlite, and media/ attachments.",
@@ -57,10 +35,32 @@
           "version": "repo-file-v1:sha256:8c088491c807afdb05a8ca26d457ec1dde9a7ab6810456d6883b3895906a26f9"
         }
       ]
+    },
+    {
+      "id": "claim_0859993029c14657b1dc7dbc2d18fe1d",
+      "statement": "Plain GEDCOM interchange (.ged) supports importing and exporting standard GEDCOM 5.5.1 and GEDCOM 7 files, with raw GEDCOM sex code normalization ('M'/'F' to 'Male'/'Female') and custom fact fallbacks.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-app/src/commands/interchange/assemble.rs",
+          "version": "repo-file-v1:sha256:cc02619b0783c6cdff19bf44a006994a53a48ee3989289d9a2acc14ce27b8ab9"
+        },
+        {
+          "resource": "repo://theogony-app/src/commands/interchange/plain_ged/mod.rs",
+          "version": "repo-file-v1:sha256:c20f6676c6a3af380717a835182c491905ba6c705a52ed9cbe4bc23c4e5cb4b1"
+        },
+        {
+          "resource": "repo://theogony-gedcom/src/mapper/export.rs",
+          "version": "repo-file-v1:sha256:5d59c91f79b650e619647505d3ef9c3d0e17657996b39ec3c5c1ae70196673ae"
+        },
+        {
+          "resource": "repo://theogony-gedcom/src/mapper/import.rs",
+          "version": "repo-file-v1:sha256:9d64748fe2462c29b630c64e52a4754384d01a47cc9bed1d46b894ec8d42bb92"
+        }
+      ]
     }
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-09-17T16:00:11.458Z"
+    "at": "2026-09-23T14:10:57.952Z"
   }
 }

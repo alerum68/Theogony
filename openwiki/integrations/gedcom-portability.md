@@ -10,8 +10,8 @@ sources:
     resource: repo://theogony-app/src/commands/interchange/assemble.rs
   - id: openwiki-source-d5eebb2df5921528f12b3fdc
     resource: repo://theogony-app/src/commands/interchange/package.rs
-  - id: openwiki-source-edba1165b0448641e1e215f5
-    resource: repo://theogony-app/src/commands/interchange/plain_ged.rs
+  - id: openwiki-source-ddf01269e6202b120e06d4bd
+    resource: repo://theogony-app/src/commands/interchange/plain_ged/mod.rs
   - id: openwiki-source-d5bede6a3c1f1e60c5bc7f38
     resource: repo://theogony-gedcom/src/mapper/export.rs
   - id: openwiki-source-bdb8e62eaee2feaa6b2f05e1
@@ -21,6 +21,9 @@ sources:
   - id: openwiki-source-3cae5790683d51118c7597cf
     resource: repo://theogony-gedcom/src/vendor/mod.rs
 generated: { by: "openwiki/0.5.1", at: "2026-09-17T16:00:11.458Z" }
+verified:
+  - by: openwiki/0.5.1
+    at: 2026-09-23T14:10:57.952Z
 ---
 
 # Data Portability & GEDCOM Interchange

@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:d3a546cb7297ab65c4d19d07561c6d5337523aefbc410b1d5fcdf3a61b165af4",
+  "claims": [
+    {
+      "id": "claim_8b305b7eefbd472da3cf15717aa846d9",
+      "statement": "Theogony organizes its backend into specialized Rust workspace crates including domain models, ports, SQLite persistence, and Tauri app shell.",
+      "evidence": [
+        {
+          "resource": "repo://Cargo.toml",
+          "version": "repo-file-v1:sha256:af24f4a20a07692922171c72d7ada29b21ab1de3d1f15649982f30f3c9aba505"
+        }
+      ]
+    },
+    {
+      "id": "claim_f444f4b02ea2417a80247c64c62ac150",
+      "statement": "Theogony's core domain models separate source documents, citations, personas, assertions, and concluded individuals.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-domain/src/lib.rs",
+          "version": "repo-file-v1:sha256:45ce42b2f316d90607a59e0e4e6726e209a11c3cdb7706786d8221ab5ada9502"
+        }
+      ]
+    },
+    {
+      "id": "claim_199091dae5e049df8c17a245b5938c93",
+      "statement": "The Tauri desktop application shell coordinates IPC commands, state management, and native user interface bindings.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-app/Cargo.toml",
+          "version": "repo-file-v1:sha256:3dc5f7911c5afd279620eb57b7f0767d615709a7a186c37f6660feb3c4b62719"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.1",
+    "at": "2026-09-23T14:10:57.952Z"
+  }
+}

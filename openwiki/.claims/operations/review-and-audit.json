@@ -1,21 +1,7 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:5d46e90651b245acc961043add47f1b8a963c398652ce3c6b8e7612eda8e5b24",
+  "pageVersion": "sha256:7d4aea550a4bb1f023696c6207db02110087016c22f3cb39a99b83b7366175c2",
   "claims": [
-    {
-      "id": "claim_ee75702a1edb40959b542ee031f18d5a",
-      "statement": "The Review Queue provides dedicated read paths and inspection grids for unattached personas and multi-cited personas, allowing researchers to attach personas or merge individual records.",
-      "evidence": [
-        {
-          "resource": "repo://theogony-app/src/commands/review.rs",
-          "version": "repo-file-v1:sha256:e5f3ce5d2627ad0ff0b5efc7bfde5eacc053254196601d178ff455a223250846"
-        },
-        {
-          "resource": "repo://ui/src/screens/ReviewQueue.tsx",
-          "version": "repo-file-v1:sha256:30067e1aabc06934f2119bce3d12d7a6781fdeacc522c729ff606ced35923091"
-        }
-      ]
-    },
     {
       "id": "claim_0508e967d94c465a96a384da29467fdf",
       "statement": "The edit history panel maintains an append-only audit trail of actions with cursor pagination, operation detail inspection, and before/after state diffs.",
@@ -43,10 +29,24 @@
           "version": "repo-file-v1:sha256:22c5974fb9f30c591c46b192e3c143978e6d812c363ddf98632a0788ecd1baac"
         }
       ]
+    },
+    {
+      "id": "claim_1a0d4183d1c346aaaa01656c2ed92fce",
+      "statement": "The Review Queue provides dedicated read paths and inspection grids for unattached personas, multi-cited personas, and date issues, allowing researchers to attach personas, inspect citations, dismiss date issues, or merge individual records.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-app/src/commands/review.rs",
+          "version": "repo-file-v1:sha256:394d5f1fb46ede790bb99a1ee076206ae7a7785979e5f47cf180af3487d8300b"
+        },
+        {
+          "resource": "repo://ui/src/screens/ReviewQueue.tsx",
+          "version": "repo-file-v1:sha256:ab3c3800c28955b6304c1701436f7db2ffb5522389fe200bbfa273588e5e236b"
+        }
+      ]
     }
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-09-17T17:22:57.510Z"
+    "at": "2026-09-23T14:10:57.952Z"
   }
 }
