@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:002fdff31180ff03764731006abf90f5698b96fe2c79c53e5ef0c8ddaeb2bea7",
+  "pageVersion": "sha256:5ef8f180714aa12bb9752d1702abdb490da8688f7a5007a08b9d89494337717b",
   "claims": [
     {
       "id": "claim_71f280f3b5544b898fa0f111a8c2d147",
@@ -8,7 +8,7 @@
       "evidence": [
         {
           "resource": "repo://theogony-domain/src/lib.rs#L1-L28",
-          "version": "repo-lines-v1:sha256:f7facdb921578bce3224f75510dd306da079aaf47c10819be01e9dfb0de945c4:eyJzZWxlY3RlZExpbmVDb3VudCI6MzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEyZmE2ODhiODI0NDdhMjI0NGMwZDJlN2YzN2EzMzM4ODk4N2NkNmM5M2IxN2I3NGEyYzBhYzc3MWE0YTdiMDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFhMWQxYTYzMzkwMjI5Yzc5ODM0N2U4M2EwNDA1NDQxYzk0MDAwMzUyODRhZDE2OGMxYmY2Y2RmMWQ3MGEzNzAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+          "version": "repo-lines-v1:sha256:45ce42b2f316d90607a59e0e4e6726e209a11c3cdb7706786d8221ab5ada9502:eyJzZWxlY3RlZExpbmVDb3VudCI6NDIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEyZmE2ODhiODI0NDdhMjI0NGMwZDJlN2YzN2EzMzM4ODk4N2NkNmM5M2IxN2I3NGEyYzBhYzc3MWE0YTdiMDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFhMWQxYTYzMzkwMjI5Yzc5ODM0N2U4M2EwNDA1NDQxYzk0MDAwMzUyODRhZDE2OGMxYmY2Y2RmMWQ3MGEzNzAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
         }
       ]
     },
@@ -28,7 +28,7 @@
       "evidence": [
         {
           "resource": "repo://theogony-app/Cargo.toml",
-          "version": "repo-file-v1:sha256:bf0e3af13ca153bdc62ce9ce1437a12c2b04b0f6bdf06ed925ada9908af61ea6"
+          "version": "repo-file-v1:sha256:3dc5f7911c5afd279620eb57b7f0767d615709a7a186c37f6660feb3c4b62719"
         },
         {
           "resource": "repo://theogony-app/src/lib.rs",
@@ -76,7 +76,7 @@
       "evidence": [
         {
           "resource": "repo://theogony-domain/src/lib.rs",
-          "version": "repo-file-v1:sha256:f7facdb921578bce3224f75510dd306da079aaf47c10819be01e9dfb0de945c4"
+          "version": "repo-file-v1:sha256:45ce42b2f316d90607a59e0e4e6726e209a11c3cdb7706786d8221ab5ada9502"
         }
       ]
     },
@@ -100,7 +100,7 @@
         },
         {
           "resource": "repo://theogony-app/Cargo.toml",
-          "version": "repo-file-v1:sha256:bf0e3af13ca153bdc62ce9ce1437a12c2b04b0f6bdf06ed925ada9908af61ea6"
+          "version": "repo-file-v1:sha256:3dc5f7911c5afd279620eb57b7f0767d615709a7a186c37f6660feb3c4b62719"
         },
         {
           "resource": "repo://theogony-app/src/lib.rs",
@@ -124,7 +124,7 @@
       "evidence": [
         {
           "resource": "repo://theogony-app/Cargo.toml",
-          "version": "repo-file-v1:sha256:bf0e3af13ca153bdc62ce9ce1437a12c2b04b0f6bdf06ed925ada9908af61ea6"
+          "version": "repo-file-v1:sha256:3dc5f7911c5afd279620eb57b7f0767d615709a7a186c37f6660feb3c4b62719"
         }
       ]
     },
@@ -164,7 +164,7 @@
       "evidence": [
         {
           "resource": "repo://theogony-app/Cargo.toml",
-          "version": "repo-file-v1:sha256:bf0e3af13ca153bdc62ce9ce1437a12c2b04b0f6bdf06ed925ada9908af61ea6"
+          "version": "repo-file-v1:sha256:3dc5f7911c5afd279620eb57b7f0767d615709a7a186c37f6660feb3c4b62719"
         },
         {
           "resource": "repo://ui/package.json",
@@ -195,6 +195,6 @@
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-09-21T03:25:57.637Z"
+    "at": "2026-09-23T05:48:16.994Z"
   }
 }
