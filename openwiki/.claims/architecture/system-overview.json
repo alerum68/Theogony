@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:5ef8f180714aa12bb9752d1702abdb490da8688f7a5007a08b9d89494337717b",
+  "pageVersion": "sha256:3638d749a04d155a1944e4b8146e645157797b8aa975ef8affd793c53f17e4e8",
   "claims": [
     {
       "id": "claim_71f280f3b5544b898fa0f111a8c2d147",
@@ -191,10 +191,54 @@
           "version": "repo-file-v1:sha256:af24f4a20a07692922171c72d7ada29b21ab1de3d1f15649982f30f3c9aba505"
         }
       ]
+    },
+    {
+      "id": "claim_e1ee362a7771462e92d3de7857d73d18",
+      "statement": "Theogony organizes its Rust backend into a modular workspace containing domain, ports, sqlite storage, gedcom interchange, AI, DNA, and tauri application crates.",
+      "evidence": [
+        {
+          "resource": "repo://Cargo.toml",
+          "version": "repo-file-v1:sha256:af24f4a20a07692922171c72d7ada29b21ab1de3d1f15649982f30f3c9aba505"
+        }
+      ]
+    },
+    {
+      "id": "claim_dd36e95f3f234db5a95f70f3bc74b199",
+      "statement": "The Tauri desktop shell (theogony-app) bridges the React frontend and Rust backend via typed IPC commands and state brokers.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-app/Cargo.toml",
+          "version": "repo-file-v1:sha256:3dc5f7911c5afd279620eb57b7f0767d615709a7a186c37f6660feb3c4b62719"
+        },
+        {
+          "resource": "repo://theogony-app/src/lib.rs",
+          "version": "repo-file-v1:sha256:a9e495c7bac30c9c33815df326b171367b598e55dbb59cde91b60cb05db9353f"
+        }
+      ]
+    },
+    {
+      "id": "claim_886404f5bc054cf09d2b91252d1d3706",
+      "statement": "Theogony utilizes SQLite with WAL mode, foreign key enforcement, and explicit migration paths as its local-first persistence spine.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-db-sqlite/Cargo.toml",
+          "version": "repo-file-v1:sha256:32df637a25c9874b25910a04865aab6cbdeb363cc5fea0e86ab1f5f46eeee8b3"
+        }
+      ]
+    },
+    {
+      "id": "claim_1b75bd82d94445c6bd329ae8b9f3424b",
+      "statement": "theogony-domain defines pure domain models and records without external data-shape or database dependencies.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-domain/src/lib.rs",
+          "version": "repo-file-v1:sha256:45ce42b2f316d90607a59e0e4e6726e209a11c3cdb7706786d8221ab5ada9502"
+        }
+      ]
     }
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-09-23T05:48:16.994Z"
+    "at": "2026-09-23T15:32:56.517Z"
   }
 }

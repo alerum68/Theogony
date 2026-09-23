@@ -4,7 +4,7 @@ okf_version: "0.2"
 
 # Files
 
-- [Theogony OpenWiki Quickstart](quickstart.md) - Initial task-routing and navigation map for the Theogony OpenWiki, guiding readers across architecture, concepts, workflows, operations, and integrations.
+- [Theogony Quickstart & Navigation Guide](quickstart.md) - Serving as the primary onboarding and navigation hub for the Theogony wiki, connecting users and developers to core workflows, concepts, and system architecture.
 
 # Directories
 

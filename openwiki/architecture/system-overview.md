@@ -1,8 +1,11 @@
 ---
 type: architecture
-title: System Overview
-description: High-level architectural overview of Theogony's local-first genealogy platform, workspace crate layout, Tauri desktop shell, and persistence spine.
+title: System Overview & Architecture
+description: Explain the high-level technical architecture of Theogony, detailing Tauri, React, SQLite, and the modular Rust crate layout.
 tags: [architecture, rust, tauri, react, sqlite, crates, system-overview]
+verified:
+  - by: openwiki/0.5.1
+    at: 2026-09-23T15:32:56.517Z
 sources:
   - id: openwiki-source-651d1fb6c9e49916a916ab51
     resource: repo://Cargo.toml
@@ -18,13 +21,10 @@ sources:
     resource: repo://theogony-domain/src/lib.rs
   - id: openwiki-source-436f4179fe22abf615d2f7d0
     resource: repo://ui/package.json
-verified:
-  - by: openwiki/0.5.1
-    at: 2026-09-23T05:48:16.994Z
-generated: { by: "openwiki/0.5.1", at: "2026-09-23T05:48:16.994Z" }
+generated: { by: "openwiki/0.5.1", at: "2026-09-23T15:32:56.517Z" }
 ---
 
-# System Overview
+# System Overview & Architecture
 
 Theogony is a high-performance, local-first genealogy desktop application engineered for rigorous evidence analysis, multi-user interchange, and historical family tree research. Built around a robust Rust backend and a native-feeling React/TypeScript desktop UI via Tauri [repo://theogony-app/Cargo.toml], Theogony separates pure domain logic, persistence, and GEDCOM interchange into discrete workspace crates [repo://Cargo.toml] while guaranteeing ACID-compliant SQLite storage.
 
@@ -50,6 +50,7 @@ graph TD
         DB["theogony-db-sqlite\n(SQLite Persistence Spine)"]
         Gedcom["theogony-gedcom\n(GEDCOM 7 & THEB Interchange)"]
         AI["theogony-ai\n(AI Analysis & Synthesis)"]
+        DNA["theogony-dna\n(DNA Segments & Matches)"]
     end
 
     React -->|Tauri IPC Invoke| Commands
@@ -57,12 +58,15 @@ graph TD
     Ports --> DB
     Ports --> Gedcom
     Ports --> AI
+    Ports --> DNA
     DB -. implements .- Ports
     Gedcom -. implements .- Ports
     AI -. implements .- Ports
+    DNA -. implements .- Ports
     DB --> Domain
     Gedcom --> Domain
     AI --> Domain
+    DNA --> Domain
     Commands --> Tauri
     Tauri --> UI
 ```
@@ -89,7 +93,10 @@ The Rust workspace (`Cargo.toml`) is organized into specialized crates that enfo
 5. **`theogony-ai`**
    - **Purpose:** Local and remote AI integration helpers, AI override tracking, and ToS state management.
 
-6. **`theogony-app`**
+6. **`theogony-dna`**
+   - **Purpose:** DNA segment mapping, chromosome browser calculations, and genetic match analysis.
+
+7. **`theogony-app`**
    - **Purpose:** Tauri desktop application entrypoint, command handlers (`commands/`), IPC routing, export/import orchestration, and TypeScript binding generation via `ts-rs` [repo://theogony-app/Cargo.toml, repo://theogony-app/src/lib.rs].
 
 ---
