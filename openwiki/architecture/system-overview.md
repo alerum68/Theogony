@@ -18,7 +18,10 @@ sources:
     resource: repo://theogony-domain/src/lib.rs
   - id: openwiki-source-436f4179fe22abf615d2f7d0
     resource: repo://ui/package.json
-generated: { by: "openwiki/0.5.1", at: "2026-09-24T01:32:08.824Z" }
+verified:
+  - by: openwiki/0.5.1
+    at: 2026-09-24T17:16:43.480Z
+generated: { by: "openwiki/0.5.1", at: "2026-09-24T17:16:43.480Z" }
 ---
 
 # System Overview
@@ -48,6 +51,7 @@ graph TD
         Gedcom["theogony-gedcom\n(GEDCOM 7 & THEB Interchange)"]
         AI["theogony-ai\n(AI Analysis & Synthesis)"]
         DNA["theogony-dna\n(DNA Segments & Matches)"]
+        Haplogroup["theogony-haplogroup\n(Haplogroup Calculations)"]
     end
 
     React -->|Tauri IPC Invoke| Commands
@@ -56,14 +60,17 @@ graph TD
     Ports --> Gedcom
     Ports --> AI
     Ports --> DNA
+    Ports --> Haplogroup
     DB -. implements .- Ports
     Gedcom -. implements .- Ports
     AI -. implements .- Ports
     DNA -. implements .- Ports
+    Haplogroup -. implements .- Ports
     DB --> Domain
     Gedcom --> Domain
     AI --> Domain
     DNA --> Domain
+    Haplogroup --> Domain
     Commands --> Tauri
     Tauri --> UI
 ```
@@ -72,7 +79,7 @@ graph TD
 
 ## Crate Structure
 
-The Rust workspace (`Cargo.toml`) is organized into specialized crates that enforce strict separation of concerns [repo://Cargo.toml]:
+The Rust workspace (`Cargo.toml`) is organized into eight specialized crates that enforce strict separation of concerns [repo://Cargo.toml]:
 
 1. **`theogony-domain`**
    - **Purpose:** Pure domain models, record structs (`Individual`, `Family`, `Fact`, `Citation`, `SourceDocument`, `Place`, `Repository`), IDs, and error enums [repo://theogony-domain/src/lib.rs].
@@ -93,7 +100,10 @@ The Rust workspace (`Cargo.toml`) is organized into specialized crates that enfo
 6. **`theogony-dna`**
    - **Purpose:** DNA segment mapping, chromosome browser calculations, and genetic match analysis.
 
-7. **`theogony-app`**
+7. **`theogony-haplogroup`**
+   - **Purpose:** Haplogroup calculations and phylogenetic branch analysis.
+
+8. **`theogony-app`**
    - **Purpose:** Tauri desktop application entrypoint, command handlers (`commands/`), IPC routing, export/import orchestration, and TypeScript binding generation via `ts-rs` [repo://theogony-app/Cargo.toml, repo://theogony-app/src/lib.rs].
 
 ---

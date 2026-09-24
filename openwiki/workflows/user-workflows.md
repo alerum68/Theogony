@@ -1,7 +1,7 @@
 ---
 type: concept
 title: Core User Workflows
-description: Step-by-step user guidance on navigating the OpenWiki interface, citing facts, surety ratings, and family structuring.
+description: Step-by-step user guidance on navigating the OpenWiki interface, citing facts, surety ratings, and managing family structures.
 tags: [workflows, navigation, interface, facts, surety, family, user-guide]
 sources:
   - id: openwiki-source-d391847d363fa47891e4e7d7
@@ -16,18 +16,21 @@ sources:
     resource: repo://ui/src/components/RelationshipsPanel.tsx
   - id: openwiki-source-581ccfdbc4f29f5dcf09c2df
     resource: repo://ui/src/screens/People.tsx
-generated: { by: "openwiki/0.5.1", at: "2026-09-17T16:00:11.458Z" }
+verified:
+  - by: openwiki/0.5.1
+    at: 2026-09-24T17:16:43.480Z
+generated: { by: "openwiki/0.5.1", at: "2026-09-24T17:16:43.480Z" }
 ---
 
 The OpenWiki genealogical workbench provides an evidence-first interface for exploring individuals, asserting and citing historical facts, managing surety ratings, and structuring family relationships. This page documents the core user workflows for navigating the application interface and performing genealogical data entry.
 
 ## Interface Navigation
 
-The OpenWiki interface is organized around a primary layout shell featuring an **Activity Bar**, a **Side Bar**, the **Tree Navigator** (Family View / Pedigree Canvas), the **Details Panel**, and the **Person Picker**.
+The OpenWiki interface is organized around a dockable layout shell (`DockWorkbench.tsx`) featuring an **Activity Bar**, **Side Bar**, **Tree Navigator** (Family View / Pedigree Canvas), **Details Panel** (`Person.tsx`), and specialized dialogs like the **Person Picker** (`PersonPicker.tsx`).
 
 ```mermaid
 flowchart TD
-    Start([Launch OpenWiki]) --> Shell[App Shell & Activity Bar]
+    Start([Launch OpenWiki]) --> Shell[App Shell & Dock Workbench]
     Shell --> PeopleList[People Screen / Data Grid]
     Shell --> TreeView[Family View / Pedigree Canvas]
     

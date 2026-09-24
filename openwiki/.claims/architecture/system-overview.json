@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:5d49384f76237f5e8243864200c1db8cd430f4f475b16d095d382430d7d27f40",
+  "pageVersion": "sha256:021cd0eea22647e5c10d51619173ed3fa86c3fc0f4a72071790e49242093981c",
   "claims": [
     {
       "id": "claim_71f280f3b5544b898fa0f111a8c2d147",
@@ -8,17 +8,7 @@
       "evidence": [
         {
           "resource": "repo://theogony-domain/src/lib.rs#L1-L28",
-          "version": "repo-lines-v1:sha256:fdc75b8c3512279e5cf090ed281053b71fb13461118ced57df3ce4e7505a00f4:eyJzZWxlY3RlZExpbmVDb3VudCI6NDQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEyZmE2ODhiODI0NDdhMjI0NGMwZDJlN2YzN2EzMzM4ODk4N2NkNmM5M2IxN2I3NGEyYzBhYzc3MWE0YTdiMDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFhMWQxYTYzMzkwMjI5Yzc5ODM0N2U4M2EwNDA1NDQxYzk0MDAwMzUyODRhZDE2OGMxYmY2Y2RmMWQ3MGEzNzAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
-        }
-      ]
-    },
-    {
-      "id": "claim_ffd3c7d89e2944ad92ae103553a69609",
-      "statement": "Theogony's Rust workspace is structured into six discrete crates (`theogony-domain`, `theogony-ports`, `theogony-db-sqlite`, `theogony-gedcom`, `theogony-ai`, and `theogony-app`) to enforce separation of concerns between domain logic, persistence, interchange, AI, and the Tauri desktop shell.",
-      "evidence": [
-        {
-          "resource": "repo://Cargo.toml",
-          "version": "repo-file-v1:sha256:af24f4a20a07692922171c72d7ada29b21ab1de3d1f15649982f30f3c9aba505"
+          "version": "repo-lines-v1:sha256:ae5fd622bd7d26e5f37149e3775564a1a215ba88360035cbe1e7da84668601a6:eyJzZWxlY3RlZExpbmVDb3VudCI6NDgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEyZmE2ODhiODI0NDdhMjI0NGMwZDJlN2YzN2EzMzM4ODk4N2NkNmM5M2IxN2I3NGEyYzBhYzc3MWE0YTdiMDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFhMWQxYTYzMzkwMjI5Yzc5ODM0N2U4M2EwNDA1NDQxYzk0MDAwMzUyODRhZDE2OGMxYmY2Y2RmMWQ3MGEzNzAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
         }
       ]
     },
@@ -28,7 +18,7 @@
       "evidence": [
         {
           "resource": "repo://theogony-app/Cargo.toml",
-          "version": "repo-file-v1:sha256:3dc5f7911c5afd279620eb57b7f0767d615709a7a186c37f6660feb3c4b62719"
+          "version": "repo-file-v1:sha256:2f9a0e7281bed8a3a437e7ca0fc0f464939fcf3af11a9412122f8999772f7dbd"
         },
         {
           "resource": "repo://theogony-app/src/lib.rs",
@@ -43,40 +33,6 @@
         {
           "resource": "repo://theogony-db-sqlite/Cargo.toml",
           "version": "repo-file-v1:sha256:32df637a25c9874b25910a04865aab6cbdeb363cc5fea0e86ab1f5f46eeee8b3"
-        }
-      ]
-    },
-    {
-      "id": "claim_6c09af287c8c4d66b2e47ed097cbb2d7",
-      "statement": "Theogony's Rust workspace is structured into six discrete crates (`theogony-domain`, `theogony-ports`, `theogony-db-sqlite`, `theogony-gedcom`, `theogony-ai`, and `theogony-app`) to enforce strict separation of concerns between pure domain logic, port interfaces, persistence, GEDCOM/THEB interchange, AI analysis, and the Tauri desktop shell.",
-      "evidence": [
-        {
-          "resource": "repo://Cargo.toml",
-          "version": "repo-file-v1:sha256:af24f4a20a07692922171c72d7ada29b21ab1de3d1f15649982f30f3c9aba505"
-        }
-      ]
-    },
-    {
-      "id": "claim_2191077cc0a5412786ef78ca461e12fc",
-      "statement": "Theogony implements a local-first desktop application architecture using Tauri for the native desktop shell, React, TypeScript, Fluent UI v9, and TanStack Virtual for the UI, and SQLite for ACID-compliant local storage.",
-      "evidence": [
-        {
-          "resource": "repo://CLAUDE.md",
-          "version": "repo-file-v1:sha256:a3fb09fbbdacbf0fdf0242c40671c722c8bed90a4712ff7d6193b3f901685406"
-        },
-        {
-          "resource": "repo://Cargo.toml",
-          "version": "repo-file-v1:sha256:af24f4a20a07692922171c72d7ada29b21ab1de3d1f15649982f30f3c9aba505"
-        }
-      ]
-    },
-    {
-      "id": "claim_bd0efbf46e934e5aacae45f0927dbd07",
-      "statement": "Theogony-domain contains pure domain records, identifiers, provenance models, and error types with zero external database or storage framework dependencies.",
-      "evidence": [
-        {
-          "resource": "repo://theogony-domain/src/lib.rs",
-          "version": "repo-file-v1:sha256:fdc75b8c3512279e5cf090ed281053b71fb13461118ced57df3ce4e7505a00f4"
         }
       ]
     },
@@ -100,21 +56,11 @@
         },
         {
           "resource": "repo://theogony-app/Cargo.toml",
-          "version": "repo-file-v1:sha256:3dc5f7911c5afd279620eb57b7f0767d615709a7a186c37f6660feb3c4b62719"
+          "version": "repo-file-v1:sha256:2f9a0e7281bed8a3a437e7ca0fc0f464939fcf3af11a9412122f8999772f7dbd"
         },
         {
           "resource": "repo://theogony-app/src/lib.rs",
           "version": "repo-file-v1:sha256:a9e495c7bac30c9c33815df326b171367b598e55dbb59cde91b60cb05db9353f"
-        }
-      ]
-    },
-    {
-      "id": "claim_c19255e267d046f18fcb94fc0f09c583",
-      "statement": "Theogony is structured as a Cargo workspace containing discrete crates for domain models, ports, SQLite persistence, GEDCOM interchange, AI assistance, and the Tauri desktop application.",
-      "evidence": [
-        {
-          "resource": "repo://Cargo.toml",
-          "version": "repo-file-v1:sha256:af24f4a20a07692922171c72d7ada29b21ab1de3d1f15649982f30f3c9aba505"
         }
       ]
     },
@@ -124,7 +70,7 @@
       "evidence": [
         {
           "resource": "repo://theogony-app/Cargo.toml",
-          "version": "repo-file-v1:sha256:3dc5f7911c5afd279620eb57b7f0767d615709a7a186c37f6660feb3c4b62719"
+          "version": "repo-file-v1:sha256:2f9a0e7281bed8a3a437e7ca0fc0f464939fcf3af11a9412122f8999772f7dbd"
         }
       ]
     },
@@ -149,70 +95,12 @@
       ]
     },
     {
-      "id": "claim_28c028cd3d3947deb3588a183429786c",
-      "statement": "Theogony organizes its Rust backend into a modular workspace containing six dedicated crates: theogony-domain, theogony-ports, theogony-db-sqlite, theogony-ai, theogony-gedcom, and theogony-app.",
-      "evidence": [
-        {
-          "resource": "repo://Cargo.toml",
-          "version": "repo-file-v1:sha256:af24f4a20a07692922171c72d7ada29b21ab1de3d1f15649982f30f3c9aba505"
-        }
-      ]
-    },
-    {
-      "id": "claim_c1c25d05ddfd4521a37d221a5bc02d4a",
-      "statement": "The user interface is built as a native-feeling desktop application using React, TypeScript, and Fluent UI v9 inside Tauri, communicating with the Rust backend via Tauri IPC commands and generated TypeScript bindings.",
-      "evidence": [
-        {
-          "resource": "repo://theogony-app/Cargo.toml",
-          "version": "repo-file-v1:sha256:3dc5f7911c5afd279620eb57b7f0767d615709a7a186c37f6660feb3c4b62719"
-        },
-        {
-          "resource": "repo://ui/package.json",
-          "version": "repo-file-v1:sha256:f643a2d44cb1e5244958c07b888e3d6a0f92b68e1da2dacbc6833ce5d1355f38"
-        }
-      ]
-    },
-    {
       "id": "claim_01a033a1e17d4312bbdbc85190a74bfa",
       "statement": "The persistence layer utilizes ACID-compliant SQLite with WAL mode, foreign key enforcement, migration management, and transaction boundaries wrapped behind repository traits defined in theogony-ports.",
       "evidence": [
         {
           "resource": "repo://theogony-db-sqlite/Cargo.toml",
           "version": "repo-file-v1:sha256:32df637a25c9874b25910a04865aab6cbdeb363cc5fea0e86ab1f5f46eeee8b3"
-        }
-      ]
-    },
-    {
-      "id": "claim_c8497db280bb4c67b8501ea1a2f8caff",
-      "statement": "Theogony's Rust workspace is organized into seven core crates: theogony-domain, theogony-ports, theogony-db-sqlite, theogony-gedcom, theogony-ai, theogony-dna, and theogony-app.",
-      "evidence": [
-        {
-          "resource": "repo://Cargo.toml",
-          "version": "repo-file-v1:sha256:af24f4a20a07692922171c72d7ada29b21ab1de3d1f15649982f30f3c9aba505"
-        }
-      ]
-    },
-    {
-      "id": "claim_e1ee362a7771462e92d3de7857d73d18",
-      "statement": "Theogony organizes its Rust backend into a modular workspace containing domain, ports, sqlite storage, gedcom interchange, AI, DNA, and tauri application crates.",
-      "evidence": [
-        {
-          "resource": "repo://Cargo.toml",
-          "version": "repo-file-v1:sha256:af24f4a20a07692922171c72d7ada29b21ab1de3d1f15649982f30f3c9aba505"
-        }
-      ]
-    },
-    {
-      "id": "claim_dd36e95f3f234db5a95f70f3bc74b199",
-      "statement": "The Tauri desktop shell (theogony-app) bridges the React frontend and Rust backend via typed IPC commands and state brokers.",
-      "evidence": [
-        {
-          "resource": "repo://theogony-app/Cargo.toml",
-          "version": "repo-file-v1:sha256:3dc5f7911c5afd279620eb57b7f0767d615709a7a186c37f6660feb3c4b62719"
-        },
-        {
-          "resource": "repo://theogony-app/src/lib.rs",
-          "version": "repo-file-v1:sha256:a9e495c7bac30c9c33815df326b171367b598e55dbb59cde91b60cb05db9353f"
         }
       ]
     },
@@ -227,18 +115,18 @@
       ]
     },
     {
-      "id": "claim_1b75bd82d94445c6bd329ae8b9f3424b",
-      "statement": "theogony-domain defines pure domain models and records without external data-shape or database dependencies.",
+      "id": "claim_124b829b94234c95921ffc950bcd6221",
+      "statement": "Theogony's Rust workspace is structured into eight discrete crates (`theogony-domain`, `theogony-ports`, `theogony-db-sqlite`, `theogony-gedcom`, `theogony-ai`, `theogony-dna`, `theogony-haplogroup`, and `theogony-app`) to enforce separation of concerns between domain logic, persistence, interchange, AI, DNA, haplogroups, and the Tauri desktop shell.",
       "evidence": [
         {
-          "resource": "repo://theogony-domain/src/lib.rs",
-          "version": "repo-file-v1:sha256:fdc75b8c3512279e5cf090ed281053b71fb13461118ced57df3ce4e7505a00f4"
+          "resource": "repo://Cargo.toml",
+          "version": "repo-file-v1:sha256:2f820b95a343fd7178ecba7a9df21c4de15028c98189c0d58eac9ce862ca975a"
         }
       ]
     }
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-09-24T01:32:08.824Z"
+    "at": "2026-09-24T17:16:43.480Z"
   }
 }

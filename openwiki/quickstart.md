@@ -3,6 +3,9 @@ type: concept
 title: Theogony Quickstart & Navigation Guide
 description: Serving as the primary onboarding and navigation hub for the Theogony wiki, connecting users and developers to core workflows, concepts, and system architecture.
 tags: [quickstart, navigation, task-routing, overview, openwiki]
+verified:
+  - by: openwiki/0.5.1
+    at: 2026-09-24T17:16:43.480Z
 sources:
   - id: openwiki-source-651d1fb6c9e49916a916ab51
     resource: repo://Cargo.toml

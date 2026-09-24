@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:8c630cfe6367b0abc2c93a42a82b6e57f3e1abdc0b0a90fb14c071018e53bc42",
+  "pageVersion": "sha256:377da0cf33e7f5a6d797f4f708abee2ca30e63afd4dd5a9f5d0c72c69ef439f9",
   "claims": [
     {
       "id": "claim_aaf89ff87a82456581abe1f2da1ed2c2",
@@ -81,10 +81,44 @@
           "version": "repo-file-v1:sha256:7ce9b0ee7791858692504d64f1b9dda5e4cfac8ff7ffabcbfee985cdcef28791"
         }
       ]
+    },
+    {
+      "id": "claim_b4a548878f4b43a5aef20585fc4155f3",
+      "statement": "Theogony implements an evidence-first genealogical model separating raw source documents and citations from extracted personas, assertions, and concluded individuals and families.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-domain/src/records.rs#L688-L737",
+          "version": "repo-lines-v1:sha256:e14f67a69101f7bfa0b05117256a452a78e2ac532f090033d52fcd90ac0aeefc:eyJzZWxlY3RlZExpbmVDb3VudCI6NTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjExN2JiZThkNWYwM2ZmZjA4NjQ2Y2Q1YWRiZjYwZDczOWJmYjVhNmViNmUwODQ2ZGNhMGUzOWM3MTdiOTM5ZGMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjExZmJhNzg1MTgzMWYwNTExYzBjNjYzNGY1OGYyYjZkNWNjOTIwZGQ1ZDJjZTU1NTQyOGM0MzczZWM4ZjZjNjkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU2MTZjZGFkZDM5YzI0NjMwYjdiZjM3ZjQ2ZDQ3MzY1Y2Y4ZjMyY2JiMjRlN2Q3NDkyZGNiMjg5NTUxMGI0OGEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_3eba885f1f9642e5a091ab05165bcd2c",
+      "statement": "Source documents and citations record physical or digital archival records, books, or census pages, along with transcriptions, footnote texts, and citation links.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-domain/src/records.rs#L688-L705",
+          "version": "repo-lines-v1:sha256:f942af10fc3bfaaae1c22c2f2aabbb0b958e671ce7b444581d0e098158f3f4bc:eyJzZWxlY3RlZExpbmVDb3VudCI6MTgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjExN2JiZThkNWYwM2ZmZjA4NjQ2Y2Q1YWRiZjYwZDczOWJmYjVhNmViNmUwODQ2ZGNhMGUzOWM3MTdiOTM5ZGMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjExZmJhNzg1MTgzMWYwNTExYzBjNjYzNGY1OGYyYjZkNWNjOTIwZGQ1ZDJjZTU1NTQyOGM0MzczZWM4ZjZjNjkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRkNTM4MTZlMTM4YzBhY2RmNWI0YWI2NzQyYWU0OWZmMDI3NWYwMWMyMTc1N2FkOGMzOWY1NmIyODY1YzYwZTMifQ"
+        },
+        {
+          "resource": "repo://theogony-domain/src/records.rs#L713-L737",
+          "version": "repo-lines-v1:sha256:56003254a6d805901d6f2104c2e5c64d3e325fa7350223d95733876d332e8a3c:eyJzZWxlY3RlZExpbmVDb3VudCI6MjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImU4ZDg5ZDRmNDcyMmRlNGU2NWI5NDU2ZmQxZTg1NDUyY2VlYWU0ZTYwZGRhYjRlYjY0MGU3ZDVhNDhlOGYzMTUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjExZmJhNzg1MTgzMWYwNTExYzBjNjYzNGY1OGYyYjZkNWNjOTIwZGQ1ZDJjZTU1NTQyOGM0MzczZWM4ZjZjNjkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjU2MTZjZGFkZDM5YzI0NjMwYjdiZjM3ZjQ2ZDQ3MzY1Y2Y4ZjMyY2JiMjRlN2Q3NDkyZGNiMjg5NTUxMGI0OGEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_903cba1486b7453299f903cee609fdf2",
+      "statement": "Assertions link personas to specific claims or facts, carrying surety ratings and operational statuses (`active`, `disputed`, `rejected`, `proposed`) for non-destructive conflict handling.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-domain/src/records.rs#L996-L1012",
+          "version": "repo-lines-v1:sha256:566d5094bc2caec0828f56f076748ac9bacec5aa8f20859560d0a351c0a2a956:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ZDBlM2YxY2I2OTcxZDA0MzFhODViYzlkNmQ2ZDllZTBiZjg4MWRlNjVmOWQ2ZWNhYTE4NTI4YWJlMjA5MTciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjExZmJhNzg1MTgzMWYwNTExYzBjNjYzNGY1OGYyYjZkNWNjOTIwZGQ1ZDJjZTU1NTQyOGM0MzczZWM4ZjZjNjkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRkNTM4MTZlMTM4YzBhY2RmNWI0YWI2NzQyYWU0OWZmMDI3NWYwMWMyMTc1N2FkOGMzOWY1NmIyODY1YzYwZTMifQ"
+        }
+      ]
     }
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-09-24T01:32:08.824Z"
+    "at": "2026-09-24T17:16:43.480Z"
   }
 }

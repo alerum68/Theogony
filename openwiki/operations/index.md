@@ -1,3 +1,3 @@
 # Files
 
-- [Review Queue and Audit History](review-and-audit.md) - Guide to maintaining data hygiene through the Review Queue, navigating edit audit history, and executing selective reverts with resolution options.
+- [Review Queue & Audit History](review-and-audit.md) - Guide users and power users through unattached persona resolution, audit logging, and selective reverts with conflict resolution strategies.

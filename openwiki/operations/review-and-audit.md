@@ -1,8 +1,8 @@
 ---
 type: operational-guide
-title: Review Queue and Audit History
-description: Guide to maintaining data hygiene through the Review Queue, navigating edit audit history, and executing selective reverts with resolution options.
-tags: [review-queue, audit-history, selective-revert, data-hygiene, evidence-first]
+title: Review Queue & Audit History
+description: Guide users and power users through unattached persona resolution, audit logging, and selective reverts with conflict resolution strategies.
+tags: [review-queue, audit-history, selective-revert, data-hygiene, evidence-first, conflict-resolution]
 sources:
   - id: openwiki-source-f885bdcb87851a5066fb63b1
     resource: repo://theogony-app/src/commands/history.rs
@@ -14,18 +14,21 @@ sources:
     resource: repo://ui/src/components/RevertDialog.tsx
   - id: openwiki-source-bc2f9c24b5998e743b312c38
     resource: repo://ui/src/screens/ReviewQueue.tsx
-generated: { by: "openwiki/0.5.1", at: "2026-09-23T14:10:57.952Z" }
+verified:
+  - by: openwiki/0.5.1
+    at: 2026-09-24T17:16:43.480Z
+generated: { by: "openwiki/0.5.1", at: "2026-09-24T17:16:43.480Z" }
 ---
 
-# Review Queue and Audit History
+# Review Queue & Audit History
 
-OpenWiki and its underlying domain engine enforce rigorous evidence-first data integrity (`repo://openwiki/concepts/evidence-first-philosophy.md`). Because research data often arrives from disparate GEDCOM imports, source extractions, and manual annotations, records can occasionally become unattached or multi-cited. The **Review Queue** provides dedicated workflows to inspect and resolve these hygiene issues, while the **Edit History** and **Selective Revert** engine offer full auditability and safe undo capabilities with conflict resolution.
+OpenWiki and its underlying domain engine enforce rigorous evidence-first data integrity (`repo://openwiki/concepts/evidence-first-philosophy.md`). Because genealogical data often arrives from disparate GEDCOM imports, multi-archive extractions, and manual annotations, records can occasionally become unattached or multi-cited. The **Review Queue** (`repo://theogony-app/src/commands/review.rs`, `repo://ui/src/screens/ReviewQueue.tsx`) provides dedicated workflows to inspect and resolve these hygiene issues, while the **Edit History** (`repo://theogony-app/src/commands/history.rs`, `repo://ui/src/components/HistoryPanel.tsx`) and **Selective Revert** engine offer full auditability, conflict checking, and safe undo capabilities (`repo://ui/src/components/RevertDialog.tsx`).
 
 ---
 
-## 1. The Review Queue
+## 1. The Review Queue and Data Hygiene
 
-The Review Queue (`repo://ui/src/screens/ReviewQueue.tsx`, `repo://theogony-app/src/commands/review.rs`) helps researchers monitor and clean up entity relationships across core sections:
+The Review Queue helps researchers monitor and clean up entity relationships across core domain sections:
 
 1. **Unattached Personas**: Floating personas that have not yet been linked to a conclusion person. Researchers can inspect their claims and sources, and click **Attach…** (`repo://ui/src/components/AttachPersonaDialog.tsx`) to link them to an individual or create a new blank person. When attached, all assertions currently held by the persona are updated in a single atomic transaction (`log_action`) to carry the link (`repo://theogony-app/src/commands/review.rs#L176-L221`). If the persona has no existing assertions, a minimal `persona_name` assertion is created to hold the attachment.
 2. **Cited by Multiple Sources**: Personas whose evidence spans multiple source documents (`repo://theogony-app/src/commands/review.rs#L255-L302`). Researchers review these entries to determine whether citations represent independent corroboration or duplicate extractions.

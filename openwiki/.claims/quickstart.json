@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:77e7e1c0b813802aa45ecf45a29122e8a9bbae43612831e190724211ff2ff0ff",
+  "pageVersion": "sha256:d5ae9e3d728ab0694dca7e3863c7ff3a89e22195006ff95b58ce4a73b5175a92",
   "claims": [
     {
       "id": "claim_8b305b7eefbd472da3cf15717aa846d9",
@@ -8,7 +8,7 @@
       "evidence": [
         {
           "resource": "repo://Cargo.toml",
-          "version": "repo-file-v1:sha256:af24f4a20a07692922171c72d7ada29b21ab1de3d1f15649982f30f3c9aba505"
+          "version": "repo-file-v1:sha256:2f820b95a343fd7178ecba7a9df21c4de15028c98189c0d58eac9ce862ca975a"
         }
       ]
     },
@@ -18,7 +18,7 @@
       "evidence": [
         {
           "resource": "repo://theogony-domain/src/lib.rs",
-          "version": "repo-file-v1:sha256:45ce42b2f316d90607a59e0e4e6726e209a11c3cdb7706786d8221ab5ada9502"
+          "version": "repo-file-v1:sha256:ae5fd622bd7d26e5f37149e3775564a1a215ba88360035cbe1e7da84668601a6"
         }
       ]
     },
@@ -28,13 +28,13 @@
       "evidence": [
         {
           "resource": "repo://theogony-app/Cargo.toml",
-          "version": "repo-file-v1:sha256:3dc5f7911c5afd279620eb57b7f0767d615709a7a186c37f6660feb3c4b62719"
+          "version": "repo-file-v1:sha256:2f9a0e7281bed8a3a437e7ca0fc0f464939fcf3af11a9412122f8999772f7dbd"
         }
       ]
     }
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-09-23T15:32:56.517Z"
+    "at": "2026-09-24T17:16:43.480Z"
   }
 }
