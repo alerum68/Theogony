@@ -10,6 +10,9 @@ sources:
     resource: repo://theogony-db-sqlite/src/personas.rs
   - id: openwiki-source-f27b89db9906f12cec9ef142
     resource: repo://theogony-db-sqlite/src/sources.rs
+verified:
+  - by: openwiki/0.5.1
+    at: 2026-09-24T01:32:08.824Z
 generated: { by: "openwiki/0.5.1", at: "2026-09-17T16:00:11.458Z" }
 ---
 

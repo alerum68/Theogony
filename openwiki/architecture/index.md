@@ -1,3 +1,3 @@
 # Files
 
-- [System Overview & Architecture](system-overview.md) - Explain the high-level technical architecture of Theogony, detailing Tauri, React, SQLite, and the modular Rust crate layout.
+- [System Overview](system-overview.md) - High-level technical overview of Theogony's architecture and crates, detailing Tauri, React, SQLite, and the modular Rust workspace.

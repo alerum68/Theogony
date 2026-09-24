@@ -1,11 +1,8 @@
 ---
 type: architecture
-title: System Overview & Architecture
-description: Explain the high-level technical architecture of Theogony, detailing Tauri, React, SQLite, and the modular Rust crate layout.
+title: System Overview
+description: High-level technical overview of Theogony's architecture and crates, detailing Tauri, React, SQLite, and the modular Rust workspace.
 tags: [architecture, rust, tauri, react, sqlite, crates, system-overview]
-verified:
-  - by: openwiki/0.5.1
-    at: 2026-09-23T15:32:56.517Z
 sources:
   - id: openwiki-source-651d1fb6c9e49916a916ab51
     resource: repo://Cargo.toml
@@ -21,10 +18,13 @@ sources:
     resource: repo://theogony-domain/src/lib.rs
   - id: openwiki-source-436f4179fe22abf615d2f7d0
     resource: repo://ui/package.json
-generated: { by: "openwiki/0.5.1", at: "2026-09-23T15:32:56.517Z" }
+verified:
+  - by: openwiki/0.5.1
+    at: 2026-09-24T01:32:08.824Z
+generated: { by: "openwiki/0.5.1", at: "2026-09-24T01:32:08.824Z" }
 ---
 
-# System Overview & Architecture
+# System Overview
 
 Theogony is a high-performance, local-first genealogy desktop application engineered for rigorous evidence analysis, multi-user interchange, and historical family tree research. Built around a robust Rust backend and a native-feeling React/TypeScript desktop UI via Tauri [repo://theogony-app/Cargo.toml], Theogony separates pure domain logic, persistence, and GEDCOM interchange into discrete workspace crates [repo://Cargo.toml] while guaranteeing ACID-compliant SQLite storage.
 
