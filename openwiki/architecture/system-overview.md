@@ -18,9 +18,6 @@ sources:
     resource: repo://theogony-domain/src/lib.rs
   - id: openwiki-source-436f4179fe22abf615d2f7d0
     resource: repo://ui/package.json
-verified:
-  - by: openwiki/0.5.1
-    at: 2026-09-24T01:32:08.824Z
 generated: { by: "openwiki/0.5.1", at: "2026-09-24T01:32:08.824Z" }
 ---
 

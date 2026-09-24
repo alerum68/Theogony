@@ -2,25 +2,25 @@
   "schemaVersion": 1,
   "pages": {
     "/openwiki/architecture/system-overview.md": {
+      "gitHead": "0056bf63510cc395dc45915300f2b2adc2d4bc78",
+      "sourceFingerprint": "sha256:8b3f5a59ac234553d4006b02e5d40c17a09d8e3c1defe28443dc2f97e43e6415",
       "pageVersion": "sha256:5d49384f76237f5e8243864200c1db8cd430f4f475b16d095d382430d7d27f40",
       "completedBy": "openwiki/0.5.1",
-      "completedRunId": "e97686f8-364b-4823-a30d-19ddaeb1d09d",
-      "gitHead": "0056bf63510cc395dc45915300f2b2adc2d4bc78",
-      "sourceFingerprint": "sha256:8b3f5a59ac234553d4006b02e5d40c17a09d8e3c1defe28443dc2f97e43e6415"
+      "completedRunId": "e97686f8-364b-4823-a30d-19ddaeb1d09d"
     },
     "/openwiki/concepts/evidence-first-philosophy.md": {
       "pageVersion": "sha256:8c630cfe6367b0abc2c93a42a82b6e57f3e1abdc0b0a90fb14c071018e53bc42",
       "completedBy": "openwiki/0.5.1",
       "completedRunId": "e97686f8-364b-4823-a30d-19ddaeb1d09d",
-      "gitHead": "0056bf63510cc395dc45915300f2b2adc2d4bc78",
-      "sourceFingerprint": "sha256:8b3f5a59ac234553d4006b02e5d40c17a09d8e3c1defe28443dc2f97e43e6415"
+      "gitHead": "1116b24d07c57abb09fc1f3ff94be9d91e5eaf94",
+      "sourceFingerprint": "sha256:bf5826a4805d0e13d9377f5964750327919253b81afb3321b56b8ecc7e0e55da"
     },
     "/openwiki/integrations/gedcom-portability.md": {
+      "gitHead": "0056bf63510cc395dc45915300f2b2adc2d4bc78",
+      "sourceFingerprint": "sha256:8b3f5a59ac234553d4006b02e5d40c17a09d8e3c1defe28443dc2f97e43e6415",
       "pageVersion": "sha256:2f5e9f0e96b6852835f3a691e65e83c2cf477a654ba59251ef4321c9a1074044",
       "completedBy": "openwiki/0.5.1",
-      "completedRunId": "e97686f8-364b-4823-a30d-19ddaeb1d09d",
-      "gitHead": "0056bf63510cc395dc45915300f2b2adc2d4bc78",
-      "sourceFingerprint": "sha256:8b3f5a59ac234553d4006b02e5d40c17a09d8e3c1defe28443dc2f97e43e6415"
+      "completedRunId": "e97686f8-364b-4823-a30d-19ddaeb1d09d"
     },
     "/openwiki/operations/review-and-audit.md": {
       "gitHead": "01b0bbfdca207d0d6e836837ccb8798fc4ed2b1d",
