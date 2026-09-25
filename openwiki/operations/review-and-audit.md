@@ -1,7 +1,7 @@
 ---
 type: operational-guide
-title: Review Queue & Audit History
-description: Guide users and power users through unattached persona resolution, audit logging, and selective reverts with conflict resolution strategies.
+title: Review, Audit & Selective Revert
+description: Comprehensive guide on data hygiene in the Review Queue, auditing edit logs, and handling conflict resolution and selective reverts.
 tags: [review-queue, audit-history, selective-revert, data-hygiene, evidence-first, conflict-resolution]
 sources:
   - id: openwiki-source-f885bdcb87851a5066fb63b1
@@ -14,10 +14,13 @@ sources:
     resource: repo://ui/src/components/RevertDialog.tsx
   - id: openwiki-source-bc2f9c24b5998e743b312c38
     resource: repo://ui/src/screens/ReviewQueue.tsx
-generated: { by: "openwiki/0.5.1", at: "2026-09-24T17:16:43.480Z" }
+verified:
+  - by: openwiki/0.5.1
+    at: 2026-09-25T15:04:19.343Z
+generated: { by: "openwiki/0.5.1", at: "2026-09-25T15:04:19.343Z" }
 ---
 
-# Review Queue & Audit History
+# Review, Audit & Selective Revert
 
 OpenWiki and its underlying domain engine enforce rigorous evidence-first data integrity (`repo://openwiki/concepts/evidence-first-philosophy.md`). Because genealogical data often arrives from disparate GEDCOM imports, multi-archive extractions, and manual annotations, records can occasionally become unattached or multi-cited. The **Review Queue** (`repo://theogony-app/src/commands/review.rs`, `repo://ui/src/screens/ReviewQueue.tsx`) provides dedicated workflows to inspect and resolve these hygiene issues, while the **Edit History** (`repo://theogony-app/src/commands/history.rs`, `repo://ui/src/components/HistoryPanel.tsx`) and **Selective Revert** engine offer full auditability, conflict checking, and safe undo capabilities (`repo://ui/src/components/RevertDialog.tsx`).
 

@@ -1,3 +1,3 @@
 # Files
 
-- [Review Queue & Audit History](review-and-audit.md) - Guide users and power users through unattached persona resolution, audit logging, and selective reverts with conflict resolution strategies.
+- [Review, Audit & Selective Revert](review-and-audit.md) - Comprehensive guide on data hygiene in the Review Queue, auditing edit logs, and handling conflict resolution and selective reverts.

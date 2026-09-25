@@ -1,17 +1,7 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:021cd0eea22647e5c10d51619173ed3fa86c3fc0f4a72071790e49242093981c",
+  "pageVersion": "sha256:918746ee82f3bc364d79c536847b2151e0bc0ff955695d11182dc1df07bd4afe",
   "claims": [
-    {
-      "id": "claim_71f280f3b5544b898fa0f111a8c2d147",
-      "statement": "Theogony-domain owns pure domain records, identifiers, provenance models, and error types with zero external storage or persistence dependencies.",
-      "evidence": [
-        {
-          "resource": "repo://theogony-domain/src/lib.rs#L1-L28",
-          "version": "repo-lines-v1:sha256:ae5fd622bd7d26e5f37149e3775564a1a215ba88360035cbe1e7da84668601a6:eyJzZWxlY3RlZExpbmVDb3VudCI6NDgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEyZmE2ODhiODI0NDdhMjI0NGMwZDJlN2YzN2EzMzM4ODk4N2NkNmM5M2IxN2I3NGEyYzBhYzc3MWE0YTdiMDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFhMWQxYTYzMzkwMjI5Yzc5ODM0N2U4M2EwNDA1NDQxYzk0MDAwMzUyODRhZDE2OGMxYmY2Y2RmMWQ3MGEzNzAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
-        }
-      ]
-    },
     {
       "id": "claim_e31f1ff7ecd847ab9b8150d7df553554",
       "statement": "The desktop application utilizes Tauri to bridge a React and TypeScript frontend with Rust backend command handlers, event brokers, and generated TypeScript bindings.",
@@ -123,10 +113,20 @@
           "version": "repo-file-v1:sha256:2f820b95a343fd7178ecba7a9df21c4de15028c98189c0d58eac9ce862ca975a"
         }
       ]
+    },
+    {
+      "id": "claim_38977825143444e28ad00958c58f681e",
+      "statement": "Theogony-domain owns pure domain records, strongly typed identifiers, provenance models, DNA/WATO calculations, and error types with zero external storage or persistence dependencies.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-domain/src/lib.rs#L1-L48",
+          "version": "repo-lines-v1:sha256:3613d02d150c7c17366a75caf852faa42bcc48ec4ed8f39d9581c93ddff994e3:eyJzZWxlY3RlZExpbmVDb3VudCI6NDgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEyZmE2ODhiODI0NDdhMjI0NGMwZDJlN2YzN2EzMzM4ODk4N2NkNmM5M2IxN2I3NGEyYzBhYzc3MWE0YTdiMDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFhMWQxYTYzMzkwMjI5Yzc5ODM0N2U4M2EwNDA1NDQxYzk0MDAwMzUyODRhZDE2OGMxYmY2Y2RmMWQ3MGEzNzAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
     }
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-09-24T17:16:43.480Z"
+    "at": "2026-09-25T15:04:19.343Z"
   }
 }
