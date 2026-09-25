@@ -1,8 +1,11 @@
 ---
 type: concept
-title: Data Portability & GEDCOM Interchange
-description: Comprehensive reference on GEDCOM 5.5.1 and GEDCOM 7 import/export, complete database backups (.theb), and lossless data packages (.tgpkg).
-tags: [gedcom, porting, backup, interchange, data-portability, vendors]
+title: GEDCOM Portability & Data Interchange
+description: Comprehensive reference on GEDCOM 5.5.1 and GEDCOM 7 import/export, complete database backups (.theb), lossless data packages (.tgpkg), and vendor extension preservation.
+tags: [gedcom, porting, backup, interchange, data-portability, vendors, gedzip, tgpkg, theb]
+verified:
+  - by: openwiki/0.5.1
+    at: 2026-09-25T18:48:04.838Z
 sources:
   - id: openwiki-source-63e7659a6ca9bd405fc03001
     resource: repo://theogony-app/src/commands/backup.rs
@@ -20,13 +23,10 @@ sources:
     resource: repo://theogony-gedcom/src/mapper/naming.rs
   - id: openwiki-source-3cae5790683d51118c7597cf
     resource: repo://theogony-gedcom/src/vendor/mod.rs
-generated: { by: "openwiki/0.5.1", at: "2026-09-17T16:00:11.458Z" }
-verified:
-  - by: openwiki/0.5.1
-    at: 2026-09-25T15:04:19.343Z
+generated: { by: "openwiki/0.5.1", at: "2026-09-25T18:48:04.838Z" }
 ---
 
-# Data Portability & GEDCOM Interchange
+# GEDCOM Portability & Data Interchange
 
 Theogony implements a robust, multi-tier data portability architecture designed to ensure zero data loss when moving genealogical data between Theogony and other desktop software, web services, or collaborative partners. Interchange spans four primary mechanisms:
 
@@ -42,7 +42,7 @@ Theogony implements a robust, multi-tier data portability architecture designed 
 Portability is divided into three architectural layers to maintain clean separation of concerns:
 
 - **`theogony-gedcom`**: A pure parsing, serialization, and mapping crate. It parses GEDCOM text into `GedcomDocument` structures, runs vendor signature detection, computes fact-type drafts for extension tags, and maps between domain export shapes and GEDCOM records. It contains **no database access** and knows nothing about SQLite or Tauri.
-- **`theogony-db-sqlite`**: Handles SQLite storage, schema migrations (`migrations::ALL`), and online backup/snapshot routines (`export_theb_snapshot`, `export_snapshot`).
+- **`theogony-db-sqlite`**: Handles SQLite storage, schema migrations (`migrations::ALL`), and online backup/snapshot routines (`export_theb_snapshot`, `export_snapshot`), as well as importing match trees and evidentiary provenance structures (such as DNA match tree imports referencing shared builtin fact types like `Birth` via `theogony-db-sqlite/src/dna_import.rs`).
 - **`theogony-app`**: Tauri command handlers (`crate::commands::interchange`, `crate::commands::backup`) that bridge the live database (`TreeRepository`) with pure export/import documents, orchestrating transaction boundaries, file locks, and temp-file renaming.
 
 ```mermaid
@@ -69,7 +69,7 @@ Plain GEDCOM interchange supports both legacy **GEDCOM 5.5.1** and modern **GEDC
 ### Import (`ImportGed`)
 - **Parsing**: Reads the source file and parses it via `GedcomDocument::parse(&text)` (`repo://theogony-app/src/commands/interchange/plain_ged.rs#L79-L80`).
 - **Vendor Detection & Fact Drafting**: Detects the originating software vendor and generates required `FactTypeDraft` definitions for any unrecognized extension tags before creating the target tree database (`repo://theogony-app/src/commands/interchange/plain_ged.rs#L85-L91`).
-- **Unsourced Persona Routing**: Facts and assertions lacking explicit source citations are routed through a synthetic "Imported GEDCOM, no source cited" persona to maintain evidentiary auditability.
+- **Unsourced Persona Routing**: Facts and assertions lacking explicit source citations are routed through a synthetic "Imported GEDCOM, no source cited" persona to maintain evidentiary auditability (matching the transactional granularity seen across interchange and DNA match tree imports in `theogony-db-sqlite/src/dna_import.rs`).
 
 ---
 

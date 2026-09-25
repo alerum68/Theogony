@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:495c2c52690c48b85b8861fe4e8bc820eba7cf733c47a0a8708e5577cab77459",
+  "pageVersion": "sha256:13eb694610716c650b299b5d11323edc6962e1afe0991823041e3e2cc802d9a0",
   "claims": [
     {
       "id": "claim_aaf89ff87a82456581abe1f2da1ed2c2",
@@ -115,10 +115,38 @@
           "version": "repo-lines-v1:sha256:566d5094bc2caec0828f56f076748ac9bacec5aa8f20859560d0a351c0a2a956:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ZDBlM2YxY2I2OTcxZDA0MzFhODViYzlkNmQ2ZDllZTBiZjg4MWRlNjVmOWQ2ZWNhYTE4NTI4YWJlMjA5MTciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjExZmJhNzg1MTgzMWYwNTExYzBjNjYzNGY1OGYyYjZkNWNjOTIwZGQ1ZDJjZTU1NTQyOGM0MzczZWM4ZjZjNjkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRkNTM4MTZlMTM4YzBhY2RmNWI0YWI2NzQyYWU0OWZmMDI3NWYwMWMyMTc1N2FkOGMzOWY1NmIyODY1YzYwZTMifQ"
         }
       ]
+    },
+    {
+      "id": "claim_4485d84ddd8649b68a8190955143ff90",
+      "statement": "Theogony implements a four-tier evidence model separating raw source documents, extracted personas, assertions, and concluded individuals and families.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-domain/src/records.rs#L343-L353",
+          "version": "repo-lines-v1:sha256:b5abe23f97e08b4ac209ac7ce49e79bc0fd48d08751512f554626baae5019e72:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImExOTliYWM4OGIwZGQ1YWRlNDQxNTFlZDQyN2NlYmNhZmNmNmY2Y2FkNGVmOWRkZTA4MGY5OTViYzU1ZDk0ZjciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjExZmJhNzg1MTgzMWYwNTExYzBjNjYzNGY1OGYyYjZkNWNjOTIwZGQ1ZDJjZTU1NTQyOGM0MzczZWM4ZjZjNjkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRkNTM4MTZlMTM4YzBhY2RmNWI0YWI2NzQyYWU0OWZmMDI3NWYwMWMyMTc1N2FkOGMzOWY1NmIyODY1YzYwZTMifQ"
+        },
+        {
+          "resource": "repo://theogony-domain/src/records.rs#L480-L524",
+          "version": "repo-lines-v1:sha256:729993e2c472ff4ddeb21e9b79821475b5e1944091fa35708838c12ba2b8cfdb:eyJzZWxlY3RlZExpbmVDb3VudCI6NDUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRlZmJlYTBlMjgxZjhlYjkwMDEyNzdkNzM5MDM1NzU4MWFmMzE1NjhiZWE3MDgyYWY2NzY0NThhZGQyN2E3NzMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjExZmJhNzg1MTgzMWYwNTExYzBjNjYzNGY1OGYyYjZkNWNjOTIwZGQ1ZDJjZTU1NTQyOGM0MzczZWM4ZjZjNjkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRkNTM4MTZlMTM4YzBhY2RmNWI0YWI2NzQyYWU0OWZmMDI3NWYwMWMyMTc1N2FkOGMzOWY1NmIyODY1YzYwZTMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_36600f64439e47168ae243dd0d099730",
+      "statement": "Assertions, persona-parent links, and persona-spouse links support non-destructive conflict handling via active, disputed, and rejected operational statuses.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-domain/src/records.rs#L1006-L1022",
+          "version": "repo-lines-v1:sha256:566d5094bc2caec0828f56f076748ac9bacec5aa8f20859560d0a351c0a2a956:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ZDBlM2YxY2I2OTcxZDA0MzFhODViYzlkNmQ2ZDllZTBiZjg4MWRlNjVmOWQ2ZWNhYTE4NTI4YWJlMjA5MTciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjExZmJhNzg1MTgzMWYwNTExYzBjNjYzNGY1OGYyYjZkNWNjOTIwZGQ1ZDJjZTU1NTQyOGM0MzczZWM4ZjZjNjkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRkNTM4MTZlMTM4YzBhY2RmNWI0YWI2NzQyYWU0OWZmMDI3NWYwMWMyMTc1N2FkOGMzOWY1NmIyODY1YzYwZTMifQ"
+        },
+        {
+          "resource": "repo://theogony-domain/src/records.rs#L495-L524",
+          "version": "repo-lines-v1:sha256:2474dfff9ed1119152d36eeed28699b7374437f7b411678aafdcb15bf9de5697:eyJzZWxlY3RlZExpbmVDb3VudCI6MzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM0ZmI4M2UxMGExYTc3YmQ3OTU2NmRhZGNlN2RkNjI1MzU0NTBmNzE3Nzc2MGIyODMxMDlmN2YxMGM4NGY0OTkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjExZmJhNzg1MTgzMWYwNTExYzBjNjYzNGY1OGYyYjZkNWNjOTIwZGQ1ZDJjZTU1NTQyOGM0MzczZWM4ZjZjNjkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRkNTM4MTZlMTM4YzBhY2RmNWI0YWI2NzQyYWU0OWZmMDI3NWYwMWMyMTc1N2FkOGMzOWY1NmIyODY1YzYwZTMifQ"
+        }
+      ]
     }
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-09-25T15:04:19.343Z"
+    "at": "2026-09-25T18:48:04.838Z"
   }
 }

@@ -10,10 +10,10 @@ sources:
     resource: repo://theogony-app/Cargo.toml
   - id: openwiki-source-61c917696a7dbf739bd28821
     resource: repo://theogony-domain/src/lib.rs
-generated: { by: "openwiki/0.5.1", at: "2026-09-23T15:32:56.517Z" }
 verified:
   - by: openwiki/0.5.1
-    at: 2026-09-25T15:04:19.343Z
+    at: 2026-09-25T18:48:04.838Z
+generated: { by: "openwiki/0.5.1", at: "2026-09-25T18:48:04.838Z" }
 ---
 
 # Theogony Quickstart & Navigation Guide
@@ -46,10 +46,10 @@ graph TD
 ## Major Wiki Domains
 
 ### 1. Architecture & System Design
-- **[System Overview & Architecture](/openwiki/architecture/system-overview.md):** High-level architectural overview of Theogony's local-first genealogy platform, workspace crate layout (`theogony-domain`, `theogony-ports`, `theogony-db-sqlite`, `theogony-gedcom`, `theogony-dna`, `theogony-ai`, `theogony-app`), Tauri desktop shell, and persistence spine.
+- **[System Overview & Architecture](/openwiki/architecture/system-overview.md):** High-level architectural overview of Theogony's local-first genealogy platform, workspace crate layout (`theogony-domain`, `theogony-ports`, `theogony-db-sqlite`, `theogony-gedcom`, `theogony-dna`, `theogony-ai`, `theogony-app`), Tauri desktop shell, and persistence spine [repo://Cargo.toml, repo://theogony-app/Cargo.toml].
 
 ### 2. Concepts & Methodology
-- **[Evidence-First Philosophy & GPS Standards](/openwiki/concepts/evidence-first-philosophy.md):** Core philosophical framework and Genealogical Proof Standard (GPS) implementation in Theogony, detailing the four-layer hierarchy separating source documents, extracted personas, asserted claims, and concluded historical individuals and families.
+- **[Evidence-First Philosophy & GPS Standards](/openwiki/concepts/evidence-first-philosophy.md):** Core philosophical framework and Genealogical Proof Standard (GPS) implementation in Theogony, detailing the four-layer hierarchy separating source documents, extracted personas, asserted claims, and concluded historical individuals and families [repo://theogony-domain/src/lib.rs].
 
 ### 3. User Workflows
 - **[Core User Workflows](/openwiki/workflows/user-workflows.md):** Step-by-step user guidance on navigating the OpenWiki and application interface, recording and citing historical facts, assigning surety ratings, and structuring family relationships.

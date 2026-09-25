@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:918746ee82f3bc364d79c536847b2151e0bc0ff955695d11182dc1df07bd4afe",
+  "pageVersion": "sha256:85d521ec12e670f95ae9be420bbeead8d7cc34447113303df468e3718ff73f4c",
   "claims": [
     {
       "id": "claim_e31f1ff7ecd847ab9b8150d7df553554",
@@ -115,18 +115,18 @@
       ]
     },
     {
-      "id": "claim_38977825143444e28ad00958c58f681e",
-      "statement": "Theogony-domain owns pure domain records, strongly typed identifiers, provenance models, DNA/WATO calculations, and error types with zero external storage or persistence dependencies.",
+      "id": "claim_a227b00788ca4591a1417d602de3b6bf",
+      "statement": "Theogony-domain owns pure domain records, strongly typed identifiers, provenance models, DNA bucketing/relationship/WATO models, and error types with zero external storage or persistence dependencies.",
       "evidence": [
         {
           "resource": "repo://theogony-domain/src/lib.rs#L1-L48",
-          "version": "repo-lines-v1:sha256:3613d02d150c7c17366a75caf852faa42bcc48ec4ed8f39d9581c93ddff994e3:eyJzZWxlY3RlZExpbmVDb3VudCI6NDgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEyZmE2ODhiODI0NDdhMjI0NGMwZDJlN2YzN2EzMzM4ODk4N2NkNmM5M2IxN2I3NGEyYzBhYzc3MWE0YTdiMDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFhMWQxYTYzMzkwMjI5Yzc5ODM0N2U4M2EwNDA1NDQxYzk0MDAwMzUyODRhZDE2OGMxYmY2Y2RmMWQ3MGEzNzAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+          "version": "repo-lines-v1:sha256:600f73bcd2b8caacc42402e43f8b944108cec905b870153b13da00e120e0da07:eyJzZWxlY3RlZExpbmVDb3VudCI6NDgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEyZmE2ODhiODI0NDdhMjI0NGMwZDJlN2YzN2EzMzM4ODk4N2NkNmM5M2IxN2I3NGEyYzBhYzc3MWE0YTdiMDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFhMWQxYTYzMzkwMjI5Yzc5ODM0N2U4M2EwNDA1NDQxYzk0MDAwMzUyODRhZDE2OGMxYmY2Y2RmMWQ3MGEzNzAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
         }
       ]
     }
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-09-25T15:04:19.343Z"
+    "at": "2026-09-25T18:48:04.838Z"
   }
 }

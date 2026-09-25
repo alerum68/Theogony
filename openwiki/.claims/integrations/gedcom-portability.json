@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:72f610d9022698cc17514daf5ca80672a5ab75960d455cb35c952afde8c194f1",
+  "pageVersion": "sha256:4c5d129c4fd18c455351fa5fdf11cc3ae639b149865edd8aeb57d51bc3d62181",
   "claims": [
     {
       "id": "claim_11087e4485e24b57a9ac887ae928c236",
@@ -57,10 +57,66 @@
           "version": "repo-file-v1:sha256:9d64748fe2462c29b630c64e52a4754384d01a47cc9bed1d46b894ec8d42bb92"
         }
       ]
+    },
+    {
+      "id": "claim_6e0c4e65e29b4c39a308e4fd22a0023e",
+      "statement": "Complete database backups (.theb) are compressed tar+gzip archives containing tree.sqlite and manifest.json produced safely via SQLite's Online Backup API with atomic staging file replacement.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-app/src/commands/backup.rs",
+          "version": "repo-file-v1:sha256:3e969f0de93a85675d76e8d32b7e37289e0cd85e3f56c3c8c1096a65df8a3697"
+        }
+      ]
+    },
+    {
+      "id": "claim_2552329de22643dea6401eeab668e27a",
+      "statement": "Lossless data packages (.tgpkg) are GEDZIP-compliant ZIP archives embedding manifest.json, tree.ged, media attachments, and evidence.sqlite for evidentiary provenance.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-app/src/commands/interchange/package.rs",
+          "version": "repo-file-v1:sha256:0007d9082dbd2207c5a522acbc596032712470e59bcaea1b037ca17e973b8c03"
+        }
+      ]
+    },
+    {
+      "id": "claim_833f289c778849859a2eb4975b63e6c3",
+      "statement": "GEDCOM 5.5.1 and GEDCOM 7 import and export handle document assembly, sex normalization, custom event fallback, and unsourced persona routing.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-app/src/commands/interchange/assemble.rs",
+          "version": "repo-file-v1:sha256:cc02619b0783c6cdff19bf44a006994a53a48ee3989289d9a2acc14ce27b8ab9"
+        },
+        {
+          "resource": "repo://theogony-app/src/commands/interchange/plain_ged/mod.rs",
+          "version": "repo-file-v1:sha256:c20f6676c6a3af380717a835182c491905ba6c705a52ed9cbe4bc23c4e5cb4b1"
+        },
+        {
+          "resource": "repo://theogony-gedcom/src/mapper/export.rs",
+          "version": "repo-file-v1:sha256:5d59c91f79b650e619647505d3ef9c3d0e17657996b39ec3c5c1ae70196673ae"
+        },
+        {
+          "resource": "repo://theogony-gedcom/src/mapper/import.rs",
+          "version": "repo-file-v1:sha256:9d64748fe2462c29b630c64e52a4754384d01a47cc9bed1d46b894ec8d42bb92"
+        }
+      ]
+    },
+    {
+      "id": "claim_ac60ca984f7e4f71bf5785579c96bae7",
+      "statement": "Vendor extension tags are preserved through a four-tier strategy covering standard tags, vendor signature registry mapping, event type fallbacks, and mechanical name conversion.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-gedcom/src/mapper/naming.rs",
+          "version": "repo-file-v1:sha256:52738aee790f9552cf4bb53928ce1f5b160d7c71c7ef235576123eaf914d75cd"
+        },
+        {
+          "resource": "repo://theogony-gedcom/src/vendor/mod.rs",
+          "version": "repo-file-v1:sha256:8c088491c807afdb05a8ca26d457ec1dde9a7ab6810456d6883b3895906a26f9"
+        }
+      ]
     }
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-09-25T15:04:19.343Z"
+    "at": "2026-09-25T18:48:04.838Z"
   }
 }

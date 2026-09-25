@@ -20,8 +20,8 @@ sources:
     resource: repo://ui/package.json
 verified:
   - by: openwiki/0.5.1
-    at: 2026-09-25T15:04:19.343Z
-generated: { by: "openwiki/0.5.1", at: "2026-09-25T15:04:19.343Z" }
+    at: 2026-09-25T18:48:04.838Z
+generated: { by: "openwiki/0.5.1", at: "2026-09-25T18:48:04.838Z" }
 ---
 
 # System Overview
@@ -46,7 +46,7 @@ graph TD
 
     subgraph Backend ["Rust Workspace Backend"]
         Ports["theogony-ports\n(Traits & Storage Interfaces)"]
-        Domain["theogony-domain\n(Pure Domain Records, IDs, Provenance)"]
+        Domain["theogony-domain\n(Pure Domain Records, IDs, DNA, WATO, Provenance)"]
         DB["theogony-db-sqlite\n(SQLite Persistence Spine)"]
         Gedcom["theogony-gedcom\n(GEDCOM 7 & .tgpkg Interchange)"]
         AI["theogony-ai\n(AI Analysis & Synthesis)"]
@@ -82,8 +82,8 @@ graph TD
 The Rust workspace (`Cargo.toml`) is organized into eight specialized crates enforcing strict modular boundaries [repo://Cargo.toml]:
 
 1. **`theogony-domain`**
-   - **Purpose:** Pure domain models, record structs (`Individual`, `Family`, `Fact`, `Citation`, `SourceDocument`, `Place`, `Repository`), strongly typed identifiers, and error enums [repo://theogony-domain/src/lib.rs].
-   - **Invariants:** Zero external data-shape or database dependencies; safe to compile anywhere core genealogical entities are needed.
+   - **Purpose:** Pure domain models, record structs (`Individual`, `Family`, `Fact`, `Citation`, `SourceDocument`, `Place`, `Repository`), strongly typed identifiers, DNA bucketing/relationship/WATO models, and error types [repo://theogony-domain/src/lib.rs].
+   - **Invariants:** Zero external data-shape or database persistence dependencies; safe to compile anywhere core genealogical entities and DNA algorithms are needed.
 
 2. **`theogony-ports`**
    - **Purpose:** Trait definitions and repository interfaces defining the contract between application execution logic and storage implementations.
@@ -98,7 +98,7 @@ The Rust workspace (`Cargo.toml`) is organized into eight specialized crates enf
    - **Purpose:** Local and cloud-assisted AI analysis helpers, AI override tracking, and Terms of Service (ToS) state management.
 
 6. **`theogony-dna`**
-   - **Purpose:** DNA segment mapping, chromosome browser calculations, genetic match bucketing, and WATO (What Are The Odds) hypothesis scoring.
+   - **Purpose:** DNA segment mapping, chromosome browser calculations, genetic match bucketing, Y-STR marker analysis, and WATO (What Are The Odds) hypothesis scoring.
 
 7. **`theogony-haplogroup`**
    - **Purpose:** Haplogroup calculations and phylogenetic branch analysis.

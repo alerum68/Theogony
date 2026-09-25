@@ -16,7 +16,7 @@ sources:
     resource: repo://ui/src/screens/ReviewQueue.tsx
 verified:
   - by: openwiki/0.5.1
-    at: 2026-09-25T15:04:19.343Z
+    at: 2026-09-25T18:48:04.838Z
 generated: { by: "openwiki/0.5.1", at: "2026-09-25T15:04:19.343Z" }
 ---
 

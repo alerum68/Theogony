@@ -1,8 +1,8 @@
 ---
 type: concept
-title: Core User Workflows
-description: Step-by-step user guidance on navigating the OpenWiki interface, citing facts, surety ratings, and managing family structures.
-tags: [workflows, navigation, interface, facts, surety, family, user-guide]
+title: User Workflows
+description: Step-by-step user guides for core genealogical tasks in Theogony, including interface navigation, citing facts with surety ratings, family structuring, and DNA/Y-STR screening and chromosome browser features.
+tags: [workflows, navigation, interface, facts, surety, family, dna, y-str, chromosome-browser, user-guide]
 sources:
   - id: openwiki-source-d391847d363fa47891e4e7d7
     resource: repo://ui/src/components/EventDialog.tsx
@@ -16,13 +16,13 @@ sources:
     resource: repo://ui/src/components/RelationshipsPanel.tsx
   - id: openwiki-source-581ccfdbc4f29f5dcf09c2df
     resource: repo://ui/src/screens/People.tsx
-generated: { by: "openwiki/0.5.1", at: "2026-09-24T17:16:43.480Z" }
 verified:
   - by: openwiki/0.5.1
-    at: 2026-09-25T15:04:19.343Z
+    at: 2026-09-25T18:48:04.838Z
+generated: { by: "openwiki/0.5.1", at: "2026-09-25T18:48:04.838Z" }
 ---
 
-The OpenWiki genealogical workbench provides an evidence-first interface for exploring individuals, asserting and citing historical facts, managing surety ratings, and structuring family relationships. This page documents the core user workflows for navigating the application interface and performing genealogical data entry.
+The OpenWiki genealogical workbench provides an evidence-first interface for exploring individuals, asserting and citing historical facts, managing surety ratings, structuring family relationships, and analyzing DNA match data, Y-STR markers, and chromosome segments. This page documents core user workflows for navigating the application interface and performing genealogical and genetic genealogy data entry.
 
 ## Interface Navigation
 
@@ -33,6 +33,7 @@ flowchart TD
     Start([Launch OpenWiki]) --> Shell[App Shell & Dock Workbench]
     Shell --> PeopleList[People Screen / Data Grid]
     Shell --> TreeView[Family View / Pedigree Canvas]
+    Shell --> DnaScreen[DNA Screening & Chromosome Browser]
     
     PeopleList -->|Click Row / Details| PersonDetails[Person Details Panel]
     TreeView -->|Click Person Node| PersonDetails
@@ -45,6 +46,10 @@ flowchart TD
     
     EventDialog --> CiteFact[Cite Fact & Attach Source]
     RelativePicker --> AddRel[Add Relative Link]
+    
+    DnaScreen -->|Relationship Probability| Prob[Relationship Probability Matrix]
+    DnaScreen -->|Chromosome Browser| Segments[Segment Visualization]
+    DnaScreen -->|Y-STR Screening| YStr[Y-STR Marker Distances]
 ```
 
 ### 1. Tree Navigator & Family View
@@ -106,3 +111,25 @@ Family structuring is managed through the **Relationships Panel** (`Relationship
 ### 3. Custom Facts & Jurisdictions
 - **Fact Types Manager**: Users can define custom fact types, specify applicability (individual vs. family), and configure custom field schemas (`FactTypesManagerDialog`).
 - **Jurisdictions & Places**: Places and historical jurisdictions are managed via dedicated place editors and smart inputs (`SmartPlaceInput`), ensuring geographic accuracy across life events.
+
+---
+
+## DNA & Y-STR Screening and Chromosome Browser
+
+Theogony includes advanced genetic genealogy workflows for importing DNA test kits (`DnaImportDialog.tsx`), evaluating relationship probabilities (`RelationshipProbability.tsx`), screening Y-STR marker distances, and exploring shared chromosomal segments.
+
+### 1. Importing DNA Kits and Matches
+- **DNA Import Wizard**: Users import DNA match exports from providers such as AncestryDNA, FTDNA, and GEDmatch via `import_dna_export` (`dna.rs`).
+- **Kit Linking**: Match kits are linked to home kits or specific repository individuals (`HomeKitLink`), creating unsourced persona records or attaching matches to existing individuals for tree integration.
+
+### 2. Relationship Probability & Match Analysis (`RelationshipProbability.tsx`)
+- **Shared cM Calculations**: Researchers enter shared centimorgan (cM) values to calculate relationship probabilities and expected degrees of relatedness (`calculateRelationshipProbabilities`).
+- **Filtering by Side and Region**: Matches can be filtered by match kit, paternal/maternal/both sides (`SIDE_LABELS`), and geographic ethnicity regions (`summarizeRegions`).
+- **Match Notes & Tags**: Users manage match annotations (`DnaMatchNotesDialog`) and bucket matches into genetic networks or clusters (`bucketDnaMatches`).
+
+### 3. Y-STR Screening & Marker Distances
+- **Y-STR Distance Evaluation**: Compares short tandem repeat (STR) marker profiles across male-lineage kits (`listYStrDistances`).
+- **Genetic Distance Thresholds**: Evaluates panel marker differences (e.g., 37, 67, or 111 markers) to estimate common ancestor generational distance for surname and haplogroup projects.
+
+### 4. Chromosome Browser (`DnaChromosomeBrowser.tsx`)
+- **Segment Visualization**: Displays shared DNA segments across chromosomes 1–22 and X, allowing researchers to triangulate common ancestors among multiple DNA matches sharing overlapping segment coordinates.

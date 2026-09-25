@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:be2db8c3ded8a5abd3792a846c5e045525b3ba0d02b8eab543a1fc5654958bdc",
+  "pageVersion": "sha256:2e90ec0c72f3ea3198d2db5ca2339507e89309faf3d73506428f771aa13a546e",
   "claims": [
     {
       "id": "claim_8b305b7eefbd472da3cf15717aa846d9",
@@ -18,7 +18,7 @@
       "evidence": [
         {
           "resource": "repo://theogony-domain/src/lib.rs",
-          "version": "repo-file-v1:sha256:3613d02d150c7c17366a75caf852faa42bcc48ec4ed8f39d9581c93ddff994e3"
+          "version": "repo-file-v1:sha256:600f73bcd2b8caacc42402e43f8b944108cec905b870153b13da00e120e0da07"
         }
       ]
     },
@@ -35,6 +35,6 @@
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-09-25T15:04:19.343Z"
+    "at": "2026-09-25T18:48:04.838Z"
   }
 }
