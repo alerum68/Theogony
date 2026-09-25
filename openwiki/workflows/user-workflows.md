@@ -16,9 +16,6 @@ sources:
     resource: repo://ui/src/components/RelationshipsPanel.tsx
   - id: openwiki-source-581ccfdbc4f29f5dcf09c2df
     resource: repo://ui/src/screens/People.tsx
-verified:
-  - by: openwiki/0.5.1
-    at: 2026-09-24T17:16:43.480Z
 generated: { by: "openwiki/0.5.1", at: "2026-09-24T17:16:43.480Z" }
 ---
 

@@ -21,9 +21,6 @@ sources:
   - id: openwiki-source-3cae5790683d51118c7597cf
     resource: repo://theogony-gedcom/src/vendor/mod.rs
 generated: { by: "openwiki/0.5.1", at: "2026-09-17T16:00:11.458Z" }
-verified:
-  - by: openwiki/0.5.1
-    at: 2026-09-24T17:16:43.480Z
 ---
 
 # Data Portability & GEDCOM Interchange
