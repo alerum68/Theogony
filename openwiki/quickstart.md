@@ -10,9 +10,6 @@ sources:
     resource: repo://theogony-app/Cargo.toml
   - id: openwiki-source-61c917696a7dbf739bd28821
     resource: repo://theogony-domain/src/lib.rs
-verified:
-  - by: openwiki/0.5.1
-    at: 2026-09-25T18:48:04.838Z
 generated: { by: "openwiki/0.5.1", at: "2026-09-25T18:48:04.838Z" }
 ---
 

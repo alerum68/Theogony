@@ -14,9 +14,6 @@ sources:
     resource: repo://ui/src/components/RevertDialog.tsx
   - id: openwiki-source-bc2f9c24b5998e743b312c38
     resource: repo://ui/src/screens/ReviewQueue.tsx
-verified:
-  - by: openwiki/0.5.1
-    at: 2026-09-25T18:48:04.838Z
 generated: { by: "openwiki/0.5.1", at: "2026-09-25T15:04:19.343Z" }
 ---
 

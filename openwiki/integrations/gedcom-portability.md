@@ -3,9 +3,6 @@ type: concept
 title: GEDCOM Portability & Data Interchange
 description: Comprehensive reference on GEDCOM 5.5.1 and GEDCOM 7 import/export, complete database backups (.theb), lossless data packages (.tgpkg), and vendor extension preservation.
 tags: [gedcom, porting, backup, interchange, data-portability, vendors, gedzip, tgpkg, theb]
-verified:
-  - by: openwiki/0.5.1
-    at: 2026-09-25T18:48:04.838Z
 sources:
   - id: openwiki-source-63e7659a6ca9bd405fc03001
     resource: repo://theogony-app/src/commands/backup.rs
