@@ -14,14 +14,16 @@ sources:
     resource: repo://theogony-app/src/lib.rs
   - id: openwiki-source-d7e9a325bf86e1ff1b0f94f1
     resource: repo://theogony-db-sqlite/Cargo.toml
+  - id: openwiki-source-48654a26c1044d28c027e22e
+    resource: repo://theogony-db-sqlite/src/schema.rs
   - id: openwiki-source-61c917696a7dbf739bd28821
     resource: repo://theogony-domain/src/lib.rs
   - id: openwiki-source-436f4179fe22abf615d2f7d0
     resource: repo://ui/package.json
 verified:
   - by: openwiki/0.5.1
-    at: 2026-09-26T19:08:17.680Z
-generated: { by: "openwiki/0.5.1", at: "2026-09-25T18:48:04.838Z" }
+    at: 2026-09-26T21:03:57.694Z
+generated: { by: "openwiki/0.5.1", at: "2026-09-26T21:03:57.694Z" }
 ---
 
 # System Overview
@@ -89,7 +91,7 @@ The Rust workspace (`Cargo.toml`) is organized into eight specialized crates enf
    - **Purpose:** Trait definitions and repository interfaces defining the contract between application execution logic and storage implementations.
 
 3. **`theogony-db-sqlite`**
-   - **Purpose:** ACID-compliant SQLite storage spine (`theogony-db-sqlite`) [repo://theogony-db-sqlite/Cargo.toml]. Implements migration management, versioned schema, high-performance queries, hypothesis branching, and transaction logs.
+   - **Purpose:** ACID-compliant SQLite storage spine (`theogony-db-sqlite`) [repo://theogony-db-sqlite/Cargo.toml]. Implements migration management, versioned schema (`SCHEMA_VERSION` in `schema.rs`), high-performance queries, hypothesis branching, and transaction logs.
 
 4. **`theogony-gedcom`**
    - **Purpose:** GEDCOM 7 parser, serialization engine, THEB interchange package format (`.tgpkg`), vendor dialect mapping, and conformance validation.
@@ -114,4 +116,4 @@ Theogony is engineered specifically as a desktop-native application with robust 
 
 - **Local-First Storage:** Every family tree is stored in a self-contained SQLite database file equipped with WAL mode, foreign key enforcement, and explicit migration paths, ensuring instant local startup, zero server dependency, and robust backup/restore capabilities via `.tgpkg` archives.
 - **Tauri Commands & IPC:** Operations exposed to the React frontend are defined as plain Rust functions over `AppState` inside `theogony-app/src/commands/` [repo://theogony-app/src/lib.rs]. Thin transport adapters marshal arguments and serialize results without embedding business logic.
-- **SQLite Backing:** The persistence layer (`theogony-db-sqlite`) wraps connections with reader pools and exclusive writer locks, implementing robust transaction management, hypothesis branching, and change history logs.
+- **SQLite Backing:** The persistence layer (`theogony-db-sqlite`) wraps connections with bundled rusqlite, implementing robust transaction management, hypothesis branching, and change history logs (`edit_actions`, `edit_branches`, `edit_ops`).

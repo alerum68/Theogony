@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:f9e6d5d159be7309c3d12b0529f8a8eba28a367998d2fcf1c97a840e61da62f4",
+  "pageVersion": "sha256:0561b1f292eba4758722dbfd163820148ab0efa380882dc9d6b96f1ea478347f",
   "claims": [
     {
       "id": "claim_e31f1ff7ecd847ab9b8150d7df553554",
@@ -22,7 +22,7 @@
       "evidence": [
         {
           "resource": "repo://theogony-db-sqlite/Cargo.toml",
-          "version": "repo-file-v1:sha256:32df637a25c9874b25910a04865aab6cbdeb363cc5fea0e86ab1f5f46eeee8b3"
+          "version": "repo-file-v1:sha256:34875da1d33e15e177d5531492520540e06fffe02af373a75903e39314edd280"
         }
       ]
     },
@@ -32,7 +32,7 @@
       "evidence": [
         {
           "resource": "repo://theogony-db-sqlite/Cargo.toml",
-          "version": "repo-file-v1:sha256:32df637a25c9874b25910a04865aab6cbdeb363cc5fea0e86ab1f5f46eeee8b3"
+          "version": "repo-file-v1:sha256:34875da1d33e15e177d5531492520540e06fffe02af373a75903e39314edd280"
         }
       ]
     },
@@ -90,7 +90,7 @@
       "evidence": [
         {
           "resource": "repo://theogony-db-sqlite/Cargo.toml",
-          "version": "repo-file-v1:sha256:32df637a25c9874b25910a04865aab6cbdeb363cc5fea0e86ab1f5f46eeee8b3"
+          "version": "repo-file-v1:sha256:34875da1d33e15e177d5531492520540e06fffe02af373a75903e39314edd280"
         }
       ]
     },
@@ -100,7 +100,7 @@
       "evidence": [
         {
           "resource": "repo://theogony-db-sqlite/Cargo.toml",
-          "version": "repo-file-v1:sha256:32df637a25c9874b25910a04865aab6cbdeb363cc5fea0e86ab1f5f46eeee8b3"
+          "version": "repo-file-v1:sha256:34875da1d33e15e177d5531492520540e06fffe02af373a75903e39314edd280"
         }
       ]
     },
@@ -123,10 +123,24 @@
           "version": "repo-lines-v1:sha256:600f73bcd2b8caacc42402e43f8b944108cec905b870153b13da00e120e0da07:eyJzZWxlY3RlZExpbmVDb3VudCI6NDgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEyZmE2ODhiODI0NDdhMjI0NGMwZDJlN2YzN2EzMzM4ODk4N2NkNmM5M2IxN2I3NGEyYzBhYzc3MWE0YTdiMDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFhMWQxYTYzMzkwMjI5Yzc5ODM0N2U4M2EwNDA1NDQxYzk0MDAwMzUyODRhZDE2OGMxYmY2Y2RmMWQ3MGEzNzAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
         }
       ]
+    },
+    {
+      "id": "claim_787f79ade8f64a5d9e547d3a7dca1ac2",
+      "statement": "Persistence is implemented via an ACID-compliant SQLite backend supporting versioned schema migrations, WAL mode, foreign key enforcement, hypothesis branching, and explicit transaction boundaries.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-db-sqlite/Cargo.toml",
+          "version": "repo-file-v1:sha256:34875da1d33e15e177d5531492520540e06fffe02af373a75903e39314edd280"
+        },
+        {
+          "resource": "repo://theogony-db-sqlite/src/schema.rs",
+          "version": "repo-file-v1:sha256:38c0381bc764f5d78184069dd9c8d8b44b0b17eeb403fe77d497a84d3c17e3d8"
+        }
+      ]
     }
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-09-26T19:08:17.680Z"
+    "at": "2026-09-26T21:03:57.694Z"
   }
 }

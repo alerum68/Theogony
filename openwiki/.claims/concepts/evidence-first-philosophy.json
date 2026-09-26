@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:da5a75125558b680a72f12161d0f75e1fbde3f47b4b4ff5b8b85c61f71b3f91a",
+  "pageVersion": "sha256:41a4ff454ea62aa93e10d5a9bd425bcba7e91b20371e93cbc16374aaccf083f2",
   "claims": [
     {
       "id": "claim_aaf89ff87a82456581abe1f2da1ed2c2",
@@ -143,10 +143,68 @@
           "version": "repo-lines-v1:sha256:2474dfff9ed1119152d36eeed28699b7374437f7b411678aafdcb15bf9de5697:eyJzZWxlY3RlZExpbmVDb3VudCI6MzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM0ZmI4M2UxMGExYTc3YmQ3OTU2NmRhZGNlN2RkNjI1MzU0NTBmNzE3Nzc2MGIyODMxMDlmN2YxMGM4NGY0OTkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjExZmJhNzg1MTgzMWYwNTExYzBjNjYzNGY1OGYyYjZkNWNjOTIwZGQ1ZDJjZTU1NTQyOGM0MzczZWM4ZjZjNjkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRkNTM4MTZlMTM4YzBhY2RmNWI0YWI2NzQyYWU0OWZmMDI3NWYwMWMyMTc1N2FkOGMzOWY1NmIyODY1YzYwZTMifQ"
         }
       ]
+    },
+    {
+      "id": "claim_519b578f7d1b47e1b9ac3d43c8c7bb2d",
+      "statement": "Theogony structures research around SourceDocuments and Citations that represent physical or digital archival records, books, census pages, vital records, repositories, or DNA test kits.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-domain/src/records.rs#L343-L353",
+          "version": "repo-lines-v1:sha256:b5abe23f97e08b4ac209ac7ce49e79bc0fd48d08751512f554626baae5019e72:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImExOTliYWM4OGIwZGQ1YWRlNDQxNTFlZDQyN2NlYmNhZmNmNmY2Y2FkNGVmOWRkZTA4MGY5OTViYzU1ZDk0ZjciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjExZmJhNzg1MTgzMWYwNTExYzBjNjYzNGY1OGYyYjZkNWNjOTIwZGQ1ZDJjZTU1NTQyOGM0MzczZWM4ZjZjNjkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRkNTM4MTZlMTM4YzBhY2RmNWI0YWI2NzQyYWU0OWZmMDI3NWYwMWMyMTc1N2FkOGMzOWY1NmIyODY1YzYwZTMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_fe4148ea43db4ee4aea5367c9c93a246",
+      "statement": "Extracted Personas represent unlinked individuals as they appear within specific source documents, capturing names, reported sexes, parent links, and spouse links as stated in that specific source.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-domain/src/records.rs#L343-L353",
+          "version": "repo-lines-v1:sha256:b5abe23f97e08b4ac209ac7ce49e79bc0fd48d08751512f554626baae5019e72:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImExOTliYWM4OGIwZGQ1YWRlNDQxNTFlZDQyN2NlYmNhZmNmNmY2Y2FkNGVmOWRkZTA4MGY5OTViYzU1ZDk0ZjciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjExZmJhNzg1MTgzMWYwNTExYzBjNjYzNGY1OGYyYjZkNWNjOTIwZGQ1ZDJjZTU1NTQyOGM0MzczZWM4ZjZjNjkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRkNTM4MTZlMTM4YzBhY2RmNWI0YWI2NzQyYWU0OWZmMDI3NWYwMWMyMTc1N2FkOGMzOWY1NmIyODY1YzYwZTMifQ"
+        },
+        {
+          "resource": "repo://theogony-domain/src/records.rs#L480-L524",
+          "version": "repo-lines-v1:sha256:729993e2c472ff4ddeb21e9b79821475b5e1944091fa35708838c12ba2b8cfdb:eyJzZWxlY3RlZExpbmVDb3VudCI6NDUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRlZmJlYTBlMjgxZjhlYjkwMDEyNzdkNzM5MDM1NzU4MWFmMzE1NjhiZWE3MDgyYWY2NzY0NThhZGQyN2E3NzMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjExZmJhNzg1MTgzMWYwNTExYzBjNjYzNGY1OGYyYjZkNWNjOTIwZGQ1ZDJjZTU1NTQyOGM0MzczZWM4ZjZjNjkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRkNTM4MTZlMTM4YzBhY2RmNWI0YWI2NzQyYWU0OWZmMDI3NWYwMWMyMTc1N2FkOGMzOWY1NmIyODY1YzYwZTMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_335cad8015dd45108b13cf479e0b5f99",
+      "statement": "Assertions represent specific claims made by a persona or source regarding facts or names, carrying explicit surety ratings and operational status attributes.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-domain/src/records.rs#L1006-L1022",
+          "version": "repo-lines-v1:sha256:566d5094bc2caec0828f56f076748ac9bacec5aa8f20859560d0a351c0a2a956:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ZDBlM2YxY2I2OTcxZDA0MzFhODViYzlkNmQ2ZDllZTBiZjg4MWRlNjVmOWQ2ZWNhYTE4NTI4YWJlMjA5MTciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjExZmJhNzg1MTgzMWYwNTExYzBjNjYzNGY1OGYyYjZkNWNjOTIwZGQ1ZDJjZTU1NTQyOGM0MzczZWM4ZjZjNjkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRkNTM4MTZlMTM4YzBhY2RmNWI0YWI2NzQyYWU0OWZmMDI3NWYwMWMyMTc1N2FkOGMzOWY1NmIyODY1YzYwZTMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_c4ce9ab5a891427f8c68fea339c23169",
+      "statement": "Concluded Individuals and Families represent canonical historical entities synthesized by exhaustively analyzing and correlating underlying assertions across multiple sources.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-domain/src/records.rs#L532-L538",
+          "version": "repo-lines-v1:sha256:8ed89dc52bf76c4244399a7f5434af49dd0e151773299dd84b2b3676fd232d96:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNzQyOTI0OWIxZDIyNGUxNmY1YzVhMzFiZjVlNjlmZjJlYWFkOTljMWJkODM0NDcxMzE1NmU3ZjlkZGU4ZDIxNSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDEyY2EzNDVjY2Y3NWJmOWMwODA2YmNlNjk1YmU4ZGU4MDhiNzk5ODQyNTFhN2E1NGQyMDJjZjYxMDFkZDQ1MSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMTFmYmE3ODUxODMxZjA1MTFjMGM2NjM0ZjU4ZjJiNmQ1Y2M5MjBkZDVkMmNlNTU1NDI4YzQzNzNlYzhmNmM2OSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZGQ1MzgxNmUxMzhjMGFjZGY1YjRhYjY3NDJhZTQ5ZmYwMjc1ZjAxYzIxNzU3YWQ4YzM5ZjU2YjI4NjVjNjBlMyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_8392a1ebe5244001a20cf05cf5962e88",
+      "statement": "Assertions, persona-parent links, and persona-spouse links support non-destructive conflict resolution through operational statuses including active, disputed, and rejected.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-domain/src/records.rs#L1006-L1022",
+          "version": "repo-lines-v1:sha256:566d5094bc2caec0828f56f076748ac9bacec5aa8f20859560d0a351c0a2a956:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijg1ZDBlM2YxY2I2OTcxZDA0MzFhODViYzlkNmQ2ZDllZTBiZjg4MWRlNjVmOWQ2ZWNhYTE4NTI4YWJlMjA5MTciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjExZmJhNzg1MTgzMWYwNTExYzBjNjYzNGY1OGYyYjZkNWNjOTIwZGQ1ZDJjZTU1NTQyOGM0MzczZWM4ZjZjNjkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRkNTM4MTZlMTM4YzBhY2RmNWI0YWI2NzQyYWU0OWZmMDI3NWYwMWMyMTc1N2FkOGMzOWY1NmIyODY1YzYwZTMifQ"
+        },
+        {
+          "resource": "repo://theogony-domain/src/records.rs#L495-L524",
+          "version": "repo-lines-v1:sha256:2474dfff9ed1119152d36eeed28699b7374437f7b411678aafdcb15bf9de5697:eyJzZWxlY3RlZExpbmVDb3VudCI6MzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM0ZmI4M2UxMGExYTc3YmQ3OTU2NmRhZGNlN2RkNjI1MzU0NTBmNzE3Nzc2MGIyODMxMDlmN2YxMGM4NGY0OTkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxMmNhMzQ1Y2NmNzViZjljMDgwNmJjZTY5NWJlOGRlODA4Yjc5OTg0MjUxYTdhNTRkMjAyY2Y2MTAxZGQ0NTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjExZmJhNzg1MTgzMWYwNTExYzBjNjYzNGY1OGYyYjZkNWNjOTIwZGQ1ZDJjZTU1NTQyOGM0MzczZWM4ZjZjNjkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRkNTM4MTZlMTM4YzBhY2RmNWI0YWI2NzQyYWU0OWZmMDI3NWYwMWMyMTc1N2FkOGMzOWY1NmIyODY1YzYwZTMifQ"
+        }
+      ]
     }
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-09-26T15:49:14.592Z"
+    "at": "2026-09-26T21:03:57.694Z"
   }
 }
