@@ -20,7 +20,7 @@ sources:
     resource: repo://ui/package.json
 verified:
   - by: openwiki/0.5.1
-    at: 2026-09-26T15:49:14.592Z
+    at: 2026-09-26T16:45:21.256Z
 generated: { by: "openwiki/0.5.1", at: "2026-09-25T18:48:04.838Z" }
 ---
 

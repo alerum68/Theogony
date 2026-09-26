@@ -3,9 +3,6 @@ type: concept
 title: Evidence-First Philosophy & GPS Standards
 description: Core genealogical philosophy and data modeling of evidence separating source documents, extracted personas, assertions, and concluded individuals and families.
 tags: [evidence-first, genealogy, gps, personas, assertions, conflict-handling, architecture]
-verified:
-  - by: openwiki/0.5.1
-    at: 2026-09-26T15:49:14.592Z
 sources:
   - id: openwiki-source-17ccbeaa6afd5efa0cb28ccd
     resource: repo://theogony-db-sqlite/src/assertions.rs
