@@ -13,6 +13,9 @@ sources:
   - id: openwiki-source-a85aedb0d5dda666b82d51d2
     resource: repo://theogony-domain/src/records.rs
 generated: { by: "openwiki/0.5.1", at: "2026-09-25T18:48:04.838Z" }
+verified:
+  - by: openwiki/0.5.1
+    at: 2026-09-27T15:02:40.157Z
 ---
 
 # Evidence-First Philosophy & GPS Standards

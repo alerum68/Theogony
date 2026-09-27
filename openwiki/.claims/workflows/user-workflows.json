@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:ede09464c50bb9f6e2bf62669ac9b8a8bcbb89bafb4aa9405e8d8fb179e6ca87",
+  "pageVersion": "sha256:f4dbcc598063b0394df017fea6eb7c6e844f4dfc1e8158c8622836337e9de82e",
   "claims": [
     {
       "id": "claim_53865b534fed47e9a5e7f49642522c63",
@@ -57,10 +57,88 @@
           "version": "repo-file-v1:sha256:3e9cdda8bc26e80e6c7fb2fcdb88e6f2e4587309f5670ed4003b6c896f1fc7b9"
         }
       ]
+    },
+    {
+      "id": "claim_1527d8a8287649e4af60ed5c4a1648a1",
+      "statement": "The OpenWiki interface is organized around a dockable layout shell featuring an Activity Bar, Side Bar, Tree Navigator (Family View / Pedigree Canvas), Details Panel, and Person Picker.",
+      "evidence": [
+        {
+          "resource": "repo://ui/src/components/FamilyView.tsx",
+          "version": "repo-file-v1:sha256:52019cca32da951c79fd3188520c0503b411e838f635f69417106f41cb380e91"
+        },
+        {
+          "resource": "repo://ui/src/components/PersonPicker.tsx",
+          "version": "repo-file-v1:sha256:2b302502c98761a11556bda4c6bab0031a9c9ea2fc195abc86138f0d6b69d04c"
+        },
+        {
+          "resource": "repo://ui/src/shell/AppShell.tsx",
+          "version": "repo-file-v1:sha256:0d8b7b1b759ab712e069e070b73c2679848ff4343eee60a2444059c6e8729f2b"
+        },
+        {
+          "resource": "repo://ui/src/shell/DockWorkbench.tsx",
+          "version": "repo-file-v1:sha256:9a7fc72ba086af44b465c8600aa17939cab916cb67a343fa61df9c211bc3511d"
+        }
+      ]
+    },
+    {
+      "id": "claim_bc40e6951cbf421baba3cde1566a9f2e",
+      "statement": "Every factual assertion in OpenWiki is anchored by source documentation via the Event Dialog, where users select standardized Fact Types, cite sources, and record claim details.",
+      "evidence": [
+        {
+          "resource": "repo://ui/src/components/EventDialog.tsx",
+          "version": "repo-file-v1:sha256:087f0f67a4af4798a521cee73d82b803f79315a344820093d36b17dd725208a0"
+        },
+        {
+          "resource": "repo://ui/src/components/EventsPanel.tsx",
+          "version": "repo-file-v1:sha256:063dbafbd36fe0988472bfd6f52a412e59b2361d1c967a32c850e2a1be2897ee"
+        }
+      ]
+    },
+    {
+      "id": "claim_6851da7237a74a1abcce6dfc3fc5b53f",
+      "statement": "To reflect genealogical certainty, every fact citation requires a Surety Rating chosen from Direct, Indirect, Negative, or Conflicting values.",
+      "evidence": [
+        {
+          "resource": "repo://ui/src/components/EventDialog.tsx",
+          "version": "repo-file-v1:sha256:087f0f67a4af4798a521cee73d82b803f79315a344820093d36b17dd725208a0"
+        }
+      ]
+    },
+    {
+      "id": "claim_373919f9d1c7451eb1d60aaa419ea236",
+      "statement": "Family structuring is managed through the Relationships Panel and Family View, supporting parent-child lineages, spousal bonds, inline relative creation, and custom role labeling.",
+      "evidence": [
+        {
+          "resource": "repo://ui/src/components/FamilyView.tsx",
+          "version": "repo-file-v1:sha256:52019cca32da951c79fd3188520c0503b411e838f635f69417106f41cb380e91"
+        },
+        {
+          "resource": "repo://ui/src/components/RelationshipsPanel.tsx",
+          "version": "repo-file-v1:sha256:3e9cdda8bc26e80e6c7fb2fcdb88e6f2e4587309f5670ed4003b6c896f1fc7b9"
+        }
+      ]
+    },
+    {
+      "id": "claim_5ba65f8a1f004f7e915c65e8bb131105",
+      "statement": "Advanced genetic genealogy workflows support importing DNA test kits, evaluating relationship probabilities, screening Y-STR marker distances, and exploring shared chromosomal segments.",
+      "evidence": [
+        {
+          "resource": "repo://ui/src/components/DnaImportDialog.tsx",
+          "version": "repo-file-v1:sha256:f5a7c0d0ba1f50c4641353b4951636226570ab270a7dc9f69531e21cf2313fd9"
+        },
+        {
+          "resource": "repo://ui/src/screens/DnaChromosomeBrowser.tsx",
+          "version": "repo-file-v1:sha256:8a9c11d19f4579c68bc0ee071e22cb1b9957394af86913ffd6afbb47d5c045f1"
+        },
+        {
+          "resource": "repo://ui/src/screens/RelationshipProbability.tsx",
+          "version": "repo-file-v1:sha256:7f59a7b58905c23d19d37b406acc08dfeadb283524852ca8d0f368e1b75e4dbf"
+        }
+      ]
     }
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-09-25T18:48:04.838Z"
+    "at": "2026-09-27T15:02:40.157Z"
   }
 }

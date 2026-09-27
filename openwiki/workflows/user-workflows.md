@@ -4,6 +4,8 @@ title: User Workflows
 description: Step-by-step user guides for core genealogical tasks in Theogony, including interface navigation, citing facts with surety ratings, family structuring, and DNA/Y-STR screening and chromosome browser features.
 tags: [workflows, navigation, interface, facts, surety, family, dna, y-str, chromosome-browser, user-guide]
 sources:
+  - id: openwiki-source-e661e85c176d7984c1c120a4
+    resource: repo://ui/src/components/DnaImportDialog.tsx
   - id: openwiki-source-d391847d363fa47891e4e7d7
     resource: repo://ui/src/components/EventDialog.tsx
   - id: openwiki-source-7b03e6b13d138321b497cb01
@@ -14,9 +16,20 @@ sources:
     resource: repo://ui/src/components/PersonPicker.tsx
   - id: openwiki-source-83064ea01b18e2e00385934e
     resource: repo://ui/src/components/RelationshipsPanel.tsx
+  - id: openwiki-source-021b4f10588b6acd4ac7ef4b
+    resource: repo://ui/src/screens/DnaChromosomeBrowser.tsx
   - id: openwiki-source-581ccfdbc4f29f5dcf09c2df
     resource: repo://ui/src/screens/People.tsx
+  - id: openwiki-source-fb3ae85602ddb1bfc6677132
+    resource: repo://ui/src/screens/RelationshipProbability.tsx
+  - id: openwiki-source-c2e356980bef52b8e5b9f126
+    resource: repo://ui/src/shell/AppShell.tsx
+  - id: openwiki-source-f87f9cc8e5ca8b9e6e4b28b2
+    resource: repo://ui/src/shell/DockWorkbench.tsx
 generated: { by: "openwiki/0.5.1", at: "2026-09-25T18:48:04.838Z" }
+verified:
+  - by: openwiki/0.5.1
+    at: 2026-09-27T15:02:40.157Z
 ---
 
 The OpenWiki genealogical workbench provides an evidence-first interface for exploring individuals, asserting and citing historical facts, managing surety ratings, structuring family relationships, and analyzing DNA match data, Y-STR markers, and chromosome segments. This page documents core user workflows for navigating the application interface and performing genealogical and genetic genealogy data entry.

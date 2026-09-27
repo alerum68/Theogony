@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:1f7cd468b7465b32ea4f080bdac2c6791c9178f50dc749bee2ab0fec3b54f1bd",
+  "pageVersion": "sha256:387e399fe32f66e3b37d6b419f29d34ad0e52e655af67b6cb9c1d99dc8f0c620",
   "claims": [
     {
       "id": "claim_e31f1ff7ecd847ab9b8150d7df553554",
@@ -241,10 +241,50 @@
           "version": "repo-file-v1:sha256:8a8a55aafe1b13e577ef7c920be2b31158c7b0cedc0948b918bb15968c8e128c"
         }
       ]
+    },
+    {
+      "id": "claim_ad6d682adc4b44b1803b96347b394f19",
+      "statement": "Theogony's Rust backend workspace is structured into eight specialized crates (`theogony-domain`, `theogony-ports`, `theogony-db-sqlite`, `theogony-ai`, `theogony-gedcom`, `theogony-dna`, `theogony-haplogroup`, and `theogony-app`) enforcing strict modular boundaries where pure domain logic and ports sit at the center.",
+      "evidence": [
+        {
+          "resource": "repo://Cargo.toml",
+          "version": "repo-file-v1:sha256:2f820b95a343fd7178ecba7a9df21c4de15028c98189c0d58eac9ce862ca975a"
+        }
+      ]
+    },
+    {
+      "id": "claim_d6a592b58f40494b90123fb41354e50b",
+      "statement": "The Tauri shell crate (`theogony-app`) serves as the application entrypoint and sole crate aware of all other workspace crates, translating IPC commands into plain Rust operations over `AppState`.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-app/Cargo.toml",
+          "version": "repo-file-v1:sha256:2f9a0e7281bed8a3a437e7ca0fc0f464939fcf3af11a9412122f8999772f7dbd"
+        }
+      ]
+    },
+    {
+      "id": "claim_fb170370e036425eb6176a9c4042eaa2",
+      "statement": "The SQLite persistence layer (`theogony-db-sqlite`) acts as the single storage swap point implementing `GraphRepository`, `ChangeEventPort`, and `EditLog` adapters with bundled rusqlite, migration management, hypothesis branching, and transaction logs.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-db-sqlite/Cargo.toml",
+          "version": "repo-file-v1:sha256:34875da1d33e15e177d5531492520540e06fffe02af373a75903e39314edd280"
+        }
+      ]
+    },
+    {
+      "id": "claim_3f9cdf79df5a425dbadae02cd33d5eb6",
+      "statement": "Tauri command handlers follow a strict design where plain Rust functions operate over `AppState` and thin transport adapters marshal arguments and serialize results without embedding business logic.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-app/src/lib.rs",
+          "version": "repo-file-v1:sha256:a9e495c7bac30c9c33815df326b171367b598e55dbb59cde91b60cb05db9353f"
+        }
+      ]
     }
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-09-27T07:21:03.369Z"
+    "at": "2026-09-27T15:02:40.157Z"
   }
 }
