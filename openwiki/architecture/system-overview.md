@@ -22,13 +22,15 @@ sources:
     resource: repo://ui/package.json
 verified:
   - by: openwiki/0.5.1
-    at: 2026-09-26T21:03:57.694Z
-generated: { by: "openwiki/0.5.1", at: "2026-09-26T21:03:57.694Z" }
+    at: 2026-09-27T06:03:20.509Z
+generated: { by: "openwiki/0.5.1", at: "2026-09-27T06:03:20.509Z" }
 ---
 
 # System Overview
 
 Theogony is a high-performance, local-first genealogy desktop application engineered for rigorous evidence analysis, multi-user interchange, and historical family tree research. Built around a modular Rust backend workspace and a native-feeling React/TypeScript desktop UI powered by Tauri [repo://theogony-app/Cargo.toml], Theogony cleanly separates pure domain logic, persistence, DNA analysis, AI integration, and GEDCOM interchange into discrete workspace crates [repo://Cargo.toml] while guaranteeing ACID-compliant SQLite storage.
+
+For related concepts and workflows, refer to the [Evidence-First Philosophy](/openwiki/concepts/evidence-first-philosophy.md), [GEDCOM Portability](/openwiki/integrations/gedcom-portability.md), and [Review and Audit](/openwiki/operations/review-and-audit.md).
 
 ## Architectural Boundaries & Data Flow
 
