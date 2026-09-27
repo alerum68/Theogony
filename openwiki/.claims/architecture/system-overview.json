@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:6be1c35de4afce028e12d3e4549d390fe9f9c8b4f36a5d73282488d161d7b994",
+  "pageVersion": "sha256:1f7cd468b7465b32ea4f080bdac2c6791c9178f50dc749bee2ab0fec3b54f1bd",
   "claims": [
     {
       "id": "claim_e31f1ff7ecd847ab9b8150d7df553554",
@@ -137,10 +137,114 @@
           "version": "repo-file-v1:sha256:38c0381bc764f5d78184069dd9c8d8b44b0b17eeb403fe77d497a84d3c17e3d8"
         }
       ]
+    },
+    {
+      "id": "claim_64d3903953a9446bb5320722cdafe54b",
+      "statement": "Theogony uses a modular Rust workspace architecture with eight specialized crates: theogony-domain, theogony-ports, theogony-db-sqlite, theogony-ai, theogony-gedcom, theogony-dna, theogony-haplogroup, and theogony-app.",
+      "evidence": [
+        {
+          "resource": "repo://Cargo.toml",
+          "version": "repo-file-v1:sha256:2f820b95a343fd7178ecba7a9df21c4de15028c98189c0d58eac9ce862ca975a"
+        }
+      ]
+    },
+    {
+      "id": "claim_ecdbe27fb71c40439c93528c9690c223",
+      "statement": "theogony-app serves as the Tauri desktop shell and orchestrates all backend crates, plain Rust command handlers over AppState, IPC routing, and TypeScript binding generation via ts-rs.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-app/Cargo.toml",
+          "version": "repo-file-v1:sha256:2f9a0e7281bed8a3a437e7ca0fc0f464939fcf3af11a9412122f8999772f7dbd"
+        }
+      ]
+    },
+    {
+      "id": "claim_b616d9dfe5f04f538325306f94980ff1",
+      "statement": "theogony-domain provides pure domain models, record structs, strongly typed identifiers, DNA bucketing, relationship, WATO, and provenance types with zero external persistence dependencies.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-domain/src/lib.rs",
+          "version": "repo-file-v1:sha256:600f73bcd2b8caacc42402e43f8b944108cec905b870153b13da00e120e0da07"
+        }
+      ]
+    },
+    {
+      "id": "claim_bc2fc7bf028b4153beb52642acbf6c1e",
+      "statement": "theogony-db-sqlite implements an ACID-compliant SQLite storage spine featuring migration management, versioned schemas, hypothesis branching, and transaction/edit history logs.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-db-sqlite/Cargo.toml",
+          "version": "repo-file-v1:sha256:34875da1d33e15e177d5531492520540e06fffe02af373a75903e39314edd280"
+        },
+        {
+          "resource": "repo://theogony-db-sqlite/src/schema.rs",
+          "version": "repo-file-v1:sha256:38c0381bc764f5d78184069dd9c8d8b44b0b17eeb403fe77d497a84d3c17e3d8"
+        }
+      ]
+    },
+    {
+      "id": "claim_5100f669d067484c91a0a7606396f8e4",
+      "statement": "theogony-gedcom handles GEDCOM 7 parsing, serialization, and .tgpkg interchange archive packaging.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-gedcom/Cargo.toml",
+          "version": "repo-file-v1:sha256:cf22721ab55cf98c4afc80842e09ea5d7f90ab07c2f5dc27c916a098abb6f450"
+        }
+      ]
+    },
+    {
+      "id": "claim_53540421474841f782917894809d873f",
+      "statement": "theogony-dna provides DNA segment mapping, chromosome browser calculations, genetic match bucketing, Y-STR marker analysis, and WATO hypothesis scoring.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-dna/Cargo.toml",
+          "version": "repo-file-v1:sha256:2fc265834a9e3ae395e95a56516501f5955df1fb4d54d16ff44725ea82e74076"
+        }
+      ]
+    },
+    {
+      "id": "claim_5c1aea6a100e41238cc864dfebb203bc",
+      "statement": "theogony-haplogroup performs haplogroup calculations and phylogenetic branch analysis.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-haplogroup/Cargo.toml",
+          "version": "repo-file-v1:sha256:ad3b31897bf1883fb8cde4a68850ca82c91a4e1ff4a15c3d5bd166640c69a6c3"
+        }
+      ]
+    },
+    {
+      "id": "claim_b71c42d9b19c463d82f58a9a1219d397",
+      "statement": "theogony-ai provides local and cloud-assisted AI analysis helpers, AI override tracking, and Terms of Service (ToS) state management.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-ai/Cargo.toml",
+          "version": "repo-file-v1:sha256:2c9e50c2bc05904830753c677c3b96b3d71857f13c757a2557addd86423d2396"
+        }
+      ]
+    },
+    {
+      "id": "claim_f5b410dd69134faab8953c62fa60db06",
+      "statement": "theogony-ports defines trait definitions and repository interfaces mediating between application logic and storage/service implementations.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-ports/Cargo.toml",
+          "version": "repo-file-v1:sha256:221d044fbe9dff5733c479d5caa1a507dad51d724ae12d10f2eb0cfdc8dca255"
+        }
+      ]
+    },
+    {
+      "id": "claim_d02fe0d0c21b4d56a64c3014c46d4e18",
+      "statement": "The frontend desktop UI is built with React and TypeScript, communicating with the Tauri backend via IPC invoke and commands.",
+      "evidence": [
+        {
+          "resource": "repo://ui/package.json",
+          "version": "repo-file-v1:sha256:8a8a55aafe1b13e577ef7c920be2b31158c7b0cedc0948b918bb15968c8e128c"
+        }
+      ]
     }
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-09-27T06:47:50.137Z"
+    "at": "2026-09-27T07:21:03.369Z"
   }
 }

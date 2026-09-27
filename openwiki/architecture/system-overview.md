@@ -8,6 +8,8 @@ sources:
     resource: repo://Cargo.toml
   - id: openwiki-source-a2371d6362e5db4bc834ad03
     resource: repo://CLAUDE.md
+  - id: openwiki-source-df6d663c8300cf4ffe858da1
+    resource: repo://theogony-ai/Cargo.toml
   - id: openwiki-source-0a92e91524b9981ef0c9df55
     resource: repo://theogony-app/Cargo.toml
   - id: openwiki-source-fb23fbb325b2a8122c3150c2
@@ -16,13 +18,21 @@ sources:
     resource: repo://theogony-db-sqlite/Cargo.toml
   - id: openwiki-source-48654a26c1044d28c027e22e
     resource: repo://theogony-db-sqlite/src/schema.rs
+  - id: openwiki-source-e757c628609b7e75af918e83
+    resource: repo://theogony-dna/Cargo.toml
   - id: openwiki-source-61c917696a7dbf739bd28821
     resource: repo://theogony-domain/src/lib.rs
+  - id: openwiki-source-aff8daa72644424d0311ddb5
+    resource: repo://theogony-gedcom/Cargo.toml
+  - id: openwiki-source-98f2c5993b8d1ac8166b80c6
+    resource: repo://theogony-haplogroup/Cargo.toml
+  - id: openwiki-source-d384a0a251d693ebb516385a
+    resource: repo://theogony-ports/Cargo.toml
   - id: openwiki-source-436f4179fe22abf615d2f7d0
     resource: repo://ui/package.json
 verified:
   - by: openwiki/0.5.1
-    at: 2026-09-27T06:47:50.137Z
+    at: 2026-09-27T07:21:03.369Z
 generated: { by: "openwiki/0.5.1", at: "2026-09-27T06:03:20.509Z" }
 ---
 
