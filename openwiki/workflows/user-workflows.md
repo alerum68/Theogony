@@ -27,9 +27,6 @@ sources:
   - id: openwiki-source-f87f9cc8e5ca8b9e6e4b28b2
     resource: repo://ui/src/shell/DockWorkbench.tsx
 generated: { by: "openwiki/0.5.1", at: "2026-09-25T18:48:04.838Z" }
-verified:
-  - by: openwiki/0.5.1
-    at: 2026-09-27T15:02:40.157Z
 ---
 
 The OpenWiki genealogical workbench provides an evidence-first interface for exploring individuals, asserting and citing historical facts, managing surety ratings, structuring family relationships, and analyzing DNA match data, Y-STR markers, and chromosome segments. This page documents core user workflows for navigating the application interface and performing genealogical and genetic genealogy data entry.

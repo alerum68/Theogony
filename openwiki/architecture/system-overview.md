@@ -1,7 +1,7 @@
 ---
 type: architecture
 title: System Overview
-description: Architectural overview of Theogony's local-first Tauri, React, and SQLite stack.
+description: High-level Tauri, React, and SQLite local-first desktop architecture and crate structure.
 tags: [architecture, rust, tauri, react, sqlite, crates, system-overview]
 sources:
   - id: openwiki-source-651d1fb6c9e49916a916ab51
@@ -32,100 +32,31 @@ sources:
     resource: repo://ui/package.json
 verified:
   - by: openwiki/0.5.1
-    at: 2026-09-27T15:02:40.157Z
-generated: { by: "openwiki/0.5.1", at: "2026-09-27T06:03:20.509Z" }
+    at: 2026-09-27T18:50:08.444Z
+generated: { by: "openwiki/0.5.1", at: "2026-09-27T18:50:08.444Z" }
 ---
 
 # System Overview
 
-Theogony is a high-performance, local-first genealogy desktop application engineered for rigorous evidence analysis, multi-user interchange, and historical family tree research. Built around a modular Rust backend workspace and a native-feeling React/TypeScript desktop UI powered by Tauri [repo://theogony-app/Cargo.toml], Theogony cleanly separates pure domain logic, persistence, DNA analysis, AI integration, and GEDCOM interchange into discrete workspace crates [repo://Cargo.toml] while guaranteeing ACID-compliant SQLite storage.
+Theogony is a local-first desktop application designed for serious genealogical research, adhering strictly to the Genealogical Proof Standard (GPS). Built around a modular Rust backend workspace and a native-feeling React/TypeScript desktop UI powered by Tauri [repo://theogony-app/Cargo.toml], Theogony cleanly separates pure domain logic, persistence, DNA analysis, AI integration, and GEDCOM interchange into discrete workspace crates [repo://Cargo.toml] while guaranteeing ACID-compliant SQLite storage.
 
-For related concepts and workflows, refer to the [Evidence-First Philosophy](/openwiki/concepts/evidence-first-philosophy.md), [GEDCOM Portability](/openwiki/integrations/gedcom-portability.md), and [Review and Audit](/openwiki/operations/review-and-audit.md).
+For related concepts and workflows, refer to the [Evidence-First Philosophy](/openwiki/concepts/evidence-first-philosophy.md) and [GEDCOM Portability](/openwiki/integrations/gedcom-portability.md).
 
-## Architectural Boundaries & Data Flow
+## Architecture
 
-Theogony follows a strict layered architecture where dependencies flow inward. Pure domain types and ports reside at the center, completely isolated from database drivers, UI frameworks, and interchange protocols.
-
-```mermaid
+<!-- openwiki: mermaid parse failed and this diagram was converted to a text fence so it does not break rendering. Fix the diagram source and restore the mermaid fence. Parser error: Heuristic: an unescaped angle bracket inside a label breaks rendering; rephrase the label. -->
+```text
 graph TD
-    subgraph UI ["Desktop UI (React + TypeScript)"]
-        React[React Components / Views]
-        AppShell[AppShell & Screens]
-    end
-
-    subgraph Tauri ["Tauri Shell (theogony-app)"]
-        Commands[Tauri Commands / IPC Handlers]
-        State[AppState & Transport Layers]
-    end
-
-    subgraph Backend ["Rust Workspace Backend"]
-        Ports["theogony-ports\n(Traits & Storage Interfaces)"]
-        Domain["theogony-domain\n(Pure Domain Records, IDs, DNA, WATO, Provenance)"]
-        DB["theogony-db-sqlite\n(SQLite Persistence Spine)"]
-        Gedcom["theogony-gedcom\n(GEDCOM 7 & .tgpkg Interchange)"]
-        AI["theogony-ai\n(AI Analysis & Synthesis)"]
-        DNA["theogony-dna\n(DNA Segments, Bucketing & WATO)"]
-        Haplogroup["theogony-haplogroup\n(Haplogroup Calculations)"]
-    end
-
-    React -->|Tauri IPC Invoke| Commands
-    Commands --> Tauri
-    Tauri --> Ports
-    Ports --> DB
-    Ports --> Gedcom
-    Ports --> AI
-    Ports --> DNA
-    Ports --> Haplogroup
-    DB -. implements .- Ports
-    Gedcom -. implements .- Ports
-    AI -. implements .- Ports
-    DNA -. implements .- Ports
-    Haplogroup -. implements .- Ports
-    DB --> Domain
-    Gedcom --> Domain
-    AI --> Domain
-    DNA --> Domain
-    Haplogroup --> Domain
-    Tauri --> UI
+    UI[React / TypeScript UI<br/>Tauri Webview] -->|Tauri IPC / Commands| App[Rust Core App<br/>theogony-app]
+    App --> Domain[Domain & Evidence Engine<br/>theogony-core / theogony-app]
+    App --> DB[SQLite Persistence Layer<br/>theogony-db-sqlite]
+    App --> Gedcom[GEDCOM Import/Export<br/>theogony-gedcom]
+    DB --> File[(Local SQLite DB)]
 ```
 
----
-
-## Workspace Crate Structure
-
-The Rust workspace (`Cargo.toml`) is organized into eight specialized crates enforcing strict modular boundaries [repo://Cargo.toml]:
-
-1. **`theogony-domain`**
-   - **Purpose:** Pure domain models, record structs (`Individual`, `Family`, `Fact`, `Citation`, `SourceDocument`, `Place`, `Repository`), strongly typed identifiers, DNA bucketing/relationship/WATO models, and error types [repo://theogony-domain/src/lib.rs].
-   - **Invariants:** Zero external data-shape or database persistence dependencies; safe to compile anywhere core genealogical entities and DNA algorithms are needed.
-
-2. **`theogony-ports`**
-   - **Purpose:** Trait definitions and repository interfaces defining the contract between application execution logic and storage implementations.
-
-3. **`theogony-db-sqlite`**
-   - **Purpose:** ACID-compliant SQLite storage spine (`theogony-db-sqlite`) [repo://theogony-db-sqlite/Cargo.toml]. Implements migration management, versioned schema (`SCHEMA_VERSION` in `schema.rs`), high-performance queries, hypothesis branching, and transaction logs.
-
-4. **`theogony-gedcom`**
-   - **Purpose:** GEDCOM 7 parser, serialization engine, THEB interchange package format (`.tgpkg`), vendor dialect mapping, and conformance validation.
-
-5. **`theogony-ai`**
-   - **Purpose:** Local and cloud-assisted AI analysis helpers, AI override tracking, and Terms of Service (ToS) state management.
-
-6. **`theogony-dna`**
-   - **Purpose:** DNA segment mapping, chromosome browser calculations, genetic match bucketing, Y-STR marker analysis, and WATO (What Are The Odds) hypothesis scoring.
-
-7. **`theogony-haplogroup`**
-   - **Purpose:** Haplogroup calculations and phylogenetic branch analysis.
-
-8. **`theogony-app`**
-   - **Purpose:** Tauri desktop application entrypoint, plain Rust command handlers over `AppState`, IPC routing, export/import orchestration, and TypeScript binding generation via `ts-rs` [repo://theogony-app/Cargo.toml, repo://theogony-app/src/lib.rs].
-
----
-
-## Local-First Storage, Tauri Commands, and SQLite Backing
-
-Theogony is engineered specifically as a desktop-native application with robust local-first guarantees:
-
-- **Local-First Storage:** Every family tree is stored in a self-contained SQLite database file equipped with WAL mode, foreign key enforcement, and explicit migration paths, ensuring instant local startup, zero server dependency, and robust backup/restore capabilities via `.tgpkg` archives.
-- **Tauri Commands & IPC:** Operations exposed to the React frontend are defined as plain Rust functions over `AppState` inside `theogony-app/src/commands/` [repo://theogony-app/src/lib.rs]. Thin transport adapters marshal arguments and serialize results without embedding business logic.
-- **SQLite Backing:** The persistence layer (`theogony-db-sqlite`) wraps connections with bundled rusqlite, implementing robust transaction management, hypothesis branching, and change history logs (`edit_actions`, `edit_branches`, `edit_ops`).
+## Crate Structure
+- **`ui/`**: React, TypeScript, and Tailwind CSS frontend built with Vite, communicating via Tauri IPC commands [repo://ui/package.json].
+- **`theogony-app/`**: Tauri command handlers, application state orchestration, and evidence management commands [repo://theogony-app/Cargo.toml].
+- **`theogony-db-sqlite/`**: SQLite persistence layer managing tables for sources, citations, personas, assertions, individuals, and families [repo://theogony-db-sqlite/Cargo.toml].
+- **`theogony-gedcom/`**: Parser and exporter for GEDCOM 5.5.1 and GEDCOM 7 standards [repo://theogony-gedcom/Cargo.toml].
+- **`theogony-core/`** / **`theogony-domain/`**: Shared domain models, validation rules, and business logic [repo://theogony-domain/src/lib.rs].
