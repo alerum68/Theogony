@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:1c91b26b8c44a77c89c1d58c2ed9013c60cbf28317679bd07b5cb58350918077",
+  "pageVersion": "sha256:d0980cf3e0cb2752b14c6597429c6d4f654151d13887531441d940cd206515f6",
   "claims": [
     {
       "id": "claim_53865b534fed47e9a5e7f49642522c63",
-      "statement": "The OpenWiki interface features an Activity Bar, Side Bar, Tree Navigator (Family View / Pedigree Canvas), Details Panel, and Person Picker for navigating individuals and entity relationships.",
+      "statement": "The OpenWiki/Theogony interface features an Activity Bar, Side Bar, Tree Navigator (Family View / Pedigree Canvas), Details Panel, and Person Picker for navigating individuals and entity relationships within a dockable layout shell.",
       "evidence": [
         {
           "resource": "repo://ui/src/components/FamilyView.tsx",
-          "version": "repo-file-v1:sha256:52019cca32da951c79fd3188520c0503b411e838f635f69417106f41cb380e91"
+          "version": "repo-file-v1:sha256:8389b46f210b8d53dc4124be6117b76242f6948db6dd561791a976f4967883d9"
         },
         {
           "resource": "repo://ui/src/components/RelationshipsPanel.tsx",
@@ -16,7 +16,15 @@
         },
         {
           "resource": "repo://ui/src/screens/People.tsx",
-          "version": "repo-file-v1:sha256:9f9a6bcc27489c6a5be54360179ff347ddbafa18b996dc64c186ff2a4dcbbe6a"
+          "version": "repo-file-v1:sha256:3d88f0f6381c2a72517b075acfd44e84e8385cac58a7d911747835154c4bfbd6"
+        },
+        {
+          "resource": "repo://ui/src/shell/AppShell.tsx",
+          "version": "repo-file-v1:sha256:38f769500e6b081b9244f2d1923c850cbf0930a3336833b2810c1e673da04b2f"
+        },
+        {
+          "resource": "repo://ui/src/shell/DockWorkbench.tsx",
+          "version": "repo-file-v1:sha256:287f36d2dc526a3f5394c012fd50b73f8c7b40202cc01127ec0170c4e0605079"
         }
       ]
     },
@@ -26,11 +34,11 @@
       "evidence": [
         {
           "resource": "repo://ui/src/components/EventDialog.tsx",
-          "version": "repo-file-v1:sha256:087f0f67a4af4798a521cee73d82b803f79315a344820093d36b17dd725208a0"
+          "version": "repo-file-v1:sha256:1c1bd1ebdca3a4cee9218b9e0ea02d5b2395cce3d6076ada76c9907cc64c961e"
         },
         {
           "resource": "repo://ui/src/components/EventsPanel.tsx",
-          "version": "repo-file-v1:sha256:063dbafbd36fe0988472bfd6f52a412e59b2361d1c967a32c850e2a1be2897ee"
+          "version": "repo-file-v1:sha256:cfdc80201a1c11cfd72b97a47ecf39164565a2d50784b3b88168a348affbfe06"
         }
       ]
     },
@@ -40,7 +48,7 @@
       "evidence": [
         {
           "resource": "repo://ui/src/components/EventDialog.tsx",
-          "version": "repo-file-v1:sha256:087f0f67a4af4798a521cee73d82b803f79315a344820093d36b17dd725208a0"
+          "version": "repo-file-v1:sha256:1c1bd1ebdca3a4cee9218b9e0ea02d5b2395cce3d6076ada76c9907cc64c961e"
         }
       ]
     },
@@ -49,8 +57,12 @@
       "statement": "Family structures such as parents, children, and spouses are managed through the Relationships Panel and Family View, supporting both linking existing individuals and creating new ones inline.",
       "evidence": [
         {
+          "resource": "repo://ui/src/components/FamilyView.tsx",
+          "version": "repo-file-v1:sha256:8389b46f210b8d53dc4124be6117b76242f6948db6dd561791a976f4967883d9"
+        },
+        {
           "resource": "repo://ui/src/components/PersonPicker.tsx",
-          "version": "repo-file-v1:sha256:2b302502c98761a11556bda4c6bab0031a9c9ea2fc195abc86138f0d6b69d04c"
+          "version": "repo-file-v1:sha256:f5ba9ac1399c8af892e9e2eea63d5e1eb7633bdf45e9866dbc045f00b1736677"
         },
         {
           "resource": "repo://ui/src/components/RelationshipsPanel.tsx",
@@ -64,19 +76,19 @@
       "evidence": [
         {
           "resource": "repo://ui/src/components/FamilyView.tsx",
-          "version": "repo-file-v1:sha256:52019cca32da951c79fd3188520c0503b411e838f635f69417106f41cb380e91"
+          "version": "repo-file-v1:sha256:8389b46f210b8d53dc4124be6117b76242f6948db6dd561791a976f4967883d9"
         },
         {
           "resource": "repo://ui/src/components/PersonPicker.tsx",
-          "version": "repo-file-v1:sha256:2b302502c98761a11556bda4c6bab0031a9c9ea2fc195abc86138f0d6b69d04c"
+          "version": "repo-file-v1:sha256:f5ba9ac1399c8af892e9e2eea63d5e1eb7633bdf45e9866dbc045f00b1736677"
         },
         {
           "resource": "repo://ui/src/shell/AppShell.tsx",
-          "version": "repo-file-v1:sha256:0d8b7b1b759ab712e069e070b73c2679848ff4343eee60a2444059c6e8729f2b"
+          "version": "repo-file-v1:sha256:38f769500e6b081b9244f2d1923c850cbf0930a3336833b2810c1e673da04b2f"
         },
         {
           "resource": "repo://ui/src/shell/DockWorkbench.tsx",
-          "version": "repo-file-v1:sha256:9a7fc72ba086af44b465c8600aa17939cab916cb67a343fa61df9c211bc3511d"
+          "version": "repo-file-v1:sha256:287f36d2dc526a3f5394c012fd50b73f8c7b40202cc01127ec0170c4e0605079"
         }
       ]
     },
@@ -86,11 +98,11 @@
       "evidence": [
         {
           "resource": "repo://ui/src/components/EventDialog.tsx",
-          "version": "repo-file-v1:sha256:087f0f67a4af4798a521cee73d82b803f79315a344820093d36b17dd725208a0"
+          "version": "repo-file-v1:sha256:1c1bd1ebdca3a4cee9218b9e0ea02d5b2395cce3d6076ada76c9907cc64c961e"
         },
         {
           "resource": "repo://ui/src/components/EventsPanel.tsx",
-          "version": "repo-file-v1:sha256:063dbafbd36fe0988472bfd6f52a412e59b2361d1c967a32c850e2a1be2897ee"
+          "version": "repo-file-v1:sha256:cfdc80201a1c11cfd72b97a47ecf39164565a2d50784b3b88168a348affbfe06"
         }
       ]
     },
@@ -100,7 +112,7 @@
       "evidence": [
         {
           "resource": "repo://ui/src/components/EventDialog.tsx",
-          "version": "repo-file-v1:sha256:087f0f67a4af4798a521cee73d82b803f79315a344820093d36b17dd725208a0"
+          "version": "repo-file-v1:sha256:1c1bd1ebdca3a4cee9218b9e0ea02d5b2395cce3d6076ada76c9907cc64c961e"
         }
       ]
     },
@@ -110,7 +122,7 @@
       "evidence": [
         {
           "resource": "repo://ui/src/components/FamilyView.tsx",
-          "version": "repo-file-v1:sha256:52019cca32da951c79fd3188520c0503b411e838f635f69417106f41cb380e91"
+          "version": "repo-file-v1:sha256:8389b46f210b8d53dc4124be6117b76242f6948db6dd561791a976f4967883d9"
         },
         {
           "resource": "repo://ui/src/components/RelationshipsPanel.tsx",
@@ -139,6 +151,6 @@
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-09-27T15:02:40.157Z"
+    "at": "2026-09-28T01:13:16.776Z"
   }
 }
