@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:21f167204c6f32813e42e4b85c34870008a131bcb05a074160dbfd30ab3b56ed",
+  "pageVersion": "sha256:613bfc0ddf867eb45fa7cb1355c66473559357bed032bf6c25f90f360803be09",
   "claims": [
     {
       "id": "claim_aaf89ff87a82456581abe1f2da1ed2c2",
@@ -36,19 +36,19 @@
     },
     {
       "id": "claim_ba4a15aff8854ee0886aaad9501f08cd",
-      "statement": "Theogony separates source documents, extracted personas, assertions, and concluded individuals and families in an evidence-first model.",
+      "statement": "Theogony separates source documents, extracted personas, assertions, and concluded individuals and families in an evidence-first model with non-destructive conflict handling across active, disputed, rejected, and proposed statuses.",
       "evidence": [
         {
-          "resource": "repo://theogony-db-sqlite/src/assertions.rs",
-          "version": "repo-file-v1:sha256:8181b03b16045b985d2323b2f240d3309e23ff053a8d5cca554bb9cf4c6e04cd"
+          "resource": "repo://theogony-db-sqlite/src/assertions.rs#L7-L16",
+          "version": "repo-lines-v1:sha256:1033e1079b4198187b10bc161ca6915eeb692b88215ad399e6703870e3397ddb:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZlN2UwMDgwODgwZmJkYjM5YzJjN2YyNzYzYmNkNGVlOWM1ZmY1ZWRmN2IxNmM5ZmEyMzRjZWJiYzlmYWMzNWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlYjcwMjU3NTkzZGEwNmY2ODJhM2RkZGE1NGE5ZDI2MGQ0ZmM1MTRmNjQ1MjM3ZjVjYTc0YjA4ZjhkYTYxYTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQxMWI3OTljZTI3MTdkNDJmZmE2ODVkMzA5OWU2ZGNjNmRkYWZjYmVhNThmMzc5MGQ1MTg1MzExMzc2MjEzZTIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImI4OGRkZmEwMTc1MDYyNGE0ZGQ2NjQ2NGMwNDdiOGYzYzE5ZGQ0MGQ1YWI0MmZmNTAwNjI5ZGM5NjEyNTcwZjYifQ"
         },
         {
-          "resource": "repo://theogony-db-sqlite/src/personas.rs",
-          "version": "repo-file-v1:sha256:7ce9b0ee7791858692504d64f1b9dda5e4cfac8ff7ffabcbfee985cdcef28791"
+          "resource": "repo://theogony-db-sqlite/src/personas.rs#L8-L20",
+          "version": "repo-lines-v1:sha256:30eace6454535b59194ddbcf897c14464a7f6e3b3f196fac11cd09ac09f42ce6:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI0MTg4OTUzMjljY2M3OGNkMjhhZGY2NDU3ZTU2YzkxMzQxMzFmMjY1OGE4NGFjZjRlNzc2NDI3YWZlNjBkZjUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdjZTMwYjUyZWY2YzI5YTM1MmYxNTUwNTk1NjNjZDVlOGEzNTcwN2I4YzFhNTU4ZjY2YjhmNDdkYjY0OGM5MjEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjU0OGVmYzMyMjZmMzY5YjBlZjJlMDUzMDEwMDNmNWZlMWFlYmM0NDg4YTVmYmUzN2Y4NjAzZThjNGU1YTJiMjAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImI5ZmQ4ZTg5ZDhhZTFjOGIzZDVlNjM3ZDE2MDc3YzUwMTBiNmRmYThiODQ1NDFmYWI1ODM0ZGM4OTYzN2FmZjYifQ"
         },
         {
-          "resource": "repo://theogony-db-sqlite/src/sources.rs",
-          "version": "repo-file-v1:sha256:93d43dc44b97169af22b3550d58577af8a83aca6b752af641a78734c744f3a41"
+          "resource": "repo://theogony-db-sqlite/src/sources.rs#L10-L17",
+          "version": "repo-lines-v1:sha256:ed99b886e449db2680eda2177670998de5491fbb6e768303d6aa71d31eb3c94f:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMjdkMDhmMTA5Y2UzYzNkODFjNmQyMTA3MzdlYzk3OWY0YmQ3ZTkyN2Q5ODBiNDA3MTE0ZDljNTZlNTYyNDhmZSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNzIzNjJiZDZiZTI2OTE0ZDVjNGRlMDNiMTgwMjY0ZTIxYzg1ODZlMjE0OWFhYjk5OThhMmU4MjlkOTIxZDllNiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNmNjZGFkMjBhZGY5M2NlYmU2MTY0ZTRhNTJjNGRkYzk5MGIzNGZkYzMwMWEyNmJkMjM0ZWRkMGRmOGRlZWUxZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYjIyM2FlM2UxYTRlZTM3MmRjOGMyODY3MWFmMDRjMWNjZDA3Mzg3NDdiOGI5MGNmY2IyMjYzMWFlMWUwNjRmMyJ9"
         }
       ]
     },
@@ -205,6 +205,6 @@
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-09-27T15:02:40.157Z"
+    "at": "2026-09-28T00:00:28.276Z"
   }
 }

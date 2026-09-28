@@ -12,7 +12,10 @@ sources:
     resource: repo://theogony-db-sqlite/src/sources.rs
   - id: openwiki-source-a85aedb0d5dda666b82d51d2
     resource: repo://theogony-domain/src/records.rs
-generated: { by: "openwiki/0.5.1", at: "2026-09-25T18:48:04.838Z" }
+verified:
+  - by: openwiki/0.5.1
+    at: 2026-09-28T00:00:28.276Z
+generated: { by: "openwiki/0.5.1", at: "2026-09-28T00:00:28.276Z" }
 ---
 
 # Evidence-First Philosophy & GPS Standards
@@ -27,16 +30,16 @@ The data architecture moves deliberately from uninterpreted historical artifacts
 
 1. **Source Documents & Citations (`SourceDocument`, `Citation`)**
    - Represents physical or digital archival records, books, census pages, vital records, repositories, or DNA test kits [repo://theogony-domain/src/records.rs#L343-L353].
-   - Each source document contains specific citations (page references, transcriptions, and footnote texts) linked to assertions, facts, or personas via citation links (`CitationLink`) [repo://theogony-domain/src/records.rs#L343-L353].
+   - Each source document contains specific citations (page references, transcriptions, and footnote texts) linked via citation links (`CitationLink`) across citation owner types (`individual_name`, `fact`, `assertion`, `persona`) [repo://theogony-domain/src/sources.rs#L10-L17, repo://theogony-domain/src/records.rs#L343-L353].
 
 2. **Extracted Personas (`Persona`, `PersonaName`, `PersonaParent`, `PersonaSpouse`)**
    - Represents an unlinked individual as they appear within a specific source document [repo://theogony-domain/src/records.rs#L343-L353].
    - A single historical person (e.g., John Smith) might appear across multiple census returns, land deeds, and marriage certificates, generating multiple distinct `Persona` records in the database [repo://theogony-domain/src/records.rs#L343-L353].
-   - Personas capture names, reported sexes, parent links (`PersonaParent`), and spouse links (`PersonaSpouse`) as stated *in that specific source document* [repo://theogony-domain/src/records.rs#L480-L524].
+   - Personas capture names, reported sexes, parent links (`PersonaParent`), and spouse links (`PersonaSpouse`) as stated *in that specific source document* [repo://theogony-db-sqlite/src/personas.rs#L8-L20, repo://theogony-domain/src/records.rs#L480-L524].
 
 3. **Assertions (`Assertion`)**
-   - Represents specific claims made by a persona or source regarding facts (birth, death, residence, occupation) or names [repo://theogony-domain/src/records.rs#L1006-L1022].
-   - Assertions carry explicit **surety** ratings and operational status attributes (`status`) [repo://theogony-domain/src/records.rs#L1015-L1016].
+   - Represents specific claims made by a persona or source regarding facts (`fact`) or names (`persona_name`) [repo://theogony-db-sqlite/src/assertions.rs#L7-L10, repo://theogony-domain/src/records.rs#L1006-L1022].
+   - Assertions carry explicit **surety** ratings and operational status attributes (`status`) supporting active, proposed, rejected, and disputed workflows [repo://theogony-db-sqlite/src/assertions.rs#L7-L15, repo://theogony-domain/src/records.rs#L1015-L1016].
 
 4. **Concluded Individuals and Families (`Individual`, `Family`, `FamilyChild`)**
    - Represents the genealogist's synthesized conclusions—the canonical historical individuals (`Individual`) and family units (`Family`) established by exhaustively analyzing and correlating underlying assertions across multiple sources [repo://theogony-domain/src/records.rs#L532-L538].
@@ -45,7 +48,7 @@ The data architecture moves deliberately from uninterpreted historical artifacts
 graph TD
     subgraph Sources ["1. Source & Citation Layer"]
         SD[SourceDocument] -->|has citations| Cit[Citation]
-        Cit -->|linked via CitationLink| CL[Owners: Persona, Fact, Assertion]
+        Cit -->|linked via CitationLink| CL[Owners: Persona, Fact, Assertion, IndividualName]
     end
 
     subgraph Personas ["2. Extracted Persona Layer"]
@@ -55,7 +58,7 @@ graph TD
 
     subgraph Assertions ["3. Assertion & Conflict Layer"]
         P -->|asserts facts & names| Ass[Assertion]
-        Ass -->|carries surety & status| Status[Status: active, disputed, rejected, proposed]
+        Ass -->|carries surety & status| Status[Status: active, proposed, disputed, rejected]
     end
 
     subgraph Conclusions ["4. Conclusion Layer"]
@@ -70,11 +73,12 @@ graph TD
 
 Genealogical research frequently encounters contradictory evidence—such as conflicting birth years across successive censuses, competing parentage claims, or contradictory assertions. Traditional software often forces users to overwrite data or delete alternatives. Theogony implements **non-destructive conflict handling**:
 
-- **Status Vocabulary:** Assertions, persona-parent links (`PersonaParent`), and persona-spouse links (`PersonaSpouse`) support operational statuses including `active`, `disputed`, and `rejected` [repo://theogony-domain/src/records.rs#L495-L524, repo://theogony-domain/src/records.rs#L1006-L1022]:
-  - `active`: Currently accepted evidence supporting a working conclusion or active hypothesis branch [repo://theogony-domain/src/records.rs#L503, repo://theogony-domain/src/records.rs#L1016].
-  - `disputed`: A conflicting claim that challenges an existing conclusion or active assertion, retained for transparent analysis rather than deleted [repo://theogony-domain/src/records.rs#L503, repo://theogony-domain/src/records.rs#L1016].
-  - `rejected`: A claim evaluated and formally rejected under GPS scrutiny [repo://theogony-domain/src/records.rs#L503, repo://theogony-domain/src/records.rs#L1016].
-- **Audit Trails & Conflict States:** When conflicting evidence arises, records are not overwritten. Instead, competing assertions or relationship links are marked as `disputed` or `rejected`, allowing researchers to review alternative interpretations side-by-side. All modifications are recorded in immutable edit logs (`Action`, `Op`) and branch revision structures.
+- **Status Vocabulary:** Assertions, persona-parent links (`PersonaParent`), and persona-spouse links (`PersonaSpouse`) support operational statuses including `active`, `disputed`, and `rejected` (alongside `proposed` for assertions) [repo://theogony-db-sqlite/src/assertions.rs#L10-L15, repo://theogony-db-sqlite/src/personas.rs#L16-L20, repo://theogony-domain/src/records.rs#L495-L524, repo://theogony-domain/src/records.rs#L1006-L1022]:
+  - `active`: Currently accepted evidence supporting a working conclusion or active hypothesis branch [repo://theogony-db-sqlite/src/assertions.rs#L15, repo://theogony-db-sqlite/src/personas.rs#L20, repo://theogony-domain/src/records.rs#L503, repo://theogony-domain/src/records.rs#L1016].
+  - `disputed`: A conflicting claim that challenges an existing conclusion or active assertion, retained for transparent analysis rather than deleted [repo://theogony-db-sqlite/src/assertions.rs#L15, repo://theogony-db-sqlite/src/personas.rs#L20, repo://theogony-domain/src/records.rs#L503, repo://theogony-domain/src/records.rs#L1016].
+  - `rejected`: A claim evaluated and formally rejected under GPS scrutiny [repo://theogony-db-sqlite/src/assertions.rs#L15, repo://theogony-db-sqlite/src/personas.rs#L20, repo://theogony-domain/src/records.rs#L503, repo://theogony-domain/src/records.rs#L1016].
+  - `proposed`: A candidate assertion awaiting analysis [repo://theogony-db-sqlite/src/assertions.rs#L15].
+- **Audit Trails & Conflict States:** When conflicting evidence arises, records are not overwritten. Instead, competing assertions or relationship links are marked as `disputed` or `rejected`, allowing researchers to review alternative interpretations side-by-side. All modifications are recorded in immutable edit logs and branch revision structures.
 
 ```mermaid
 stateDiagram-v2
@@ -93,7 +97,7 @@ stateDiagram-v2
 To establish reliable genealogical conclusions, Theogony's architecture supports the five pillars of the **Genealogical Proof Standard**:
 
 1. **A reasonably exhaustive search** for all available sources that could contain information about each identity or event.
-2. **Complete and accurate citations** of every source used (`SourceDocument`, `Citation`) [repo://theogony-domain/src/records.rs#L343-L353].
-3. **Thorough analysis and correlation** of the collected evidence (supported by `Assertion` statuses, surety levels, and persona linking) [repo://theogony-domain/src/records.rs#L495-L524, repo://theogony-domain/src/records.rs#L1006-L1022].
-4. **Resolution of conflicting evidence** (supported by non-destructive `active`, `disputed`, and `rejected` states rather than silent overwrites) [repo://theogony-domain/src/records.rs#L495-L524, repo://theogony-domain/src/records.rs#L1006-L1022].
+2. **Complete and accurate citations** of every source used (`SourceDocument`, `Citation`, `CitationLink`) [repo://theogony-domain/src/records.rs#L343-L353, repo://theogony-db-sqlite/src/sources.rs#L10-L17].
+3. **Thorough analysis and correlation** of the collected evidence (supported by `Assertion` statuses, surety levels, and persona linking) [repo://theogony-db-sqlite/src/assertions.rs#L7-L16, repo://theogony-db-sqlite/src/personas.rs#L8-L20, repo://theogony-domain/src/records.rs#L495-L524, repo://theogony-domain/src/records.rs#L1006-L1022].
+4. **Resolution of conflicting evidence** (supported by non-destructive `active`, `disputed`, `rejected`, and `proposed` states rather than silent overwrites) [repo://theogony-db-sqlite/src/assertions.rs#L10-L16, repo://theogony-db-sqlite/src/personas.rs#L16-L20, repo://theogony-domain/src/records.rs#L495-L524, repo://theogony-domain/src/records.rs#L1006-L1022].
 5. **A soundly reasoned, written conclusion** explaining how the evidence proves the identity, relationship, or event.

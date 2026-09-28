@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:780922fe011e9e32d26f8736f70edf6ae6d3d6da2f052fb0033a4bd5a9607805",
+  "pageVersion": "sha256:0ea96e6ab8fe3db23bb166a8950bce493db480ad3df8c6a10b10f9410968b779",
   "claims": [
     {
       "id": "claim_e31f1ff7ecd847ab9b8150d7df553554",
@@ -281,10 +281,60 @@
           "version": "repo-file-v1:sha256:a9e495c7bac30c9c33815df326b171367b598e55dbb59cde91b60cb05db9353f"
         }
       ]
+    },
+    {
+      "id": "claim_d493b684e6c548e7b9f587dda839c87a",
+      "statement": "Theogony is structured as a Cargo workspace with discrete crates for domain models, SQLite persistence, Tauri desktop shell, GEDCOM interchange, DNA analysis, haplogroups, AI integrations, and port traits, paired with a React and TypeScript frontend communicating via Tauri IPC commands.",
+      "evidence": [
+        {
+          "resource": "repo://Cargo.toml",
+          "version": "repo-file-v1:sha256:2f820b95a343fd7178ecba7a9df21c4de15028c98189c0d58eac9ce862ca975a"
+        },
+        {
+          "resource": "repo://theogony-app/Cargo.toml",
+          "version": "repo-file-v1:sha256:2f9a0e7281bed8a3a437e7ca0fc0f464939fcf3af11a9412122f8999772f7dbd"
+        },
+        {
+          "resource": "repo://ui/package.json",
+          "version": "repo-file-v1:sha256:8a8a55aafe1b13e577ef7c920be2b31158c7b0cedc0948b918bb15968c8e128c"
+        }
+      ]
+    },
+    {
+      "id": "claim_145c0c44abf14766b55daa93efdc1121",
+      "statement": "The UI frontend includes interactive components like pedigree canvases and family views alongside specialized report generation engines such as Ahnentafel, family group sheets, and citation reports.",
+      "evidence": [
+        {
+          "resource": "repo://ui/package.json",
+          "version": "repo-file-v1:sha256:8a8a55aafe1b13e577ef7c920be2b31158c7b0cedc0948b918bb15968c8e128c"
+        },
+        {
+          "resource": "repo://ui/src/components/PedigreeCanvas.tsx",
+          "version": "repo-file-v1:sha256:af1c3b136d7241bee4b879ab5dde267a643e1be56e0a2755b1b726760840a7ab"
+        },
+        {
+          "resource": "repo://ui/src/reports/CitationReports.tsx",
+          "version": "repo-file-v1:sha256:ce845583bf43d6516fa2751b1be1881001add9b31c6c590d46ce8e3df387547a"
+        }
+      ]
+    },
+    {
+      "id": "claim_96549a0e97924133aafac025168c3bac",
+      "statement": "Persistence is handled by theogony-db-sqlite providing ACID-compliant storage for sources, citations, personas, assertions, individuals, families, places, DNA kits, and edit logs.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-db-sqlite/Cargo.toml",
+          "version": "repo-file-v1:sha256:34875da1d33e15e177d5531492520540e06fffe02af373a75903e39314edd280"
+        },
+        {
+          "resource": "repo://theogony-db-sqlite/src/schema.rs",
+          "version": "repo-file-v1:sha256:38c0381bc764f5d78184069dd9c8d8b44b0b17eeb403fe77d497a84d3c17e3d8"
+        }
+      ]
     }
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-09-27T18:50:08.444Z"
+    "at": "2026-09-28T00:00:28.276Z"
   }
 }

@@ -20,7 +20,10 @@ sources:
     resource: repo://theogony-gedcom/src/mapper/naming.rs
   - id: openwiki-source-3cae5790683d51118c7597cf
     resource: repo://theogony-gedcom/src/vendor/mod.rs
-generated: { by: "openwiki/0.5.1", at: "2026-09-25T18:48:04.838Z" }
+verified:
+  - by: openwiki/0.5.1
+    at: 2026-09-28T00:00:28.276Z
+generated: { by: "openwiki/0.5.1", at: "2026-09-28T00:00:28.276Z" }
 ---
 
 # GEDCOM Portability & Data Interchange
@@ -40,7 +43,7 @@ Portability is divided into three architectural layers to maintain clean separat
 
 - **`theogony-gedcom`**: A pure parsing, serialization, and mapping crate. It parses GEDCOM text into `GedcomDocument` structures, runs vendor signature detection, computes fact-type drafts for extension tags, and maps between domain export shapes and GEDCOM records. It contains **no database access** and knows nothing about SQLite or Tauri.
 - **`theogony-db-sqlite`**: Handles SQLite storage, schema migrations (`migrations::ALL`), and online backup/snapshot routines (`export_theb_snapshot`, `export_snapshot`), as well as importing match trees and evidentiary provenance structures (such as DNA match tree imports referencing shared builtin fact types like `Birth` via `theogony-db-sqlite/src/dna_import.rs`).
-- **`theogony-app`**: Tauri command handlers (`crate::commands::interchange`, `crate::commands::backup`) that bridge the live database (`TreeRepository`) with pure export/import documents, orchestrating transaction boundaries, file locks, and temp-file renaming.
+- **`theogony-app`**: Tauri command handlers (`crate::commands::interchange`, `crate::commands::backup`, and source/bibliography report generators in `crate::commands::reports`) that bridge the live database (`TreeRepository`) with pure export/import documents and analytical views, orchestrating transaction boundaries, file locks, and temp-file renaming (`repo://theogony-app/src/commands/reports.rs`).
 
 ```mermaid
 graph TD
@@ -109,3 +112,15 @@ Genealogy software frequently uses proprietary extension tags (e.g., Ancestry, R
 2. **Tier 2 (Vendor Signature & Tag Tables)**: `detect_vendor` inspects `HEAD.SOUR` and child tags (`NAME`, `VERS`, `CORP`) against a prioritized `REGISTRY` of known vendor profiles (`repo://theogony-gedcom/src/vendor/mod.rs#L57-L71`). Matched extension tags (such as RootsMagic's `_MILT` or custom military tags) resolve to canonical fact types (`canonical_names::MILITARY_SERVICE`, `HAS_PHOTO`, etc.) via centralized mapping tables.
 3. **Tier 3 (Event Type Fallback)**: Unrecognized `EVEN` or `FACT` tags with a `2 TYPE <Value>` substructure adopt the specified type name (`repo://theogony-gedcom/src/mapper/naming.rs#L43-L50`).
 4. **Tier 4 (Mechanical Fallback)**: Any remaining custom extension tags (e.g., `_DIT_NAME`, `_UID`) are processed via `mechanical_name_for_tag`: leading underscores are stripped, remaining underscores and dots are converted to word breaks, and words are title-cased (`_DIT_NAME` → `"Dit Name"`). This guarantees zero data loss: every custom tag becomes a valid fact type rather than falling back to unsearchable raw notes (`repo://theogony-gedcom/src/mapper/naming.rs#L14-L22`).
+
+---
+
+## 6. Source Index, Usage, & Bibliography Reporting
+
+Complementing direct import and export, `theogony-app/src/commands/reports.rs` provides analytical source and citation reports that track evidentiary usage across the database:
+
+- **Source Index (`build_source_index`)**: Lists all source documents in the tree along with title-case-insensitive filtering (`title_filter`) and citation counts per source (`repo://theogony-app/src/commands/reports.rs`).
+- **Source Usage (`build_source_usage`)**: Inspects all fact links and assertion chains citing a given source document, reporting fact type, subject display name, subject kind (`individual` or family), and page reference (`repo://theogony-app/src/commands/reports.rs`).
+- **Individual Bibliography (`build_bibliography`)**: Gathers citation footnotes and evidentiary documentation for a specified individual or ancestor line (`repo://theogony-app/src/commands/reports.rs`).
+- **Unsourced Facts (`build_unsourced_facts`)**: Identifies facts and assertions lacking supporting citations, filterable by owner type, ensuring research gaps are clearly highlighted (`repo://theogony-app/src/commands/reports.rs`).
+- **Privacy Redaction**: All report builders enforce living-person privacy protection (`is_private`), redacting names and sensitive metadata across source usage and bibliographic views (`repo://theogony-app/src/commands/reports.rs`).

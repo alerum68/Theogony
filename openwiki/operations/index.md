@@ -1,3 +1,3 @@
 # Files
 
-- [Review, Audit & Selective Revert](review-and-audit.md) - Comprehensive guide on data hygiene in the Review Queue, auditing edit logs, and handling conflict resolution and selective reverts.
+- [Data Hygiene & Auditability](review-and-audit.md) - Comprehensive guide to the Review Queue, unattached personas, edit history, and selective revert actions.

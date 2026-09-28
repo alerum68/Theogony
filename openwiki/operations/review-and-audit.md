@@ -1,8 +1,8 @@
 ---
 type: operational-guide
-title: Review, Audit & Selective Revert
-description: Comprehensive guide on data hygiene in the Review Queue, auditing edit logs, and handling conflict resolution and selective reverts.
-tags: [review-queue, audit-history, selective-revert, data-hygiene, evidence-first, conflict-resolution]
+title: Data Hygiene & Auditability
+description: Comprehensive guide to the Review Queue, unattached personas, edit history, and selective revert actions.
+tags: [review-queue, audit-history, selective-revert, data-hygiene, evidence-first, conflict-resolution, reporting]
 sources:
   - id: openwiki-source-f885bdcb87851a5066fb63b1
     resource: repo://theogony-app/src/commands/history.rs
@@ -14,16 +14,19 @@ sources:
     resource: repo://ui/src/components/RevertDialog.tsx
   - id: openwiki-source-bc2f9c24b5998e743b312c38
     resource: repo://ui/src/screens/ReviewQueue.tsx
-generated: { by: "openwiki/0.5.1", at: "2026-09-25T15:04:19.343Z" }
+verified:
+  - by: openwiki/0.5.1
+    at: 2026-09-28T00:00:28.276Z
+generated: { by: "openwiki/0.5.1", at: "2026-09-28T00:00:28.276Z" }
 ---
 
-# Review, Audit & Selective Revert
+# Data Hygiene & Auditability
 
-OpenWiki and its underlying domain engine enforce rigorous evidence-first data integrity (`repo://openwiki/concepts/evidence-first-philosophy.md`). Because genealogical data often arrives from disparate GEDCOM imports, multi-archive extractions, and manual annotations, records can occasionally become unattached or multi-cited. The **Review Queue** (`repo://theogony-app/src/commands/review.rs`, `repo://ui/src/screens/ReviewQueue.tsx`) provides dedicated workflows to inspect and resolve these hygiene issues, while the **Edit History** (`repo://theogony-app/src/commands/history.rs`, `repo://ui/src/components/HistoryPanel.tsx`) and **Selective Revert** engine offer full auditability, conflict checking, and safe undo capabilities (`repo://ui/src/components/RevertDialog.tsx`).
+OpenWiki and its underlying domain engine enforce rigorous evidence-first data integrity (`repo://openwiki/concepts/evidence-first-philosophy.md`). Because genealogical data often arrives from disparate GEDCOM imports, multi-archive extractions, and manual annotations, records can occasionally become unattached, multi-cited, or unsourced. The **Review Queue** (`repo://theogony-app/src/commands/review.rs`, `repo://ui/src/screens/ReviewQueue.tsx`) and **Reporting Engine** (`repo://theogony-app/src/commands/reports.rs`) provide dedicated workflows to inspect and resolve these hygiene issues, while the **Edit History** (`repo://theogony-app/src/commands/history.rs`, `repo://ui/src/components/HistoryPanel.tsx`) and **Selective Revert** engine offer full auditability, conflict checking, and safe undo capabilities (`repo://ui/src/components/RevertDialog.tsx`, `repo://theogony-db-sqlite/src/edit_log/conflicts.rs`).
 
 ---
 
-## 1. The Review Queue and Data Hygiene
+## 1. The Review Queue, Data Hygiene & Reporting
 
 The Review Queue helps researchers monitor and clean up entity relationships across core domain sections:
 
@@ -31,6 +34,7 @@ The Review Queue helps researchers monitor and clean up entity relationships acr
 2. **Cited by Multiple Sources**: Personas whose evidence spans multiple source documents (`repo://theogony-app/src/commands/review.rs#L255-L302`). Researchers review these entries to determine whether citations represent independent corroboration or duplicate extractions.
 3. **Date Issues**: Chronological inconsistencies or questionable lifecycle dates flagged for review (`repo://theogony-app/src/commands/review.rs`, `repo://ui/src/screens/ReviewQueue.tsx`), which researchers can dismiss if verified as valid historical variance.
 4. **Merge People**: A manual search-and-pick merge tool where researchers select two individual records (Person A and Person B) via `PersonPicker` components, compare their attributes in the `MergeDialog`, and merge them.
+5. **Unsourced Facts & Place Usage**: Powered by backend reporting commands (`repo://theogony-app/src/commands/dispatch/reports.rs`), the system catalogs facts lacking citations (`build_unsourced_facts`), place usage statistics (`build_place_usage_stats`), and comprehensive bibliographic sources (`build_source_index`, `build_source_usage`, `build_bibliography`), enabling proactive data hygiene audits.
 
 ---
 
@@ -46,7 +50,7 @@ Every modification in the system is recorded in an immutable append-only edit lo
 
 ## 3. Selective Revert and Conflict Resolution
 
-When a researcher initiates a revert on a historical action (`repo://ui/src/components/RevertDialog.tsx`, `repo://theogony-app/src/commands/history.rs`), the system checks for conflicts (`revert_conflicts`) to ensure subsequent edits are not silently corrupted or broken.
+When a researcher initiates a revert on a historical action (`repo://ui/src/components/RevertDialog.tsx`, `repo://theogony-app/src/commands/history.rs`, `repo://theogony-db-sqlite/src/edit_log/conflicts.rs`), the system checks for conflicts (`revert_conflicts`) to ensure subsequent edits are not silently corrupted or broken.
 
 ### Conflict State Transition Logic
 
