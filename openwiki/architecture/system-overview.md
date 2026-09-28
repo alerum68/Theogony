@@ -34,9 +34,6 @@ sources:
     resource: repo://ui/src/components/PedigreeCanvas.tsx
   - id: openwiki-source-6ff378a34d0301bebf1cfaa0
     resource: repo://ui/src/reports/CitationReports.tsx
-verified:
-  - by: openwiki/0.5.1
-    at: 2026-09-28T00:00:28.276Z
 generated: { by: "openwiki/0.5.1", at: "2026-09-28T00:00:28.276Z" }
 ---
 

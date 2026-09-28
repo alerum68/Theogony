@@ -12,9 +12,6 @@ sources:
     resource: repo://theogony-db-sqlite/src/sources.rs
   - id: openwiki-source-a85aedb0d5dda666b82d51d2
     resource: repo://theogony-domain/src/records.rs
-verified:
-  - by: openwiki/0.5.1
-    at: 2026-09-28T00:00:28.276Z
 generated: { by: "openwiki/0.5.1", at: "2026-09-28T00:00:28.276Z" }
 ---
 

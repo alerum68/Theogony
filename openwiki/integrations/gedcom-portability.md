@@ -20,9 +20,6 @@ sources:
     resource: repo://theogony-gedcom/src/mapper/naming.rs
   - id: openwiki-source-3cae5790683d51118c7597cf
     resource: repo://theogony-gedcom/src/vendor/mod.rs
-verified:
-  - by: openwiki/0.5.1
-    at: 2026-09-28T00:00:28.276Z
 generated: { by: "openwiki/0.5.1", at: "2026-09-28T00:00:28.276Z" }
 ---
 
