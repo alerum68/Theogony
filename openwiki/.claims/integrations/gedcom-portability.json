@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:68ed779d9855d46409ab1154ff84d7a63684884895ff88718b7bb64670ea4bf8",
+  "pageVersion": "sha256:8bfcb1a87ba921ca5780951fc0639bbc4f5c2eef01922c005240c4cfb0cde357",
   "claims": [
     {
       "id": "claim_11087e4485e24b57a9ac887ae928c236",
@@ -113,10 +113,54 @@
           "version": "repo-file-v1:sha256:8c088491c807afdb05a8ca26d457ec1dde9a7ab6810456d6883b3895906a26f9"
         }
       ]
+    },
+    {
+      "id": "claim_60b3da90030a4d52bed504b56e4c6f97",
+      "statement": "Complete database backups (.theb) bundle tree.sqlite snapshots created via SQLite's Online Backup API with a manifest.json file inside compressed tar+gzip archives, using atomic staging and file renaming to prevent corruption.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-app/src/commands/backup.rs",
+          "version": "repo-file-v1:sha256:3e969f0de93a85675d76e8d32b7e37289e0cd85e3f56c3c8c1096a65df8a3697"
+        }
+      ]
+    },
+    {
+      "id": "claim_0a3317ca0e84489baee551bd55cea98d",
+      "statement": "Lossless data packages (.tgpkg) are GEDZIP-compliant ZIP archives containing manifest.json, evidence.sqlite, tree.ged, and media/ attachments, supporting full tree instantiation and incremental delta imports with upfront archive validation and schema migration inspection.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-app/src/commands/interchange/package.rs",
+          "version": "repo-file-v1:sha256:0007d9082dbd2207c5a522acbc596032712470e59bcaea1b037ca17e973b8c03"
+        }
+      ]
+    },
+    {
+      "id": "claim_3a04e2f2fd6f458e9ec72d780d39b295",
+      "statement": "Plain GEDCOM interchange supports both GEDCOM 5.5.1 and GEDCOM 7 formats via document assembly, sex normalization, custom fact fallbacks, and vendor extension tag parsing with fact-type draft generation.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-app/src/commands/interchange/plain_ged/mod.rs",
+          "version": "repo-file-v1:sha256:c20f6676c6a3af380717a835182c491905ba6c705a52ed9cbe4bc23c4e5cb4b1"
+        }
+      ]
+    },
+    {
+      "id": "claim_a71bb3909dcb4526bc2db93db787a7a3",
+      "statement": "Vendor extension tags are preserved through a multi-tier resolution strategy combining standard tag mapping, vendor signature detection against HEAD.SOUR, event type fallbacks, and mechanical name conversion for unknown custom tags.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-gedcom/src/mapper/naming.rs",
+          "version": "repo-file-v1:sha256:52738aee790f9552cf4bb53928ce1f5b160d7c71c7ef235576123eaf914d75cd"
+        },
+        {
+          "resource": "repo://theogony-gedcom/src/vendor/mod.rs",
+          "version": "repo-file-v1:sha256:8c088491c807afdb05a8ca26d457ec1dde9a7ab6810456d6883b3895906a26f9"
+        }
+      ]
     }
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-09-28T00:00:28.276Z"
+    "at": "2026-09-29T02:08:51.954Z"
   }
 }

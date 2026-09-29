@@ -34,7 +34,10 @@ sources:
     resource: repo://ui/src/components/PedigreeCanvas.tsx
   - id: openwiki-source-6ff378a34d0301bebf1cfaa0
     resource: repo://ui/src/reports/CitationReports.tsx
-generated: { by: "openwiki/0.5.1", at: "2026-09-28T00:00:28.276Z" }
+verified:
+  - by: openwiki/0.5.1
+    at: 2026-09-29T02:08:51.954Z
+generated: { by: "openwiki/0.5.1", at: "2026-09-29T02:08:51.954Z" }
 ---
 
 # System Overview
@@ -55,6 +58,7 @@ graph TD
     App --> DNA[DNA Analysis and Kits<br/>theogony-dna]
     DB --> File[(Local SQLite Database)]
 ```
+
 System architecture showing Tauri UI interacting via IPC commands with the Rust core application, which orchestrates domain logic, SQLite storage, GEDCOM interchange, and DNA analysis crates.
 
 ## Crate Structure and Subsystems

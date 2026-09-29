@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:0ea96e6ab8fe3db23bb166a8950bce493db480ad3df8c6a10b10f9410968b779",
+  "pageVersion": "sha256:be100e7fdb1d7e4624bbdaf2d68423b9a66b33806e6bfcf911373cd29b88209a",
   "claims": [
     {
       "id": "claim_e31f1ff7ecd847ab9b8150d7df553554",
@@ -8,7 +8,7 @@
       "evidence": [
         {
           "resource": "repo://theogony-app/Cargo.toml",
-          "version": "repo-file-v1:sha256:2f9a0e7281bed8a3a437e7ca0fc0f464939fcf3af11a9412122f8999772f7dbd"
+          "version": "repo-file-v1:sha256:4976bc040535cd7728237deae55d2600c0c6c8bb50b0809f400b6b4bd651d06f"
         },
         {
           "resource": "repo://theogony-app/src/lib.rs",
@@ -46,7 +46,7 @@
         },
         {
           "resource": "repo://theogony-app/Cargo.toml",
-          "version": "repo-file-v1:sha256:2f9a0e7281bed8a3a437e7ca0fc0f464939fcf3af11a9412122f8999772f7dbd"
+          "version": "repo-file-v1:sha256:4976bc040535cd7728237deae55d2600c0c6c8bb50b0809f400b6b4bd651d06f"
         },
         {
           "resource": "repo://theogony-app/src/lib.rs",
@@ -60,7 +60,7 @@
       "evidence": [
         {
           "resource": "repo://theogony-app/Cargo.toml",
-          "version": "repo-file-v1:sha256:2f9a0e7281bed8a3a437e7ca0fc0f464939fcf3af11a9412122f8999772f7dbd"
+          "version": "repo-file-v1:sha256:4976bc040535cd7728237deae55d2600c0c6c8bb50b0809f400b6b4bd651d06f"
         }
       ]
     },
@@ -80,7 +80,7 @@
       "evidence": [
         {
           "resource": "repo://ui/package.json",
-          "version": "repo-file-v1:sha256:8a8a55aafe1b13e577ef7c920be2b31158c7b0cedc0948b918bb15968c8e128c"
+          "version": "repo-file-v1:sha256:8cb3c5b7cb6e3d4c635e8d86ca5a96a4f769ed410b73bca9752f3ab460b4847a"
         }
       ]
     },
@@ -154,7 +154,7 @@
       "evidence": [
         {
           "resource": "repo://theogony-app/Cargo.toml",
-          "version": "repo-file-v1:sha256:2f9a0e7281bed8a3a437e7ca0fc0f464939fcf3af11a9412122f8999772f7dbd"
+          "version": "repo-file-v1:sha256:4976bc040535cd7728237deae55d2600c0c6c8bb50b0809f400b6b4bd651d06f"
         }
       ]
     },
@@ -238,7 +238,7 @@
       "evidence": [
         {
           "resource": "repo://ui/package.json",
-          "version": "repo-file-v1:sha256:8a8a55aafe1b13e577ef7c920be2b31158c7b0cedc0948b918bb15968c8e128c"
+          "version": "repo-file-v1:sha256:8cb3c5b7cb6e3d4c635e8d86ca5a96a4f769ed410b73bca9752f3ab460b4847a"
         }
       ]
     },
@@ -258,7 +258,7 @@
       "evidence": [
         {
           "resource": "repo://theogony-app/Cargo.toml",
-          "version": "repo-file-v1:sha256:2f9a0e7281bed8a3a437e7ca0fc0f464939fcf3af11a9412122f8999772f7dbd"
+          "version": "repo-file-v1:sha256:4976bc040535cd7728237deae55d2600c0c6c8bb50b0809f400b6b4bd651d06f"
         }
       ]
     },
@@ -292,11 +292,11 @@
         },
         {
           "resource": "repo://theogony-app/Cargo.toml",
-          "version": "repo-file-v1:sha256:2f9a0e7281bed8a3a437e7ca0fc0f464939fcf3af11a9412122f8999772f7dbd"
+          "version": "repo-file-v1:sha256:4976bc040535cd7728237deae55d2600c0c6c8bb50b0809f400b6b4bd651d06f"
         },
         {
           "resource": "repo://ui/package.json",
-          "version": "repo-file-v1:sha256:8a8a55aafe1b13e577ef7c920be2b31158c7b0cedc0948b918bb15968c8e128c"
+          "version": "repo-file-v1:sha256:8cb3c5b7cb6e3d4c635e8d86ca5a96a4f769ed410b73bca9752f3ab460b4847a"
         }
       ]
     },
@@ -306,7 +306,7 @@
       "evidence": [
         {
           "resource": "repo://ui/package.json",
-          "version": "repo-file-v1:sha256:8a8a55aafe1b13e577ef7c920be2b31158c7b0cedc0948b918bb15968c8e128c"
+          "version": "repo-file-v1:sha256:8cb3c5b7cb6e3d4c635e8d86ca5a96a4f769ed410b73bca9752f3ab460b4847a"
         },
         {
           "resource": "repo://ui/src/components/PedigreeCanvas.tsx",
@@ -335,6 +335,6 @@
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-09-28T00:00:28.276Z"
+    "at": "2026-09-29T02:08:51.954Z"
   }
 }

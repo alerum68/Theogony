@@ -12,7 +12,10 @@ sources:
     resource: repo://theogony-db-sqlite/src/sources.rs
   - id: openwiki-source-a85aedb0d5dda666b82d51d2
     resource: repo://theogony-domain/src/records.rs
-generated: { by: "openwiki/0.5.1", at: "2026-09-28T00:00:28.276Z" }
+verified:
+  - by: openwiki/0.5.1
+    at: 2026-09-29T02:08:51.954Z
+generated: { by: "openwiki/0.5.1", at: "2026-09-29T02:08:51.954Z" }
 ---
 
 # Evidence-First Philosophy & GPS Standards
@@ -35,8 +38,8 @@ The data architecture moves deliberately from uninterpreted historical artifacts
    - Personas capture names, reported sexes, parent links (`PersonaParent`), and spouse links (`PersonaSpouse`) as stated *in that specific source document* [repo://theogony-db-sqlite/src/personas.rs#L8-L20, repo://theogony-domain/src/records.rs#L480-L524].
 
 3. **Assertions (`Assertion`)**
-   - Represents specific claims made by a persona or source regarding facts (`fact`) or names (`persona_name`) [repo://theogony-db-sqlite/src/assertions.rs#L7-L10, repo://theogony-domain/src/records.rs#L1006-L1022].
-   - Assertions carry explicit **surety** ratings and operational status attributes (`status`) supporting active, proposed, rejected, and disputed workflows [repo://theogony-db-sqlite/src/assertions.rs#L7-L15, repo://theogony-domain/src/records.rs#L1015-L1016].
+   - Represents specific claims made by a persona or source regarding facts (`fact`) or names (`persona_name`), linking back to personas and optionally concerning specific concluded individuals (`concerns_individual_id`) or families (`concerns_family_id`) [repo://theogony-db-sqlite/src/assertions.rs#L7-L10, repo://theogony-domain/src/records.rs#L1006-L1028].
+   - Assertions carry explicit **surety** ratings and operational status attributes (`status`) supporting active, proposed, rejected, and disputed workflows [repo://theogony-db-sqlite/src/assertions.rs#L7-L15, repo://theogony-domain/src/records.rs#L1015-L1022].
 
 4. **Concluded Individuals and Families (`Individual`, `Family`, `FamilyChild`)**
    - Represents the genealogist's synthesized conclusions—the canonical historical individuals (`Individual`) and family units (`Family`) established by exhaustively analyzing and correlating underlying assertions across multiple sources [repo://theogony-domain/src/records.rs#L532-L538].
@@ -59,6 +62,7 @@ graph TD
     end
 
     subgraph Conclusions ["4. Conclusion Layer"]
+    classDef default fill:#f9f9f9,stroke:#333,stroke-width:1px;
         Ass -->|synthesized into| Ind[Concluded Individual]
         Ass -->|synthesized into| Fam[Concluded Family]
     end
