@@ -3,6 +3,9 @@ type: architecture
 title: System Overview
 description: High-level Tauri, React, and SQLite local-first desktop architecture, workspace crates, UI components, and report generation engines.
 tags: [architecture, rust, tauri, react, sqlite, crates, system-overview, ui, reports]
+verified:
+  - by: openwiki/0.5.1
+    at: 2026-09-29T04:26:49.358Z
 sources:
   - id: openwiki-source-651d1fb6c9e49916a916ab51
     resource: repo://Cargo.toml
@@ -34,9 +37,6 @@ sources:
     resource: repo://ui/src/components/PedigreeCanvas.tsx
   - id: openwiki-source-6ff378a34d0301bebf1cfaa0
     resource: repo://ui/src/reports/CitationReports.tsx
-verified:
-  - by: openwiki/0.5.1
-    at: 2026-09-29T02:08:51.954Z
 generated: { by: "openwiki/0.5.1", at: "2026-09-29T02:08:51.954Z" }
 ---
 

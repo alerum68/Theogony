@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:be100e7fdb1d7e4624bbdaf2d68423b9a66b33806e6bfcf911373cd29b88209a",
+  "pageVersion": "sha256:5f1b405275cfc069f2748ea96e560cb8f2953e9b7a904f9c3f155e5d6539c403",
   "claims": [
     {
       "id": "claim_e31f1ff7ecd847ab9b8150d7df553554",
@@ -22,7 +22,7 @@
       "evidence": [
         {
           "resource": "repo://theogony-db-sqlite/Cargo.toml",
-          "version": "repo-file-v1:sha256:34875da1d33e15e177d5531492520540e06fffe02af373a75903e39314edd280"
+          "version": "repo-file-v1:sha256:8f7145250e610c035ea30b2a90b8e707769f10878870e16686b69ee246e45621"
         }
       ]
     },
@@ -32,7 +32,7 @@
       "evidence": [
         {
           "resource": "repo://theogony-db-sqlite/Cargo.toml",
-          "version": "repo-file-v1:sha256:34875da1d33e15e177d5531492520540e06fffe02af373a75903e39314edd280"
+          "version": "repo-file-v1:sha256:8f7145250e610c035ea30b2a90b8e707769f10878870e16686b69ee246e45621"
         }
       ]
     },
@@ -90,7 +90,7 @@
       "evidence": [
         {
           "resource": "repo://theogony-db-sqlite/Cargo.toml",
-          "version": "repo-file-v1:sha256:34875da1d33e15e177d5531492520540e06fffe02af373a75903e39314edd280"
+          "version": "repo-file-v1:sha256:8f7145250e610c035ea30b2a90b8e707769f10878870e16686b69ee246e45621"
         }
       ]
     },
@@ -100,7 +100,7 @@
       "evidence": [
         {
           "resource": "repo://theogony-db-sqlite/Cargo.toml",
-          "version": "repo-file-v1:sha256:34875da1d33e15e177d5531492520540e06fffe02af373a75903e39314edd280"
+          "version": "repo-file-v1:sha256:8f7145250e610c035ea30b2a90b8e707769f10878870e16686b69ee246e45621"
         }
       ]
     },
@@ -120,7 +120,7 @@
       "evidence": [
         {
           "resource": "repo://theogony-domain/src/lib.rs#L1-L48",
-          "version": "repo-lines-v1:sha256:600f73bcd2b8caacc42402e43f8b944108cec905b870153b13da00e120e0da07:eyJzZWxlY3RlZExpbmVDb3VudCI6NDgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEyZmE2ODhiODI0NDdhMjI0NGMwZDJlN2YzN2EzMzM4ODk4N2NkNmM5M2IxN2I3NGEyYzBhYzc3MWE0YTdiMDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFhMWQxYTYzMzkwMjI5Yzc5ODM0N2U4M2EwNDA1NDQxYzk0MDAwMzUyODRhZDE2OGMxYmY2Y2RmMWQ3MGEzNzAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+          "version": "repo-lines-v1:sha256:af604995192d4c2af11137ecf0af0a8ee7bfab6362196bd27bc73c83862c7cd7:eyJzZWxlY3RlZExpbmVDb3VudCI6NDksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEyZmE2ODhiODI0NDdhMjI0NGMwZDJlN2YzN2EzMzM4ODk4N2NkNmM5M2IxN2I3NGEyYzBhYzc3MWE0YTdiMDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFhMWQxYTYzMzkwMjI5Yzc5ODM0N2U4M2EwNDA1NDQxYzk0MDAwMzUyODRhZDE2OGMxYmY2Y2RmMWQ3MGEzNzAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
         }
       ]
     },
@@ -130,11 +130,11 @@
       "evidence": [
         {
           "resource": "repo://theogony-db-sqlite/Cargo.toml",
-          "version": "repo-file-v1:sha256:34875da1d33e15e177d5531492520540e06fffe02af373a75903e39314edd280"
+          "version": "repo-file-v1:sha256:8f7145250e610c035ea30b2a90b8e707769f10878870e16686b69ee246e45621"
         },
         {
           "resource": "repo://theogony-db-sqlite/src/schema.rs",
-          "version": "repo-file-v1:sha256:38c0381bc764f5d78184069dd9c8d8b44b0b17eeb403fe77d497a84d3c17e3d8"
+          "version": "repo-file-v1:sha256:bcfc2eca1b63e67c5959d41c01e03c0d607f62a64cce09b0243ac073a09f882c"
         }
       ]
     },
@@ -164,7 +164,7 @@
       "evidence": [
         {
           "resource": "repo://theogony-domain/src/lib.rs",
-          "version": "repo-file-v1:sha256:600f73bcd2b8caacc42402e43f8b944108cec905b870153b13da00e120e0da07"
+          "version": "repo-file-v1:sha256:af604995192d4c2af11137ecf0af0a8ee7bfab6362196bd27bc73c83862c7cd7"
         }
       ]
     },
@@ -174,11 +174,11 @@
       "evidence": [
         {
           "resource": "repo://theogony-db-sqlite/Cargo.toml",
-          "version": "repo-file-v1:sha256:34875da1d33e15e177d5531492520540e06fffe02af373a75903e39314edd280"
+          "version": "repo-file-v1:sha256:8f7145250e610c035ea30b2a90b8e707769f10878870e16686b69ee246e45621"
         },
         {
           "resource": "repo://theogony-db-sqlite/src/schema.rs",
-          "version": "repo-file-v1:sha256:38c0381bc764f5d78184069dd9c8d8b44b0b17eeb403fe77d497a84d3c17e3d8"
+          "version": "repo-file-v1:sha256:bcfc2eca1b63e67c5959d41c01e03c0d607f62a64cce09b0243ac073a09f882c"
         }
       ]
     },
@@ -268,7 +268,7 @@
       "evidence": [
         {
           "resource": "repo://theogony-db-sqlite/Cargo.toml",
-          "version": "repo-file-v1:sha256:34875da1d33e15e177d5531492520540e06fffe02af373a75903e39314edd280"
+          "version": "repo-file-v1:sha256:8f7145250e610c035ea30b2a90b8e707769f10878870e16686b69ee246e45621"
         }
       ]
     },
@@ -324,17 +324,17 @@
       "evidence": [
         {
           "resource": "repo://theogony-db-sqlite/Cargo.toml",
-          "version": "repo-file-v1:sha256:34875da1d33e15e177d5531492520540e06fffe02af373a75903e39314edd280"
+          "version": "repo-file-v1:sha256:8f7145250e610c035ea30b2a90b8e707769f10878870e16686b69ee246e45621"
         },
         {
           "resource": "repo://theogony-db-sqlite/src/schema.rs",
-          "version": "repo-file-v1:sha256:38c0381bc764f5d78184069dd9c8d8b44b0b17eeb403fe77d497a84d3c17e3d8"
+          "version": "repo-file-v1:sha256:bcfc2eca1b63e67c5959d41c01e03c0d607f62a64cce09b0243ac073a09f882c"
         }
       ]
     }
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-09-29T02:08:51.954Z"
+    "at": "2026-09-29T04:26:49.358Z"
   }
 }

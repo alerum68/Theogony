@@ -1,3 +1,3 @@
 # Files
 
-- [Data Hygiene & Auditability](review-and-audit.md) - Comprehensive guide to the Review Queue, unattached personas, edit history, and selective revert actions.
+- [Review Queue & Audit Trail](review-and-audit.md) - Guides users and administrators through reviewing unattached personas, audit logs, and selective revert workflows.

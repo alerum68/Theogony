@@ -1,8 +1,11 @@
 ---
 type: operational-guide
-title: Data Hygiene & Auditability
-description: Comprehensive guide to the Review Queue, unattached personas, edit history, and selective revert actions.
+title: Review Queue & Audit Trail
+description: Guides users and administrators through reviewing unattached personas, audit logs, and selective revert workflows.
 tags: [review-queue, audit-history, selective-revert, data-hygiene, evidence-first, conflict-resolution, reporting]
+verified:
+  - by: openwiki/0.5.1
+    at: 2026-09-29T04:26:49.358Z
 sources:
   - id: openwiki-source-f885bdcb87851a5066fb63b1
     resource: repo://theogony-app/src/commands/history.rs
@@ -14,16 +17,16 @@ sources:
     resource: repo://ui/src/components/RevertDialog.tsx
   - id: openwiki-source-bc2f9c24b5998e743b312c38
     resource: repo://ui/src/screens/ReviewQueue.tsx
-generated: { by: "openwiki/0.5.1", at: "2026-09-28T00:00:28.276Z" }
+generated: { by: "openwiki/0.5.1", at: "2026-09-29T04:26:49.358Z" }
 ---
 
-# Data Hygiene & Auditability
+# Review Queue & Audit Trail
 
 OpenWiki and its underlying domain engine enforce rigorous evidence-first data integrity (`repo://openwiki/concepts/evidence-first-philosophy.md`). Because genealogical data often arrives from disparate GEDCOM imports, multi-archive extractions, and manual annotations, records can occasionally become unattached, multi-cited, or unsourced. The **Review Queue** (`repo://theogony-app/src/commands/review.rs`, `repo://ui/src/screens/ReviewQueue.tsx`) and **Reporting Engine** (`repo://theogony-app/src/commands/reports.rs`) provide dedicated workflows to inspect and resolve these hygiene issues, while the **Edit History** (`repo://theogony-app/src/commands/history.rs`, `repo://ui/src/components/HistoryPanel.tsx`) and **Selective Revert** engine offer full auditability, conflict checking, and safe undo capabilities (`repo://ui/src/components/RevertDialog.tsx`, `repo://theogony-db-sqlite/src/edit_log/conflicts.rs`).
 
 ---
 
-## 1. The Review Queue, Data Hygiene & Reporting
+## 1. Review Queue Resolution for Unattached Personas & Data Hygiene
 
 The Review Queue helps researchers monitor and clean up entity relationships across core domain sections:
 
@@ -35,17 +38,18 @@ The Review Queue helps researchers monitor and clean up entity relationships acr
 
 ---
 
-## 2. Edit History and Audit Trail
+## 2. Edit History, Multi-Source Citations & Audit Logs
 
-Every modification in the system is recorded in an immutable append-only edit log (`repo://ui/src/components/HistoryPanel.tsx`, `repo://theogony-app/src/commands/history.rs`). 
+Every modification in the system is recorded in an immutable append-only edit log (`repo://ui/src/components/HistoryPanel.tsx`, `repo://theogony-app/src/commands/history.rs`).
 
 - **Virtualized Grid & Cursor Pagination**: The history panel displays actions using cursor pagination over `history_actions` and total counts via `history_count`.
 - **Operation Detail Pane**: Selecting any action loads its underlying low-level field operations (`history_ops`), showing the exact sequence of changes (`op.seq`), operation summaries (`op.kind` and `op.target_kind`), and the before/after JSON states (`op.before`, `op.after`).
 - **Reverted Status**: Actions that have been undone are visually marked as `(reverted)` via `action.reverted_by`.
+- **Multi-Source Citations**: Audit logs and review entries trace complex citations across multiple source documents (`repo://theogony-app/src/commands/review.rs`), ensuring clear provenance when resolving multi-cited records or unattached personas.
 
 ---
 
-## 3. Selective Revert and Conflict Resolution
+## 3. Selective Revert Actions and Conflict Resolution
 
 When a researcher initiates a revert on a historical action (`repo://ui/src/components/RevertDialog.tsx`, `repo://theogony-app/src/commands/history.rs`, `repo://theogony-db-sqlite/src/edit_log/conflicts.rs`), the system checks for conflicts (`revert_conflicts`) to ensure subsequent edits are not silently corrupted or broken.
 

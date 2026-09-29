@@ -11,6 +11,9 @@ sources:
   - id: openwiki-source-61c917696a7dbf739bd28821
     resource: repo://theogony-domain/src/lib.rs
 generated: { by: "openwiki/0.5.1", at: "2026-09-25T18:48:04.838Z" }
+verified:
+  - by: openwiki/0.5.1
+    at: 2026-09-29T04:26:49.358Z
 ---
 
 # Theogony Quickstart & Navigation Guide

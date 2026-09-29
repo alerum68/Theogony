@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:bd437e62598f2129c0f5f2d080cf1f9f6501f5ca8a82a0948b7c0254b7d022eb",
+  "pageVersion": "sha256:9a98efa75ffa9d1ef8068268a3cb328f1b2015d732a5afc3d602b25533f92f51",
   "claims": [
     {
       "id": "claim_aaf89ff87a82456581abe1f2da1ed2c2",
@@ -267,10 +267,54 @@
           "version": "repo-lines-v1:sha256:133c093072a53e6243f60d90856450100ec4d6ef163276597e0e9907ee0bfb8d:eyJzZWxlY3RlZExpbmVDb3VudCI6MzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ4ZDBhZmFmNDZjMGUyN2I4YTg5M2ViOWE2OWZmM2JlMzczZDVlYjNhMjhjMGZiNWE2NWI1ZGQwMjkyZGVjMTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVlZTFiMjIzZmJhODZhMTgxMTA2NzQ5OTAwY2IzMjEyMTMxODQyZWI3MDViYThkNTEzOWNmMjg5ZmVkZWM3YjIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFjOTI5MzE3MDUzMDVkMjFlOTU5Y2RhZTA5MmYzNjU0ZDJkNmZjMTE5Zjc4YzE4NWM5MDkzYWViZDMzNDgzMGEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE3MjBlNzgxNWUwYjVkNDVmNzg0MmNiY2M1NWFhODBkYTJjNTZkNTg4MmE0MzczNzc4MzA2YTZmZmQ3MjM2MjMifQ"
         }
       ]
+    },
+    {
+      "id": "claim_c874f11c35744e999aa39a6ab4621a10",
+      "statement": "Theogony's evidence-first architecture separates raw source documents and citations from extracted personas, assertions, and concluded individuals and families.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-domain/src/records.rs#L343-L353",
+          "version": "repo-lines-v1:sha256:f362ed76457c41faf3146406cb46fa4ae89a95e2f84fdf380feae4699bbb3865:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZmMjczYjA3MzgxMjIxMzY4OWU1MmZjZGY2ZTVjMzMzMWY5NjUwODIyNjIzODk1NDEzMTczOGM2Y2IwODdlMGUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlkZmI4MWU4NWEwOTg2Mjg1YzdjYjE2NTUwM2JkZGFkMzM4OGFlZDFiYjFiOTkzZDQ4MDE2N2Q5MjI4MmVmMTIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ1YTA1Yzg2MWZkNzk1M2U2NzMxZTBhODY2NDY0M2Q4N2RjODNkZGQ2MDczYTZlODg4OGNmYjhjZmEwZGY0ZjMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZkZTE5OWM3NTI1ZDQwN2FjNTM5MjkzYjEyNjdmMzk5ZWFlN2IyYWEwZDllZjdkYWJhNDNhODdiMmJmYzFlNDYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_090098d7ffcc4aaa935c2afef1d63d37",
+      "statement": "Extracted personas represent unlinked historical individuals as they appear within specific source documents, preserving names, reported sexes, and document-specific parent or spouse links.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-domain/src/records.rs#L343-L353",
+          "version": "repo-lines-v1:sha256:f362ed76457c41faf3146406cb46fa4ae89a95e2f84fdf380feae4699bbb3865:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZmMjczYjA3MzgxMjIxMzY4OWU1MmZjZGY2ZTVjMzMzMWY5NjUwODIyNjIzODk1NDEzMTczOGM2Y2IwODdlMGUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlkZmI4MWU4NWEwOTg2Mjg1YzdjYjE2NTUwM2JkZGFkMzM4OGFlZDFiYjFiOTkzZDQ4MDE2N2Q5MjI4MmVmMTIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ1YTA1Yzg2MWZkNzk1M2U2NzMxZTBhODY2NDY0M2Q4N2RjODNkZGQ2MDczYTZlODg4OGNmYjhjZmEwZGY0ZjMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZkZTE5OWM3NTI1ZDQwN2FjNTM5MjkzYjEyNjdmMzk5ZWFlN2IyYWEwZDllZjdkYWJhNDNhODdiMmJmYzFlNDYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_523fd1c291564f0797e5ea119e468a86",
+      "statement": "Assertions represent specific claims made by personas or sources regarding facts or names, carrying surety ratings and operational status attributes.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-domain/src/records.rs#L1006-L1028",
+          "version": "repo-lines-v1:sha256:84cc3869d56a704866c6150f235a11a2d3984e94eddbd4f7a30d5d72445b9cc8:eyJzZWxlY3RlZExpbmVDb3VudCI6MjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlkZmI4MWU4NWEwOTg2Mjg1YzdjYjE2NTUwM2JkZGFkMzM4OGFlZDFiYjFiOTkzZDQ4MDE2N2Q5MjI4MmVmMTIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjkwYmRjZGY5ZGNhMzg3YThjOTQ1ZDNiM2M3NjFjYjRjMmE4ZTY0OTZmYTU0ZDAxZmEzMDk3ZjAzYWNmNWUyZjgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZkZTE5OWM3NTI1ZDQwN2FjNTM5MjkzYjEyNjdmMzk5ZWFlN2IyYWEwZDllZjdkYWJhNDNhODdiMmJmYzFlNDYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_e54acd9b2637474f9b12e06c6c9b1931",
+      "statement": "Non-destructive conflict handling uses operational statuses such as active, disputed, rejected, and proposed to manage conflicting genealogical claims without overwriting data.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-domain/src/records.rs#L1006-L1022",
+          "version": "repo-lines-v1:sha256:f49b280f968090d509745434b783f8c9cd2afe9187de9f34ebedee8e687efa31:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU1N2U2YTgzZGMyOTI0MDNhZmRjYTMzZTc2MTI2M2ZjZGMwMDhhNTA5MmU5YjUyMzkxMjAzNzc2NzVhYTM0YjkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjkwYmRjZGY5ZGNhMzg3YThjOTQ1ZDNiM2M3NjFjYjRjMmE4ZTY0OTZmYTU0ZDAxZmEzMDk3ZjAzYWNmNWUyZjgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImFmMjk1ZTVlMWQ3OTI2Y2ZlZjdkNjIwNTg5ZmY2MGExY2IxNGViZGM2YThhNWZkMWQ4NTY1ZTZmNjZkMDllYTAifQ"
+        },
+        {
+          "resource": "repo://theogony-domain/src/records.rs#L495-L524",
+          "version": "repo-lines-v1:sha256:dadcf505436edbaa6de863d54ff481d6eaf2e9da4dcfc1a51d5eb37f174412ff:eyJzZWxlY3RlZExpbmVDb3VudCI6MzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRlMjIzNjNmYTY0MTdhYjVhNGFhZjlkYzU1ZTA2ODUxOTkxZmM4MzNmMGMxOTI5ZDdmZGRhYmI4MDEzNjM3NGIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjkwYmRjZGY5ZGNhMzg3YThjOTQ1ZDNiM2M3NjFjYjRjMmE4ZTY0OTZmYTU0ZDAxZmEzMDk3ZjAzYWNmNWUyZjgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjE4ZjZmMzAzZWNiNTE3MGNlNzgyMjc4Y2U5NzA1MzVkN2VlOWYxZjVmOGE2MjY5MDEwY2M4MGFjYmI4ODZkM2YifQ"
+        }
+      ]
     }
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-09-29T02:08:51.954Z"
+    "at": "2026-09-29T04:26:49.358Z"
   }
 }

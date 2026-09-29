@@ -23,7 +23,7 @@ sources:
 generated: { by: "openwiki/0.5.1", at: "2026-09-28T00:00:28.276Z" }
 verified:
   - by: openwiki/0.5.1
-    at: 2026-09-29T02:08:51.954Z
+    at: 2026-09-29T04:26:49.358Z
 ---
 
 # GEDCOM Portability & Data Interchange

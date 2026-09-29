@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:9709cfd4b0bb4641dc2ce19f08d7fc740c310423751631b67d19ab18e071dd8d",
+  "pageVersion": "sha256:4844bf1f24f65976181c8d1b1fa77fb24fe49b6876e7db01efbe3bb390b4a53f",
   "claims": [
     {
       "id": "claim_8b305b7eefbd472da3cf15717aa846d9",
@@ -14,27 +14,31 @@
     },
     {
       "id": "claim_f444f4b02ea2417a80247c64c62ac150",
-      "statement": "Theogony's core domain models separate source documents, citations, personas, assertions, and concluded individuals.",
+      "statement": "Theogony's core domain models separate source documents, citations, personas, assertions, and concluded individuals across structured Rust modules.",
       "evidence": [
         {
           "resource": "repo://theogony-domain/src/lib.rs",
-          "version": "repo-file-v1:sha256:600f73bcd2b8caacc42402e43f8b944108cec905b870153b13da00e120e0da07"
+          "version": "repo-file-v1:sha256:af604995192d4c2af11137ecf0af0a8ee7bfab6362196bd27bc73c83862c7cd7"
         }
       ]
     },
     {
       "id": "claim_199091dae5e049df8c17a245b5938c93",
-      "statement": "The Tauri desktop application shell coordinates IPC commands, state management, and native user interface bindings.",
+      "statement": "The Tauri desktop application shell coordinates IPC commands, state management, native user interface bindings, and workspace crate coordination.",
       "evidence": [
         {
+          "resource": "repo://Cargo.toml",
+          "version": "repo-file-v1:sha256:2f820b95a343fd7178ecba7a9df21c4de15028c98189c0d58eac9ce862ca975a"
+        },
+        {
           "resource": "repo://theogony-app/Cargo.toml",
-          "version": "repo-file-v1:sha256:2f9a0e7281bed8a3a437e7ca0fc0f464939fcf3af11a9412122f8999772f7dbd"
+          "version": "repo-file-v1:sha256:4976bc040535cd7728237deae55d2600c0c6c8bb50b0809f400b6b4bd651d06f"
         }
       ]
     }
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-09-28T01:13:16.776Z"
+    "at": "2026-09-29T04:26:49.358Z"
   }
 }
