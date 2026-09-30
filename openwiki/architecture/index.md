@@ -1,3 +1,3 @@
 # Files
 
-- [System Overview](system-overview.md) - High-level Tauri, React, and SQLite local-first desktop architecture, workspace crates, UI components, and report generation engines.
+- [System Overview & Evidence Architecture](system-overview.md) - Explains the high-level architecture of Theogony (Tauri, React, SQLite), the core crate structure, and the Evidence-First Philosophy data pipeline.

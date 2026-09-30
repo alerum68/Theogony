@@ -5,7 +5,7 @@ description: Core genealogical philosophy and data modeling of evidence separati
 tags: [evidence-first, genealogy, gps, personas, assertions, conflict-handling, architecture]
 verified:
   - by: openwiki/0.5.1
-    at: 2026-09-29T04:26:49.358Z
+    at: 2026-09-30T22:45:20.709Z
 sources:
   - id: openwiki-source-17ccbeaa6afd5efa0cb28ccd
     resource: repo://theogony-db-sqlite/src/assertions.rs

@@ -3,9 +3,6 @@ type: operational-guide
 title: Review Queue & Audit Trail
 description: Guides users and administrators through reviewing unattached personas, audit logs, and selective revert workflows.
 tags: [review-queue, audit-history, selective-revert, data-hygiene, evidence-first, conflict-resolution, reporting]
-verified:
-  - by: openwiki/0.5.1
-    at: 2026-09-29T04:26:49.358Z
 sources:
   - id: openwiki-source-f885bdcb87851a5066fb63b1
     resource: repo://theogony-app/src/commands/history.rs

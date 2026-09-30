@@ -26,9 +26,6 @@ sources:
     resource: repo://ui/src/shell/AppShell.tsx
   - id: openwiki-source-f87f9cc8e5ca8b9e6e4b28b2
     resource: repo://ui/src/shell/DockWorkbench.tsx
-verified:
-  - by: openwiki/0.5.1
-    at: 2026-09-29T04:26:49.358Z
 generated: { by: "openwiki/0.5.1", at: "2026-09-25T18:48:04.838Z" }
 ---
 
