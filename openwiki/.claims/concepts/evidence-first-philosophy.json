@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:475e699eae37b59c8de5c21cc549a8e3ce5ef5cc90b17c5a8d3c30ef9ce49389",
+  "pageVersion": "sha256:976101d6bdc57606e855ec95c3fd38601ddd8e6408267047d2d8756032641a53",
   "claims": [
     {
       "id": "claim_aaf89ff87a82456581abe1f2da1ed2c2",
@@ -311,10 +311,68 @@
           "version": "repo-lines-v1:sha256:dadcf505436edbaa6de863d54ff481d6eaf2e9da4dcfc1a51d5eb37f174412ff:eyJzZWxlY3RlZExpbmVDb3VudCI6MzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRlMjIzNjNmYTY0MTdhYjVhNGFhZjlkYzU1ZTA2ODUxOTkxZmM4MzNmMGMxOTI5ZDdmZGRhYmI4MDEzNjM3NGIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjkwYmRjZGY5ZGNhMzg3YThjOTQ1ZDNiM2M3NjFjYjRjMmE4ZTY0OTZmYTU0ZDAxZmEzMDk3ZjAzYWNmNWUyZjgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjE4ZjZmMzAzZWNiNTE3MGNlNzgyMjc4Y2U5NzA1MzVkN2VlOWYxZjVmOGE2MjY5MDEwY2M4MGFjYmI4ODZkM2YifQ"
         }
       ]
+    },
+    {
+      "id": "claim_7e96364c9732406fb2744406ff6c2dd6",
+      "statement": "Theogony separates raw source documents and citations (SourceDocument, Citation, CitationLink) from extracted personas, assertions, and concluded individuals and families.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-domain/src/records.rs#L343-L353",
+          "version": "repo-lines-v1:sha256:f362ed76457c41faf3146406cb46fa4ae89a95e2f84fdf380feae4699bbb3865:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZmMjczYjA3MzgxMjIxMzY4OWU1MmZjZGY2ZTVjMzMzMWY5NjUwODIyNjIzODk1NDEzMTczOGM2Y2IwODdlMGUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlkZmI4MWU4NWEwOTg2Mjg1YzdjYjE2NTUwM2JkZGFkMzM4OGFlZDFiYjFiOTkzZDQ4MDE2N2Q5MjI4MmVmMTIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ1YTA1Yzg2MWZkNzk1M2U2NzMxZTBhODY2NDY0M2Q4N2RjODNkZGQ2MDczYTZlODg4OGNmYjhjZmEwZGY0ZjMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZkZTE5OWM3NTI1ZDQwN2FjNTM5MjkzYjEyNjdmMzk5ZWFlN2IyYWEwZDllZjdkYWJhNDNhODdiMmJmYzFlNDYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_6ce9eedd290d489795de641b13ef4cd9",
+      "statement": "Extracted personas represent unlinked individuals as they appear within specific source documents, capturing reported names, sex, and source-local parent and spouse relationships.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-domain/src/records.rs#L343-L353",
+          "version": "repo-lines-v1:sha256:f362ed76457c41faf3146406cb46fa4ae89a95e2f84fdf380feae4699bbb3865:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZmMjczYjA3MzgxMjIxMzY4OWU1MmZjZGY2ZTVjMzMzMWY5NjUwODIyNjIzODk1NDEzMTczOGM2Y2IwODdlMGUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlkZmI4MWU4NWEwOTg2Mjg1YzdjYjE2NTUwM2JkZGFkMzM4OGFlZDFiYjFiOTkzZDQ4MDE2N2Q5MjI4MmVmMTIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQ1YTA1Yzg2MWZkNzk1M2U2NzMxZTBhODY2NDY0M2Q4N2RjODNkZGQ2MDczYTZlODg4OGNmYjhjZmEwZGY0ZjMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZkZTE5OWM3NTI1ZDQwN2FjNTM5MjkzYjEyNjdmMzk5ZWFlN2IyYWEwZDllZjdkYWJhNDNhODdiMmJmYzFlNDYifQ"
+        },
+        {
+          "resource": "repo://theogony-domain/src/records.rs#L480-L524",
+          "version": "repo-lines-v1:sha256:532f408ce4546eff96459999c0ed34367b17a283611c3205b981888f6068ef97:eyJzZWxlY3RlZExpbmVDb3VudCI6NDUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRlMjIzNjNmYTY0MTdhYjVhNGFhZjlkYzU1ZTA2ODUxOTkxZmM4MzNmMGMxOTI5ZDdmZGRhYmI4MDEzNjM3NGIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImVjYzgwYjQ2N2U2MWQ4NGM5Y2JmMGNhNWRmNTE5MjAzN2Y5ZWYzZmUxZjhiZjRmMTc4YmQ2MDkxZDVmMmYyMTgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjE4ZjZmMzAzZWNiNTE3MGNlNzgyMjc4Y2U5NzA1MzVkN2VlOWYxZjVmOGE2MjY5MDEwY2M4MGFjYmI4ODZkM2YifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_c6150bf87eb8405582093e76062491db",
+      "statement": "Assertions represent specific claims made by a persona or source regarding facts or names, carrying surety ratings and operational status attributes.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-domain/src/records.rs#L1006-L1028",
+          "version": "repo-lines-v1:sha256:84cc3869d56a704866c6150f235a11a2d3984e94eddbd4f7a30d5d72445b9cc8:eyJzZWxlY3RlZExpbmVDb3VudCI6MjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlkZmI4MWU4NWEwOTg2Mjg1YzdjYjE2NTUwM2JkZGFkMzM4OGFlZDFiYjFiOTkzZDQ4MDE2N2Q5MjI4MmVmMTIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjkwYmRjZGY5ZGNhMzg3YThjOTQ1ZDNiM2M3NjFjYjRjMmE4ZTY0OTZmYTU0ZDAxZmEzMDk3ZjAzYWNmNWUyZjgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZkZTE5OWM3NTI1ZDQwN2FjNTM5MjkzYjEyNjdmMzk5ZWFlN2IyYWEwZDllZjdkYWJhNDNhODdiMmJmYzFlNDYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_d6bc27e06c5842049ee026d4d2021060",
+      "statement": "Concluded individuals and families represent the canonical historical entities synthesized by analyzing and correlating underlying assertions across multiple sources.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-domain/src/records.rs#L532-L538",
+          "version": "repo-lines-v1:sha256:93608ef0a685ce287cc107361e14b4b0c81f1bdd07fd782f11f297cef1c37cb8:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZmYyNzNiMDczODEyMjEzNjg5ZTUyZmNkZjZlNWMzMzMxZjk2NTA4MjI2MjM4OTU0MTMxNzM4YzZjYjA4N2UwZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiOTBiZGNkZjlkY2EzODdhOGM5NDVkM2IzYzc2MWNiNGMyYThlNjQ5NmZhNTRkMDFmYTMwOTdmMDNhY2Y1ZTJmOCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNWIzNTU5YTViNTY1MzBjZjExN2UyNzgxYWVlMmU5NDUzZGQzMmZmZjcwYjE1NzA5MzA4ZTliYjZlMTc1NTNkYiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_96d57a5ed546477bbd7923f91f21c4ef",
+      "statement": "Non-destructive conflict handling uses operational statuses such as active, disputed, rejected, and proposed on assertions and relationship links instead of overwriting conflicting data.",
+      "evidence": [
+        {
+          "resource": "repo://theogony-domain/src/records.rs#L1006-L1022",
+          "version": "repo-lines-v1:sha256:f49b280f968090d509745434b783f8c9cd2afe9187de9f34ebedee8e687efa31:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU1N2U2YTgzZGMyOTI0MDNhZmRjYTMzZTc2MTI2M2ZjZGMwMDhhNTA5MmU5YjUyMzkxMjAzNzc2NzVhYTM0YjkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjkwYmRjZGY5ZGNhMzg3YThjOTQ1ZDNiM2M3NjFjYjRjMmE4ZTY0OTZmYTU0ZDAxZmEzMDk3ZjAzYWNmNWUyZjgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImFmMjk1ZTVlMWQ3OTI2Y2ZlZjdkNjIwNTg5ZmY2MGExY2IxNGViZGM2YThhNWZkMWQ4NTY1ZTZmNjZkMDllYTAifQ"
+        },
+        {
+          "resource": "repo://theogony-domain/src/records.rs#L495-L524",
+          "version": "repo-lines-v1:sha256:dadcf505436edbaa6de863d54ff481d6eaf2e9da4dcfc1a51d5eb37f174412ff:eyJzZWxlY3RlZExpbmVDb3VudCI6MzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRlMjIzNjNmYTY0MTdhYjVhNGFhZjlkYzU1ZTA2ODUxOTkxZmM4MzNmMGMxOTI5ZDdmZGRhYmI4MDEzNjM3NGIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjkwYmRjZGY5ZGNhMzg3YThjOTQ1ZDNiM2M3NjFjYjRjMmE4ZTY0OTZmYTU0ZDAxZmEzMDk3ZjAzYWNmNWUyZjgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjE4ZjZmMzAzZWNiNTE3MGNlNzgyMjc4Y2U5NzA1MzVkN2VlOWYxZjVmOGE2MjY5MDEwY2M4MGFjYmI4ODZkM2YifQ"
+        }
+      ]
     }
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-09-30T22:45:20.709Z"
+    "at": "2026-10-01T06:02:24.177Z"
   }
 }

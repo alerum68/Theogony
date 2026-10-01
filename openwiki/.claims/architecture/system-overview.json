@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:5f6ac62dcd73791bfb8178521f1bdd02cf4f7afd4ada9e3e2de70bd6cb38226c",
+  "pageVersion": "sha256:6fd36ab2c56973bd4a65e40cb021f17aa920109a05b10162e5978ca535ae576f",
   "claims": [
     {
       "id": "claim_e31f1ff7ecd847ab9b8150d7df553554",
@@ -120,7 +120,7 @@
       "evidence": [
         {
           "resource": "repo://theogony-domain/src/lib.rs#L1-L48",
-          "version": "repo-lines-v1:sha256:c678a9bdc297bfbf0364f48278578eb2189fce3f05e061c1d3b0ddaed088281f:eyJzZWxlY3RlZExpbmVDb3VudCI6NDksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEyZmE2ODhiODI0NDdhMjI0NGMwZDJlN2YzN2EzMzM4ODk4N2NkNmM5M2IxN2I3NGEyYzBhYzc3MWE0YTdiMDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImFhMWQxYTYzMzkwMjI5Yzc5ODM0N2U4M2EwNDA1NDQxYzk0MDAwMzUyODRhZDE2OGMxYmY2Y2RmMWQ3MGEzNzAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+          "version": "repo-lines-v1:sha256:51478aaf9c6d1ff254339eea6c99b05cef17920c85f590d45105f50f0dce5ff4:eyJzZWxlY3RlZExpbmVDb3VudCI6NTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEyZmE2ODhiODI0NDdhMjI0NGMwZDJlN2YzN2EzMzM4ODk4N2NkNmM5M2IxN2I3NGEyYzBhYzc3MWE0YTdiMDAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImUzZWFiZTY1ZmNjZDA3NTU4ZjFmZjhiOTNmYjM5YzQwMTYwN2JjZjBmNjhhNjliZjZjNjI4ZTdkNWY2N2ZkYjQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
         }
       ]
     },
@@ -134,7 +134,7 @@
         },
         {
           "resource": "repo://theogony-db-sqlite/src/schema.rs",
-          "version": "repo-file-v1:sha256:0b32046865da788b895aade26b53e29a9f4ab2573ba50c47d3ba1c6cd6a259ca"
+          "version": "repo-file-v1:sha256:179d269fd0a59eeceab4a93ea82dbf6961d40c945f8c934f813332bef46e8ebb"
         }
       ]
     },
@@ -164,7 +164,7 @@
       "evidence": [
         {
           "resource": "repo://theogony-domain/src/lib.rs",
-          "version": "repo-file-v1:sha256:c678a9bdc297bfbf0364f48278578eb2189fce3f05e061c1d3b0ddaed088281f"
+          "version": "repo-file-v1:sha256:51478aaf9c6d1ff254339eea6c99b05cef17920c85f590d45105f50f0dce5ff4"
         }
       ]
     },
@@ -178,7 +178,7 @@
         },
         {
           "resource": "repo://theogony-db-sqlite/src/schema.rs",
-          "version": "repo-file-v1:sha256:0b32046865da788b895aade26b53e29a9f4ab2573ba50c47d3ba1c6cd6a259ca"
+          "version": "repo-file-v1:sha256:179d269fd0a59eeceab4a93ea82dbf6961d40c945f8c934f813332bef46e8ebb"
         }
       ]
     },
@@ -328,13 +328,13 @@
         },
         {
           "resource": "repo://theogony-db-sqlite/src/schema.rs",
-          "version": "repo-file-v1:sha256:0b32046865da788b895aade26b53e29a9f4ab2573ba50c47d3ba1c6cd6a259ca"
+          "version": "repo-file-v1:sha256:179d269fd0a59eeceab4a93ea82dbf6961d40c945f8c934f813332bef46e8ebb"
         }
       ]
     }
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-09-30T22:45:20.709Z"
+    "at": "2026-10-01T06:02:24.177Z"
   }
 }
