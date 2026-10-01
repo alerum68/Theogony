@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:1c91b26b8c44a77c89c1d58c2ed9013c60cbf28317679bd07b5cb58350918077",
+  "pageVersion": "sha256:81173b84fa072582d311aaf03c503c8b5573a86af607ee9ef094ccd6dd7a5a1f",
   "claims": [
     {
       "id": "claim_53865b534fed47e9a5e7f49642522c63",
@@ -24,7 +24,7 @@
         },
         {
           "resource": "repo://ui/src/shell/DockWorkbench.tsx",
-          "version": "repo-file-v1:sha256:d456d8d667cc6586479c4606234a650b9bb44a74836f2aa71ed8642a40e459bf"
+          "version": "repo-file-v1:sha256:401743728049ce98358ce3cbaca5e65ff16714f2bd7271b56c8da9985d246297"
         }
       ]
     },
@@ -88,7 +88,7 @@
         },
         {
           "resource": "repo://ui/src/shell/DockWorkbench.tsx",
-          "version": "repo-file-v1:sha256:d456d8d667cc6586479c4606234a650b9bb44a74836f2aa71ed8642a40e459bf"
+          "version": "repo-file-v1:sha256:401743728049ce98358ce3cbaca5e65ff16714f2bd7271b56c8da9985d246297"
         }
       ]
     },
@@ -151,6 +151,6 @@
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-09-29T04:26:49.358Z"
+    "at": "2026-10-01T02:58:19.008Z"
   }
 }

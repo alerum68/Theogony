@@ -5,29 +5,29 @@
       "pageVersion": "sha256:5f6ac62dcd73791bfb8178521f1bdd02cf4f7afd4ada9e3e2de70bd6cb38226c",
       "completedBy": "openwiki/0.5.1",
       "completedRunId": "f6c01791-61e9-4906-bb1b-fa001f7fb321",
-      "gitHead": "f275c88177c260f9be9b19d74ebc056658b97ead",
-      "sourceFingerprint": "sha256:29f1d0cea4580d515c2c2e952e476ed945b8f5541ed20a6fce4169b419f19c2c"
+      "gitHead": "028b9bf8e7ac7f3e01a1d5244528a791bf7ed978",
+      "sourceFingerprint": "sha256:56e176285cf97750623ccbecd5795eb1c0df55cc2daa31e97f447e7230346b15"
     },
     "/openwiki/concepts/evidence-first-philosophy.md": {
       "pageVersion": "sha256:475e699eae37b59c8de5c21cc549a8e3ce5ef5cc90b17c5a8d3c30ef9ce49389",
       "completedBy": "openwiki/0.5.1",
       "completedRunId": "f6c01791-61e9-4906-bb1b-fa001f7fb321",
-      "gitHead": "f275c88177c260f9be9b19d74ebc056658b97ead",
-      "sourceFingerprint": "sha256:29f1d0cea4580d515c2c2e952e476ed945b8f5541ed20a6fce4169b419f19c2c"
+      "gitHead": "028b9bf8e7ac7f3e01a1d5244528a791bf7ed978",
+      "sourceFingerprint": "sha256:56e176285cf97750623ccbecd5795eb1c0df55cc2daa31e97f447e7230346b15"
     },
     "/openwiki/integrations/gedcom-portability.md": {
-      "gitHead": "e21640f7027e794ddf0009eff2d2b5581ca6785c",
-      "sourceFingerprint": "sha256:b7f12a85f88576fc9db1ef0d82447a2b868aab16a290b7077d9afc0983758db9",
       "pageVersion": "sha256:a85e9430bbf9d6ec7e4efd9d3f555a80b71e1fb2e9b89934eaf7f4365cc6c1cb",
       "completedBy": "openwiki/0.5.1",
-      "completedRunId": "e8c4b5f2-0aa7-4636-a376-b5e05f46ae0a"
+      "completedRunId": "e8c4b5f2-0aa7-4636-a376-b5e05f46ae0a",
+      "gitHead": "028b9bf8e7ac7f3e01a1d5244528a791bf7ed978",
+      "sourceFingerprint": "sha256:56e176285cf97750623ccbecd5795eb1c0df55cc2daa31e97f447e7230346b15"
     },
     "/openwiki/operations/review-and-audit.md": {
-      "gitHead": "e21640f7027e794ddf0009eff2d2b5581ca6785c",
-      "sourceFingerprint": "sha256:b7f12a85f88576fc9db1ef0d82447a2b868aab16a290b7077d9afc0983758db9",
-      "pageVersion": "sha256:95635b41785375ed94d6410ba0b2005b465de6c9b1cbf2329bbe3cf3b8c22248",
+      "pageVersion": "sha256:46abe8d73121a0ac749a9f096a382b3af6a08d6263b2c993db15528e1e81be5a",
       "completedBy": "openwiki/0.5.1",
-      "completedRunId": "e8c4b5f2-0aa7-4636-a376-b5e05f46ae0a"
+      "completedRunId": "e8c4b5f2-0aa7-4636-a376-b5e05f46ae0a",
+      "gitHead": "028b9bf8e7ac7f3e01a1d5244528a791bf7ed978",
+      "sourceFingerprint": "sha256:56e176285cf97750623ccbecd5795eb1c0df55cc2daa31e97f447e7230346b15"
     },
     "/openwiki/quickstart.md": {
       "gitHead": "e21640f7027e794ddf0009eff2d2b5581ca6785c",
@@ -37,11 +37,11 @@
       "completedRunId": "e8c4b5f2-0aa7-4636-a376-b5e05f46ae0a"
     },
     "/openwiki/workflows/user-workflows.md": {
-      "gitHead": "e21640f7027e794ddf0009eff2d2b5581ca6785c",
-      "sourceFingerprint": "sha256:b7f12a85f88576fc9db1ef0d82447a2b868aab16a290b7077d9afc0983758db9",
-      "pageVersion": "sha256:6d5cf640a360d8d11a80e7aa73521aa6bc4873fc515cb0c89e15cc96aec4bf60",
+      "pageVersion": "sha256:81173b84fa072582d311aaf03c503c8b5573a86af607ee9ef094ccd6dd7a5a1f",
       "completedBy": "openwiki/0.5.1",
-      "completedRunId": "e8c4b5f2-0aa7-4636-a376-b5e05f46ae0a"
+      "completedRunId": "4154d258-3fbb-4d93-bec5-a3ea7e6e2287",
+      "gitHead": "028b9bf8e7ac7f3e01a1d5244528a791bf7ed978",
+      "sourceFingerprint": "sha256:56e176285cf97750623ccbecd5795eb1c0df55cc2daa31e97f447e7230346b15"
     }
   }
 }
