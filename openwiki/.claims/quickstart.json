@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:9709cfd4b0bb4641dc2ce19f08d7fc740c310423751631b67d19ab18e071dd8d",
+  "pageVersion": "sha256:f6800511de5818e0f59e25e36cc138532ab397fc1ab029bc8e229505304f1345",
   "claims": [
     {
       "id": "claim_8b305b7eefbd472da3cf15717aa846d9",
@@ -14,11 +14,15 @@
     },
     {
       "id": "claim_f444f4b02ea2417a80247c64c62ac150",
-      "statement": "Theogony's core domain models separate source documents, citations, personas, assertions, and concluded individuals across structured Rust modules.",
+      "statement": "Theogony's core domain models separate source documents, citations, personas, assertions, and concluded individuals across structured Rust modules in `theogony-domain`.",
       "evidence": [
         {
+          "resource": "repo://Cargo.toml",
+          "version": "repo-file-v1:sha256:2f820b95a343fd7178ecba7a9df21c4de15028c98189c0d58eac9ce862ca975a"
+        },
+        {
           "resource": "repo://theogony-domain/src/lib.rs",
-          "version": "repo-file-v1:sha256:af604995192d4c2af11137ecf0af0a8ee7bfab6362196bd27bc73c83862c7cd7"
+          "version": "repo-file-v1:sha256:c678a9bdc297bfbf0364f48278578eb2189fce3f05e061c1d3b0ddaed088281f"
         }
       ]
     },
@@ -39,6 +43,6 @@
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-09-29T04:26:49.358Z"
+    "at": "2026-10-01T04:51:25.311Z"
   }
 }
