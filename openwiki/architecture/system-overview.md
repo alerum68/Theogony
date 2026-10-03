@@ -5,7 +5,7 @@ description: Explains the high-level architecture of Theogony (Tauri, React, SQL
 tags: [architecture, rust, tauri, react, sqlite, crates, system-overview, evidence-first, gps, ui, reports]
 verified:
   - by: openwiki/0.5.1
-    at: 2026-10-01T23:42:41.967Z
+    at: 2026-10-03T02:56:33.539Z
 sources:
   - id: openwiki-source-651d1fb6c9e49916a916ab51
     resource: repo://Cargo.toml
