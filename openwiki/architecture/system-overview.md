@@ -5,7 +5,7 @@ description: Explains the high-level architecture of Theogony (Tauri, React, SQL
 tags: [architecture, rust, tauri, react, sqlite, crates, system-overview, evidence-first, gps, ui, reports]
 verified:
   - by: openwiki/0.5.1
-    at: 2026-10-03T02:56:33.539Z
+    at: 2026-10-03T14:11:35.891Z
 sources:
   - id: openwiki-source-651d1fb6c9e49916a916ab51
     resource: repo://Cargo.toml
@@ -37,7 +37,7 @@ sources:
     resource: repo://ui/src/components/PedigreeCanvas.tsx
   - id: openwiki-source-6ff378a34d0301bebf1cfaa0
     resource: repo://ui/src/reports/CitationReports.tsx
-generated: { by: "openwiki/0.5.1", at: "2026-09-30T22:45:20.709Z" }
+generated: { by: "openwiki/0.5.1", at: "2026-10-03T14:11:35.891Z" }
 ---
 
 # System Overview & Evidence Architecture
@@ -53,11 +53,11 @@ Theogony uses a local-first desktop architecture where a React/TypeScript single
 <!-- openwiki: mermaid parse failed and this diagram was converted to a text fence so it does not break rendering. Fix the diagram source and restore the mermaid fence. Parser error: Heuristic: an unescaped angle bracket inside a label breaks rendering; rephrase the label. -->
 ```text
 graph TD
-    UI[React TypeScript UI<br/>Tauri Webview] -->|Tauri IPC Commands| App[Rust Core App<br/>theogony-app]
-    App --> Domain[Domain and Evidence Engine<br/>theogony-domain]
-    App --> DB[SQLite Persistence Layer<br/>theogony-db-sqlite]
-    App --> Gedcom[GEDCOM Interchange<br/>theogony-gedcom]
-    App --> DNA[DNA Analysis and Kits<br/>theogony-dna]
+    UI[React TypeScript UI<br>Tauri Webview] -->|Tauri IPC Commands| App[Rust Core App<br>theogony-app]
+    App --> Domain[Domain and Evidence Engine<br>theogony-domain]
+    App --> DB[SQLite Persistence Layer<br>theogony-db-sqlite]
+    App --> Gedcom[GEDCOM Interchange<br>theogony-gedcom]
+    App --> DNA[DNA Analysis and Kits<br>theogony-dna]
     DB --> File[(Local SQLite Database)]
 ```
 
