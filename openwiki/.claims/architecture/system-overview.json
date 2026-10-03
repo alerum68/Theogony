@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:6cfc57cdcd53c6ae05473cd9b7acc602d49da4ec2884ff1ad035a4994b313d83",
+  "pageVersion": "sha256:c13b7d5ec18379aaefd3576b41032d49bf3f0889cd1818db09409952ce53c5e8",
   "claims": [
     {
       "id": "claim_e31f1ff7ecd847ab9b8150d7df553554",
@@ -12,7 +12,7 @@
         },
         {
           "resource": "repo://theogony-app/src/lib.rs",
-          "version": "repo-file-v1:sha256:8bc410d30822c43f51a5321723e215c1f1ed6970a5784e407dc04ce7c0a5efa7"
+          "version": "repo-file-v1:sha256:afd1c5c9f3839015023f8ce2e889f1bf17bfb655479dc61784b656980e45802c"
         }
       ]
     },
@@ -50,7 +50,7 @@
         },
         {
           "resource": "repo://theogony-app/src/lib.rs",
-          "version": "repo-file-v1:sha256:8bc410d30822c43f51a5321723e215c1f1ed6970a5784e407dc04ce7c0a5efa7"
+          "version": "repo-file-v1:sha256:afd1c5c9f3839015023f8ce2e889f1bf17bfb655479dc61784b656980e45802c"
         }
       ]
     },
@@ -70,7 +70,7 @@
       "evidence": [
         {
           "resource": "repo://theogony-app/src/lib.rs",
-          "version": "repo-file-v1:sha256:8bc410d30822c43f51a5321723e215c1f1ed6970a5784e407dc04ce7c0a5efa7"
+          "version": "repo-file-v1:sha256:afd1c5c9f3839015023f8ce2e889f1bf17bfb655479dc61784b656980e45802c"
         }
       ]
     },
@@ -134,7 +134,7 @@
         },
         {
           "resource": "repo://theogony-db-sqlite/src/schema.rs",
-          "version": "repo-file-v1:sha256:ee91832c387a16fb5d1cd5ae68a2c14b8fd228a14c0d916fc6188f979c6490d3"
+          "version": "repo-file-v1:sha256:5284d35f47ca0a83b1229610eacf3b5a79b6158a3d60c11b7b44c01d633b8b64"
         }
       ]
     },
@@ -178,7 +178,7 @@
         },
         {
           "resource": "repo://theogony-db-sqlite/src/schema.rs",
-          "version": "repo-file-v1:sha256:ee91832c387a16fb5d1cd5ae68a2c14b8fd228a14c0d916fc6188f979c6490d3"
+          "version": "repo-file-v1:sha256:5284d35f47ca0a83b1229610eacf3b5a79b6158a3d60c11b7b44c01d633b8b64"
         }
       ]
     },
@@ -278,7 +278,7 @@
       "evidence": [
         {
           "resource": "repo://theogony-app/src/lib.rs",
-          "version": "repo-file-v1:sha256:8bc410d30822c43f51a5321723e215c1f1ed6970a5784e407dc04ce7c0a5efa7"
+          "version": "repo-file-v1:sha256:afd1c5c9f3839015023f8ce2e889f1bf17bfb655479dc61784b656980e45802c"
         }
       ]
     },
@@ -328,13 +328,13 @@
         },
         {
           "resource": "repo://theogony-db-sqlite/src/schema.rs",
-          "version": "repo-file-v1:sha256:ee91832c387a16fb5d1cd5ae68a2c14b8fd228a14c0d916fc6188f979c6490d3"
+          "version": "repo-file-v1:sha256:5284d35f47ca0a83b1229610eacf3b5a79b6158a3d60c11b7b44c01d633b8b64"
         }
       ]
     }
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-10-03T14:11:35.891Z"
+    "at": "2026-10-03T22:35:12.983Z"
   }
 }

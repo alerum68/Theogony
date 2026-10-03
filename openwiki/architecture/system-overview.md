@@ -35,6 +35,9 @@ sources:
   - id: openwiki-source-6ff378a34d0301bebf1cfaa0
     resource: repo://ui/src/reports/CitationReports.tsx
 generated: { by: "openwiki/0.5.1", at: "2026-10-03T14:11:35.891Z" }
+verified:
+  - by: openwiki/0.5.1
+    at: 2026-10-03T22:35:12.983Z
 ---
 
 # System Overview & Evidence Architecture
