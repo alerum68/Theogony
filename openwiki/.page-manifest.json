@@ -2,18 +2,18 @@
   "schemaVersion": 1,
   "pages": {
     "/openwiki/architecture/system-overview.md": {
+      "gitHead": "090f5bdee9e772ad804bee50861e2246118f114b",
+      "sourceFingerprint": "sha256:412ebcb494da39b32a2b27e46d37a33502afbb2b339441d52c158c9f59c0edf2",
       "pageVersion": "sha256:6cfc57cdcd53c6ae05473cd9b7acc602d49da4ec2884ff1ad035a4994b313d83",
       "completedBy": "openwiki/0.5.1",
-      "completedRunId": "4f1ec61e-2355-45c5-9d77-92cba9369966",
-      "gitHead": "090f5bdee9e772ad804bee50861e2246118f114b",
-      "sourceFingerprint": "sha256:412ebcb494da39b32a2b27e46d37a33502afbb2b339441d52c158c9f59c0edf2"
+      "completedRunId": "4f1ec61e-2355-45c5-9d77-92cba9369966"
     },
     "/openwiki/concepts/evidence-first-philosophy.md": {
+      "gitHead": "090f5bdee9e772ad804bee50861e2246118f114b",
+      "sourceFingerprint": "sha256:412ebcb494da39b32a2b27e46d37a33502afbb2b339441d52c158c9f59c0edf2",
       "pageVersion": "sha256:092ff025e0a2a4904a252b30911206da7fd46dcacf93c11e9a9ed2cd3fe52383",
       "completedBy": "openwiki/0.5.1",
-      "completedRunId": "4f1ec61e-2355-45c5-9d77-92cba9369966",
-      "gitHead": "090f5bdee9e772ad804bee50861e2246118f114b",
-      "sourceFingerprint": "sha256:412ebcb494da39b32a2b27e46d37a33502afbb2b339441d52c158c9f59c0edf2"
+      "completedRunId": "4f1ec61e-2355-45c5-9d77-92cba9369966"
     },
     "/openwiki/integrations/gedcom-portability.md": {
       "gitHead": "df1c10da0d903daf8bbda9f57f0342aeda558bc9",

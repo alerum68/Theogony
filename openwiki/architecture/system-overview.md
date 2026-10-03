@@ -3,9 +3,6 @@ type: architecture
 title: System Overview & Evidence Architecture
 description: Explains the high-level architecture of Theogony (Tauri, React, SQLite), the core crate structure, and the Evidence-First Philosophy data pipeline.
 tags: [architecture, rust, tauri, react, sqlite, crates, system-overview, evidence-first, gps, ui, reports]
-verified:
-  - by: openwiki/0.5.1
-    at: 2026-10-03T14:11:35.891Z
 sources:
   - id: openwiki-source-651d1fb6c9e49916a916ab51
     resource: repo://Cargo.toml
