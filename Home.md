@@ -39,3 +39,10 @@ This guide walks through every screen of the application.
 ## DNA
 - [DNA chromosome browser](User-Guide-DNA-DNA-Chromosome-Browser)
 - [DNA cluster matrix (Leeds method)](User-Guide-DNA-DNA-Cluster-Matrix-Leeds-Method)
+- [DNA review and kit manager](User-Guide-DNA-DNA-Review-And-Kit-Manager)
+- [Haplogroup lineage lookup](User-Guide-DNA-Haplogroup-Lineage-Lookup)
+- [Relationship probability calculator](User-Guide-DNA-Relationship-Probability-Calculator)
+- [What Are The Odds (WATO)](User-Guide-DNA-What-Are-The-Odds-WATO)
+
+## Settings
+- [Date format settings](User-Guide-Settings-Date-Format-Settings)
