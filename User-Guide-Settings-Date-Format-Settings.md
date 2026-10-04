@@ -2,20 +2,35 @@
 
 ![Date format settings](images/user-guide/date-settings.png)
 
-Configure how the program reads ambiguous numeric dates across all data entry forms in your tree. Open this panel when you want to change whether numeric dates like 3/4/1850 are interpreted as day-first or month-first.
+Configure how ambiguous numeric dates are interpreted across all data entry forms in your family tree. Open this screen from application settings when you want to choose between day-first and month-first date parsing conventions.
 
 ## What you see
 
-The panel contains a single setting for date interpretation. The **Date format for numbers like 3/4/1850** section provides two options in a radio button group. The first option is **Day first (3/4/1850 is 3 April 1850)** and the second option is **Month first (3/4/1850 is 4 March 1850)**.
+The **Date format for numbers like 3/4/1850** section provides radio buttons to select how numeric dates without written month names are parsed throughout the tree.
+
+The **Day first (3/4/1850 is 3 April 1850)** option sets numeric dates to interpret the first integer as the calendar day and the second integer as the month.
+
+The **Month first (3/4/1850 is 4 March 1850)** option sets numeric dates to interpret the first integer as the calendar month and the second integer as the day.
 
 ## Common tasks
 
-### Change the numeric date format
+### Set day-first date interpretation
 
-1. Select **Day first (3/4/1850 is 3 April 1850)** or **Month first (3/4/1850 is 4 March 1850)** to set your preferred interpretation for ambiguous dates.
+1. Open the application **Settings…** dialog from the main window toolbar.
+2. Scroll to the **Dates** section.
+3. Select **Day first (3/4/1850 is 3 April 1850)**.
 
-The program applies your selection immediately to all date entry fields across your tree.
+The application immediately stores the preference and parses subsequent numeric date entries as day-first.
+
+### Set month-first date interpretation
+
+1. Open the application **Settings…** dialog from the main window toolbar.
+2. Scroll to the **Dates** section.
+3. Select **Month first (3/4/1850 is 4 March 1850)**.
+
+The application immediately stores the preference and parses subsequent numeric date entries as month-first.
 
 ## Good to know
 
-- Changes to date formats save automatically as soon as you select a new option.
+- Changes take effect immediately across all fact forms, event dialogs, and persona creation panels.
+- Written month names (such as 4 Mar 1850 or April 3, 1850) are always unambiguous and are unaffected by this setting.

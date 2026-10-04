@@ -2,27 +2,31 @@
 
 ![Haplogroup lineage lookup](images/user-guide/haplogroup-lineage.png)
 
-The Haplogroup Lineage panel traces direct paternal and maternal haplogroups through the phylogenetic tree back to root haplogroups. Open this panel when studying specific DNA kit lineages and identifying defining mutations for ancestral branches.
+Trace paternal and maternal haplogroups through their phylogenetic branches back to root haplogroups. You open this screen when you want to examine the full evolutionary lineage and defining mutations of a Y-DNA or mtDNA subclade.
 
 ## What you see
 
-The header displays the target haplogroup and an action button.
+The top header displays the selected haplogroup name and includes the **View migration map** button when opened in connection with a specific kit.
 
-The main area lists the computed lineage chain from the target haplogroup back to the root, showing defining mutations in parentheses where available.
-
-Error or empty state messages appear below the header when the reference tree lacks the requested haplogroup.
+The main pane presents an ordered list showing the evolutionary branch path. Each entry lists the ancestral haplogroup name and its defining mutations in parentheses.
 
 ## Common tasks
 
-### View lineage and mutations
+### Trace an ancestral haplogroup chain
 
-1. Select a haplogroup label on the DNA Kits screen to open the lineage panel.
-2. Review the ordered chain of ancestral haplogroups and their defining mutations.
+1. Open the haplogroup viewer by selecting a haplogroup label on a DNA kit record.
+2. Review the ordered chain in the list to follow the branch from ancestral root down to the terminal subclade.
 
-### Open migration map
+The list details all intermediate mutation steps recorded in the phylogenetic reference tree.
 
-1. Select **View migration map** next to the haplogroup header.
+### Open the migration map for a kit
+
+1. Open the haplogroup lineage panel for a tested kit.
+2. Select **View migration map** next to the haplogroup header.
+
+The application switches to the migration map view centered on that kit's lineage.
 
 ## Good to know
 
-The lineage computation relies on the current reference tree loaded in the program. If a haplogroup is missing from the reference data, an empty state message appears.
+- Lineage chains are computed directly from built-in phylogenetic reference trees for Y-DNA and mtDNA.
+- If an imported haplogroup is not present in the current reference data, the panel displays a notice that the subclade was not found.
