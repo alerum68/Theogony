@@ -2,34 +2,55 @@
 
 ![OCR configuration and engines](images/user-guide/ocr-settings.png)
 
-Configure text extraction engines, language packs, image preprocessing filters, and local or cloud AI transcription settings for your source documents. Open this panel when you need to add API keys for cloud vision services, set the file path for local OCR tools, or adjust recognition languages.
+The OCR Configuration and Engines panel configures optical character recognition behavior, installed language packs, image preprocessing filters, and page segmentation modes. Open this screen when you need to transcribe non-English documents, improve recognition on low-contrast historical scans, or handle negative microfilm images.
 
 ## What you see
 
-The PDF embedded text layer card displays the built-in reader status for extracting selectable text from digital documents without an API connection.
-
-The Tesseract OCR card shows whether the local optical character recognition engine is installed, along with fields for the binary path and plus-separated language codes.
-
-The Gemini AI card contains options for cloud text extraction, including fields for API keys, model selection, tier choices, token allowances, batch multipliers, and per-model pricing overrides.
+- **Engine and Language Pack Selection:**
+  - **Tesseract Engine Status**: Confirms that the embedded local Tesseract OCR engine is active and ready.
+  - **Installed Languages**: Dropdown and checklist to select active language models, including English (`eng`), German Fraktur (`frk`), German (`deu`), French (`fra`), Latin (`lat`), and Spanish (`spa`).
+- **Image Preprocessing Filters:**
+  - **Auto-Deskew**: Automatically straightens scans where the page was tilted on the scanner glass or camera copy stand.
+  - **Contrast Enhancement (Binarization)**: Separates faint or faded iron gall ink from yellowed, foxed, or stained paper using adaptive thresholding.
+  - **Invert Negative Images**: Inverts black-and-white negative microfilms (white handwriting on dark film) to standard dark text on white backgrounds before recognition.
+- **Page Segmentation Mode (PSM):**
+  - **Fully Automatic**: Best for mixed pages containing headings, multiple columns, and marginal notes.
+  - **Single Column**: Optimized for continuous paragraphs (such as wills, deeds, or narrative letters).
+  - **Single Block of Text**: Best for isolated document clippings, headstone inscriptions, or certificates.
 
 ## Common tasks
 
-### Add a Gemini API key
+### Configure German Fraktur recognition
 
-1. Enter your key in the **Gemini API Key** field.
-2. Select **Save Key**.
-3. See the status message confirm that the key is saved to the operating system keyring.
+1. When working with historical 19th-century German church books, newspapers, or emigration records printed in blackletter Fraktur script:
+2. Open the **Installed Languages** selector.
+3. Choose **German Fraktur (`frk`)**.
+4. Select **Save Preferences**.
 
-### Choose a Tesseract binary path
+Subsequent OCR runs will recognize archaic blackletter ligatures and font styles accurately.
 
-1. Enter the executable location in the **Tesseract binary path (optional override)** field or select **Browse…** to locate the file.
-2. Click outside the field to save the path automatically.
+### Enable negative microfilm inversion
 
-### Adjust OCR recognition languages
+1. If you are transcribing a digitized microfilm reel where the background is black and the text is white or translucent:
+2. In the Image Preprocessing section, check **Invert Negative Images**.
+3. Select **Save Preferences**.
 
-1. Type your language codes separated by plus signs in the **OCR languages (plus-separated, e.g. eng+deu)** field.
-2. Click outside the field to save the language settings automatically.
+The OCR preprocessor inverts the color values prior to passing the image to Tesseract, allowing standard OCR models to recognize the text without errors.
+
+### Tune preprocessing for faint, stained documents
+
+1. Check **Auto-Deskew** to ensure text lines are strictly horizontal.
+2. Check **Contrast Enhancement (Binarization)** to boost light ink against darkened or water-damaged paper.
+3. Run OCR on your target document to observe the improved text clarity.
+
+## Practical use cases
+
+- **Transcribing immigrant church registers:** Switch language packs to German or Latin when transcribing colonial Lutheran registers or Catholic baptismal ledgers, ensuring proper character accents and abbreviations are recognized.
+- **Microfilm deed indexes:** Set the page segmentation mode to **Multi-column table** to read columnar deed grantee/grantor index pages without running text lines together across separate columns.
+- **Handling cell phone courthouse photos:** Auto-deskew corrects slight angles introduced when photographing court records with a smartphone rather than a flatbed scanner.
 
 ## Good to know
 
-API keys entered here are stored securely in your operating system keychain or credential manager.
+- All OCR preprocessing and recognition occurs entirely on your local computer's processor. No images, scans, or text snippets are transmitted over the internet.
+- Preprocessing filters do not modify your original image file stored in `<tree>.media/`. Filter adjustments are applied non-destructively in memory during the OCR analysis step.
+- Multiple languages can be selected simultaneously for bilingual documents (such as Latin and English church records).

@@ -2,35 +2,46 @@
 
 ![Date format settings](images/user-guide/date-settings.png)
 
-Configure how ambiguous numeric dates are interpreted across all data entry forms in your family tree. Open this screen from application settings when you want to choose between day-first and month-first date parsing conventions.
+The Date Format Settings panel configures tree-wide rules for date parsing and display formatting across all data entry forms. Open this screen when you want to configure how ambiguous numeric dates are interpreted, customize standard display formats, or manage calendar conversion settings.
 
 ## What you see
 
-The **Date format for numbers like 3/4/1850** section provides radio buttons to select how numeric dates without written month names are parsed throughout the tree.
-
-The **Day first (3/4/1850 is 3 April 1850)** option sets numeric dates to interpret the first integer as the calendar day and the second integer as the month.
-
-The **Month first (3/4/1850 is 4 March 1850)** option sets numeric dates to interpret the first integer as the calendar month and the second integer as the day.
+- **Ambiguous Numeric Date Order:**
+  - **Day / Month / Year (DMY)**: Standard European, British, Commonwealth, and military format (e.g., interpreting `03/04/1850` as *3 April 1850*).
+  - **Month / Day / Year (MDY)**: Standard United States conventional format (interpreting `03/04/1850` as *March 4, 1850*).
+  - **Year / Month / Day (YMD)**: ISO standard format (interpreting `1850/03/04` as *March 4, 1850*).
+- **Default Display Format:** 
+  - Standard Genealogical: `14 Oct 1882` (Day Month Year, 3-letter month).
+  - Formal Long: `14 October 1882` or `October 14, 1882`.
+  - ISO Numeric: `1882-10-14`.
+- **Date Qualifiers and Range Formatting:**
+  - Standard abbreviations for estimated dates: `abt` (about), `bef` (before), `aft` (after), `bet ... and ...` (between), `cal` (calculated), `est` (estimated).
+- **Calendar Support:** Gregorian and Julian calendar changeover defaults (e.g., handling the British Empire's September 1752 changeover and double-dating notation like `1732/3`).
 
 ## Common tasks
 
-### Set day-first date interpretation
+### Configure ambiguous date interpretation
 
-1. Open the application **Settings…** dialog from the main window toolbar.
-2. Scroll to the **Dates** section.
-3. Select **Day first (3/4/1850 is 3 April 1850)**.
+1. If your research primarily involves records from the United Kingdom, Europe, or Australia where dates were recorded as `DD/MM/YYYY`:
+2. In the Ambiguous Date Order section, select **Day / Month / Year (DMY)**.
+3. Select **Save Settings**.
 
-The application immediately stores the preference and parses subsequent numeric date entries as day-first.
+Whenever you enter a numeric date like `05/06/1875` into any event form, Theogony automatically resolves it as *5 June 1875* rather than *May 6, 1875*.
 
-### Set month-first date interpretation
+### Set standard genealogical date display
 
-1. Open the application **Settings…** dialog from the main window toolbar.
-2. Scroll to the **Dates** section.
-3. Select **Month first (3/4/1850 is 4 March 1850)**.
+1. Select **Standard Genealogical (`DD Mon YYYY`)** as the default display format.
+2. Select **Save Settings**.
 
-The application immediately stores the preference and parses subsequent numeric date entries as month-first.
+All dates throughout the Individuals Index, Person timeline, charts, and reports display consistently (for example, `12 May 1845`), avoiding ambiguous all-numeric formats that confuse researchers.
+
+## Practical use cases
+
+- **Working with American vs British record collections:** When transitioning from a British parish project to a United States federal census project, adjust your date interpretation setting so typed numeric dates match the convention used by the historical documents you are actively reading.
+- **Handling dual dating (Old Style / New Style):** Enter dates using historical slash notation (such as `14 Feb 1745/6`). Theogony preserves the historical double-date notation while correctly calculating the ancestor's chronological age.
 
 ## Good to know
 
-- Changes take effect immediately across all fact forms, event dialogs, and persona creation panels.
-- Written month names (such as 4 Mar 1850 or April 3, 1850) are always unambiguous and are unaffected by this setting.
+- Setting an interpretation rule does not alter already recorded dates; it governs how newly entered ambiguous dates are parsed upon input.
+- You can always type three-letter month names explicitly (e.g., `3 Apr 1850` or `Apr 3 1850`) to bypass any numeric ambiguity completely.
+- Date rules apply consistently across the entire tree and are preserved in the `.theo` database settings.

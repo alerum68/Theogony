@@ -2,51 +2,70 @@
 
 ![DNA review and kit manager](images/user-guide/dna-review.png)
 
-Manage imported DNA kits and resolve match-tree personas in your genealogical tree. Open this screen after importing autosomal, Y-DNA, or mtDNA test files to link kits to people and inspect suggested merges.
+The DNA Review and Kit Manager dashboard is the central hub for managing genetic genealogy kits, importing match lists, and examining shared centimorgan data across testing companies. Open this screen when you want to import a new raw match file, link a DNA kit to a person in your tree, or search across your genetic matches.
 
 ## What you see
 
-The **DNA Kits** section lists every imported kit with its testing company, identifier, display name, haplogroups, and connection to your tree. Unlinked kits display a **Link to individual** picker.
-
-The **Recently auto-merged ancestors** section displays individuals whose evidence personas merged automatically during the last scan.
-
-The **Match-tree personas to review** table lists imported personas from match trees that need manual review, with an **Attach…** button for each entry.
-
-The **Possible shared ancestors across matches** table identifies potential duplicate ancestor pairs across multiple match trees, offering an **Attach both to a new person** action.
+- **Kits Management Toolbar:**
+  - **Import Matches...**: Opens the file importer supporting standard CSV and TSV match downloads from AncestryDNA, FamilyTreeDNA, GEDmatch, 23andMe, and MyHeritage.
+  - **Add Kit / Tester**: Manually creates a new kit entry.
+  - **Filter by Testing Company**: Filters your kit list by testing laboratory.
+- **The DNA Kits List:** Displays all imported kits in your database:
+  - **Kit Identifier and Tester Name**: The test subject or account pseudonym.
+  - **Testing Platform**: Identifies the source company.
+  - **Linked Tree Individual**: The person in your family tree linked to this genetic sample.
+  - **Home Kit Indicator**: Designates your primary reference kit used across analysis tools.
+  - **Total Match Count**: Number of imported genetic cousins for this kit.
+  - **Y-DNA / mtDNA Haplogroups**: Displayed when available from the test results.
+- **Match Explorer Grid:** When a kit is selected, the lower table lists all matching individuals, displaying:
+  - **Match Name**: The genetic cousin.
+  - **Total Shared cM**: Total centimorgans shared.
+  - **Longest Segment**: Length of the largest continuous matching block.
+  - **Estimated Relationship**: Company or standard estimated kinship degree.
+  - **Linked Person Badge**: Highlights matches who have been identified and placed into your tree.
 
 ## Common tasks
 
-### Link a DNA kit to an individual
+### Import an autosomal match list
 
-1. Locate the unlinked kit in the **DNA Kits** table.
-2. Select the **Link to individual** picker on that row.
-3. Choose the corresponding person from your tree to assign the kit.
+1. Download your match list file (CSV or TSV) from your testing provider (e.g., AncestryDNA or GEDmatch).
+2. In Theogony, select **Import Matches...** in the toolbar.
+3. Select your downloaded file.
+4. Choose or create the tester kit to associate with the import.
+5. Select **Import**.
 
-The row updates to show the kit linked to that person.
+Theogony processes the matches, parses total shared cMs and longest segments, and displays them immediately in the match explorer.
 
-### Inspect a haplogroup lineage
+### Link a DNA kit to an ancestor in your tree
 
-1. Locate a kit with an assigned Y-DNA or mtDNA haplogroup in the **DNA Kits** table.
-2. Select the haplogroup button under **Y-DNA Haplogroup** or **mtDNA Haplogroup**.
+1. Select a kit row in the top kit list.
+2. Select **Link to Person**.
+3. Search for the tested individual in your family tree (for example, yourself, your parent, or a tested cousin).
+4. Select **Confirm Link**.
 
-The lineage viewer opens to trace the phylogenetic tree for that haplogroup.
+The kit is now tied to that individual. Chromosome browser data and cluster matrices will now cross-reference their family pedigree.
 
-### Attach a match-tree persona
+### Designate your Home Kit
 
-1. Find the persona in the **Match-tree personas to review** table.
-2. Select **Attach…**.
-3. Choose whether to link the persona to an existing person or create a new individual.
+1. Right-click the kit belonging to the primary researcher (or focal tester).
+2. Select **Set as Home Kit**.
 
-The persona disappears from the review queue and attaches to the selected record.
+This kit becomes the default reference kit across the Leeds Cluster Matrix, Chromosome Browser, and Migration Map.
 
-### Merge possible shared ancestors
+### Search and filter matches
 
-1. Review the proposed ancestor pair under **Possible shared ancestors across matches**.
-2. Select **Attach both to a new person**.
+1. Use the search field above the Match Explorer grid to find matches by name or ancestral surname.
+2. Filter by minimum shared centimorgans (e.g., typing `50` to view only matches sharing 50 cM or more).
+3. Select any match row to view their segment breakdown or in-common-with matches.
 
-The application combines both personas into a new individual record in your tree.
+## Practical use cases
+
+- **Cross-company match consolidation:** Manage kits from AncestryDNA, FamilyTreeDNA, and GEDmatch in one unified local environment, avoiding the need to juggle multiple browser tabs.
+- **Adoptee and unknown parentage research:** Import match files for an adoptee to establish a baseline of close matches, identify top matches sharing over 90 cM, and feed them directly into the **Leeds Cluster Matrix**.
+- **Auditing family testing coverage:** Review your kit list to identify which ancestral branches have been verified by living testers (e.g., verifying that you have kits representing both your paternal grandfather's and maternal grandmother's lines).
 
 ## Good to know
 
-- Kits marked with the Home badge represent your primary reference test files.
-- The review scan runs automatically when you open the screen.
+- DNA match data in Theogony is stored locally within your `.theo` database file. Your genetic data is never uploaded to external servers.
+- Importing the same match file multiple times is handled idempotently; existing match records are updated without creating duplicates.
+- When exporting public trees or GEDCOM files, DNA links belonging to living individuals are automatically protected and redacted.

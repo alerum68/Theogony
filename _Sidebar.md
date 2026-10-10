@@ -16,9 +16,7 @@
   * [Media staging and gallery](User-Guide-Sources-And-Media-Media-Staging-And-Gallery)
 * Extraction and OCR
   * [OCR text extraction](User-Guide-Extraction-And-OCR-OCR-Text-Extraction)
-  * [OCR batch jobs](User-Guide-Extraction-And-OCR-OCR-Batch-Jobs)
   * [OCR configuration and engines](User-Guide-Extraction-And-OCR-OCR-Configuration-And-Engines)
-  * [OCR cost and time estimate](User-Guide-Extraction-And-OCR-OCR-Cost-And-Time-Estimate)
   * [AI evidence extraction](User-Guide-Extraction-And-OCR-AI-Evidence-Extraction)
   * [Extraction proposals list](User-Guide-Extraction-And-OCR-Extraction-Proposals-List)
   * [Extraction model settings](User-Guide-Extraction-And-OCR-Extraction-Model-Settings)
@@ -27,11 +25,20 @@
   * [Review queue](User-Guide-Review-Review-Queue)
   * [Proposal review cards](User-Guide-Review-Proposal-Review-Cards)
 * DNA
-  * [DNA chromosome browser](User-Guide-DNA-DNA-Chromosome-Browser)
-  * [DNA cluster matrix (Leeds method)](User-Guide-DNA-DNA-Cluster-Matrix-Leeds-Method)
   * [DNA review and kit manager](User-Guide-DNA-DNA-Review-And-Kit-Manager)
-  * [Haplogroup lineage lookup](User-Guide-DNA-Haplogroup-Lineage-Lookup)
+  * [DNA cluster matrix (Leeds method)](User-Guide-DNA-DNA-Cluster-Matrix-Leeds-Method)
+  * [DNA chromosome browser](User-Guide-DNA-DNA-Chromosome-Browser)
   * [Relationship probability calculator](User-Guide-DNA-Relationship-Probability-Calculator)
   * [What Are The Odds (WATO)](User-Guide-DNA-What-Are-The-Odds-WATO)
-* Settings
+  * [Haplogroup lineage lookup](User-Guide-DNA-Haplogroup-Lineage-Lookup)
+* Reports and charts
+  * [Genealogy charts overview](User-Guide-Reports-And-Charts-Genealogy-Charts-Overview)
+  * [Pedigree chart](User-Guide-Reports-And-Charts-Pedigree-Chart)
+  * [Fan chart](User-Guide-Reports-And-Charts-Fan-Chart)
+  * [Descendant chart](User-Guide-Reports-And-Charts-Descendant-Chart)
+  * [Trellis chart](User-Guide-Reports-And-Charts-Trellis-Chart)
+  * [Family group sheets and reports](User-Guide-Reports-And-Charts-Family-Group-Sheets-And-Reports)
+  * [Tree statistics](User-Guide-Reports-And-Charts-Tree-Statistics)
+* Settings and appearance
   * [Date format settings](User-Guide-Settings-Date-Format-Settings)
+  * [Skins and visual themes](User-Guide-Settings-Skins-And-Themes)

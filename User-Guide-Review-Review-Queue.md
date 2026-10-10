@@ -2,27 +2,52 @@
 
 ![Review queue](images/user-guide/review-queue.png)
 
-The Review Queue collects unattached personas, multi-source citations, and potential duplicates that require genealogical adjudication. Open this screen when you want to link evidence to conclusion people, examine date issues, or clean up duplicate records in your tree.
+The Review Queue is the central clearinghouse for all pending evidence in Theogony. Open this screen when you want to review unattached personas extracted from historical documents, manage unreviewed claims, or adjudicate incoming evidence before it enters your tree conclusions.
 
 ## What you see
 
-The upper section displays tables for unattached personas and multi-source citations, showing names, claims, and source documents alongside an **Attach…** button for each entry. Further down, you find tables for date and age issues featuring a **Not an issue** button, followed by search pickers and a **Compare and merge** button for manually combining records. The lower portion includes candidate grids for duplicate people, persona matches, linked personas, and duplicate places, accompanied by a **Scan for duplicates** button.
+- **Queue Filter Bar:** Filter queue items by source document, candidate persona, or item type (e.g., *Unattached Personas*, *Unreviewed Facts*, *Potential Duplicates*).
+- **The Evidence Review Grid:** A virtualized DataGrid displaying:
+  - **Persona / Subject:** The name of the person as written in the original historical document.
+  - **Source Document:** The specific record (e.g., *1860 US Census* or *St. Paul Parish Register*) where the evidence was found.
+  - **Proposed Claims:** The count and summary of asserted life events, dates, and relationships.
+  - **Confidence / Status:** Processing state and informant quality level.
+- **Queue Action Toolbar:** 
+  - **Review Selected in Cards**: Opens the interactive step-by-step Proposal Review Cards interface.
+  - **Link to Existing Person**: Manually associates a candidate persona with a conclusion person in your database.
+  - **Create New Person**: Initializes a new individual in your tree from the persona's details.
+  - **Dismiss / Archive**: Removes peripheral or unneeded evidence from the active queue.
 
 ## Common tasks
 
-### Attach an unattached persona
+### Work through pending document claims
 
-1. Locate the persona in the **Unattached personas** table.
-2. Select **Attach…** on the corresponding row to open the attach dialog.
-3. Complete the attachment to link the persona to a conclusion person.
+1. Select a document batch in the **Queue Filter Bar**.
+2. Select **Review Selected in Cards** in the toolbar.
+3. Theogony launches the **Proposal Review Cards** interface, allowing you to evaluate each claim, match personas to ancestors, and accept or reject proposed facts.
 
-### Dismiss a date or age issue
+### Manually link an unattached persona to an ancestor
 
-1. Locate the entry in the **Possible date/age issues** table.
-2. Select **Not an issue** to remove the warning from the queue.
+1. In the Review Queue grid, select an unattached persona (for example, a persona named `"Polly Hale"` extracted from a marriage bond).
+2. Select **Link to Existing Person**.
+3. In the search dialog, find and select `"Mary Elizabeth Hale"` in your tree.
+4. Select **Confirm Link**.
 
-### Scan for duplicate records
+The persona is permanently connected to Mary Elizabeth Hale as an evidence source, and its associated assertions are linked to her record.
 
-1. Locate the **Possible duplicate people** section.
-2. Select **Scan for duplicates** to refresh the candidate lists.
-3. Review the matching pairs in the candidate grids and select an action to resolve them.
+### Review unattached personas from deleted individuals
+
+1. When you delete individuals from your tree, their underlying document evidence is never erased; the personas move directly to the Review Queue.
+2. Filter the queue by **Unattached Evidence**.
+3. Re-link these personas to other relatives or keep them in the evidence layer for future correlation.
+
+## Practical use cases
+
+- **Controlled evidence intake:** Avoid the common pitfall of other genealogy programs where importing an index or record dumps hundreds of unverified names directly into your tree, cluttering your pedigree with duplicates and speculative data. The Review Queue acts as an essential quarantine layer.
+- **Resolving identity conflicts:** When two people in the same county share the exact same name, keep their respective document personas in the Review Queue until you have assembled enough land and probate records to definitively separate them into distinct individuals.
+
+## Good to know
+
+- Evidence in the Review Queue never appears on published pedigree charts, family group sheets, or standard GEDCOM exports until you accept it.
+- Items can remain in the Review Queue indefinitely without expiring or cluttering your primary family lists.
+- You can leave the Review Queue at any time; your progress is automatically saved.

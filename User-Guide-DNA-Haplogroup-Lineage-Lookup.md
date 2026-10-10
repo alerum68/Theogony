@@ -2,31 +2,50 @@
 
 ![Haplogroup lineage lookup](images/user-guide/haplogroup-lineage.png)
 
-Trace paternal and maternal haplogroups through their phylogenetic branches back to root haplogroups. You open this screen when you want to examine the full evolutionary lineage and defining mutations of a Y-DNA or mtDNA subclade.
+The Haplogroup Lineage Lookup panel traces direct paternal (Y-DNA) and direct maternal (mtDNA) haplogroups through the human phylogenetic tree. Open this screen when you want to explore the evolutionary hierarchy of your haplogroup, compare testing company predictions against full sequencing results, or trace lineage pathways from ancient roots down to modern terminal subclades.
 
 ## What you see
 
-The top header displays the selected haplogroup name and includes the **View migration map** button when opened in connection with a specific kit.
-
-The main pane presents an ordered list showing the evolutionary branch path. Each entry lists the ancestral haplogroup name and its defining mutations in parentheses.
+- **Lineage Input Toolbar:**
+  - **Haplogroup Name Input**: Enter any valid Y-DNA or mtDNA branch notation (e.g., `R-M269`, `I-L22`, `H1a3`, or `U5b1b`).
+  - **Tree Selector**: Toggle between **Y-DNA (Paternal)** and **mtDNA (Maternal)** phylogenetic trees.
+  - **Kit Selector**: Quickly populate the input from any imported DNA kit in your database.
+- **Phylogenetic Lineage Pathway:** An interactive stepped hierarchy displaying the branch sequence from the root ancestor down to the entered subclade:
+  - **Branch Names**: Standard ISOGG and mutation-based nomenclatures.
+  - **Defining SNP Mutations**: Specific genetic single-nucleotide polymorphisms that define each branching point.
+  - **Estimated Age (BP / BCE)**: Calculated age of the mutation in thousands of years before present.
+- **Actions Panel:** Direct button to **Open in Migration Map** to visualize the geographic route associated with the lineage.
 
 ## Common tasks
 
-### Trace an ancestral haplogroup chain
+### Trace the path of a paternal Y-DNA haplogroup
 
-1. Open the haplogroup viewer by selecting a haplogroup label on a DNA kit record.
-2. Review the ordered chain in the list to follow the branch from ancestral root down to the terminal subclade.
+1. Set the tree selector to **Y-DNA (Paternal)**.
+2. Enter your terminal haplogroup (for example, `R-DF13` or `R-L21`) into the haplogroup input.
+3. Select **Lookup Lineage**.
+4. The panel displays the complete paternal lineage path:
+   `Y-Adam` $\rightarrow$ `A` $\rightarrow$ `BT` $\rightarrow$ `CT` $\rightarrow$ `F` $\rightarrow$ `K` $\rightarrow$ `P` $\rightarrow$ `R` $\rightarrow$ `R1` $\rightarrow$ `R1b-M343` $\rightarrow$ `M269` $\rightarrow$ `L21` $\rightarrow$ `DF13`.
+5. Each node lists its defining SNPs and estimated divergence age.
 
-The list details all intermediate mutation steps recorded in the phylogenetic reference tree.
+### Compare different company haplogroup predictions
 
-### Open the migration map for a kit
+1. If 23andMe or AncestryDNA reports an older, broad haplogroup such as `R-M269`, but a relative's Big Y test reports a specific subclade like `R-FT12345`:
+2. Look up the specific subclade in this tool.
+3. Verify that `R-M269` is an upstream ancestral node on the exact same direct path, proving that the two test results are fully compatible and simply differ in resolution.
 
-1. Open the haplogroup lineage panel for a tested kit.
-2. Select **View migration map** next to the haplogroup header.
+### Open migration routes for a lineage
 
-The application switches to the migration map view centered on that kit's lineage.
+1. With a haplogroup displayed, select **Open in Migration Map**.
+2. Theogony launches the **Ancient DNA Migration Map** centered on your lineage, illustrating the prehistoric route and ancient archaeological burials sharing that mutation.
+
+## Practical use cases
+
+- **Harmonizing test results across family members:** Confirm whether two cousins who tested at different times with different companies belong to the same direct paternal or maternal lineage.
+- **Surname project analysis:** In Y-DNA surname studies, determine whether multiple branches carrying the same surname share a common medieval forefather or represent independent paternal origins by comparing where their subclades branch apart on the Y-tree.
+- **Deep ancestry timeline construction:** Use the calibrated mutation dates to establish an approximate historical era when major lineage branches formed (e.g., Bronze Age expansion versus Iron Age migrations).
 
 ## Good to know
 
-- Lineage chains are computed directly from built-in phylogenetic reference trees for Y-DNA and mtDNA.
-- If an imported haplogroup is not present in the current reference data, the panel displays a notice that the subclade was not found.
+- Theogony contains embedded, comprehensive phylogenetic trees for both Y-DNA and mtDNA; lookups operate entirely offline with no internet access required.
+- The tool accepts both shorthand SNP designations (e.g., `R-U106`) and traditional longhand alphanumeric nomenclatures (e.g., `R1b1a1b1a1a`).
+- Looking up a haplogroup does not modify any kit records; it is a purely analytical reference tool.
